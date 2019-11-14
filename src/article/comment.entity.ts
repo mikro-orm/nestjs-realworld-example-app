@@ -1,25 +1,32 @@
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
-import { UserEntity } from '../user/user.entity';
-import { ArticleEntity } from './article.entity';
+import { Entity, IdEntity, ManyToOne, PrimaryKey, Property } from 'mikro-orm';
+import { User } from '../user/user.entity';
+import { Article } from './article.entity';
 
 @Entity()
-export class Comment {
+export class Comment implements IdEntity<Comment> {
 
-  @PrimaryGeneratedColumn()
-  public id: number;
+  @PrimaryKey()
+  id: number;
 
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
-  public createdAt: Date;
+  @Property()
+  createdAt = new Date();
 
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
-  public updatedAt: Date;
+  @Property({ onUpdate: () => new Date() })
+  updatedAt = new Date();
 
-  @Column()
-  public body: string;
+  @Property()
+  body: string;
 
-  @ManyToOne((type) => ArticleEntity, (article) => article.comments)
-  public article: ArticleEntity;
+  @ManyToOne()
+  article: Article;
 
-  @ManyToOne((type) => UserEntity, (user) => user.articles)
-  public author: UserEntity;
+  @ManyToOne()
+  author: User;
+
+  constructor(author: User, article: Article, body: string) {
+    this.author = author;
+    this.article = article;
+    this.body = body;
+  }
+
 }

@@ -1,48 +1,59 @@
-import { BeforeUpdate, Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
-import { UserEntity } from '../user/user.entity';
+import { Collection, Entity, IdEntity, ManyToOne, OneToMany, PrimaryKey, Property, wrap } from 'mikro-orm';
+import slug from 'slug';
+
+import { User } from '../user/user.entity';
 import { Comment } from './comment.entity';
 
-@Entity('article')
-export class ArticleEntity {
+@Entity()
+export class Article implements IdEntity<Article> {
 
-  @PrimaryGeneratedColumn()
-  public id: number;
+  @PrimaryKey()
+  id: number;
 
-  @Column()
-  public slug: string;
+  @Property()
+  slug: string;
 
-  @Column()
-  public title: string;
+  @Property()
+  title: string;
 
-  @Column({ default: '' })
-  public description: string;
+  @Property()
+  description = '';
 
-  @Column({ default: '' })
-  public body: string;
+  @Property()
+  body = '';
 
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
-  public createdAt: Date;
+  @Property()
+  createdAt = new Date();
 
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
-  public updatedAt: Date;
+  @Property({ onUpdate: () => new Date() })
+  updatedAt = new Date();
 
-  @Column('simple-array')
-  public tagList: string[];
+  @Property() // TODO 'simple-array'?
+  tagList: string[] = [];
 
-  @ManyToOne((type) => UserEntity, (user) => user.articles)
-  public author: UserEntity;
+  @ManyToOne()
+  author: User;
 
-  @OneToMany((type) => Comment, (comment) => comment.article, { eager: true })
-  @JoinColumn()
-  public comments: Comment[];
+  @OneToMany(() => Comment, comment => comment.article, { eager: true, orphanRemoval: true })
+  comments = new Collection<Comment>(this);
 
-  @Column({ default: 0 })
-  public favoritesCount: number;
+  @Property()
+  favoritesCount = 0;
 
-  public favorited = false;
-
-  @BeforeUpdate()
-  public updateTimestamp() {
-    this.updatedAt = new Date();
+  constructor(author: User, title: string, description: string, body: string) {
+    this.author = author;
+    this.title = title;
+    this.description = description;
+    this.body = body;
+    this.slug = slug(title, { lower: true }) + '-' + (Math.random() * Math.pow(36, 6) | 0).toString(36); // tslint:disable-line
   }
+
+  toJSON(user?: User): Article {
+    const o = wrap(this).toObject();
+    o.favorited = user && user.favorites.isInitialized() ? user.favorites.contains(this) : false;
+    o.author = this.author.toJSON(user);
+
+    return o as Article;
+  }
+
 }

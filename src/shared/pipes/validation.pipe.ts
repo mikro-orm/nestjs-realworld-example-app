@@ -4,7 +4,7 @@ import { validate } from 'class-validator';
 
 @Injectable()
 export class ValidationPipe implements PipeTransform<any> {
-  public async transform(value, metadata: ArgumentMetadata) {
+  async transform(value, metadata: ArgumentMetadata) {
 
     if (!value) {
       throw new BadRequestException('No data submitted');

@@ -1,73 +1,63 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
-import { InjectRepository } from '@nestjs/typeorm';
-import { DeepPartial, Repository } from 'typeorm';
-import { UserEntity } from '../user/user.entity';
-import { FollowsEntity } from './follows.entity';
+import { User } from '../user/user.entity';
 import { IProfileData, IProfileRO } from './profile.interface';
+import { EntityRepository, FilterQuery } from 'mikro-orm';
+import { InjectRepository } from 'nestjs-mikro-orm';
 
 @Injectable()
 export class ProfileService {
   constructor(
-    @InjectRepository(UserEntity)
-    private readonly userRepository: Repository<UserEntity>,
-    @InjectRepository(FollowsEntity)
-    private readonly followsRepository: Repository<FollowsEntity>,
+    @InjectRepository(User)
+    private readonly userRepository: EntityRepository<User>,
   ) {}
 
-  public async findAll(): Promise<UserEntity[]> {
-    return this.userRepository.find();
+  async findAll(): Promise<User[]> {
+    return this.userRepository.findAll();
   }
 
-  public async findOne(options?: DeepPartial<UserEntity>): Promise<IProfileRO> {
+  async findOne(options?: FilterQuery<User>): Promise<IProfileRO> {
     const user = await this.userRepository.findOne(options);
     delete user.id;
+
     if (user) {
       delete user.password;
     }
+
     return { profile: user };
   }
 
-  public async findProfile(id: number, followingUsername: string): Promise<IProfileRO> {
-    const foundProfile = await this.userRepository.findOne({ username: followingUsername });
+  async findProfile(id: number, followingUsername: string): Promise<IProfileRO> {
+    const foundProfile = await this.userRepository.findOne({ username: followingUsername }, ['followers']);
+    const follower = this.userRepository.getReference(id);
 
     if (!foundProfile) {
       return;
     }
+
     const profile: IProfileData = {
       bio: foundProfile.bio,
       image: foundProfile.image,
       username: foundProfile.username,
+      following: foundProfile.followers.contains(follower),
     };
-
-    const follows = await this.followsRepository.findOne({ followerId: id, followingId: foundProfile.id });
-
-    if (id) {
-      profile.following = !!follows;
-    }
 
     return { profile };
   }
 
-  public async follow(followerEmail: string, username: string): Promise<IProfileRO> {
+  async follow(followerEmail: string, username: string): Promise<IProfileRO> {
     if (!followerEmail || !username) {
       throw new HttpException('Follower email and username not provided.', HttpStatus.BAD_REQUEST);
     }
 
-    const followingUser = await this.userRepository.findOne({ username });
+    const followingUser = await this.userRepository.findOne({ username }, ['followers']);
     const followerUser = await this.userRepository.findOne({ email: followerEmail });
 
     if (followingUser.email === followerEmail) {
       throw new HttpException('FollowerEmail and FollowingId cannot be equal.', HttpStatus.BAD_REQUEST);
     }
 
-    const foundFollows = await this.followsRepository.findOne({ followerId: followerUser.id, followingId: followingUser.id });
-
-    if (!foundFollows) {
-      const follows = new FollowsEntity();
-      follows.followerId = followerUser.id;
-      follows.followingId = followingUser.id;
-      await this.followsRepository.save(follows);
-    }
+    followingUser.followers.add(followerUser);
+    await this.userRepository.flush();
 
     const profile: IProfileData = {
       bio: followingUser.bio,
@@ -79,18 +69,20 @@ export class ProfileService {
     return { profile };
   }
 
-  public async unFollow(followerId: number, username: string): Promise<IProfileRO> {
+  async unFollow(followerId: number, username: string): Promise<IProfileRO> {
     if (!followerId || !username) {
       throw new HttpException('FollowerId and username not provided.', HttpStatus.BAD_REQUEST);
     }
 
-    const followingUser = await this.userRepository.findOne({ username });
+    const followingUser = await this.userRepository.findOne({ username }, ['followers']);
+    const followerUser = this.userRepository.getReference(followerId);
 
     if (followingUser.id === followerId) {
       throw new HttpException('FollowerId and FollowingId cannot be equal.', HttpStatus.BAD_REQUEST);
     }
-    const followingId = followingUser.id;
-    await this.followsRepository.delete({ followerId, followingId });
+
+    followingUser.followers.remove(followerUser);
+    await this.userRepository.flush();
 
     const profile: IProfileData = {
       bio: followingUser.bio,

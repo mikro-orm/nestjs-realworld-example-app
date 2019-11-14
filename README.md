@@ -1,7 +1,8 @@
 # ![NestJS](project-logo.png)
 
-> ### NestJS codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) API spec.
+> ### NestJS + MikroORM codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) API spec.
 
+> Rewrite of https://github.com/lujakob/nestjs-realworld-example-app to MikroORM.
 
 ----------
 
@@ -11,7 +12,7 @@
     
 Install dependencies
     
-    npm install
+    yarn
 
 Copy config file and set JsonWebToken secret key
 
@@ -21,37 +22,28 @@ Copy config file and set JsonWebToken secret key
 
 ## Database
 
-The example codebase uses [Typeorm](http://typeorm.io/) with a mySQL database.
+The example codebase uses [MikroORM](https://mikro-orm.io/) with a MySQL database.
 
-Copy Typeorm config example file for database settings
+Copy MikroORM config example file for database settings and adjust the connection settings.
 
-    cp ormconfig.json.example ormconfig.json
+    cp src/mikro-orm.config.ts.example src/mikro-orm.config.ts
     
-Set mysql database settings in ormconfig.json
+Start local MySQL server and create a new database called `nestjsrealworld` (or the name you specified in the config file).
 
-    {
-      "type": "mysql",
-      "host": "localhost",
-      "port": 3306,
-      "username": "your-mysql-username",
-      "password": "your-mysql-password",
-      "database": "nestjsrealworld",
-      "entities": ["src/**/**.entity{.ts,.js}"],
-      "synchronize": true
-    }
-    
-Start local mysql server and create a new database called nestjsrealworld (or the name you specified in the ormconfig.json)
+Create database schema:
 
-On application start, tables for all entities will be created.
+    npx mikro-orm schema:create --run
+
+Now you can start the application witt `yarn start`
 
 ----------
 
 ## NPM scripts
 
-- `npm start` - Start application
-- `npm run start:watch` - Start application in watch mode
-- `npm run test` - run Jest test runner 
-- `npm run start:prod` - Build application
+- `yarn start` - Start application
+- `yarn start:watch` - Start application in watch mode
+- `yarn test` - run Jest test runner 
+- `yarn start:prod` - Build application
 
 ----------
 
@@ -67,9 +59,10 @@ More information regarding the project can be found here https://github.com/goth
 
 ## Start application
 
-- `npm start`
+- `yarn start`
 - Test api by browsing to `http://localhost:3000/api/articles`
 - View automatically generated swagger api docs by browsing to `http://localhost:3000/docs`
+- Run e2e tests from the `gothinkster/realworld` repository with `yarn test:e2e`
 
 ----------
 

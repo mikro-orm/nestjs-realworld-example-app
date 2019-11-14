@@ -1,3 +1,6 @@
+dist
+temp
+
 # Logs
 logs
 *.log
@@ -15,7 +18,7 @@ node_modules
 .idea
 
 #config files
-ormconfig.json
+src/mikro-orm.config.ts
 src/config.ts
 
 # code testing coverage

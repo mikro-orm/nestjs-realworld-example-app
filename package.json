@@ -1,7 +1,7 @@
 {
   "name": "nestjs-realworld-example-app",
   "version": "1.0.0",
-  "description": "[![Build Status](https://travis-ci.org/anishkny/node-express-realworld-example-app.svg?branch=master)](https://travis-ci.org/anishkny/node-express-realworld-example-app)",
+  "description": "NestJS + MikroORM realworld API example (MySQL)",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -11,55 +11,63 @@
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "test": "jest --config=jest.json",
     "test:watch": "jest --watch --config=jest.json",
-    "test:coverage": "jest --config=jest.json --coverage --coverageDirectory=coverage"
+    "test:coverage": "jest --config=jest.json --coverage --coverageDirectory=coverage",
+    "test:e2e": "APIURL=http://localhost:3000/api ./e2e/run-api-tests.sh"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lujakob/nestjs-realworld-example-app.git"
+    "url": "git+https://github.com/mikro-orm/nestjs-realworld-example-app.git"
   },
-  "author": "lu.jakob@googlemail.com",
-  "license": "ISC",
+  "author": "banan23@gmail.com",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lujakob/nestjs-realworld-example-app/issues"
+    "url": "https://github.com/mikro-orm/nestjs-realworld-example-app/issues"
   },
-  "homepage": "https://github.com/lujakob/nestjs-realworld-example-app#readme",
+  "homepage": "https://github.com/mikro-orm/nestjs-realworld-example-app#readme",
   "dependencies": {
-    "@nestjs/common": "^6.0.1",
-    "@nestjs/core": "^6.0.1",
-    "@nestjs/microservices": "^6.0.1",
-    "@nestjs/platform-express": "^6.0.1",
-    "@nestjs/swagger": "^3.0.1",
-    "@nestjs/testing": "^6.0.1",
-    "@nestjs/typeorm": "^6.0.0",
-    "@nestjs/websockets": "^6.0.1",
-    "class-transformer": "^0.2.0",
-    "class-validator": "^0.9.1",
+    "@nestjs/common": "^6.9.0",
+    "@nestjs/core": "^6.9.0",
+    "@nestjs/microservices": "^6.9.0",
+    "@nestjs/platform-express": "^6.9.0",
+    "@nestjs/swagger": "^3.1.0",
+    "@nestjs/testing": "^6.9.0",
+    "@nestjs/websockets": "^6.9.0",
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.11.0",
     "crypto": "^1.0.1",
     "crypto-js": "^3.1.9-1",
-    "jsonwebtoken": "^8.1.1",
-    "mysql": "^2.15.0",
+    "jsonwebtoken": "^8.5.1",
+    "mikro-orm": "3.0.0-alpha.38",
+    "mysql2": "^2.0.0",
+    "nestjs-mikro-orm": "^0.1.8",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^6.4.0",
-    "slug": "^1.0.0",
+    "rxjs": "^6.5.3",
+    "slug": "^1.1.0",
     "swagger-ui-express": "^4.1.2",
-    "typeorm": "^0.2.15",
-    "typescript": "^3.3.1"
+    "typescript": "3.6.4"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.13",
-    "@types/node": "^10.12.21",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.7",
     "atob": ">=2.1.0",
     "deep-extend": ">=0.5.1",
     "extend": ">=3.0.2",
-    "jest": "^24.5.0",
-    "nodemon": "^1.18.10",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4",
     "supertest": "^3.0.0",
-    "ts-jest": "^24.0.0",
-    "ts-node": "^8.0.3",
-    "tslint": "^5.20.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.5.0",
+    "tslint": "^5.20.1",
     "tslint-config-standard": "^8.0.1",
     "tslint-react": "^4.1.0"
+  },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./dist/mikro-orm.config.js"
+    ]
   }
 }

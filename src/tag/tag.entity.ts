@@ -1,12 +1,12 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, IdEntity, PrimaryKey, Property } from 'mikro-orm';
 
-@Entity('tag')
-export class TagEntity {
+@Entity()
+export class Tag implements IdEntity<Tag> {
 
-  @PrimaryGeneratedColumn()
-  public id: number;
+  @PrimaryKey()
+  id: number;
 
-  @Column()
-  public tag: string;
+  @Property()
+  tag: string;
 
 }

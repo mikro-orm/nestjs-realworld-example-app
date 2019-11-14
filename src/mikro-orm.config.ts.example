@@ -1,0 +1,19 @@
+import { Options } from 'mikro-orm';
+import { Article } from './article/article.entity';
+import { Comment } from './article/comment.entity';
+import { Follows } from './profile/follows.entity';
+import { User } from './user/user.entity';
+import { Tag } from './tag/tag.entity';
+
+const config = {
+  type: 'mysql',
+  host: 'localhost',
+  port: 3307,
+  username: 'root',
+  password: '',
+  dbName: 'nestjsrealworld',
+  entities: [Article, Comment, Follows, User, Tag],
+  entitiesDirsTs: ['src'],
+} as Options;
+
+export default config;

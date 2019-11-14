@@ -1,5 +1,5 @@
-import { TagEntity } from './tag.entity';
+import { Tag } from './tag.entity';
 
 export interface ITagsRO {
-  tags: TagEntity[];
+  tags: Tag[];
 }

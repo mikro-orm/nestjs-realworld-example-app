@@ -1,6 +1,7 @@
+import config from './mikro-orm.config';
 import { Module } from '@nestjs/common';
-import { TypeOrmModule } from '@nestjs/typeorm';
-import { Connection } from 'typeorm';
+import { MikroOrmModule } from 'nestjs-mikro-orm';
+
 import { AppController } from './app.controller';
 import { ArticleModule } from './article/article.module';
 import { ProfileModule } from './profile/profile.module';
@@ -12,7 +13,7 @@ import { UserModule } from './user/user.module';
     AppController,
   ],
   imports: [
-    TypeOrmModule.forRoot(),
+    MikroOrmModule.forRoot(config),
     ArticleModule,
     UserModule,
     ProfileModule,
@@ -20,6 +21,4 @@ import { UserModule } from './user/user.module';
   ],
   providers: [],
 })
-export class ApplicationModule {
-  constructor(private readonly connection: Connection) {}
-}
+export class AppModule { }

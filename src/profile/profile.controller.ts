@@ -12,18 +12,18 @@ export class ProfileController {
   constructor(private readonly profileService: ProfileService) {}
 
   @Get(':username')
-  public async getProfile(@User('id') userId: number, @Param('username') username: string): Promise<IProfileRO> {
+  async getProfile(@User('id') userId: number, @Param('username') username: string): Promise<IProfileRO> {
     return this.profileService.findProfile(userId, username);
   }
 
   @Post(':username/follow')
   @HttpCode(200)
-  public async follow(@User('email') email: string, @Param('username') username: string): Promise<IProfileRO> {
+  async follow(@User('email') email: string, @Param('username') username: string): Promise<IProfileRO> {
     return this.profileService.follow(email, username);
   }
 
   @Delete(':username/follow')
-  public async unFollow(@User('id') userId: number, @Param('username') username: string): Promise<IProfileRO> {
+  async unFollow(@User('id') userId: number, @Param('username') username: string): Promise<IProfileRO> {
     return this.profileService.unFollow(userId, username);
   }
 }

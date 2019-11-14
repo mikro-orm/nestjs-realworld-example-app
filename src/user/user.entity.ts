@@ -1,39 +1,54 @@
 import { IsEmail } from 'class-validator';
-import * as crypto from 'crypto';
-import { BeforeInsert, Column, Entity, JoinTable, ManyToMany, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
-import { ArticleEntity } from '../article/article.entity';
+import crypto from 'crypto';
+import { Collection, Entity, IdEntity, ManyToMany, OneToMany, PrimaryKey, Property, wrap } from 'mikro-orm';
+import { Article } from '../article/article.entity';
 
-@Entity('user')
-export class UserEntity {
+@Entity()
+export class User implements IdEntity<User> {
 
-  @PrimaryGeneratedColumn()
-  public id: number;
+  @PrimaryKey()
+  id: number;
 
-  @Column()
-  public username: string;
+  @Property()
+  username: string;
 
-  @Column()
+  @Property({ hidden: true })
   @IsEmail()
-  public email: string;
+  email: string;
 
-  @Column({ default: '' })
-  public bio: string;
+  @Property()
+  bio = '';
 
-  @Column({ default: '' })
-  public image: string;
+  @Property()
+  image = '';
 
-  @Column()
-  public password: string;
+  @Property({ hidden: true })
+  password: string;
 
-  @ManyToMany((type) => ArticleEntity)
-  @JoinTable()
-  public favorites: ArticleEntity[];
+  @ManyToMany({ hidden: true })
+  favorites = new Collection<Article>(this);
 
-  @OneToMany((type) => ArticleEntity, (article) => article.author)
-  public articles: ArticleEntity[];
+  @ManyToMany({ entity: () => User, inversedBy: u => u.followed, owner: true, pivotTable: 'user_to_follower', joinColumn: 'follower', inverseJoinColumn: 'following', hidden: true })
+  followers = new Collection<User>(this);
 
-  @BeforeInsert()
-  public hashPassword() {
-    this.password = crypto.createHmac('sha256', this.password).digest('hex');
+  @ManyToMany(() => User, u => u.followers, { hidden: true })
+  followed = new Collection<User>(this);
+
+  @OneToMany(() => Article, article => article.author, { hidden: true })
+  articles = new Collection<Article>(this);
+
+  constructor(username: string, email: string, password: string) {
+    this.username = username;
+    this.email = email;
+    this.password = crypto.createHmac('sha256', password).digest('hex');
   }
+
+  toJSON(user?: User) {
+    const o = wrap(this).toObject();
+    o.image = this.image || 'https://static.productionready.io/images/smiley-cyrus.jpg';
+    o.following = user && user.followers.isInitialized() ? user.followers.contains(this) : false; // TODO or followed?
+
+    return o;
+  }
+
 }

@@ -4,6 +4,7 @@
     "declaration": false,
     "noImplicitAny": false,
     "removeComments": true,
+    "esModuleInterop": true,
     "noLib": false,
     "lib": ["es2017"],
     "emitDecoratorMetadata": true,
@@ -16,7 +17,7 @@
     "include": [
     "src/**/*"
   ],
-    "exclude": [
+  "exclude": [
     "node_modules",
     "**/*.spec.ts"
   ]

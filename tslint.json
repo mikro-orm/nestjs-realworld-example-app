@@ -1,7 +1,7 @@
 {
   "extends": [
     "tslint-config-standard",
-    "tslint:latest", 
+    "tslint:latest",
     "tslint-react"
   ],
   "rules": {
@@ -9,12 +9,16 @@
     "jsx-no-lambda": false,
     "jsx-no-multiline-js": false,
     "max-line-length": false,
+    "arrow-parens": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "member-access": [false],
     "no-console": false,
     "no-empty": false,
     "no-extra-boolean-cast": false,
     "no-object-literal-type-assertion": false,
     "no-submodule-imports": [
-      true, 
+      true,
       "next"
     ],
     "no-unused-variable": false,
