@@ -80,7 +80,7 @@ export class UserService {
   }
 
   async findByEmail(email: string): Promise<IUserRO> {
-    const user = await this.userRepository.findOne({ email });
+    const user = await this.userRepository.findOneOrFail({ email });
     return this.buildUserRO(user);
   }
 

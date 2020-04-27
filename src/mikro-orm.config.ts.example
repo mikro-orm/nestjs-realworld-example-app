@@ -1,7 +1,6 @@
 import { Options } from 'mikro-orm';
 import { Article } from './article/article.entity';
 import { Comment } from './article/comment.entity';
-import { Follows } from './profile/follows.entity';
 import { User } from './user/user.entity';
 import { Tag } from './tag/tag.entity';
 
@@ -12,8 +11,9 @@ const config = {
   username: 'root',
   password: '',
   dbName: 'nestjsrealworld',
-  entities: [Article, Comment, Follows, User, Tag],
+  entities: [Article, Comment, User, Tag],
   entitiesDirsTs: ['src'],
+  debug: true,
 } as Options;
 
 export default config;

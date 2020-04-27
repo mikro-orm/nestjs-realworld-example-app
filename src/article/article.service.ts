@@ -24,7 +24,7 @@ export class ArticleService {
     const user = userId ? await this.userRepository.findOne(userId, ['followers', 'favorites']) : undefined;
     const qb = this.articleRepository
       .createQueryBuilder('a')
-      .select(['a.*', 'u.*'])
+      .select('a.*')
       .leftJoin('a.author', 'u');
 
     if ('tag' in query) {
