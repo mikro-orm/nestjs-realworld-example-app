@@ -1,9 +1,9 @@
-import { Entity, IdEntity, ManyToOne, PrimaryKey, Property } from 'mikro-orm';
+import { Entity, ManyToOne, PrimaryKey, Property } from '@mikro-orm/core';
 import { User } from '../user/user.entity';
 import { Article } from './article.entity';
 
 @Entity()
-export class Comment implements IdEntity<Comment> {
+export class Comment {
 
   @PrimaryKey()
   id: number;

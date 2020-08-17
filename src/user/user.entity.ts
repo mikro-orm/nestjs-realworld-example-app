@@ -1,10 +1,10 @@
 import { IsEmail } from 'class-validator';
 import crypto from 'crypto';
-import { Collection, Entity, IdEntity, ManyToMany, OneToMany, PrimaryKey, Property, wrap } from 'mikro-orm';
+import { Collection, Entity, ManyToMany, OneToMany, PrimaryKey, Property, wrap } from '@mikro-orm/core';
 import { Article } from '../article/article.entity';
 
 @Entity()
-export class User implements IdEntity<User> {
+export class User {
 
   @PrimaryKey()
   id: number;

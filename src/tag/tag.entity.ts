@@ -1,7 +1,7 @@
-import { Entity, IdEntity, PrimaryKey, Property } from 'mikro-orm';
+import { Entity, PrimaryKey, Property } from '@mikro-orm/core';
 
 @Entity()
-export class Tag implements IdEntity<Tag> {
+export class Tag {
 
   @PrimaryKey()
   id: number;

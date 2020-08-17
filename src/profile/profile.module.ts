@@ -4,7 +4,7 @@ import { User } from '../user/user.entity';
 import { UserModule } from '../user/user.module';
 import { ProfileController } from './profile.controller';
 import { ProfileService } from './profile.service';
-import { MikroOrmModule } from 'nestjs-mikro-orm';
+import { MikroOrmModule } from '@mikro-orm/nestjs'
 
 @Module({
   controllers: [

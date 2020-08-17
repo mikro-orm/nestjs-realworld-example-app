@@ -6,7 +6,7 @@ import { ArticleController } from './article.controller';
 import { Article } from './article.entity';
 import { ArticleService } from './article.service';
 import { Comment } from './comment.entity';
-import { MikroOrmModule } from 'nestjs-mikro-orm';
+import { MikroOrmModule } from '@mikro-orm/nestjs'
 
 @Module({
   controllers: [

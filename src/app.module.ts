@@ -1,6 +1,5 @@
-import config from './mikro-orm.config';
 import { Module } from '@nestjs/common';
-import { MikroOrmModule } from 'nestjs-mikro-orm';
+import { MikroOrmModule } from '@mikro-orm/nestjs';
 
 import { AppController } from './app.controller';
 import { ArticleModule } from './article/article.module';
@@ -13,7 +12,7 @@ import { UserModule } from './user/user.module';
     AppController,
   ],
   imports: [
-    MikroOrmModule.forRoot(config),
+    MikroOrmModule.forRoot(),
     ArticleModule,
     UserModule,
     ProfileModule,

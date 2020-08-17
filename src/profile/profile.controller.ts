@@ -1,11 +1,11 @@
 import { Controller, Delete, Get, HttpCode, Param, Post } from '@nestjs/common';
-import { ApiBearerAuth, ApiUseTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { User } from '../user/user.decorator';
 import { IProfileRO } from './profile.interface';
 import { ProfileService } from './profile.service';
 
 @ApiBearerAuth()
-@ApiUseTags('profiles')
+@ApiTags('profiles')
 @Controller('profiles')
 export class ProfileController {
 

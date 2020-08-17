@@ -1,8 +1,8 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { User } from '../user/user.entity';
 import { IProfileData, IProfileRO } from './profile.interface';
-import { EntityRepository, FilterQuery } from 'mikro-orm';
-import { InjectRepository } from 'nestjs-mikro-orm';
+import { EntityRepository, FilterQuery } from '@mikro-orm/core';
+import { InjectRepository } from '@mikro-orm/nestjs'
 
 @Injectable()
 export class ProfileService {

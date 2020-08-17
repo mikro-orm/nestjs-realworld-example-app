@@ -1,11 +1,11 @@
-import { Collection, Entity, IdEntity, ManyToOne, OneToMany, PrimaryKey, Property, wrap } from 'mikro-orm';
+import { ArrayType, Collection, Entity, ManyToOne, OneToMany, PrimaryKey, Property, wrap } from '@mikro-orm/core';
 import slug from 'slug';
 
 import { User } from '../user/user.entity';
 import { Comment } from './comment.entity';
 
 @Entity()
-export class Article implements IdEntity<Article> {
+export class Article {
 
   @PrimaryKey()
   id: number;
@@ -28,7 +28,7 @@ export class Article implements IdEntity<Article> {
   @Property({ onUpdate: () => new Date() })
   updatedAt = new Date();
 
-  @Property() // TODO 'simple-array'?
+  @Property({ type: ArrayType })
   tagList: string[] = [];
 
   @ManyToOne()
@@ -45,7 +45,7 @@ export class Article implements IdEntity<Article> {
     this.title = title;
     this.description = description;
     this.body = body;
-    this.slug = slug(title, { lower: true }) + '-' + (Math.random() * Math.pow(36, 6) | 0).toString(36); // tslint:disable-line
+    this.slug = slug(title, { lower: true }) + '-' + (Math.random() * Math.pow(36, 6) | 0).toString(36);
   }
 
   toJSON(user?: User): Article {

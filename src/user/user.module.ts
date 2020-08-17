@@ -3,7 +3,7 @@ import { AuthMiddleware } from './auth.middleware';
 import { UserController } from './user.controller';
 import { User } from './user.entity';
 import { UserService } from './user.service';
-import { MikroOrmModule } from 'nestjs-mikro-orm';
+import { MikroOrmModule } from '@mikro-orm/nestjs'
 
 @Module({
   controllers: [

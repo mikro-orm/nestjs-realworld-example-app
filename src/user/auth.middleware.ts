@@ -1,5 +1,5 @@
 import { HttpException, HttpStatus, Injectable, NestMiddleware } from '@nestjs/common';
-import { NextFunction, Request, Response } from 'express'; // tslint:disable-line
+import { NextFunction, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import { SECRET } from '../config';
 import { UserService } from './user.service';

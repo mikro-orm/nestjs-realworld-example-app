@@ -1,8 +1,6 @@
-import { Options } from 'mikro-orm';
-import { Article } from './article/article.entity';
-import { Comment } from './article/comment.entity';
-import { User } from './user/user.entity';
-import { Tag } from './tag/tag.entity';
+import { Options } from '@mikro-orm/core';
+import { SqlHighlighter } from '@mikro-orm/sql-highlighter';
+import { TsMorphMetadataProvider } from '@mikro-orm/reflection';
 
 const config = {
   type: 'mysql',
@@ -11,9 +9,11 @@ const config = {
   username: 'root',
   password: '',
   dbName: 'nestjsrealworld',
-  entities: [Article, Comment, User, Tag],
-  entitiesDirsTs: ['src'],
+  entities: ['dist/**/*.entity.js'],
+  entitiesTs: ['src/**/*.entity.ts'],
   debug: true,
+  highlighter: new SqlHighlighter(),
+  metadataProvider: TsMorphMetadataProvider,
 } as Options;
 
 export default config;

@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { EntityRepository, QueryOrder, wrap } from 'mikro-orm';
-import { InjectRepository } from 'nestjs-mikro-orm';
+import { QueryOrder, wrap } from '@mikro-orm/core';
+import { InjectRepository } from '@mikro-orm/nestjs'
+import { EntityRepository } from '@mikro-orm/mysql';
 
 import { User } from '../user/user.entity';
 import { Article } from './article.entity';
