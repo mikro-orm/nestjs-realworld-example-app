@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/mikro-orm/nestjs-realworld-example-app#readme",
   "dependencies": {
-    "@mikro-orm/core": "^4.0.0-rc.1",
-    "@mikro-orm/mysql": "^4.0.0-rc.1",
-    "@mikro-orm/nestjs": "^4.0.0-alpha.2",
-    "@mikro-orm/reflection": "^4.0.0-rc.1",
+    "@mikro-orm/core": "^4.0.0-rc.6",
+    "@mikro-orm/mysql": "^4.0.0-rc.6",
+    "@mikro-orm/nestjs": "^4.0.0-alpha.4",
+    "@mikro-orm/reflection": "^4.0.0-rc.6",
     "@mikro-orm/sql-highlighter": "^1.0.1",
     "@nestjs/common": "^7.4.2",
     "@nestjs/core": "^7.4.2",
@@ -51,7 +51,7 @@
     "typescript": "3.9.7"
   },
   "devDependencies": {
-    "@mikro-orm/cli": "^4.0.0-rc.1",
+    "@mikro-orm/cli": "^4.0.0-rc.6",
     "@types/jest": "^26.0.9",
     "@types/node": "^14.0.27",
     "atob": ">=2.1.2",
