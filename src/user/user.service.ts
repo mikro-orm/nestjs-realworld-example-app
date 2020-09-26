@@ -2,18 +2,17 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { validate } from 'class-validator';
 import crypto from 'crypto';
 import jwt from 'jsonwebtoken';
-import { EntityRepository, wrap } from '@mikro-orm/core';
-import { InjectRepository } from '@mikro-orm/nestjs'
+import { wrap } from '@mikro-orm/core';
 import { SECRET } from '../config';
 import { CreateUserDto, LoginUserDto, UpdateUserDto } from './dto';
 import { User } from './user.entity';
 import { IUserRO } from './user.interface';
+import { UserRepository } from './user.repository';
 
 @Injectable()
 export class UserService {
   constructor(
-    @InjectRepository(User)
-    private readonly userRepository: EntityRepository<User>,
+    private readonly userRepository: UserRepository,
   ) {}
 
   async findAll(): Promise<User[]> {

@@ -1,10 +1,22 @@
 import { IsEmail } from 'class-validator';
 import crypto from 'crypto';
-import { Collection, Entity, ManyToMany, OneToMany, PrimaryKey, Property, wrap } from '@mikro-orm/core';
+import {
+  Collection,
+  Entity,
+  EntityRepositoryType,
+  ManyToMany,
+  OneToMany,
+  PrimaryKey,
+  Property,
+  wrap,
+} from '@mikro-orm/core';
 import { Article } from '../article/article.entity';
+import { UserRepository } from './user.repository';
 
 @Entity()
 export class User {
+
+  [EntityRepositoryType]?: UserRepository;
 
   @PrimaryKey()
   id: number;

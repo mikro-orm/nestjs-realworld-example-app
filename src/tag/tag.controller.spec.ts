@@ -4,7 +4,7 @@ import { MikroOrmModule } from '@mikro-orm/nestjs'
 import { TagController } from './tag.controller';
 import { Tag } from './tag.entity';
 import { TagService } from './tag.service';
-import { MikroORM } from 'mikro-orm';
+import { MikroORM } from '@mikro-orm/core';
 
 describe('TagController', () => {
   let tagController: TagController;
