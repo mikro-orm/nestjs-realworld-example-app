@@ -1,6 +1,8 @@
 dist
 temp
 
+env/prod.env
+
 # Logs
 logs
 *.log

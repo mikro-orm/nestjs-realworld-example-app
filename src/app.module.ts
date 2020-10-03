@@ -6,13 +6,21 @@ import { ArticleModule } from './article/article.module';
 import { ProfileModule } from './profile/profile.module';
 import { TagModule } from './tag/tag.module';
 import { UserModule } from './user/user.module';
+import { ConfigModule } from './config/config.module';
+import { ConfigService } from './config/config.service';
 
 @Module({
   controllers: [
     AppController,
   ],
   imports: [
-    MikroOrmModule.forRoot(),
+    MikroOrmModule.forRootAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (configService: ConfigService) => {
+        return configService.db()
+      },
+    }),
     ArticleModule,
     UserModule,
     ProfileModule,
