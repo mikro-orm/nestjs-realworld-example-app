@@ -1,0 +1,19 @@
+version: "3.4"
+
+services:
+  mysql:
+    image: mysql:5.7
+    platform: linux/x86_64
+    restart: unless-stopped
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+    volumes:
+      - mysql:/var/lib/mysql
+
+volumes:
+  mysql:
+    driver_opts:
+      type: tmpfs
+      device: tmpfs

@@ -1,4 +1,5 @@
-import { EntityRepository, Repository } from '@mikro-orm/core';
+import { Repository } from '@mikro-orm/core';
+import { EntityRepository } from '@mikro-orm/mysql';
 import { User } from './user.entity';
 
 @Repository(User)

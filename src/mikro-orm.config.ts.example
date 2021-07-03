@@ -2,11 +2,11 @@ import { Options } from '@mikro-orm/core';
 import { SqlHighlighter } from '@mikro-orm/sql-highlighter';
 import { TsMorphMetadataProvider } from '@mikro-orm/reflection';
 
-const config = {
+const config: Options = {
   type: 'mysql',
   host: 'localhost',
   port: 3307,
-  username: 'root',
+  user: 'root',
   password: '',
   dbName: 'nestjsrealworld',
   entities: ['dist/**/*.entity.js'],
@@ -14,6 +14,6 @@ const config = {
   debug: true,
   highlighter: new SqlHighlighter(),
   metadataProvider: TsMorphMetadataProvider,
-} as Options;
+};
 
 export default config;
