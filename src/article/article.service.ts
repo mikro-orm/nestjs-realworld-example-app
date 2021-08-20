@@ -162,7 +162,7 @@ export class ArticleService {
   }
 
   async delete(slug: string) {
-    return this.articleRepository.remove({ slug });
+    return this.articleRepository.nativeDelete({ slug });
   }
 
 }
