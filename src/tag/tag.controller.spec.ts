@@ -12,6 +12,7 @@ describe('TagController', () => {
   let orm: MikroORM;
 
   beforeEach(async () => {
+    config.tsNode = true; // enforce TS mode for tests so we discover TS entities even if ts-node is not detected properly
     const module = await Test.createTestingModule({
       imports: [MikroOrmModule.forRoot(config), MikroOrmModule.forFeature({ entities: [Tag] })],
       controllers: [TagController],
