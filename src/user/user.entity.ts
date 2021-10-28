@@ -2,7 +2,7 @@ import { IsEmail } from 'class-validator';
 import crypto from 'crypto';
 import {
   Collection,
-  Entity,
+  Entity, EntityDTO,
   EntityRepositoryType,
   ManyToMany,
   OneToMany,
@@ -13,7 +13,7 @@ import {
 import { Article } from '../article/article.entity';
 import { UserRepository } from './user.repository';
 
-@Entity()
+@Entity({ customRepository: () => UserRepository })
 export class User {
 
   [EntityRepositoryType]?: UserRepository;
@@ -56,11 +56,15 @@ export class User {
   }
 
   toJSON(user?: User) {
-    const o = wrap(this).toObject();
+    const o = wrap<User>(this).toObject() as UserDTO;
     o.image = this.image || 'https://static.productionready.io/images/smiley-cyrus.jpg';
     o.following = user && user.followers.isInitialized() ? user.followers.contains(this) : false; // TODO or followed?
 
     return o;
   }
 
+}
+
+interface UserDTO extends EntityDTO<User> {
+  following?: boolean;
 }

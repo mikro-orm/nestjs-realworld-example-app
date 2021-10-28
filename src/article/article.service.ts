@@ -22,7 +22,7 @@ export class ArticleService {
   ) {}
 
   async findAll(userId: number, query: any): Promise<IArticlesRO> {
-    const user = userId ? await this.userRepository.findOne(userId, ['followers', 'favorites']) : undefined;
+    const user = userId ? await this.userRepository.findOne(userId, { populate: ['followers', 'favorites'] }) : undefined;
     const qb = this.articleRepository
       .createQueryBuilder('a')
       .select('a.*')
@@ -71,7 +71,7 @@ export class ArticleService {
   }
 
   async findFeed(userId: number, query): Promise<IArticlesRO> {
-    const user = userId ? await this.userRepository.findOne(userId, ['followers', 'favorites']) : undefined;
+    const user = userId ? await this.userRepository.findOne(userId, { populate: ['followers', 'favorites'] }) : undefined;
     const res = await this.articleRepository.findAndCount({ author: { followers: userId } }, {
       populate: ['author'],
       orderBy: { createdAt: QueryOrder.DESC },
@@ -84,13 +84,13 @@ export class ArticleService {
   }
 
   async findOne(userId: number, where): Promise<IArticleRO> {
-    const user = userId ? await this.userRepository.findOneOrFail(userId, ['followers', 'favorites']) : undefined;
-    const article = await this.articleRepository.findOne(where, ['author']);
+    const user = userId ? await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites'] }) : undefined;
+    const article = await this.articleRepository.findOne(where, { populate: ['author'] });
     return { article: article && article.toJSON(user) };
   }
 
   async addComment(userId: number, slug: string, dto: CreateCommentDto) {
-    const article = await this.articleRepository.findOneOrFail({ slug }, ['author']);
+    const article = await this.articleRepository.findOneOrFail({ slug }, { populate: ['author'] });
     const author = await this.userRepository.findOneOrFail(userId);
     const comment = new Comment(author, article, dto.body);
     await this.commentRepository.persistAndFlush(comment);
@@ -99,7 +99,7 @@ export class ArticleService {
   }
 
   async deleteComment(userId: number, slug: string, id: number): Promise<IArticleRO> {
-    const article = await this.articleRepository.findOneOrFail({ slug }, ['author']);
+    const article = await this.articleRepository.findOneOrFail({ slug }, { populate: ['author'] });
     const user = await this.userRepository.findOneOrFail(userId);
     const comment = this.commentRepository.getReference(id);
 
@@ -112,8 +112,8 @@ export class ArticleService {
   }
 
   async favorite(id: number, slug: string): Promise<IArticleRO> {
-    const article = await this.articleRepository.findOneOrFail({ slug }, ['author']);
-    const user = await this.userRepository.findOneOrFail(id, ['favorites', 'followers']);
+    const article = await this.articleRepository.findOneOrFail({ slug }, { populate: ['author'] });
+    const user = await this.userRepository.findOneOrFail(id, { populate: ['favorites', 'followers'] });
 
     if (!user.favorites.contains(article)) {
       user.favorites.add(article);
@@ -125,8 +125,8 @@ export class ArticleService {
   }
 
   async unFavorite(id: number, slug: string): Promise<IArticleRO> {
-    const article = await this.articleRepository.findOneOrFail({ slug }, ['author']);
-    const user = await this.userRepository.findOneOrFail(id, ['followers', 'favorites']);
+    const article = await this.articleRepository.findOneOrFail({ slug }, { populate: ['author'] });
+    const user = await this.userRepository.findOneOrFail(id, { populate: ['followers', 'favorites'] });
 
     if (user.favorites.contains(article)) {
       user.favorites.remove(article);
@@ -138,12 +138,12 @@ export class ArticleService {
   }
 
   async findComments(slug: string): Promise<ICommentsRO> {
-    const article = await this.articleRepository.findOne({ slug }, ['comments']);
+    const article = await this.articleRepository.findOne({ slug }, { populate: ['comments'] });
     return { comments: article.comments.getItems() };
   }
 
   async create(userId: number, dto: CreateArticleDto) {
-    const user = await this.userRepository.findOne({ id: userId }, ['followers', 'favorites', 'articles']);
+    const user = await this.userRepository.findOne({ id: userId }, { populate: ['followers', 'favorites', 'articles'] });
     const article = new Article(user, dto.title, dto.description, dto.body);
     article.tagList.push(...dto.tagList);
     user.articles.add(article);
@@ -153,8 +153,8 @@ export class ArticleService {
   }
 
   async update(userId: number, slug: string, articleData: any): Promise<IArticleRO> {
-    const user = await this.userRepository.findOne({ id: userId }, ['followers', 'favorites', 'articles']);
-    const article = await this.articleRepository.findOne({ slug }, ['author']);
+    const user = await this.userRepository.findOne({ id: userId }, { populate: ['followers', 'favorites', 'articles'] });
+    const article = await this.articleRepository.findOne({ slug }, { populate: ['author'] });
     wrap(article).assign(articleData);
     await this.articleRepository.flush();
 

@@ -12,8 +12,12 @@ const config: Options = {
   entities: ['dist/**/*.entity.js'],
   entitiesTs: ['src/**/*.entity.ts'],
   debug: true,
+  loadStrategy: LoadStrategy.JOINED,
   highlighter: new SqlHighlighter(),
   metadataProvider: TsMorphMetadataProvider,
+  migrations: {
+    path: Utils.detectTsNode() ? 'src/migrations' : 'dist/migrations',
+  },
 };
 
 export default config;

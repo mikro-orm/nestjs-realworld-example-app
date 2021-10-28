@@ -34,7 +34,7 @@ export class UserController {
   }
 
   @Delete('users/:slug')
-  async delete(@Param() params) {
+  async delete(@Param() params): Promise<any> {
     return this.userService.delete(params.slug);
   }
 

@@ -4,7 +4,6 @@ on:
   push:
     branches: [ master ]
   pull_request:
-    branches: [ master ]
 
 jobs:
   test:
@@ -14,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [ 12, 14, 15, 16.1 ]
+        node-version: [ 14, 15, 16.1 ]
     steps:
       - name: Checkout Source code
         uses: actions/checkout@v2
@@ -47,6 +46,13 @@ jobs:
       - name: Test
         run: |
           yarn test
+
+      - name: E2E tests
+        run: |
+          yarn start &
+          cd e2e
+          APIURL=http://localhost:3000/api ./run-api-tests.sh
+          exit 0
 
       - name: Teardown docker
         run: docker-compose down

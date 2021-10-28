@@ -1,4 +1,4 @@
-import { Article } from './article.entity';
+import { ArticleDTO } from './article.entity';
 
 interface IComment {
   body: string;
@@ -9,10 +9,10 @@ export interface ICommentsRO {
 }
 
 export interface IArticleRO {
-  article: Article;
+  article: ArticleDTO;
 }
 
 export interface IArticlesRO {
-  articles: Article[];
+  articles: ArticleDTO[];
   articlesCount: number;
 }
