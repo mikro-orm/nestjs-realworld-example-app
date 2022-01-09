@@ -2,7 +2,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import crypto from 'crypto';
 import { UserService } from '../user.service';
 import { UserRepository } from '../user.repository';
-import { LoginUserDto } from '../dto';
+import { CreateUserDto } from '../dto';
 
 describe('UsersService', () => {
   let service: UserService;
@@ -11,18 +11,22 @@ describe('UsersService', () => {
     findAll: jest.fn().mockImplementation(() => {
       return Promise.resolve([]);
     }),
-    findOne: jest.fn().mockImplementation((loginUserDto: LoginUserDto) => {
+    findOne: jest.fn().mockImplementation((options) => {
       return Promise.resolve({
-        id: Date.now(),
-        email: loginUserDto.email,
+        id: Date.now() || options.id,
+        email: 'test@test.com' || options.email,
+        password: 'test' || options.password,
         bio: 'test',
         image: 'test.jpg',
         username: 'test',
-        password: crypto
-          .createHmac('sha256', loginUserDto.password)
-          .digest('hex'),
       });
     }),
+    persistAndFlush: jest.fn().mockImplementation((dto: CreateUserDto) => {
+      return Promise.resolve({
+        ...dto,
+      });
+    }),
+    count: jest.fn().mockImplementation(() => 0),
     remove: jest.fn().mockImplementation((email: string) => {
       return 1;
     }),
@@ -79,6 +83,34 @@ describe('UsersService', () => {
   });
   it('should delete user', async () => {
     expect(await service.delete('test@test.com')).toBe(1);
+  });
+  it('should create user', async () => {
+    expect(
+      await service.create({
+        email: 'test@test.com',
+        password: 'test',
+        username: 'test1',
+      }),
+    ).toEqual({
+      user: {
+        bio: '',
+        email: 'test@test.com',
+        image: '',
+        token: expect.any(String),
+        username: 'test1',
+      },
+    });
+  });
+  it('should return user by id', async () => {
+    expect(await service.findById(1)).toEqual({
+      user: {
+        email: 'test@test.com',
+        bio: 'test',
+        image: 'test.jpg',
+        token: expect.any(String),
+        username: 'test',
+      },
+    });
   });
   it('should return user by email', async () => {
     expect(await service.findByEmail('test@test.com')).toEqual({
