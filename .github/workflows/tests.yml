@@ -53,7 +53,7 @@ jobs:
       - name: E2E tests
         run: |
           yarn start &
-          sleep 10
+          sleep 30
           cd e2e
           APIURL=http://localhost:3000/api ./run-api-tests.sh
           exit 0
