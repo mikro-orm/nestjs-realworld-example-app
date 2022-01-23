@@ -2,7 +2,7 @@ name: tests
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, v5 ]
   pull_request:
 
 jobs:
@@ -31,7 +31,10 @@ jobs:
 
       - name: Init docker
         run: docker-compose up -d
-
+      - name: Sleep for 10s
+        uses: juliangruber/sleep-action@v1
+        with:
+          time: 10s
       - name: Install
         run: |
           yarn config set ignore-engines true
