@@ -2,9 +2,8 @@ name: tests
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, v5 ]
   pull_request:
-    branches: [ master ]
 
 jobs:
   test:
@@ -14,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [ 12, 14, 15, 16.1 ]
+        node-version: [ 14, 15, 16.1 ]
     steps:
       - name: Checkout Source code
         uses: actions/checkout@v2
@@ -32,7 +31,10 @@ jobs:
 
       - name: Init docker
         run: docker-compose up -d
-
+      - name: Sleep for 10s
+        uses: juliangruber/sleep-action@v1
+        with:
+          time: 10s
       - name: Install
         run: |
           yarn config set ignore-engines true
@@ -42,11 +44,19 @@ jobs:
         run: |
           cp src/config.ts.example src/config.ts
           cp src/mikro-orm.config.ts.example src/mikro-orm.config.ts
-          npx mikro-orm schema:create -r
+          npx mikro-orm migration:up
 
       - name: Test
         run: |
           yarn test
+
+      - name: E2E tests
+        run: |
+          yarn start &
+          sleep 30
+          cd e2e
+          APIURL=http://localhost:3000/api ./run-api-tests.sh
+          exit 0
 
       - name: Teardown docker
         run: docker-compose down

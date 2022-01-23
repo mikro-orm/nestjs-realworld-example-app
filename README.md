@@ -28,13 +28,9 @@ Copy MikroORM config example file for database settings and adjust the connectio
 
     cp src/mikro-orm.config.ts.example src/mikro-orm.config.ts
     
-Start local MySQL server and create a new database called `nestjsrealworld` (or the name you specified in the config file).
-
-Create database schema:
-
-    npx mikro-orm schema:create --run
-
-Now you can start the application witt `yarn start`
+Now you can start the application with `yarn start`. It will automatically
+create the database and run initial migration that sets up the database 
+schema.
 
 ----------
 

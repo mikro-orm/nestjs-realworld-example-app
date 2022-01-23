@@ -1,10 +1,10 @@
 import { MiddlewareConsumer, Module, NestModule, RequestMethod } from '@nestjs/common';
+import { MikroOrmModule } from '@mikro-orm/nestjs'
 import { AuthMiddleware } from '../user/auth.middleware';
 import { User } from '../user/user.entity';
 import { UserModule } from '../user/user.module';
 import { ProfileController } from './profile.controller';
 import { ProfileService } from './profile.service';
-import { MikroOrmModule } from '@mikro-orm/nestjs'
 
 @Module({
   controllers: [

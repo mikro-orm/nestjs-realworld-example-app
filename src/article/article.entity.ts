@@ -1,4 +1,4 @@
-import { ArrayType, Collection, Entity, ManyToOne, OneToMany, PrimaryKey, Property, wrap } from '@mikro-orm/core';
+import { ArrayType, Collection, Entity, EntityDTO, ManyToOne, OneToMany, PrimaryKey, Property, wrap } from '@mikro-orm/core';
 import slug from 'slug';
 
 import { User } from '../user/user.entity';
@@ -48,12 +48,16 @@ export class Article {
     this.slug = slug(title, { lower: true }) + '-' + (Math.random() * Math.pow(36, 6) | 0).toString(36);
   }
 
-  toJSON(user?: User): Article {
-    const o = wrap(this).toObject();
+  toJSON(user?: User) {
+    const o = wrap<Article>(this).toObject() as ArticleDTO;
     o.favorited = user && user.favorites.isInitialized() ? user.favorites.contains(this) : false;
     o.author = this.author.toJSON(user);
 
-    return o as Article;
+    return o;
   }
 
+}
+
+export interface ArticleDTO extends EntityDTO<Article> {
+  favorited?: boolean;
 }

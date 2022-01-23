@@ -1,14 +1,13 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { User } from '../user/user.entity';
 import { IProfileData, IProfileRO } from './profile.interface';
-import { EntityRepository, FilterQuery } from '@mikro-orm/core';
-import { InjectRepository } from '@mikro-orm/nestjs'
+import { FilterQuery } from '@mikro-orm/core';
+import { UserRepository } from '../user/user.repository';
 
 @Injectable()
 export class ProfileService {
   constructor(
-    @InjectRepository(User)
-    private readonly userRepository: EntityRepository<User>,
+    private readonly userRepository: UserRepository,
   ) {}
 
   async findAll(): Promise<User[]> {
@@ -27,7 +26,9 @@ export class ProfileService {
   }
 
   async findProfile(id: number, followingUsername: string): Promise<IProfileRO> {
-    const foundProfile = await this.userRepository.findOne({ username: followingUsername }, ['followers']);
+    const foundProfile = await this.userRepository.findOne({ username: followingUsername }, {
+      populate: ['followers'],
+    });
     const follower = this.userRepository.getReference(id);
 
     if (!foundProfile) {
@@ -49,7 +50,9 @@ export class ProfileService {
       throw new HttpException('Follower email and username not provided.', HttpStatus.BAD_REQUEST);
     }
 
-    const followingUser = await this.userRepository.findOne({ username }, ['followers']);
+    const followingUser = await this.userRepository.findOne({ username }, {
+      populate: ['followers'],
+    });
     const followerUser = await this.userRepository.findOne({ email: followerEmail });
 
     if (followingUser.email === followerEmail) {
@@ -74,7 +77,9 @@ export class ProfileService {
       throw new HttpException('FollowerId and username not provided.', HttpStatus.BAD_REQUEST);
     }
 
-    const followingUser = await this.userRepository.findOne({ username }, ['followers']);
+    const followingUser = await this.userRepository.findOne({ username }, {
+      populate: ['followers'],
+    });
     const followerUser = this.userRepository.getReference(followerId);
 
     if (followingUser.id === followerId) {
