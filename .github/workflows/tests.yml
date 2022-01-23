@@ -44,7 +44,7 @@ jobs:
         run: |
           cp src/config.ts.example src/config.ts
           cp src/mikro-orm.config.ts.example src/mikro-orm.config.ts
-          npx mikro-orm schema:create -r
+          npx mikro-orm migration:up
 
       - name: Test
         run: |
