@@ -25,6 +25,31 @@
     "url": "https://github.com/mikro-orm/nestjs-realworld-example-app/issues"
   },
   "homepage": "https://github.com/mikro-orm/nestjs-realworld-example-app#readme",
+  "renovate": {
+    "extends": [
+      "config:base",
+      ":preserveSemverRanges",
+      ":semanticCommitTypeAll(chore)"
+    ],
+    "semanticCommits": "enabled",
+    "separateMajorMinor": false,
+    "dependencyDashboard": false,
+    "packageRules": [
+      {
+        "matchUpdateTypes": [
+          "patch",
+          "minor"
+        ],
+        "groupName": "patch/minor dependencies",
+        "groupSlug": "all-non-major",
+        "automerge": true,
+        "automergeType": "branch"
+      }
+    ],
+    "schedule": [
+      "every weekday"
+    ]
+  },
   "dependencies": {
     "@mikro-orm/core": "^5.0.1",
     "@mikro-orm/migrations": "^5.0.1",
