@@ -774,9 +774,9 @@
     node-fetch "^2.6.1"
 
 "@rushstack/ts-command-line@^4.7.7":
-  version "4.10.7"
-  resolved "https://registry.yarnpkg.com/@rushstack/ts-command-line/-/ts-command-line-4.10.7.tgz#21e3757a756cbd4f7eeab8f89ec028a64d980efc"
-  integrity sha512-CjS+DfNXUSO5Ab2wD1GBGtUTnB02OglRWGqfaTcac9Jn45V5MeUOsq/wA8wEeS5Y/3TZ2P1k+IWdVDiuOFP9Og==
+  version "4.10.8"
+  resolved "https://registry.yarnpkg.com/@rushstack/ts-command-line/-/ts-command-line-4.10.8.tgz#f4bec690e7f4838e6f91028d8a557e67c3a75f68"
+  integrity sha512-G7CQYY/m3aZU5fVxbebv35yDeua7sSumrDAB2pJp0d60ZEsxGkUQW8771CeMcGWwSKqT9PxPzKpmIakiWv54sA==
   dependencies:
     "@types/argparse" "1.0.38"
     argparse "~1.0.9"
@@ -3885,9 +3885,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 lru-cache@^7.4.0:
-  version "7.8.0"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.8.0.tgz#649aaeb294a56297b5cbc5d70f198dcc5ebe5747"
-  integrity sha512-AmXqneQZL3KZMIgBpaPTeI6pfwh+xQ2vutMsyqOu1TBdEXFZgpG/80wuJ531w2ZN7TI0/oc8CPxzh/DKQudZqg==
+  version "7.8.1"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.8.1.tgz#68ee3f4807a57d2ba185b7fd90827d5c21ce82bb"
+  integrity sha512-E1v547OCgJvbvevfjgK9sNKIVXO96NnsTsFPBlg4ZxjhsJSODoH9lk8Bm0OxvHNm6Vm5Yqkl/1fErDxhYL8Skg==
 
 macos-release@^2.5.0:
   version "2.5.0"
