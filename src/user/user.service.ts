@@ -64,7 +64,12 @@ export class UserService {
   }
 
   async delete(email: string) {
-    return this.userRepository.remove({ email });
+    const deleted = this.userRepository.nativeDelete({ email });
+
+    if (!deleted) {
+      const errors = { User: ' not found' };
+      throw new HttpException({ errors }, HttpStatus.NOT_FOUND);
+    }
   }
 
   async findById(id: number): Promise<IUserRO> {
@@ -72,7 +77,7 @@ export class UserService {
 
     if (!user) {
       const errors = { User: ' not found' };
-      throw new HttpException({ errors }, 401);
+      throw new HttpException({ errors }, HttpStatus.NOT_FOUND);
     }
 
     return this.buildUserRO(user);

@@ -1,5 +1,4 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import crypto from 'crypto';
 import { UserService } from '../user.service';
 import { UserRepository } from '../user.repository';
 import { CreateUserDto } from '../dto';
@@ -27,7 +26,7 @@ describe('UsersService', () => {
       });
     }),
     count: jest.fn().mockImplementation(() => 0),
-    remove: jest.fn().mockImplementation((email: string) => {
+    nativeDelete: jest.fn().mockImplementation(() => {
       return 1;
     }),
     findOneOrFail: jest.fn().mockImplementation((email: string) => {
@@ -82,7 +81,7 @@ describe('UsersService', () => {
     });
   });
   it('should delete user', async () => {
-    expect(await service.delete('test@test.com')).toBe(1);
+    expect(await service.delete('test@test.com')).toBe(undefined);
   });
   it('should create user', async () => {
     expect(
