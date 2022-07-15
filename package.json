@@ -66,7 +66,7 @@
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
-    "@nestjs/swagger": "^5.2.1",
+    "@nestjs/swagger": "^6.0.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.13.2",
     "crypto": "^1.0.1",
