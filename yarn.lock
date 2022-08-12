@@ -633,9 +633,9 @@
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
 "@jridgewell/trace-mapping@^0.3.12", "@jridgewell/trace-mapping@^0.3.13", "@jridgewell/trace-mapping@^0.3.7", "@jridgewell/trace-mapping@^0.3.9":
-  version "0.3.14"
-  resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.14.tgz#b231a081d8f66796e475ad588a1ef473112701ed"
-  integrity sha512-bJWEfQ9lPTvm3SneWwRFVLzrh6nhjwqw7TUFFBEMzwvg7t7PCDenf2lDwqo4NQXzdpgBXyFgDWnQA+2vkruksQ==
+  version "0.3.15"
+  resolved "https://registry.yarnpkg.com/@jridgewell/trace-mapping/-/trace-mapping-0.3.15.tgz#aba35c48a38d3fd84b37e66c9c0423f9744f9774"
+  integrity sha512-oWZNOULl+UbhsgB51uuZzglikfIKSUBO/M9W2OfEjn7cmqoAiCgmv9lyACTUacZwBz0ITnJ2NqjU8Tx0DHL88g==
   dependencies:
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
@@ -749,18 +749,18 @@
     webpack-node-externals "3.0.0"
 
 "@nestjs/common@^9.0.0":
-  version "9.0.8"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-9.0.8.tgz#7a1bf829a79a4e4c53e943feda4181813d6f36c2"
-  integrity sha512-x6+qGRnTEZmg0jzqPUW8uPCK6qPjc7JGmeHszZOso1YCCKNiqaCM4NY6ndbl2Of3kWSpq3qE4thCmuZ/4DwBQA==
+  version "9.0.9"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-9.0.9.tgz#5255a9cffa070f3c7d3be4a201c91515bcbc4dfb"
+  integrity sha512-FHXRm3gSK24M0vKAkQeyBB+GVJwVf61eqYrst1IMAh6FiTwrS4UMsdXD4p9HosfzPsNf6uD6vL2Mn+qOuXNEbQ==
   dependencies:
     iterare "1.2.1"
     tslib "2.4.0"
     uuid "8.3.2"
 
 "@nestjs/core@^9.0.0":
-  version "9.0.8"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-9.0.8.tgz#97dca6d86d09ffc4533ae1db537e6f16c593c886"
-  integrity sha512-ICnBw0cH6RzAhWLFQ21UOd8M5pajD3fB9lgttZX0rW153/ZlUavHIVnBRhIXT6soYetK8z2XsyzlPaL/Z7/1ig==
+  version "9.0.9"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-9.0.9.tgz#4582d8ea1d7bf99faac4b6b5208150c2addab458"
+  integrity sha512-wqr/Nqz6U4B2MqbzD6b6eRNgJeZB9FvUQsgHtsTA8g/77ONyLMJcANPoYQcxu39iWCbd4JlIkZ2vXbCeubJaeA==
   dependencies:
     "@nuxtjs/opencollective" "0.3.2"
     fast-safe-stringify "2.1.1"
@@ -776,9 +776,9 @@
   integrity sha512-+2kSly4P1QI+9eGt+/uGyPdEG1hVz7nbpqPHWZVYgoqz8eOHljpXPag+UCVRw9zo2XCu4sgNUIGe8Uk0+OvUQg==
 
 "@nestjs/platform-express@^9.0.0":
-  version "9.0.8"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-9.0.8.tgz#fcc4aba924d5ae7f169bb9c0fc2529c5fb6d8410"
-  integrity sha512-gKeZwt6eAituYU4xe0IeD8IHSGE14LYN1L+aNdUk0KWKAfAjphM4L9FgSzI/r27q2q1tMGYUmMUJKsiUoENVHg==
+  version "9.0.9"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-9.0.9.tgz#3cd40321f13aa0b6e1510ae4ca8d2a7114e84b62"
+  integrity sha512-lCcDKtoeDVzQa60Fj0bYP1DSVnT/evgP8VD+HD+2gAabPEL95y7K4+c5kkTLI8yA1brc87m73iT4xEwVcFRUzA==
   dependencies:
     body-parser "1.20.0"
     cors "2.8.5"
@@ -809,9 +809,9 @@
     swagger-ui-dist "4.13.2"
 
 "@nestjs/testing@^9.0.0":
-  version "9.0.8"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-9.0.8.tgz#94c346cf39a9beaed084debff2960d09ce7818e1"
-  integrity sha512-7mFQwhA+wE4gqYoZnW7+BM7ELM4FMZPQMfDSiHYaBSLkH8w6Ddn1+D7w1gXebgz0SkT1/EUJv/sJpFD9Vsgfvg==
+  version "9.0.9"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-9.0.9.tgz#703872b5ed29bb4fac112d92e7ed5ebb919bc80d"
+  integrity sha512-K6Ev/XQMhDGVIP4jAwnl6vFI5JKkPIYBM9URXwR6TMqe8P76Qdb4ExnKvwiHVdOQUOuRw2c4/aTKa5wXWLq3Iw==
   dependencies:
     tslib "2.4.0"
 
@@ -2126,9 +2126,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.202:
-  version "1.4.214"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.214.tgz#a06499c8d950e74a45fe8ba37f89892667430478"
-  integrity sha512-HTLm4/c5vNoM/57HJWIc1ZAnsyLNcqwtztS4+wGKS/gYrfyvfHrvkenbEewj9KjoSwg8xl66cF78TEPby6p2KA==
+  version "1.4.216"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.216.tgz#e1b56d3dc81333fbfd74a967b45a03d822e67af8"
+  integrity sha512-jDkyyqIy2n+dtl3isE0Y8znnN936BGobE8SDnwErubJ3zOophPDFPMr7rCoIH+EUae6T7+t1cbBggGtvVf3ZtQ==
 
 emittery@^0.10.2:
   version "0.10.2"
