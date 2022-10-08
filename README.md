@@ -37,7 +37,7 @@ schema.
 ## NPM scripts
 
 - `yarn start` - Start application
-- `yarn start:watch` - Start application in watch mode
+- `yarn start:dev` - Start application in watch mode
 - `yarn test` - run Jest test runner 
 - `yarn start:prod` - Build application
 
