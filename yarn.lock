@@ -373,10 +373,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@faker-js/faker@7.5.0":
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/@faker-js/faker/-/faker-7.5.0.tgz#8e8265f65f5b68d2a57886d59b03788eeb676264"
-  integrity sha512-8wNUCCUHvfvI0gQpDUho/3gPzABffnCn5um65F8dzQ86zz6dlt4+nmAA7PQUc8L+eH+9RgR/qzy5N/8kN0Ozdw==
+"@faker-js/faker@7.6.0":
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/@faker-js/faker/-/faker-7.6.0.tgz#9ea331766084288634a9247fcd8b84f16ff4ba07"
+  integrity sha512-XK6BTq1NDMo9Xqw/YkYyGjSsg44fbNwYRx7QK2CuoQgyy+f1rrTDHoExVM5PsyXCtfl2vs2vVJ0MN0yN6LppRw==
 
 "@humanwhocodes/config-array@^0.11.6":
   version "0.11.6"
@@ -663,55 +663,55 @@
     "@jridgewell/sourcemap-codec" "1.4.14"
 
 "@mikro-orm/cli@^5.2.1":
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/cli/-/cli-5.4.2.tgz#c7e51c247aa4d1e89b3d6188c0dc0310004452c0"
-  integrity sha512-/y1zeV2Q72eMEP3VfcQhon7HJ1I6sHsWWhAR1gwpCIrQ10hgcsgMk6r6VObMYfqPxSSMU9+S9WRG6mp1L7UMAQ==
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/cli/-/cli-5.5.0.tgz#ad5c510573c90361be8128b629c7d409eb357c40"
+  integrity sha512-IhRThD5ygBxv9BhGognFkhGR0gCBkMeht8SRd39v6fDd4Rp2m4CP+lklMXT7t56dokY3ZspXBVRyUEq5TNTNOA==
   dependencies:
-    "@mikro-orm/core" "~5.4.2"
-    "@mikro-orm/knex" "~5.4.2"
+    "@mikro-orm/core" "~5.5.0"
+    "@mikro-orm/knex" "~5.5.0"
     fs-extra "10.1.0"
     tsconfig-paths "4.1.0"
     yargonaut "1.1.4"
     yargs "15.4.1"
 
-"@mikro-orm/core@^5.2.1", "@mikro-orm/core@~5.4.2":
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/core/-/core-5.4.2.tgz#62793e90237f06a8a88ffb92426eb382c3a87922"
-  integrity sha512-4JZfkUQNSvLh2RKNPl+2qy3RXmWdWOy8e++Owsb2qzmsL0T6CjIOz2kd+yPqZVvFH+unF5R1eQit/xnP3biM+A==
+"@mikro-orm/core@^5.2.1", "@mikro-orm/core@~5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/core/-/core-5.5.0.tgz#889bf3fad6d15ae4414f64798332a3b3eb72cc37"
+  integrity sha512-65mjIbdKgybRpzP9IsZTl+J0SaGIXfY7WCtneADE29Vo94Mo2y80g9Od7kjBAOCw392JBCOoFCZJxaeJHyIHPw==
   dependencies:
     acorn-loose "8.3.0"
     acorn-walk "8.2.0"
-    dotenv "16.0.2"
+    dotenv "16.0.3"
     fs-extra "10.1.0"
     globby "11.0.4"
-    mikro-orm "~5.4.2"
+    mikro-orm "~5.5.0"
     reflect-metadata "0.1.13"
 
-"@mikro-orm/knex@~5.4.2":
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/knex/-/knex-5.4.2.tgz#3f9e0a2d23767d73a872d52f3d9bcdebb275ddf5"
-  integrity sha512-KOasr9arBAwIyv+MkczA43uS0yu0HoC1axzqwgC1ua+Sw4xMtzospPxeWQyjA2qjqkPnkSST7Wya+CS0NZmc2g==
+"@mikro-orm/knex@~5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/knex/-/knex-5.5.0.tgz#d69f7d8064a37539c5e138a7b13570f7e98a6bc5"
+  integrity sha512-tsZ18f8o8CWMZk9OEacNUbmTXycCQsty+UKBtBtVwTJHB5h9gEbrHJCZNAJMxOlUuJOSiELL3yF+7vLZLwKImQ==
   dependencies:
     fs-extra "10.1.0"
     knex "2.3.0"
     sqlstring "2.3.3"
 
 "@mikro-orm/migrations@^5.2.1":
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/migrations/-/migrations-5.4.2.tgz#167ef9e8e5c6953f7f5136b25ada0a8578f966fd"
-  integrity sha512-eXy8vaSrMfmUkjm4yBDle5SA80dL3csIyuP3sp/wmKMxKmzMUXX6CUyNy6kahplOpnjhplFy9uMzFg2fQfQV+g==
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/migrations/-/migrations-5.5.0.tgz#a258c52d3fda356fd4691bbbbcca72fd4f3e6f72"
+  integrity sha512-eMRWJEQYvvw8hAky/4J8h18HqstuEeXbBG9rlgxYGnsGSo5Dk3gcdsmO81amyh3iX2FkK0jz3o49EKMw0yRrtg==
   dependencies:
-    "@mikro-orm/knex" "~5.4.2"
+    "@mikro-orm/knex" "~5.5.0"
     fs-extra "10.1.0"
     knex "2.3.0"
     umzug "3.2.1"
 
 "@mikro-orm/mysql@^5.2.1":
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/mysql/-/mysql-5.4.2.tgz#ca3f4b64b49184a9f7318390b2524416400f55dd"
-  integrity sha512-UqqNjiajCsRrgbSk6JHeTOPxeujkfIUoiAwz1NN12b3gvCDkH04YZMe3XSwaulzhzp9fGTLphQyeE8td851Qxw==
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/mysql/-/mysql-5.5.0.tgz#95ebefee3de591084f1026fd8b22b7436e96af6f"
+  integrity sha512-kUag+y3rlvRXSUX6ZrhC1zzo4YDKbv1kerr1jc7kU3nMhyTNQm+xCrILyrUQ+X7IClaaxNg0krx0U0SEVysCDw==
   dependencies:
-    "@mikro-orm/knex" "~5.4.2"
+    "@mikro-orm/knex" "~5.5.0"
     mysql2 "2.3.3"
 
 "@mikro-orm/nestjs@^5.0.1":
@@ -720,19 +720,19 @@
   integrity sha512-kHvrcZoIsZUwaahWIjuJDII0rfikGucsyZg9UJRDLcDIYm9nm39Qtos9uGgTAySejll/g/XdOM6QirPHtgR8FQ==
 
 "@mikro-orm/reflection@^5.2.1":
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/reflection/-/reflection-5.4.2.tgz#667a801df485389d2bce210421e6ca5927ec3a30"
-  integrity sha512-5XcW4FD5hLe214pFUxd66WvbvULrz8dPpc5eJ1aF5tfkKMVmIJRxn9X0pnLf1pzYb36PiuZ/urA1neZfUz/mXw==
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/reflection/-/reflection-5.5.0.tgz#0d8a8bfd349d769174eb2ed624aca8ca9a1b8f6e"
+  integrity sha512-EPqW84Q7PfyGQW9QRgy8aejNmKrWHQQUzsEgMUyJVwuHNH49OGa9m3gsuOQqhfpdDRXAn5Ir3H0XeUWHAsYuYA==
   dependencies:
     globby "11.0.4"
     ts-morph "16.0.0"
 
 "@mikro-orm/seeder@^5.2.1":
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/seeder/-/seeder-5.4.2.tgz#1c33896e7dc02d76f92dce6fb40f2fd10910cca1"
-  integrity sha512-5tiRsjlrOAEL0GHfLiM4wqzNp4wa0VKnE0RTTmecNE1311HDgQK6pvrz7KpbEh4dW6VAL/Xbe+KO7JVSsYzuJA==
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/seeder/-/seeder-5.5.0.tgz#4cd03e7c8d4816af2f64d2c9ecfbdddb8844c4da"
+  integrity sha512-UUeQa9/GTlmo70FLhdR90GbX1pfBM/wDSXFD1DZN4MKwXV1WZpDaAIheSrPenksuJa+EJlnkBZHB8dzKjgsx8w==
   dependencies:
-    "@faker-js/faker" "7.5.0"
+    "@faker-js/faker" "7.6.0"
     fs-extra "10.1.0"
     globby "11.0.4"
 
@@ -879,9 +879,9 @@
     string-argv "~0.3.1"
 
 "@sinclair/typebox@^0.24.1":
-  version "0.24.48"
-  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.24.48.tgz#bd558c6059df563d49a4d94df8e8e0510b662e3f"
-  integrity sha512-WPGpRNHbkOsfBDmh8QHU7a5NWzEuYNThST8x1cISvX0RpP+1+V8zjuJqNwGJkHGIlhdIIhv6qVYqXz2q5/gjAA==
+  version "0.24.50"
+  resolved "https://registry.yarnpkg.com/@sinclair/typebox/-/typebox-0.24.50.tgz#35ee4db4ab8f3a8ff56490c51f92445d2776451e"
+  integrity sha512-k8ETQOOQDg5FtK7y9KJWpsGLik+QlPmIi8zzl/dGUgshV2QitprkFlCR/AemjWOTyKn9UwSSGRTzLVotvgCjYQ==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -1070,9 +1070,9 @@
   integrity sha512-Y4XFY5VJAuw0FgAqPNd6NNoV44jbq9Bz2L7Rh/J6jLTiHBSBJa9fxqQIvkIld4GsoDOcCbvzOUAbLPsSKKg+uA==
 
 "@types/node@*":
-  version "18.11.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.3.tgz#78a6d7ec962b596fc2d2ec102c4dd3ef073fea6a"
-  integrity sha512-fNjDQzzOsZeKZu5NATgXUPsaFaTxeRgFXoosrHivTl8RGeV733OLawXsGfEk9a8/tySyZUyiZ6E8LcjPFZ2y1A==
+  version "18.11.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.4.tgz#7017a52e18dfaad32f55eebd539993014441949c"
+  integrity sha512-BxcJpBu8D3kv/GZkx/gSMz6VnTJREBj/4lbzYOQueUOELkt8WrO6zAcSPmp9uRPEW/d+lUO8QK0W2xnS1hEU0A==
 
 "@types/node@^17.0.38":
   version "17.0.45"
@@ -2133,10 +2133,10 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-dotenv@16.0.2:
-  version "16.0.2"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.2.tgz#0b0f8652c016a3858ef795024508cddc4bffc5bf"
-  integrity sha512-JvpYKUmzQhYoIFgK2MOnF3bciIZoItIIoryihy0rIA+H4Jy0FmgyKYAHCTN98P5ybGSJcIFbh6QKeJdtZd1qhA==
+dotenv@16.0.3:
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.3.tgz#115aec42bac5053db3c456db30cc243a5a836a07"
+  integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
 
 ecdsa-sig-formatter@1.0.11:
   version "1.0.11"
@@ -3784,10 +3784,10 @@ micromatch@^4.0.4:
     braces "^3.0.2"
     picomatch "^2.3.1"
 
-mikro-orm@~5.4.2:
-  version "5.4.2"
-  resolved "https://registry.yarnpkg.com/mikro-orm/-/mikro-orm-5.4.2.tgz#affe273b60dcf9d22be4309455c0284a788accc3"
-  integrity sha512-V2vE9SFjhLx1wYtgVH9ZE1rk4F5ECajA1LI6+/rGt7IsShyPKfXi1KF6yQK73JQ5E+ypf+bVNFne4j7CmN81XA==
+mikro-orm@~5.5.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/mikro-orm/-/mikro-orm-5.5.0.tgz#06c613eab1ce0967d1277649d0447a7c8937883d"
+  integrity sha512-iCAt/gEoEX5fa47NS12CDA322jcLPy00oNV6xsOecj/C6BX3wWw3p3RS8zRmYg+KcXxRXaGgI4F5jIzxuVIsXA==
 
 mime-db@1.52.0:
   version "1.52.0"
