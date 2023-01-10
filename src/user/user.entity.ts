@@ -1,8 +1,9 @@
 import { IsEmail } from 'class-validator';
-import crypto from 'crypto';
+import crypto from 'node:crypto';
 import {
   Collection,
-  Entity, EntityDTO,
+  Entity,
+  EntityDTO,
   EntityRepositoryType,
   ManyToMany,
   OneToMany,
@@ -13,7 +14,7 @@ import {
 import { Article } from '../article/article.entity';
 import { UserRepository } from './user.repository';
 
-@Entity({ customRepository: () => UserRepository })
+@Entity({ repository: () => UserRepository })
 export class User {
 
   [EntityRepositoryType]?: UserRepository;

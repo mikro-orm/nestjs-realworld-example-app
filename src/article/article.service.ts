@@ -80,7 +80,6 @@ export class ArticleService {
       offset: query.offset,
     });
 
-    console.log('findFeed', { articles: res[0], articlesCount: res[1] });
     return { articles: res[0].map(a => a.toJSON(user)), articlesCount: res[1] };
   }
 

@@ -10,6 +10,7 @@ npm-debug.log*
 
 # Dependency directory
 node_modules
+.yarn
 
 # Optional npm cache directory
 .npm
