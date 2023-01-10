@@ -1,10 +1,12 @@
-import { MikroOrmModuleOptions as Options } from '@mikro-orm/nestjs';
+import { LoadStrategy } from '@mikro-orm/core';
+import { defineConfig } from '@mikro-orm/mysql';
 import { SqlHighlighter } from '@mikro-orm/sql-highlighter';
 import { TsMorphMetadataProvider } from '@mikro-orm/reflection';
-import { LoadStrategy } from '@mikro-orm/core';
+import { Migrator } from '@mikro-orm/migrations';
+import { EntityGenerator } from '@mikro-orm/entity-generator';
+import { SeedManager } from '@mikro-orm/seeder';
 
-const config: Options = {
-  type: 'mysql',
+export default defineConfig({
   host: 'localhost',
   port: 3307,
   user: 'root',
@@ -16,11 +18,7 @@ const config: Options = {
   loadStrategy: LoadStrategy.JOINED,
   highlighter: new SqlHighlighter(),
   metadataProvider: TsMorphMetadataProvider,
+  // @ts-expect-error nestjs adapter option
   registerRequestContext: false,
-  migrations: {
-    path: 'dist/migrations',
-    pathTs: 'src/migrations',
-  },
-};
-
-export default config;
+  extensions: [Migrator, EntityGenerator, SeedManager],
+});
