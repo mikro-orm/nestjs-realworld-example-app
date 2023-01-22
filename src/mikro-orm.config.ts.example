@@ -12,6 +12,7 @@ export default defineConfig({
   user: 'root',
   password: '',
   dbName: 'nestjsrealworld',
+  tsNode: true,
   entities: ['dist/**/*.entity.js'],
   entitiesTs: ['src/**/*.entity.ts'],
   debug: true,
