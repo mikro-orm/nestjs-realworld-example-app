@@ -650,6 +650,11 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@lukeed/csprng@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@lukeed/csprng/-/csprng-1.0.1.tgz#625e93a0edb2c830e3c52ce2d67b9d53377c6a66"
+  integrity sha512-uSvJdwQU5nK+Vdf6zxcWAY2A8r7uqe+gePwLWzJ+fsQehq18pc0I2hJKwypZ2aLM90+Er9u1xn4iLJPZ+xlL4g==
+
 "@mikro-orm/cli@^5.6.5":
   version "5.6.8"
   resolved "https://registry.yarnpkg.com/@mikro-orm/cli/-/cli-5.6.8.tgz#eb7617ecce71f64a750b65e8f4b423f4ceb66d30"
@@ -768,18 +773,18 @@
     webpack-node-externals "3.0.0"
 
 "@nestjs/common@^9.0.0":
-  version "9.2.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-9.2.1.tgz#24de19ee85a8f1747288980fe517b12753cf66ea"
-  integrity sha512-nZuo3oDsSSlC5mti/M2aCWTEIfHPGDXmBwWgPeCpRbrNz3IWd109rkajll+yxgidVjznAdBS9y00JkAVJblNYw==
+  version "9.3.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-9.3.1.tgz#8bbe94539783088e01f14c3459212b713961beed"
+  integrity sha512-T14G3xjIXmEkxMcHcwh/eJwodF2owhYIT0ZA8u6UCNCEQg+391TXA7xTynUuR5Fl2EJPYTKF0g89XSFOW7NS2Q==
   dependencies:
+    uid "2.0.1"
     iterare "1.2.1"
     tslib "2.4.1"
-    uuid "9.0.0"
 
 "@nestjs/core@^9.0.0":
-  version "9.2.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-9.2.1.tgz#598e51a421a0aaafc568c1a02499f7c1f9491caf"
-  integrity sha512-a9GkXuu8uXgNgCVW+17iI8kLCltO+HwHpU2IhR+32JKnN2WEQ1YEWU4t3GJ2MNq44YkjIw9zrKvFkjJBlYrNbQ==
+  version "9.3.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-9.3.1.tgz#af01bfed0d46443d3416d42ceb8e5f41373258ad"
+  integrity sha512-hLVfImzHu1vdcViEhIRnm7x3EBk+YiV7XVTJNz6n2Ly8a6t7IFBoJkGrZkE8ZTytnfbJZO0Vtp54ZBllxx3MwA==
   dependencies:
     "@nuxtjs/opencollective" "0.3.2"
     fast-safe-stringify "2.1.1"
@@ -795,9 +800,9 @@
   integrity sha512-NTFwPZkQWsArQH8QSyFWGZvJ08gR+R4TofglqZoihn/vU+ktHEJjMqsIsADwb7XD97DhiD+TVv5ac+jG33BHrg==
 
 "@nestjs/platform-express@^9.0.0":
-  version "9.2.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-9.2.1.tgz#74b88a531239eaee3fe23af2f2912ebef313866f"
-  integrity sha512-7PecaXt8lrdS1p6Vb1X/am3GGv+EO1VahyDzaEGOK6C0zwhc0VPfLtwihkjjfhS6BjpRIXXgviwEjONUvxVZnA==
+  version "9.3.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-9.3.1.tgz#5513c4e1fa8d3ae9c8cec3c7c74c6159e0a43dd6"
+  integrity sha512-MOdsV+TIBM7xUrj/sW9uowYIRuBDmrobMJ94mrF5aCzfjLiV+6UmgIyaM8hRQpbkQXHkP0YMZZeBDOBNTISCBw==
   dependencies:
     body-parser "1.20.1"
     cors "2.8.5"
@@ -828,9 +833,9 @@
     swagger-ui-dist "4.15.5"
 
 "@nestjs/testing@^9.0.0":
-  version "9.2.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-9.2.1.tgz#2a3f64214d58ec4ab878862395407947671e4ece"
-  integrity sha512-lemXZdRSuqoZ87l0orCrS/c7gqwxeduIFOd21g9g2RUeQ4qlWPegbQDKASzbfC28klPyrgJLW4MNq7uv2JwV8w==
+  version "9.3.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-9.3.1.tgz#c64b9e08971bf219231c8de8bc4bb215e388a352"
+  integrity sha512-jjsmfd9h0E8bWTSWMm+QD1P8T8ElHufTJ2tDbi0q9U8JR5QoJ9KLcVTYZVPciXpwPxIiZ+qFEjrY1/irvPHDug==
   dependencies:
     tslib "2.4.1"
 
@@ -1710,9 +1715,9 @@ camelcase@^6.2.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001449:
-  version "1.0.30001449"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001449.tgz#a8d11f6a814c75c9ce9d851dc53eb1d1dfbcd657"
-  integrity sha512-CPB+UL9XMT/Av+pJxCKGhdx+yg1hzplvFJQlJ2n68PyQGMz9L/E2zCyLdOL8uasbouTUgnPl+y0tccI/se+BEw==
+  version "1.0.30001450"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001450.tgz#022225b91200589196b814b51b1bbe45144cf74f"
+  integrity sha512-qMBmvmQmFXaSxexkjjfMvD5rnDL0+m+dUMZKoDYsGG8iZN29RuYh9eRoMvKsT6uMAWlyUUGDEQGJJYjzCIO9ew==
 
 chalk@3.0.0:
   version "3.0.0"
@@ -4952,6 +4957,13 @@ typescript@4.9.5:
   version "4.9.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
+
+uid@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/uid/-/uid-2.0.1.tgz#a3f57c962828ea65256cd622fc363028cdf4526b"
+  integrity sha512-PF+1AnZgycpAIEmNtjxGBVmKbZAQguaa4pBUq6KNaGEcpzZ2klCNZLM34tsjp76maN00TttiiUf6zkIBpJQm2A==
+  dependencies:
+    "@lukeed/csprng" "^1.0.0"
 
 umzug@3.2.1:
   version "3.2.1"
