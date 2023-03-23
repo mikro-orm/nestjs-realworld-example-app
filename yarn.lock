@@ -819,18 +819,18 @@
     webpack-node-externals "3.0.0"
 
 "@nestjs/common@^9.0.0":
-  version "9.3.11"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-9.3.11.tgz#95a54a2dd0fec0a7abc1edba793c53a53b59c783"
-  integrity sha512-IFZ2G/5UKWC2Uo7tJ4SxGed2+aiA+sJyWeWsGTogKVDhq90oxVBToh+uCDeI31HNUpqYGoWmkletfty42zUd8A==
+  version "9.3.12"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-9.3.12.tgz#9b3a9e162fe73c830ffa588fd3d921fd8a9f174a"
+  integrity sha512-NtrUG2VgCbhmZEO1yRt/Utq16uFRV+xeHAOtdYIsfHGG0ssAV2lVLlvFFAQYh0SQ+KuYY1Gsxd3GK2JFoJCNqQ==
   dependencies:
     uid "2.0.1"
     iterare "1.2.1"
     tslib "2.5.0"
 
 "@nestjs/core@^9.0.0":
-  version "9.3.11"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-9.3.11.tgz#1be65db0e889f8f12b87aec12c9cf66ea6043205"
-  integrity sha512-CI27a2JFd5rvvbgkalWqsiwQNhcP4EAG5BUK8usjp29wVp1kx30ghfBT8FLqIgmkRVo65A0IcEnWsxeXMntkxQ==
+  version "9.3.12"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-9.3.12.tgz#b1c06b56ff5c8ad41e841688c6763aa9748a2395"
+  integrity sha512-Qe0ZjJo7bOlfudn7KHLppYrt5i4k1nR1+9d5ppYat2bb5knCIT4kIqblj666n+22/2zvsHRiTo015cLyLKsLRQ==
   dependencies:
     uid "2.0.1"
     "@nuxtjs/opencollective" "0.3.2"
@@ -845,9 +845,9 @@
   integrity sha512-3dHxLXs3M0GPiriAcCFFJQHoDFUuzTD5w6JDhE7TyfT89YKpe6tcCCIqOZWdXmt9AZjjK30RkHRSFF+QEnWFQg==
 
 "@nestjs/platform-express@^9.0.0":
-  version "9.3.11"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-9.3.11.tgz#19a73af7f6f1ceb1cc173709cac741f8a4a032ca"
-  integrity sha512-S5VH4dNKmj0HHC1cnmbFDhU7v/C6eX7syDQolQ1KWdtf48AdrqmHJtL+/FbYmHtegx36Vcx6pb1RrkzsHB4MBQ==
+  version "9.3.12"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-9.3.12.tgz#ad47eba72ec55cf3f4633afb19c01e6413bd77b0"
+  integrity sha512-iQToH9rnZHmm3a2YDKLEN7weU2qC/EVOBnuwTf1lIkqB48yLxlykSJu3KmgtlUUNDt2/HY527QIo+GZSZfCLyg==
   dependencies:
     body-parser "1.20.2"
     cors "2.8.5"
@@ -878,9 +878,9 @@
     swagger-ui-dist "4.15.5"
 
 "@nestjs/testing@^9.0.0":
-  version "9.3.11"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-9.3.11.tgz#3c4171a9187ca35510cfa58d4818d6c1fa4aef0d"
-  integrity sha512-8xSxrpQFW0Z9ABJz0r8J+zZwBZQ1I4Yn880ye3iS863s1tLCS7ARUeuCiD3eQ6imIGt3+oPUzwGQIrbrQopLcw==
+  version "9.3.12"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-9.3.12.tgz#e02ed34c9a267ba9495ba7f5e3d83d4956e3414f"
+  integrity sha512-nH274IXEqU4hr4bcb71POe58hYLONt9RcfKKM5ZvOS7wYMnybMpKKR8DkC1WcfE1P2k2GQmQoHeSH5emPtYrBA==
   dependencies:
     tslib "2.5.0"
 
@@ -2204,9 +2204,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.284:
-  version "1.4.335"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.335.tgz#69c08baa608bbb58e290d83320190fa82c835efe"
-  integrity sha512-l/eowQqTnrq3gu+WSrdfkhfNHnPgYqlKAwxz7MTOj6mom19vpEDHNXl6dxDxyTiYuhemydprKr/HCrHfgk+OfQ==
+  version "1.4.336"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.336.tgz#3e97b6752f76d24565df545a1f36bfd3aea34ae3"
+  integrity sha512-yLaoSY/ngjgRpEGU4ueeW0vlj456idQBn74r6s1yutoOIadvd7rwt05TGenPj0PoetJ5pEHomVkmfTdIgqPfJw==
 
 emittery@^0.12.1:
   version "0.12.1"
@@ -2799,9 +2799,9 @@ glob@^8.0.3:
     once "^1.3.0"
 
 glob@^9.2.0:
-  version "9.3.1"
-  resolved "https://registry.yarnpkg.com/glob/-/glob-9.3.1.tgz#4a15cf72479a440f77e97805b21e1b5b6e4fb18a"
-  integrity sha512-qERvJb7IGsnkx6YYmaaGvDpf77c951hICMdWaFXyH3PlVob8sbPJJyJX0kWkiCWyXUzoy9UOTNjGg0RbD8bYIw==
+  version "9.3.2"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-9.3.2.tgz#8528522e003819e63d11c979b30896e0eaf52eda"
+  integrity sha512-BTv/JhKXFEHsErMte/AnfiSv8yYOLLiyH2lTg8vn02O21zWFgHPTfxtgn1QRe7NRgggUhC8hacR2Re94svHqeA==
   dependencies:
     fs.realpath "^1.0.0"
     minimatch "^7.4.1"
@@ -3509,9 +3509,9 @@ jest@^29.0.0:
     jest-cli "^29.5.0"
 
 js-sdsl@^4.1.4:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/js-sdsl/-/js-sdsl-4.3.0.tgz#aeefe32a451f7af88425b11fdb5f58c90ae1d711"
-  integrity sha512-mifzlm2+5nZ+lEcLJMoBK0/IH/bDg8XnJfd/Wq6IP+xoCjLZsTOnV2QpxlVbX9bMnkl5PdEjNtBJ9Cj1NjifhQ==
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/js-sdsl/-/js-sdsl-4.4.0.tgz#8b437dbe642daa95760400b602378ed8ffea8430"
+  integrity sha512-FfVSdx6pJ41Oa+CF7RDaFmTnCaFhua+SNYQX74riGOpl96x+2jQCqEfQ2bnXu/5DPCqlRuiqyvTJM0Qjz26IVg==
 
 js-tokens@^4.0.0:
   version "4.0.0"
@@ -3843,9 +3843,9 @@ minimatch@^5.0.1, minimatch@^5.1.0:
     brace-expansion "^2.0.1"
 
 minimatch@^7.4.1:
-  version "7.4.2"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-7.4.2.tgz#157e847d79ca671054253b840656720cb733f10f"
-  integrity sha512-xy4q7wou3vUoC9k1xGTXc+awNdGaGVHtFUaey8tiX4H1QRc04DZ/rmDFwNm2EBsuYEhAZ6SgMmYf3InGY6OauA==
+  version "7.4.3"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-7.4.3.tgz#012cbf110a65134bb354ae9773b55256cdb045a2"
+  integrity sha512-5UB4yYusDtkRPbRiy1cqZ1IpGNcJCGlEMG17RKzPddpyiPKoCdwohbED8g4QXT0ewCt8LTkQXuljsUfQ3FKM4A==
   dependencies:
     brace-expansion "^2.0.1"
 
@@ -4165,9 +4165,9 @@ path-parse@^1.0.7:
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-scurry@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/path-scurry/-/path-scurry-1.6.1.tgz#dab45f7bb1d3f45a0e271ab258999f4ab7e23132"
-  integrity sha512-OW+5s+7cw6253Q4E+8qQ/u1fVvcJQCJo/VFD8pje+dbJCF1n5ZRMV2AEHbGp+5Q7jxQIYJxkHopnj6nzdGeZLA==
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/path-scurry/-/path-scurry-1.6.3.tgz#4eba7183d64ef88b63c7d330bddc3ba279dc6c40"
+  integrity sha512-RAmB+n30SlN+HnNx6EbcpoDy9nwdpcGPnEKrJnu6GZoDWBdIjo1UQMVtW2ybtC7LC2oKLcMq8y5g8WnKLiod9g==
   dependencies:
     lru-cache "^7.14.1"
     minipass "^4.0.2"
