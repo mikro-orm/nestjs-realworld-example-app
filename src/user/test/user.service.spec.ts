@@ -1,12 +1,16 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import crypto from 'crypto';
 import { UserService } from '../user.service';
 import { UserRepository } from '../user.repository';
-import { CreateUserDto } from '../dto';
+import { EntityManager } from '@mikro-orm/core';
 
 describe('UsersService', () => {
   let service: UserService;
 
+  const mockEntityManager = {
+    persistAndFlush: jest.fn().mockImplementation(() => {
+      return Promise.resolve();
+    }),
+  };
   const mockUserRepository = {
     findAll: jest.fn().mockImplementation(() => {
       return Promise.resolve([]);
@@ -21,13 +25,8 @@ describe('UsersService', () => {
         username: 'test',
       });
     }),
-    persistAndFlush: jest.fn().mockImplementation((dto: CreateUserDto) => {
-      return Promise.resolve({
-        ...dto,
-      });
-    }),
     count: jest.fn().mockImplementation(() => 0),
-    remove: jest.fn().mockImplementation((email: string) => {
+    nativeDelete: jest.fn().mockImplementation((email: string) => {
       return 1;
     }),
     findOneOrFail: jest.fn().mockImplementation((email: string) => {
@@ -54,6 +53,10 @@ describe('UsersService', () => {
           provide: UserRepository,
           useValue: mockUserRepository,
         },
+        {
+          provide: EntityManager,
+          useValue: mockEntityManager,
+        }
       ],
     }).compile();
 

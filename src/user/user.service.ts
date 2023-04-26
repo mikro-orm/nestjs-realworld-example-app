@@ -2,7 +2,7 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { validate } from 'class-validator';
 import crypto from 'crypto';
 import jwt from 'jsonwebtoken';
-import { wrap } from '@mikro-orm/core';
+import { EntityManager, wrap } from '@mikro-orm/core';
 import { SECRET } from '../config';
 import { CreateUserDto, LoginUserDto, UpdateUserDto } from './dto';
 import { User } from './user.entity';
@@ -13,6 +13,7 @@ import { UserRepository } from './user.repository';
 export class UserService {
   constructor(
     private readonly userRepository: UserRepository,
+    private readonly em: EntityManager,
   ) {}
 
   async findAll(): Promise<User[]> {
@@ -50,7 +51,7 @@ export class UserService {
         errors: { username: 'Userinput is not valid.' },
       }, HttpStatus.BAD_REQUEST);
     } else {
-      await this.userRepository.persistAndFlush(user);
+      await this.em.persistAndFlush(user);
       return this.buildUserRO(user);
     }
   }
@@ -58,13 +59,13 @@ export class UserService {
   async update(id: number, dto: UpdateUserDto) {
     const user = await this.userRepository.findOne(id);
     wrap(user).assign(dto);
-    await this.userRepository.flush();
+    await this.em.flush();
 
     return this.buildUserRO(user);
   }
 
   async delete(email: string) {
-    return this.userRepository.remove({ email });
+    return this.userRepository.nativeDelete({ email });
   }
 
   async findById(id: number): Promise<IUserRO> {

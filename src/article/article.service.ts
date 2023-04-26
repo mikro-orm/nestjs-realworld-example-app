@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { QueryOrder, wrap } from '@mikro-orm/core';
+import { EntityManager, QueryOrder, wrap } from '@mikro-orm/core';
 import { InjectRepository } from '@mikro-orm/nestjs'
 import { EntityRepository } from '@mikro-orm/mysql';
 
@@ -13,6 +13,7 @@ import { CreateArticleDto, CreateCommentDto } from './dto';
 export class ArticleService {
 
   constructor(
+    private readonly em: EntityManager,
     @InjectRepository(Article)
     private readonly articleRepository: EntityRepository<Article>,
     @InjectRepository(Comment)
@@ -93,7 +94,7 @@ export class ArticleService {
     const article = await this.articleRepository.findOneOrFail({ slug }, { populate: ['author'] });
     const author = await this.userRepository.findOneOrFail(userId);
     const comment = new Comment(author, article, dto.body);
-    await this.commentRepository.persistAndFlush(comment);
+    await this.em.persistAndFlush(comment);
 
     return { comment, article: article.toJSON(author) };
   }
@@ -105,7 +106,7 @@ export class ArticleService {
 
     if (article.comments.contains(comment)) {
       article.comments.remove(comment);
-      await this.commentRepository.removeAndFlush(comment);
+      await this.em.removeAndFlush(comment);
     }
 
     return { article: article.toJSON(user) };
@@ -120,7 +121,7 @@ export class ArticleService {
       article.favoritesCount++;
     }
 
-    await this.articleRepository.flush();
+    await this.em.flush();
     return { article: article.toJSON(user) };
   }
 
@@ -133,7 +134,7 @@ export class ArticleService {
       article.favoritesCount--;
     }
 
-    await this.articleRepository.flush();
+    await this.em.flush();
     return { article: article.toJSON(user) };
   }
 
@@ -147,7 +148,7 @@ export class ArticleService {
     const article = new Article(user, dto.title, dto.description, dto.body);
     article.tagList.push(...dto.tagList);
     user.articles.add(article);
-    await this.userRepository.flush();
+    await this.em.flush();
 
     return { article: article.toJSON(user) };
   }
@@ -156,7 +157,7 @@ export class ArticleService {
     const user = await this.userRepository.findOne({ id: userId }, { populate: ['followers', 'favorites', 'articles'] });
     const article = await this.articleRepository.findOne({ slug }, { populate: ['author'] });
     wrap(article).assign(articleData);
-    await this.articleRepository.flush();
+    await this.em.flush();
 
     return { article: article.toJSON(user) };
   }

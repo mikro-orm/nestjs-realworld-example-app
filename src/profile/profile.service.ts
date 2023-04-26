@@ -1,13 +1,14 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { User } from '../user/user.entity';
 import { IProfileData, IProfileRO } from './profile.interface';
-import { FilterQuery } from '@mikro-orm/core';
+import { EntityManager, FilterQuery } from '@mikro-orm/core';
 import { UserRepository } from '../user/user.repository';
 
 @Injectable()
 export class ProfileService {
   constructor(
     private readonly userRepository: UserRepository,
+    private readonly em: EntityManager,
   ) {}
 
   async findAll(): Promise<User[]> {
@@ -60,7 +61,7 @@ export class ProfileService {
     }
 
     followingUser.followers.add(followerUser);
-    await this.userRepository.flush();
+    await this.em.flush();
 
     const profile: IProfileData = {
       bio: followingUser.bio,
@@ -87,7 +88,7 @@ export class ProfileService {
     }
 
     followingUser.followers.remove(followerUser);
-    await this.userRepository.flush();
+    await this.em.flush();
 
     const profile: IProfileData = {
       bio: followingUser.bio,
