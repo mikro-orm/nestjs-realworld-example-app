@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@aashutoshrathi/word-wrap@^1.2.3":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@aashutoshrathi/word-wrap/-/word-wrap-1.2.6.tgz#bd9154aec9983f77b3a034ecaa015c2e4201f6cf"
+  integrity sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==
+
 "@ampproject/remapping@^2.2.0":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.2.1.tgz#99e8e11851128b8702cd57c33684f1d0f260b630"
@@ -643,12 +648,9 @@
   integrity sha512-xnkseuNADM0gt2bs+BvhO0p78Mk762YnZdsuzFV018NoG1Sj1SCQvpSqa7XUaTam5vAGasABV9qXASMKnFMwMw==
 
 "@jridgewell/source-map@^0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@jridgewell/source-map/-/source-map-0.3.3.tgz#8108265659d4c33e72ffe14e33d6cc5eb59f2fda"
-  integrity sha512-b+fsZXeLYi9fEULmfBrhxn4IrPlINf8fiNarzTof004v3lFdntdwa9PF7vFJqm3mg7s+ScJMxXaE3Acp1irZcg==
-  dependencies:
-    "@jridgewell/gen-mapping" "^0.3.0"
-    "@jridgewell/trace-mapping" "^0.3.9"
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@jridgewell/source-map/-/source-map-0.3.4.tgz#856a142864530d4059dda415659b48d37db2d556"
+  integrity sha512-KE/SxsDqNs3rrWwFHcRh15ZLVFrI0YoZtgAdIyIq9k5hUNmiWRXXThPomIxHuL20sLdgzbDFyvkUMna14bvtrw==
 
 "@jridgewell/sourcemap-codec@1.4.14":
   version "1.4.14"
@@ -1767,9 +1769,9 @@ camelcase@^6.2.0:
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
 
 caniuse-lite@^1.0.30001503:
-  version "1.0.30001508"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001508.tgz#4461bbc895c692a96da399639cc1e146e7302a33"
-  integrity sha512-sdQZOJdmt3GJs1UMNpCCCyeuS2IEGLXnHyAo9yIO5JJDjbjoVRij4M1qep6P6gFpptD1PqIYgzM+gwJbOi92mw==
+  version "1.0.30001509"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001509.tgz#2b7ad5265392d6d2de25cd8776d1ab3899570d14"
+  integrity sha512-2uDDk+TRiTX5hMcUYT/7CSyzMZxjfGu0vAUjS2g0LSD8UoXOv0LtpH4LxGMemsiPq6LCVIUjNwVM0erkOkGCDA==
 
 chalk@4.1.2, chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.1, chalk@^4.1.2:
   version "4.1.2"
@@ -2179,9 +2181,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.431:
-  version "1.4.441"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.441.tgz#94dd9c1cbf081d83f032a4f1cd9f787e21fc24ce"
-  integrity sha512-LlCgQ8zgYZPymf5H4aE9itwiIWH4YlCiv1HFLmmcBeFYi5E+3eaIFnjHzYtcFQbaKfAW+CqZ9pgxo33DZuoqPg==
+  version "1.4.445"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.445.tgz#058d2c5f3a2981ab1a37440f5a5e42d15672aa6d"
+  integrity sha512-++DB+9VK8SBJwC+X1zlMfJ1tMA3F0ipi39GdEp+x3cV2TyBihqAgad8cNMWtLDEkbH39nlDQP7PfGrDr3Dr7HA==
 
 emittery@^0.12.1:
   version "0.12.1"
@@ -3623,9 +3625,9 @@ levn@^0.4.1:
     type-check "~0.4.0"
 
 libphonenumber-js@^1.10.14:
-  version "1.10.36"
-  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.10.36.tgz#ec74008ffbc488d7ad9ebd722b2773292d568033"
-  integrity sha512-NCPWES1poiS4NSzIS49mxHM5hCkSWov8wFICRKfL9narzimqAXlnAgNloHCt0BukZHbWt8TIStCdzLy7LXBYpQ==
+  version "1.10.37"
+  resolved "https://registry.yarnpkg.com/libphonenumber-js/-/libphonenumber-js-1.10.37.tgz#185264130c9375f17d0c487a288223294579929c"
+  integrity sha512-Z10PCaOCiAxbUxLyR31DNeeNugSVP6iv/m7UrSKS5JHziEMApJtgku4e9Q69pzzSC9LnQiM09sqsGf2ticZnMw==
 
 lines-and-columns@^1.1.6:
   version "1.2.4"
@@ -3703,10 +3705,10 @@ lru-cache@^8.0.0:
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-8.0.5.tgz#983fe337f3e176667f8e567cfcce7cb064ea214e"
   integrity sha512-MhWWlVnuab1RG5/zMRRcVGXZLCXrZTgfwMikgzCegsPnG62yDQo5JnqKkrK4jO5iKqDAZGItAqN5CtKBCBWRUA==
 
-lru-cache@^9.1.1:
-  version "9.1.2"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-9.1.2.tgz#255fdbc14b75589d6d0e73644ca167a8db506835"
-  integrity sha512-ERJq3FOzJTxBbFjZ7iDs+NiK4VI9Wz+RdrrAB8dio1oV+YvdPzUEE4QNiT2VD51DkIbCYRUUzCRkssXCHqSnKQ==
+"lru-cache@^9.1.1 || ^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-10.0.0.tgz#b9e2a6a72a129d81ab317202d93c7691df727e61"
+  integrity sha512-svTf/fzsKHffP42sujkO/Rjs37BCIsQVRCeNYIm9WN8rgT7ffoUnRtZCqU+6BqcSBdv8gwJeTz8knJpgACeQMw==
 
 macos-release@^2.5.0:
   version "2.5.1"
@@ -3953,9 +3955,9 @@ node-emoji@1.11.0:
     lodash "^4.17.21"
 
 node-fetch@^2.6.1:
-  version "2.6.11"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.11.tgz#cde7fc71deef3131ef80a738919f999e6edfff25"
-  integrity sha512-4I6pdBY1EthSqDmJkiNk3JIT8cswwR9nfeW/cPdUagJYEQG7R95WRH74wpz7ma8Gh/9dI9FP+OU+0E4FvtA55w==
+  version "2.6.12"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.12.tgz#02eb8e22074018e3d5a83016649d04df0e348fba"
+  integrity sha512-C/fGU2E8ToujUivIO0H+tpQ6HWo4eEmchoPIoXtxCrVghxdKq+QOHqEZW7tuP3KlV3bC8FRMO5nMCC7Zm1VP6g==
   dependencies:
     whatwg-url "^5.0.0"
 
@@ -4013,16 +4015,16 @@ onetime@^5.1.0, onetime@^5.1.2:
     mimic-fn "^2.1.0"
 
 optionator@^0.9.1:
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/optionator/-/optionator-0.9.1.tgz#4f236a6373dae0566a6d43e1326674f50c291499"
-  integrity sha512-74RlY5FCnhq4jRxVUPKDaRwrVNXMqsGsiW6AJw4XK8hmtm10wC0ypZBLw5IIp85NZMr91+qd1RvvENwg7jjRFw==
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/optionator/-/optionator-0.9.3.tgz#007397d44ed1872fdc6ed31360190f81814e2c64"
+  integrity sha512-JjCoypp+jKn1ttEFExxhetCKeJt9zhAgAve5FXHixTvFDW/5aEktX9bufBKLRRMdU7bNtpLfcGu94B3cdEJgjg==
   dependencies:
+    "@aashutoshrathi/word-wrap" "^1.2.3"
     deep-is "^0.1.3"
     fast-levenshtein "^2.0.6"
     levn "^0.4.1"
     prelude-ls "^1.2.1"
     type-check "^0.4.0"
-    word-wrap "^1.2.3"
 
 ora@5.4.1, ora@^5.4.1:
   version "5.4.1"
@@ -4160,11 +4162,11 @@ path-parse@^1.0.7:
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-scurry@^1.6.1:
-  version "1.9.2"
-  resolved "https://registry.yarnpkg.com/path-scurry/-/path-scurry-1.9.2.tgz#90f9d296ac5e37e608028e28a447b11d385b3f63"
-  integrity sha512-qSDLy2aGFPm8i4rsbHd4MNyTcrzHFsLQykrtbuGRknZZCBBVXSv2tSCDN2Cg6Rt/GFRw8GoW9y9Ecw5rIPG1sg==
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/path-scurry/-/path-scurry-1.10.0.tgz#0ffbd4c1f7de9600f98a1405507d9f9acb438ab3"
+  integrity sha512-tZFEaRQbMLjwrsmidsGJ6wDMv0iazJWk6SfIKnY4Xru8auXgmJkOBa5DUbYFcFD2Rzk2+KDlIiF0GVXNCbgC7g==
   dependencies:
-    lru-cache "^9.1.1"
+    lru-cache "^9.1.1 || ^10.0.0"
     minipass "^5.0.0 || ^6.0.2"
 
 path-to-regexp@0.1.7:
@@ -4817,9 +4819,9 @@ terser-webpack-plugin@^5.3.7:
     terser "^5.16.8"
 
 terser@^5.16.8:
-  version "5.18.1"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.18.1.tgz#6d8642508ae9fb7b48768e48f16d675c89a78460"
-  integrity sha512-j1n0Ao919h/Ai5r43VAnfV/7azUYW43GPxK7qSATzrsERfW7+y2QW9Cp9ufnRF5CQUWbnLSo7UJokSWCqg4tsQ==
+  version "5.18.2"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.18.2.tgz#ff3072a0faf21ffd38f99acc9a0ddf7b5f07b948"
+  integrity sha512-Ah19JS86ypbJzTzvUCX7KOsEIhDaRONungA4aYBjEP3JZRf4ocuDzTg4QWZnPn9DEMiMYGJPiSOy7aykoCc70w==
   dependencies:
     "@jridgewell/source-map" "^0.3.3"
     acorn "^8.8.2"
@@ -5186,11 +5188,6 @@ windows-release@^4.0.0:
   integrity sha512-OxmV4wzDKB1x7AZaZgXMVsdJ1qER1ed83ZrTYd5Bwq2HfJVg3DJS8nqlAG4sMoJ7mu8cuRmLEYyU13BKwctRAg==
   dependencies:
     execa "^4.0.2"
-
-word-wrap@^1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
-  integrity sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
 
 wrap-ansi@^7.0.0:
   version "7.0.0"
