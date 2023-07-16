@@ -54,7 +54,7 @@ jobs:
         run: |
           curl -fsSL https://fnm.vercel.app/install | bash
           export PATH="/home/runner/.local/share/fnm:$PATH"
-          eval "`fnm env`"
+          eval "$(fnm env)"
 
       - name: E2E tests
         run: |
