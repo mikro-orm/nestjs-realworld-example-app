@@ -26,7 +26,7 @@ describe('UsersService', () => {
       });
     }),
     count: jest.fn().mockImplementation(() => 0),
-    nativeDelete: jest.fn().mockImplementation((email: string) => {
+    nativeDelete: jest.fn().mockImplementation(() => {
       return 1;
     }),
     findOneOrFail: jest.fn().mockImplementation((email: string) => {

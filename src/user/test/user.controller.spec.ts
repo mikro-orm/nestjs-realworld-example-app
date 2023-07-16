@@ -35,7 +35,7 @@ describe('UsersController', () => {
         username: dto.username,
       };
     }),
-    delete: jest.fn((email: string) => {
+    delete: jest.fn(() => {
       return 1;
     }),
   };
