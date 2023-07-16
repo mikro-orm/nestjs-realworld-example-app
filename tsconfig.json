@@ -6,10 +6,10 @@
     "removeComments": true,
     "esModuleInterop": true,
     "noLib": false,
-    "lib": ["es2017"],
+    "lib": ["es2020"],
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es6",
+    "target": "es2020",
     "sourceMap": true,
     "allowJs": true,
     "outDir": "./dist"

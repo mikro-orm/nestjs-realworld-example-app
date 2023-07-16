@@ -55,6 +55,9 @@ jobs:
           yarn start &
           sleep 30
           cd e2e
+          curl -fsSL https://fnm.vercel.app/install | bash
+          fnm install 18
+          fnm use 18
           APIURL=http://localhost:3000/api ./run-api-tests.sh
           exit 0
 

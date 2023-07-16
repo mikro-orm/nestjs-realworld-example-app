@@ -44,13 +44,13 @@ export class ArticleService {
     }
 
     if ('favorited' in query) {
-      const author = await this.userRepository.findOne({ username: query.favorited });
+      const author = await this.userRepository.findOne({ username: query.favorited }, { populate: ['favorites'] });
 
       if (!author) {
         return { articles: [], articlesCount: 0 };
       }
 
-      const ids = author.favorites.getIdentifiers();
+      const ids = author.favorites.$.getIdentifiers();
       qb.andWhere({ author: ids });
     }
 
