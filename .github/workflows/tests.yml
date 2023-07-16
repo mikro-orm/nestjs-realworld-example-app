@@ -50,12 +50,17 @@ jobs:
         run: |
           yarn test
 
+      - name: Install fnm
+        run: |
+          curl -fsSL https://fnm.vercel.app/install | bash
+          export PATH="/home/runner/.local/share/fnm:$PATH"
+          eval "`fnm env`"
+
       - name: E2E tests
         run: |
           yarn start &
           sleep 30
           cd e2e
-          curl -fsSL https://fnm.vercel.app/install | bash
           fnm install 18
           fnm use 18
           APIURL=http://localhost:3000/api ./run-api-tests.sh
