@@ -792,18 +792,18 @@
     webpack-node-externals "3.0.0"
 
 "@nestjs/common@^10.0.5":
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-10.2.0.tgz#afeeedd81cc1986b2a22e4aebe0b0f2b81bdb3b2"
-  integrity sha512-QhoIaekEfXJ48IHdp9pBsZho464XoW8LRNid61Qncxx90qWCbe7oT1tswlT8kxn1HxsqEqZ8sXGY3ozLxZeVJQ==
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-10.2.1.tgz#ec31de16d8594ec74e51cdd30190998c59324d1b"
+  integrity sha512-zo5OQbNmchV58SHw4vBCLIbsCrpZmNuW9W4m5BE1lB+9FW9ZiLQeZjIxzlL3bEKiI9cezRvDhct/53LPS8R4aA==
   dependencies:
     uid "2.0.2"
     iterare "1.2.1"
     tslib "2.6.1"
 
 "@nestjs/core@^10.0.5":
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-10.2.0.tgz#4e5c3d374b7a37b2d2d135680b667b7ffcd9a592"
-  integrity sha512-K9QwdSXO8O8HHAgs23U+icLuNhkD4JmesE6LH2VIFgpsBOc7pUuUD+Ur4A0juNVeB+Us3etKdYIkw4SWgkBfXA==
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-10.2.1.tgz#ad369628eb220cc0bd7596e2a236ec020c11007a"
+  integrity sha512-oH1jmCrVUkBkbeiEzAaYZ5unddn5bW/Id15pPGblYeLGAmfjXW9+G5VCffoGpO1DxBZdZu5/qcXTYyCR6rgXTg==
   dependencies:
     uid "2.0.2"
     "@nuxtjs/opencollective" "0.3.2"
@@ -818,9 +818,9 @@
   integrity sha512-V0izw6tWs6fTp9+KiiPUbGHWALy563Frn8X6Bm87ANLRuE46iuBMD5acKBDP5lKL/75QFvrzSJT7HkCbB0jTpg==
 
 "@nestjs/platform-express@^10.0.5":
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-10.2.0.tgz#364afbf2be1ac04c14cc9c45616875629bd6a6b4"
-  integrity sha512-WmRNGqDZIfKpCPQcTKABuIKmdyULpZN6jB7i2s5z96BiqfI1BaNORPGw1gpWvUdN+ssJ/aFhLsHTDY0p48nKMg==
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-10.2.1.tgz#8fd5c69bb43c3cbec33546a8212b388daaa550ef"
+  integrity sha512-QwujsYKeVAdyZAyS21fzIsOn5X+JpIm1ZJrdzj/4B8U5GmAm5NM6H3E2ZqvctEtSnhD9iKP4tGUj4Z8MiIFo5A==
   dependencies:
     body-parser "1.20.2"
     cors "2.8.5"
@@ -1020,9 +1020,9 @@
   integrity sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==
 
 "@types/express-serve-static-core@^4.17.33":
-  version "4.17.35"
-  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.35.tgz#c95dd4424f0d32e525d23812aa8ab8e4d3906c4f"
-  integrity sha512-wALWQwrgiB2AWTT91CB62b6Yt0sNHpznUXeZEcnPU3DRdlDIz74x8Qg1UUYKSVFi+va5vKOLYRBI1bRKiLLKIg==
+  version "4.17.36"
+  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.36.tgz#baa9022119bdc05a4adfe740ffc97b5f9360e545"
+  integrity sha512-zbivROJ0ZqLAtMzgzIUC4oNqDG9iF0lSsAqpOD9kbs5xcIM3dTiyuHvBc7R8MtWBp3AAWGaovJa+wzWPjLYW7Q==
   dependencies:
     "@types/node" "*"
     "@types/qs" "*"
@@ -1071,9 +1071,9 @@
     "@types/istanbul-lib-report" "*"
 
 "@types/jest@^29.0.0":
-  version "29.5.3"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.5.3.tgz#7a35dc0044ffb8b56325c6802a4781a626b05777"
-  integrity sha512-1Nq7YrO/vJE/FYnqYyw0FS8LdrjExSgIiHyKg7xPpn+yi8Q4huZryKnkJatN1ZRH89Kw2v33/8ZMB7DuZeSLlA==
+  version "29.5.4"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.5.4.tgz#9d0a16edaa009a71e6a71a999acd582514dab566"
+  integrity sha512-PhglGmhWeD46FYOVLt3X7TiWjzwuVGW9wG/4qocPevXMjCmrIc5b6db9WjeGE4QYVpUAWMDv3v0IiBwObY289A==
   dependencies:
     expect "^29.0.0"
     pretty-format "^29.0.0"
@@ -1094,14 +1094,14 @@
   integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
 
 "@types/node@*":
-  version "20.5.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.1.tgz#178d58ee7e4834152b0e8b4d30cbfab578b9bb30"
-  integrity sha512-4tT2UrL5LBqDwoed9wZ6N3umC4Yhz3W3FloMmiiG4JwmUJWpie0c7lcnUNd4gtMKuDEO4wRVS8B6Xa0uMRsMKg==
+  version "20.5.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.3.tgz#fa52c147f405d56b2f1dd8780d840aa87ddff629"
+  integrity sha512-ITI7rbWczR8a/S6qjAW7DMqxqFMjjTo61qZVWJ1ubPvbIQsL5D/TvwjYEalM8Kthpe3hTzOGrF2TGbAu2uyqeA==
 
 "@types/node@^18.0.0":
-  version "18.17.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.6.tgz#0296e9a30b22d2a8fcaa48d3c45afe51474ca55b"
-  integrity sha512-fGmT/P7z7ecA6bv/ia5DlaWCH4YeZvAQMNpUhrJjtAhOhZfoxS1VLUgU2pdk63efSjQaOJWdXMuAJsws+8I6dg==
+  version "18.17.8"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.8.tgz#fd69eb04c25d50374245e8bd69ba29dd0eb7ff5e"
+  integrity sha512-Av/7MqX/iNKwT9Tr60V85NqMnsmh8ilfJoBlIVibkXfitk9Q22D9Y5mSpm+FvG5DET7EbVfB40bOiLzKgYFgPw==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -2168,9 +2168,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.477:
-  version "1.4.498"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.498.tgz#cef35341123f62a35ba7084e439c911d25e0d81b"
-  integrity sha512-4LODxAzKGVy7CJyhhN5mebwe7U2L29P+0G+HUriHnabm0d7LSff8Yn7t+Wq+2/9ze2Fu1dhX7mww090xfv7qXQ==
+  version "1.4.499"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.499.tgz#dc36b67f4c8e273524e8d2080c5203a6a76987b6"
+  integrity sha512-0NmjlYBLKVHva4GABWAaHuPJolnDuL0AhV3h1hES6rcLCWEIbRL6/8TghfsVwkx6TEroQVdliX7+aLysUpKvjw==
 
 emittery@^0.12.1:
   version "0.12.1"
