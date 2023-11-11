@@ -2224,9 +2224,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.535:
-  version "1.4.580"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.580.tgz#2f8f70f70733a6be1fb6f31de1224e6dc4bb196d"
-  integrity sha512-T5q3pjQon853xxxHUq3ZP68ZpvJHuSMY2+BZaW3QzjS4HvNuvsMmZ/+lU+nCrftre1jFZ+OSlExynXWBihnXzw==
+  version "1.4.581"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.581.tgz#23b684c67bf56d4284e95598c05a5d266653b6d8"
+  integrity sha512-6uhqWBIapTJUxgPTCHH9sqdbxIMPt7oXl0VcAL1kOtlU6aECdcMncCrX5Z7sHQ/invtrC9jUQUef7+HhO8vVFw==
 
 emittery@^0.13.0, emittery@^0.13.1:
   version "0.13.1"
@@ -2271,9 +2271,9 @@ error-ex@^1.3.1:
     is-arrayish "^0.2.1"
 
 es-module-lexer@^1.2.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-1.3.1.tgz#c1b0dd5ada807a3b3155315911f364dc4e909db1"
-  integrity sha512-JUFAyicQV9mXc3YRxPnDlrfBKpqt6hUYzz9/boprUJHs4e4KVr3XwOF70doO6gwXUor6EWZJAyWAfKki84t20Q==
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-1.4.0.tgz#285182e7f8f536ff5f4c57f2309836ef851474d8"
+  integrity sha512-lcCr3v3OLezdfFyx9r5NRYHOUTQNnFEQ9E87Mx8Kc+iqyJNkO7MJoB4GQRTlIMw9kLLTwGw0OAkm4BQQud/d9g==
 
 escalade@^3.1.1:
   version "3.1.1"
@@ -3844,9 +3844,11 @@ lru-cache@^8.0.0:
   integrity sha512-MhWWlVnuab1RG5/zMRRcVGXZLCXrZTgfwMikgzCegsPnG62yDQo5JnqKkrK4jO5iKqDAZGItAqN5CtKBCBWRUA==
 
 "lru-cache@^9.1.1 || ^10.0.0":
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-10.0.1.tgz#0a3be479df549cca0e5d693ac402ff19537a6b7a"
-  integrity sha512-IJ4uwUTi2qCccrioU6g9g/5rvvVl13bsdczUUcqbciD9iLr095yj8DQKdObriEvuNSx325N1rV1O0sJFszx75g==
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-10.0.2.tgz#34504678cc3266b09b8dfd6fab4e1515258271b7"
+  integrity sha512-Yj9mA8fPiVgOUpByoTZO5pNrcl5Yk37FcSHsUINpAsaBIEZIuqcCclDZJCVxqQShDsmYX8QG63svJiTbOATZwg==
+  dependencies:
+    semver "^7.3.5"
 
 macos-release@^2.5.0:
   version "2.5.1"
