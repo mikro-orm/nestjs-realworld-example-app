@@ -59,12 +59,12 @@
     ]
   },
   "dependencies": {
-    "@mikro-orm/core": "^6.0.0-rc.0",
-    "@mikro-orm/entity-generator": "^6.0.0-rc.0",
-    "@mikro-orm/migrations": "^6.0.0-rc.0",
-    "@mikro-orm/mysql": "^6.0.0-rc.0",
+    "@mikro-orm/core": "^6.0.0-rc.2",
+    "@mikro-orm/entity-generator": "^6.0.0-rc.2",
+    "@mikro-orm/migrations": "^6.0.0-rc.2",
+    "@mikro-orm/mysql": "^6.0.0-rc.2",
     "@mikro-orm/nestjs": "^5.2.2",
-    "@mikro-orm/reflection": "^6.0.0-rc.0",
+    "@mikro-orm/reflection": "^6.0.0-rc.2",
     "@mikro-orm/sql-highlighter": "^1.0.1",
     "@nestjs/common": "^10.2.7",
     "@nestjs/core": "^10.2.7",
@@ -83,8 +83,8 @@
     "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
-    "@mikro-orm/cli": "^6.0.0-rc.0",
-    "@mikro-orm/seeder": "^6.0.0-rc.0",
+    "@mikro-orm/cli": "^6.0.0-rc.2",
+    "@mikro-orm/seeder": "^6.0.0-rc.2",
     "@nestjs/cli": "^10.2.0",
     "@nestjs/schematics": "^10.0.2",
     "@nestjs/testing": "^10.2.7",
