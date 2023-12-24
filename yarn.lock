@@ -742,9 +742,9 @@
     mysql2 "3.6.5"
 
 "@mikro-orm/nestjs@^5.2.2":
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/@mikro-orm/nestjs/-/nestjs-5.2.2.tgz#29311eb64b93269800ff70c75ca0b84c90fab097"
-  integrity sha512-NwPTmpmwf4/aX7FjKk/CTncYS7Mbr4fMvSOfbo9rOElySjpniTnk2cCGABgj2kaX9NSFHzWCUy5tAMIkoedd4A==
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@mikro-orm/nestjs/-/nestjs-5.2.3.tgz#204ef21781fce6b6e2423019bad515186228064d"
+  integrity sha512-JMxaXrNXlo6j59D3LWMC1tEC1a5JanCtqdfv91JUH0sfVZh97SsjQ9K794BY3JWIUKSFyQwpnLxYZ0Ash/BlPA==
 
 "@mikro-orm/reflection@^6.0.0-rc.3":
   version "6.0.0-rc.3"
