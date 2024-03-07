@@ -79,7 +79,7 @@
     "passport-jwt": "^4.0.1",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
-    "slug": "^8.2.2",
+    "slug": "^9.0.0",
     "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
