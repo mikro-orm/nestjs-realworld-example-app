@@ -2264,9 +2264,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.668:
-  version "1.4.697"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.697.tgz#2fff1955aea09fa8bdb418c29bb6b2870b151b13"
-  integrity sha512-iPS+iUNUrqTkPRFjMYv1FGXIUYhj2K4rc/93nrDsDtQGMUqyRouCq/xABOSOljKbriEiwg0bEQHGaeD4OaU56g==
+  version "1.4.699"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.699.tgz#dd53c939e13da64e94b341e563f0a3011b4ef0e9"
+  integrity sha512-I7q3BbQi6e4tJJN5CRcyvxhK0iJb34TV8eJQcgh+fR2fQ8miMgZcEInckCo1U9exDHbfz7DLDnFn8oqH/VcRKw==
 
 emittery@^0.13.0, emittery@^0.13.1:
   version "0.13.1"
@@ -5227,9 +5227,9 @@ type-fest@^0.21.3:
   integrity sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==
 
 type-fest@^4.0.0:
-  version "4.11.1"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.11.1.tgz#7de27117459b926cb56922a4fd565423041e06d3"
-  integrity sha512-MFMf6VkEVZAETidGGSYW2B1MjXbGX+sWIywn2QPEaJ3j08V+MwVRHMXtf2noB8ENJaD0LIun9wh5Z6OPNf1QzQ==
+  version "4.12.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-4.12.0.tgz#00ae70d02161b81ecd095158143c4bb8c879760d"
+  integrity sha512-5Y2/pp2wtJk8o08G0CMkuFPCO354FGwk/vbidxrdhRGZfd0tFnb4Qb8anp9XxXriwBgVPjdWbKpGl4J9lJY2jQ==
 
 type-is@^1.6.4, type-is@~1.6.18:
   version "1.6.18"
