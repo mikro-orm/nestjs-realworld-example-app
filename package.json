@@ -110,5 +110,5 @@
       "./dist/mikro-orm.config.js"
     ]
   },
-  "packageManager": "yarn@1.22.21"
+  "packageManager": "yarn@1.22.22"
 }
