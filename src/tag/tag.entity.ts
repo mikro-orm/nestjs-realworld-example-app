@@ -4,9 +4,9 @@ import { Entity, PrimaryKey, Property } from '@mikro-orm/core';
 export class Tag {
 
   @PrimaryKey()
-  id: number;
+  id!: number;
 
   @Property()
-  tag: string;
+  tag!: string;
 
 }

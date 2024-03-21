@@ -7,42 +7,27 @@ describe('UsersService', () => {
   let service: UserService;
 
   const mockEntityManager = {
-    persistAndFlush: jest.fn().mockImplementation(() => {
-      return Promise.resolve();
-    }),
+    persistAndFlush: jest.fn().mockImplementation(async () => {}),
   };
   const mockUserRepository = {
-    findAll: jest.fn().mockImplementation(() => {
-      return Promise.resolve([]);
-    }),
-    findOne: jest.fn().mockImplementation((options) => {
-      return Promise.resolve({
-        id: Date.now() || options.id,
-        email: 'test@test.com' || options.email,
-        password: 'test' || options.password,
-        bio: 'test',
-        image: 'test.jpg',
-        username: 'test',
-      });
-    }),
+    findAll: jest.fn().mockImplementation(async () => []),
+    findOne: jest.fn().mockImplementation(async (options) => ({
+      id: Date.now() || options.id,
+      email: 'test@test.com' || options.email,
+      password: 'test' || options.password,
+      bio: 'test',
+      image: 'test.jpg',
+      username: 'test',
+    })),
     count: jest.fn().mockImplementation(() => 0),
-    nativeDelete: jest.fn().mockImplementation(() => {
-      return 1;
-    }),
-    findOneOrFail: jest.fn().mockImplementation((email: string) => {
-      return {
-        id: Date.now(),
-        email,
-        bio: 'test',
-        username: 'test',
-        image: 'test.jpg',
-        exp: {
-          getTime() {
-            return 100;
-          },
-        },
-      };
-    }),
+    nativeDelete: jest.fn().mockImplementation(() => 1),
+    findOneOrFail: jest.fn().mockImplementation((options) => ({
+      id: Date.now(),
+      email: 'test@test.com' || options.email,
+      bio: 'test',
+      username: 'test',
+      image: 'test.jpg',
+    })),
   };
 
   beforeEach(async () => {
@@ -70,15 +55,13 @@ describe('UsersService', () => {
     expect(await service.findAll()).toStrictEqual([]);
   });
   it('should return one user', async () => {
-    expect(
-      await service.findOne({
-        email: 'test@test.com',
-        password: 'test',
-      }),
-    ).toEqual({
+    const user = await service.findOne({
+      email: 'test@test.com',
+      password: 'test',
+    });
+    expect(user).toEqual({
       id: expect.any(Number),
       email: 'test@test.com',
-      password: expect.any(String),
       username: 'test',
       bio: 'test',
       image: 'test.jpg',
@@ -119,7 +102,7 @@ describe('UsersService', () => {
     expect(await service.findByEmail('test@test.com')).toEqual({
       user: {
         bio: 'test',
-        email: { email: 'test@test.com' },
+        email: 'test@test.com',
         image: 'test.jpg',
         token: expect.any(String),
         username: 'test',
