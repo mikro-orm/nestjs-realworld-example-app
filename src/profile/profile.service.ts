@@ -1,7 +1,7 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { User } from '../user/user.entity';
 import { IProfileData, IProfileRO } from './profile.interface';
-import { EntityManager, FilterQuery } from '@mikro-orm/core';
+import { EntityManager, FilterQuery, serialize } from '@mikro-orm/core';
 import { UserRepository } from '../user/user.repository';
 
 @Injectable()
@@ -15,26 +15,16 @@ export class ProfileService {
     return this.userRepository.findAll();
   }
 
-  async findOne(options?: FilterQuery<User>): Promise<IProfileRO> {
-    const user = await this.userRepository.findOne(options);
-    delete user.id;
-
-    if (user) {
-      delete user.password;
-    }
-
-    return { profile: user };
+  async findOne(where: FilterQuery<User>): Promise<IProfileRO> {
+    const user = await this.userRepository.findOneOrFail(where);
+    return { profile: serialize(user, { exclude: ['id', 'password'] }) };
   }
 
   async findProfile(id: number, followingUsername: string): Promise<IProfileRO> {
-    const foundProfile = await this.userRepository.findOne({ username: followingUsername }, {
+    const foundProfile = await this.userRepository.findOneOrFail({ username: followingUsername }, {
       populate: ['followers'],
     });
     const follower = this.userRepository.getReference(id);
-
-    if (!foundProfile) {
-      return;
-    }
 
     const profile: IProfileData = {
       bio: foundProfile.bio,
@@ -51,10 +41,10 @@ export class ProfileService {
       throw new HttpException('Follower email and username not provided.', HttpStatus.BAD_REQUEST);
     }
 
-    const followingUser = await this.userRepository.findOne({ username }, {
+    const followingUser = await this.userRepository.findOneOrFail({ username }, {
       populate: ['followers'],
     });
-    const followerUser = await this.userRepository.findOne({ email: followerEmail });
+    const followerUser = await this.userRepository.findOneOrFail({ email: followerEmail });
 
     if (followingUser.email === followerEmail) {
       throw new HttpException('FollowerEmail and FollowingId cannot be equal.', HttpStatus.BAD_REQUEST);
@@ -78,7 +68,7 @@ export class ProfileService {
       throw new HttpException('FollowerId and username not provided.', HttpStatus.BAD_REQUEST);
     }
 
-    const followingUser = await this.userRepository.findOne({ username }, {
+    const followingUser = await this.userRepository.findOneOrFail({ username }, {
       populate: ['followers'],
     });
     const followerUser = this.userRepository.getReference(followerId);

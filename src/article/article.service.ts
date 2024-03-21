@@ -23,7 +23,7 @@ export class ArticleService {
   ) {}
 
   async findAll(userId: number, query: any): Promise<IArticlesRO> {
-    const user = userId ? await this.userRepository.findOne(userId, { populate: ['followers', 'favorites'] }) : undefined;
+    const user = userId ? await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites'] }) : undefined;
     const qb = this.articleRepository
       .createQueryBuilder('a')
       .select('a.*')
@@ -72,7 +72,7 @@ export class ArticleService {
   }
 
   async findFeed(userId: number, query): Promise<IArticlesRO> {
-    const user = userId ? await this.userRepository.findOne(userId, { populate: ['followers', 'favorites'] }) : undefined;
+    const user = userId ? await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites'] }) : undefined;
     const res = await this.articleRepository.findAndCount({ author: { followers: userId } }, {
       populate: ['author'],
       orderBy: { createdAt: QueryOrder.DESC },
@@ -86,8 +86,8 @@ export class ArticleService {
 
   async findOne(userId: number, where): Promise<IArticleRO> {
     const user = userId ? await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites'] }) : undefined;
-    const article = await this.articleRepository.findOne(where, { populate: ['author'] });
-    return { article: article && article.toJSON(user) };
+    const article = await this.articleRepository.findOneOrFail(where, { populate: ['author'] });
+    return { article: article?.toJSON(user) };
   }
 
   async addComment(userId: number, slug: string, dto: CreateCommentDto) {
@@ -139,12 +139,12 @@ export class ArticleService {
   }
 
   async findComments(slug: string): Promise<ICommentsRO> {
-    const article = await this.articleRepository.findOne({ slug }, { populate: ['comments'] });
+    const article = await this.articleRepository.findOneOrFail({ slug }, { populate: ['comments'] });
     return { comments: article.comments.getItems() };
   }
 
   async create(userId: number, dto: CreateArticleDto) {
-    const user = await this.userRepository.findOne({ id: userId }, { populate: ['followers', 'favorites', 'articles'] });
+    const user = await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites', 'articles'] });
     const article = new Article(user, dto.title, dto.description, dto.body);
     article.tagList.push(...dto.tagList);
     user.articles.add(article);
@@ -154,8 +154,8 @@ export class ArticleService {
   }
 
   async update(userId: number, slug: string, articleData: any): Promise<IArticleRO> {
-    const user = await this.userRepository.findOne({ id: userId }, { populate: ['followers', 'favorites', 'articles'] });
-    const article = await this.articleRepository.findOne({ slug }, { populate: ['author'] });
+    const user = await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites', 'articles'] });
+    const article = await this.articleRepository.findOneOrFail({ slug }, { populate: ['author'] });
     wrap(article).assign(articleData);
     await this.em.flush();
 

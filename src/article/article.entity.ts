@@ -8,7 +8,7 @@ import { Comment } from './comment.entity';
 export class Article {
 
   @PrimaryKey()
-  id: number;
+  id!: number;
 
   @Property()
   slug: string;

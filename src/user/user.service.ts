@@ -26,7 +26,7 @@ export class UserService {
       password: crypto.createHmac('sha256', loginUserDto.password).digest('hex'),
     };
 
-    return this.userRepository.findOne(findOneOptions);
+    return this.userRepository.findOneOrFail(findOneOptions);
   }
 
   async create(dto: CreateUserDto): Promise<IUserRO> {
@@ -57,7 +57,7 @@ export class UserService {
   }
 
   async update(id: number, dto: UpdateUserDto) {
-    const user = await this.userRepository.findOne(id);
+    const user = await this.userRepository.findOneOrFail(id);
     wrap(user).assign(dto);
     await this.em.flush();
 
@@ -104,7 +104,7 @@ export class UserService {
       image: user.image,
       token: this.generateJWT(user),
       username: user.username,
-    };
+    } as any;
 
     return { user: userRO };
   }

@@ -6,7 +6,7 @@ import {
   EntityDTO,
   EntityRepositoryType,
   ManyToMany,
-  OneToMany,
+  OneToMany, Opt,
   PrimaryKey,
   Property,
   wrap,
@@ -20,7 +20,7 @@ export class User {
   [EntityRepositoryType]?: UserRepository;
 
   @PrimaryKey()
-  id: number;
+  id!: number;
 
   @Property()
   username: string;
@@ -30,10 +30,10 @@ export class User {
   email: string;
 
   @Property()
-  bio = '';
+  bio: string & Opt = '';
 
   @Property()
-  image = '';
+  image: string & Opt = '';
 
   @Property({ hidden: true })
   password: string;

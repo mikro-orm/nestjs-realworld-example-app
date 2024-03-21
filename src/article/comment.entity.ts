@@ -6,7 +6,7 @@ import { Article } from './article.entity';
 export class Comment {
 
   @PrimaryKey()
-  id: number;
+  id!: number;
 
   @Property()
   createdAt = new Date();
