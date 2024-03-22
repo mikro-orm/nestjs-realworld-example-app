@@ -3149,9 +3149,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.713
-  resolution: "electron-to-chromium@npm:1.4.713"
-  checksum: 10/e653b6f589188606923d5060abeb28f47e002c5f46240fac787b26a9b582cc484bc9922bb428349945889e85b60418e7737c14ce6eb96ed830fb8a1e9814d285
+  version: 1.4.714
+  resolution: "electron-to-chromium@npm:1.4.714"
+  checksum: 10/570e662c864f1cd4673cd3b0cc523cdbf5bfcaba5dcb65fe7490b672718a4435848f3e02ea737b8fe17a9b432f080e4aa275eb348ec6badfbd37b4343f25b12c
   languageName: node
   linkType: hard
 
@@ -7191,8 +7191,8 @@ __metadata:
   linkType: hard
 
 "tar@npm:^6.1.11, tar@npm:^6.1.2":
-  version: 6.2.0
-  resolution: "tar@npm:6.2.0"
+  version: 6.2.1
+  resolution: "tar@npm:6.2.1"
   dependencies:
     chownr: "npm:^2.0.0"
     fs-minipass: "npm:^2.0.0"
@@ -7200,7 +7200,7 @@ __metadata:
     minizlib: "npm:^2.1.1"
     mkdirp: "npm:^1.0.3"
     yallist: "npm:^4.0.0"
-  checksum: 10/2042bbb14830b5cd0d584007db0eb0a7e933e66d1397e72a4293768d2332449bc3e312c266a0887ec20156dea388d8965e53b4fc5097f42d78593549016da089
+  checksum: 10/bfbfbb2861888077fc1130b84029cdc2721efb93d1d1fb80f22a7ac3a98ec6f8972f29e564103bbebf5e97be67ebc356d37fa48dbc4960600a1eb7230fbd1ea0
   languageName: node
   linkType: hard
 
