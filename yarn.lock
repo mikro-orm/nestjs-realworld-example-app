@@ -1074,8 +1074,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/common@npm:^10.3.4":
-  version: 10.3.5
-  resolution: "@nestjs/common@npm:10.3.5"
+  version: 10.3.6
+  resolution: "@nestjs/common@npm:10.3.6"
   dependencies:
     iterare: "npm:1.2.1"
     tslib: "npm:2.6.2"
@@ -1090,13 +1090,13 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10/33444dc9ac2a27c5479561c615465c1c33f7014366806d9b8ed01b94bea9e56c34308d340fb155a49321b032f43019e8d132869faa4c0886178548d6956281cd
+  checksum: 10/efa0308bec3d2f752067aaa4858491d71f394f6ff02d403deef6b77594515bdd7acfcd112ba691da5d6ea6d565023335fc7aba5b3a4b4665d1663c53316a7e18
   languageName: node
   linkType: hard
 
 "@nestjs/core@npm:^10.3.4":
-  version: 10.3.5
-  resolution: "@nestjs/core@npm:10.3.5"
+  version: 10.3.6
+  resolution: "@nestjs/core@npm:10.3.6"
   dependencies:
     "@nuxtjs/opencollective": "npm:0.3.2"
     fast-safe-stringify: "npm:2.1.1"
@@ -1118,7 +1118,7 @@ __metadata:
       optional: true
     "@nestjs/websockets":
       optional: true
-  checksum: 10/fea282acff84676c509ce3589222d9c812c972b9e77751173ca897c0ab341c5df4ea201ff741d8e9ff0db057b0642fd3f49e35e5b5f8ccb598afbcc0bb78d692
+  checksum: 10/be72e15fd744f0496e890f468e53aef10997b1d260bff955068f2ababc6314cae38eac9446cb530dce0225c6328aca69974eda37e3479391c32b5bc38c1ebb16
   languageName: node
   linkType: hard
 
@@ -1140,18 +1140,18 @@ __metadata:
   linkType: hard
 
 "@nestjs/platform-express@npm:^10.3.4":
-  version: 10.3.5
-  resolution: "@nestjs/platform-express@npm:10.3.5"
+  version: 10.3.6
+  resolution: "@nestjs/platform-express@npm:10.3.6"
   dependencies:
     body-parser: "npm:1.20.2"
     cors: "npm:2.8.5"
-    express: "npm:4.18.3"
+    express: "npm:4.19.2"
     multer: "npm:1.4.4-lts.1"
     tslib: "npm:2.6.2"
   peerDependencies:
     "@nestjs/common": ^10.0.0
     "@nestjs/core": ^10.0.0
-  checksum: 10/b57cc1987e0fed57862f41f38080dcb11a9f4c4dc73487fad5e4c88aa6c1d74274e65cf85016e633431c5f4e736afeb37e2d238e24a4ec9c71a1d13382a439a2
+  checksum: 10/2828b4c88f8f994ea79c6e2dd266ee2da50b4c35beb8a8d32445d43651479d5202164d3810b7c005cb1ceed15b79032377f8934e9243185b0d3d939a6517f13c
   languageName: node
   linkType: hard
 
@@ -1199,8 +1199,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/testing@npm:^10.3.4":
-  version: 10.3.5
-  resolution: "@nestjs/testing@npm:10.3.5"
+  version: 10.3.6
+  resolution: "@nestjs/testing@npm:10.3.6"
   dependencies:
     tslib: "npm:2.6.2"
   peerDependencies:
@@ -1213,7 +1213,7 @@ __metadata:
       optional: true
     "@nestjs/platform-express":
       optional: true
-  checksum: 10/265702d4790b1be7dc35acc192d55a8fd0380f26ecf40e2f3ae4ec4f4866d2879d0f4c84e7c43cc5b76505f5adf4f2005cd3e23497bda63a0d6a9d5377b114cb
+  checksum: 10/0a1d89589d1ccfa6a5e9969d2dc2411cbf5812b33f4eb4686ded09c45fabc4a4b615814103405ac8361a93baffcf41cf553963df177b43e66164dd6419273b54
   languageName: node
   linkType: hard
 
@@ -1370,9 +1370,9 @@ __metadata:
   linkType: hard
 
 "@tsconfig/node10@npm:^1.0.7":
-  version: 1.0.10
-  resolution: "@tsconfig/node10@npm:1.0.10"
-  checksum: 10/1204c05940c3669e897c1bcdf20668acc7fdbbeb41b4e8a3eb83ec486d6a442ba0f5d3b8122c93cb813fa498a232946ecb09e5a59a02828db3f1c27529563046
+  version: 1.0.11
+  resolution: "@tsconfig/node10@npm:1.0.11"
+  checksum: 10/51fe47d55fe1b80ec35e6e5ed30a13665fd3a531945350aa74a14a1e82875fb60b350c2f2a5e72a64831b1b6bc02acb6760c30b3738b54954ec2dea82db7a267
   languageName: node
   linkType: hard
 
@@ -2863,10 +2863,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cookie@npm:0.5.0":
-  version: 0.5.0
-  resolution: "cookie@npm:0.5.0"
-  checksum: 10/aae7911ddc5f444a9025fbd979ad1b5d60191011339bce48e555cb83343d0f98b865ff5c4d71fecdfb8555a5cafdc65632f6fce172f32aaf6936830a883a0380
+"cookie@npm:0.6.0":
+  version: 0.6.0
+  resolution: "cookie@npm:0.6.0"
+  checksum: 10/c1f8f2ea7d443b9331680598b0ae4e6af18a618c37606d1bbdc75bec8361cce09fe93e727059a673f2ba24467131a9fb5a4eec76bb1b149c1b3e1ccb268dc583
   languageName: node
   linkType: hard
 
@@ -3149,9 +3149,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.716
-  resolution: "electron-to-chromium@npm:1.4.716"
-  checksum: 10/05d21ac234ed7fe030717670b578619002ae1f050d85ddf545b46e84fee4eecf5a14a5ad7b2804507c7f69fe66d9443401b459b06509ff1cf5855e9853419b05
+  version: 1.4.719
+  resolution: "electron-to-chromium@npm:1.4.719"
+  checksum: 10/456c0ea234e3885e25307a7cb700bd07ff4eaea6ca5cc6ca5fc3f8b362725761a74c2f6c14614252f7e1e4bfbe697c3878f9476f2e4a9c1ed73d132754227367
   languageName: node
   linkType: hard
 
@@ -3490,16 +3490,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"express@npm:4.18.3":
-  version: 4.18.3
-  resolution: "express@npm:4.18.3"
+"express@npm:4.19.2":
+  version: 4.19.2
+  resolution: "express@npm:4.19.2"
   dependencies:
     accepts: "npm:~1.3.8"
     array-flatten: "npm:1.1.1"
     body-parser: "npm:1.20.2"
     content-disposition: "npm:0.5.4"
     content-type: "npm:~1.0.4"
-    cookie: "npm:0.5.0"
+    cookie: "npm:0.6.0"
     cookie-signature: "npm:1.0.6"
     debug: "npm:2.6.9"
     depd: "npm:2.0.0"
@@ -3525,7 +3525,7 @@ __metadata:
     type-is: "npm:~1.6.18"
     utils-merge: "npm:1.0.1"
     vary: "npm:~1.1.2"
-  checksum: 10/0bf4656d0020cdc477aec884c6245dceea78992f6c747c899c87dbb0598474658d4130a29c80f02c99d1f0d6ebef706e7131c70c5454c3e07aba761c5bd3d627
+  checksum: 10/3fcd792536f802c059789ef48db3851b87e78fba103423e524144d79af37da7952a2b8d4e1a007f423329c7377d686d9476ac42e7d9ea413b80345d495e30a3a
   languageName: node
   linkType: hard
 
@@ -5392,7 +5392,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lru-cache@npm:^10.0.1, lru-cache@npm:^9.1.1 || ^10.0.0":
+"lru-cache@npm:^10.0.1, lru-cache@npm:^10.2.0":
   version: 10.2.0
   resolution: "lru-cache@npm:10.2.0"
   checksum: 10/502ec42c3309c0eae1ce41afca471f831c278566d45a5273a0c51102dee31e0e250a62fa9029c3370988df33a14188a38e682c16143b794de78668de3643e302
@@ -6214,12 +6214,12 @@ __metadata:
   linkType: hard
 
 "path-scurry@npm:^1.10.1, path-scurry@npm:^1.6.1":
-  version: 1.10.1
-  resolution: "path-scurry@npm:1.10.1"
+  version: 1.10.2
+  resolution: "path-scurry@npm:1.10.2"
   dependencies:
-    lru-cache: "npm:^9.1.1 || ^10.0.0"
+    lru-cache: "npm:^10.2.0"
     minipass: "npm:^5.0.0 || ^6.0.2 || ^7.0.0"
-  checksum: 10/eebfb8304fef1d4f7e1486df987e4fd77413de4fce16508dea69fcf8eb318c09a6b15a7a2f4c22877cec1cb7ecbd3071d18ca9de79eeece0df874a00f1f0bdc8
+  checksum: 10/a2bbbe8dc284c49dd9be78ca25f3a8b89300e0acc24a77e6c74824d353ef50efbf163e64a69f4330b301afca42d0e2229be0560d6d616ac4e99d48b4062016b1
   languageName: node
   linkType: hard
 
@@ -7159,9 +7159,9 @@ __metadata:
   linkType: hard
 
 "swagger-ui-dist@npm:>=5.0.0":
-  version: 5.12.0
-  resolution: "swagger-ui-dist@npm:5.12.0"
-  checksum: 10/2e52f3958b6e6cbdc1a904828f7c15eee34b3327696c4a26a6987a5036582a04aa22d8cc4587af4849de0ba10ec4e036390fa4ecad3a2e90184b0f4437fabde3
+  version: 5.12.3
+  resolution: "swagger-ui-dist@npm:5.12.3"
+  checksum: 10/41135e1b5306f47e927ea422f8be1e416f3d681a63dc2432f032633a633d0aa5ab22463515e25df6342fcf6a6dde041b376f544b43daf28cef34ab9df5de4774
   languageName: node
   linkType: hard
 
@@ -7234,8 +7234,8 @@ __metadata:
   linkType: hard
 
 "terser@npm:^5.26.0":
-  version: 5.29.2
-  resolution: "terser@npm:5.29.2"
+  version: 5.30.0
+  resolution: "terser@npm:5.30.0"
   dependencies:
     "@jridgewell/source-map": "npm:^0.3.3"
     acorn: "npm:^8.8.2"
@@ -7243,7 +7243,7 @@ __metadata:
     source-map-support: "npm:~0.5.20"
   bin:
     terser: bin/terser
-  checksum: 10/062df6a8f99ea2635d1b3ce41cfd4180dea6e1c83db9b2cf4b525170b2446d10e069d2877d8dcb59fbf6045870efa17b56462b67045ef2d2b420870f9d144690
+  checksum: 10/78e6ce9e95ec7fc40e694da2e749fa80c3a99c916626349361c22d4cf2e510e8e6e49859c955416088e40688f99115cd595cb033fd5a8a7f0fc03c527ed8efe3
   languageName: node
   linkType: hard
 
