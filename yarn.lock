@@ -1074,8 +1074,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/common@npm:^10.3.4":
-  version: 10.3.6
-  resolution: "@nestjs/common@npm:10.3.6"
+  version: 10.3.7
+  resolution: "@nestjs/common@npm:10.3.7"
   dependencies:
     iterare: "npm:1.2.1"
     tslib: "npm:2.6.2"
@@ -1090,13 +1090,13 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10/efa0308bec3d2f752067aaa4858491d71f394f6ff02d403deef6b77594515bdd7acfcd112ba691da5d6ea6d565023335fc7aba5b3a4b4665d1663c53316a7e18
+  checksum: 10/4bf007140e765d64e50f51e436915bb501e77ba0ad3e4d268d04b5e056df6791c7232a3e641fba0dbd2691627b9c5b3b76c66f7a6d331e0080082cfb9e8cec1c
   languageName: node
   linkType: hard
 
 "@nestjs/core@npm:^10.3.4":
-  version: 10.3.6
-  resolution: "@nestjs/core@npm:10.3.6"
+  version: 10.3.7
+  resolution: "@nestjs/core@npm:10.3.7"
   dependencies:
     "@nuxtjs/opencollective": "npm:0.3.2"
     fast-safe-stringify: "npm:2.1.1"
@@ -1118,7 +1118,7 @@ __metadata:
       optional: true
     "@nestjs/websockets":
       optional: true
-  checksum: 10/be72e15fd744f0496e890f468e53aef10997b1d260bff955068f2ababc6314cae38eac9446cb530dce0225c6328aca69974eda37e3479391c32b5bc38c1ebb16
+  checksum: 10/70ee28c7e7b07cf7fb3684dc8aace8b300072f55a5feec910e4f540dfd42776a70823eaf355a608c0693b9a911ae738d5ae48a159e8e718ecdc3f90b39f282e8
   languageName: node
   linkType: hard
 
@@ -1140,8 +1140,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/platform-express@npm:^10.3.4":
-  version: 10.3.6
-  resolution: "@nestjs/platform-express@npm:10.3.6"
+  version: 10.3.7
+  resolution: "@nestjs/platform-express@npm:10.3.7"
   dependencies:
     body-parser: "npm:1.20.2"
     cors: "npm:2.8.5"
@@ -1151,7 +1151,7 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^10.0.0
     "@nestjs/core": ^10.0.0
-  checksum: 10/2828b4c88f8f994ea79c6e2dd266ee2da50b4c35beb8a8d32445d43651479d5202164d3810b7c005cb1ceed15b79032377f8934e9243185b0d3d939a6517f13c
+  checksum: 10/a34d8a5ab9db1d091de679f25cf9f671002ba4f42c7aaf7463dce019f297276870cef949df1df0a5230ffc3ed30d377194bda17cceefa664c9808ec8144455da
   languageName: node
   linkType: hard
 
@@ -1199,8 +1199,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/testing@npm:^10.3.4":
-  version: 10.3.6
-  resolution: "@nestjs/testing@npm:10.3.6"
+  version: 10.3.7
+  resolution: "@nestjs/testing@npm:10.3.7"
   dependencies:
     tslib: "npm:2.6.2"
   peerDependencies:
@@ -1213,7 +1213,7 @@ __metadata:
       optional: true
     "@nestjs/platform-express":
       optional: true
-  checksum: 10/0a1d89589d1ccfa6a5e9969d2dc2411cbf5812b33f4eb4686ded09c45fabc4a4b615814103405ac8361a93baffcf41cf553963df177b43e66164dd6419273b54
+  checksum: 10/43064d314ae7e7bfeab214ff1ad0096ba65b3a0439a06655ee5d5768b97116ca5caabe42fa421925ef6c571cd0a5da837fb2b5500beb5facbf26b920bedd8719
   languageName: node
   linkType: hard
 
@@ -3149,9 +3149,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.719
-  resolution: "electron-to-chromium@npm:1.4.719"
-  checksum: 10/456c0ea234e3885e25307a7cb700bd07ff4eaea6ca5cc6ca5fc3f8b362725761a74c2f6c14614252f7e1e4bfbe697c3878f9476f2e4a9c1ed73d132754227367
+  version: 1.4.720
+  resolution: "electron-to-chromium@npm:1.4.720"
+  checksum: 10/44c0a44676baaa70c028371da45f7d47d5c14c56640f5bae3a6765c596933c1d32511bb6472daf6d59b72564d47d47ed5285e3710c9d09ef9fcc8a0526be7f1f
   languageName: node
   linkType: hard
 
@@ -3948,7 +3948,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:10.3.10, glob@npm:^10.2.2, glob@npm:^10.3.10":
+"glob@npm:10.3.10":
   version: 10.3.10
   resolution: "glob@npm:10.3.10"
   dependencies:
@@ -3960,6 +3960,21 @@ __metadata:
   bin:
     glob: dist/esm/bin.mjs
   checksum: 10/38bdb2c9ce75eb5ed168f309d4ed05b0798f640b637034800a6bf306f39d35409bf278b0eaaffaec07591085d3acb7184a201eae791468f0f617771c2486a6a8
+  languageName: node
+  linkType: hard
+
+"glob@npm:^10.2.2, glob@npm:^10.3.10":
+  version: 10.3.12
+  resolution: "glob@npm:10.3.12"
+  dependencies:
+    foreground-child: "npm:^3.1.0"
+    jackspeak: "npm:^2.3.6"
+    minimatch: "npm:^9.0.1"
+    minipass: "npm:^7.0.4"
+    path-scurry: "npm:^1.10.2"
+  bin:
+    glob: dist/esm/bin.mjs
+  checksum: 10/9e8186abc22dc824b5dd86cefd8e6b5621a72d1be7f68bacc0fd681e8c162ec5546660a6ec0553d6a74757a585e655956c7f8f1a6d24570e8d865c307323d178
   languageName: node
   linkType: hard
 
@@ -4542,7 +4557,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jackspeak@npm:^2.3.5":
+"jackspeak@npm:^2.3.5, jackspeak@npm:^2.3.6":
   version: 2.3.6
   resolution: "jackspeak@npm:2.3.6"
   dependencies:
@@ -5586,7 +5601,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:9.0.3, minimatch@npm:^9.0.1, minimatch@npm:^9.0.3":
+"minimatch@npm:9.0.3":
   version: 9.0.3
   resolution: "minimatch@npm:9.0.3"
   dependencies:
@@ -5619,6 +5634,15 @@ __metadata:
   dependencies:
     brace-expansion: "npm:^2.0.1"
   checksum: 10/aef05598ee565e1013bc8a10f53410ac681561f901c1a084b8ecfd016c9ed919f58f4bbd5b63e05643189dfb26e8106a84f0e1ff12e4a263aa37e1cae7ce9828
+  languageName: node
+  linkType: hard
+
+"minimatch@npm:^9.0.1, minimatch@npm:^9.0.3":
+  version: 9.0.4
+  resolution: "minimatch@npm:9.0.4"
+  dependencies:
+    brace-expansion: "npm:^2.0.1"
+  checksum: 10/4cdc18d112b164084513e890d6323370db14c22249d536ad1854539577a895e690a27513dc346392f61a4a50afbbd8abc88f3f25558bfbbbb862cd56508b20f5
   languageName: node
   linkType: hard
 
@@ -5703,7 +5727,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minipass@npm:^5.0.0 || ^6.0.2 || ^7.0.0, minipass@npm:^7.0.2, minipass@npm:^7.0.3":
+"minipass@npm:^5.0.0 || ^6.0.2 || ^7.0.0, minipass@npm:^7.0.2, minipass@npm:^7.0.3, minipass@npm:^7.0.4":
   version: 7.0.4
   resolution: "minipass@npm:7.0.4"
   checksum: 10/e864bd02ceb5e0707696d58f7ce3a0b89233f0d686ef0d447a66db705c0846a8dc6f34865cd85256c1472ff623665f616b90b8ff58058b2ad996c5de747d2d18
@@ -6213,7 +6237,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-scurry@npm:^1.10.1, path-scurry@npm:^1.6.1":
+"path-scurry@npm:^1.10.1, path-scurry@npm:^1.10.2, path-scurry@npm:^1.6.1":
   version: 1.10.2
   resolution: "path-scurry@npm:1.10.2"
   dependencies:
