@@ -11,6 +11,9 @@ export default defineConfig({
   user: 'root',
   password: '',
   dbName: 'nestjsrealworld',
+  seeder: {
+    path: 'database/seeder'
+  },
   entities: ['dist/**/*.entity.js'],
   entitiesTs: ['src/**/*.entity.ts'],
   debug: true,
