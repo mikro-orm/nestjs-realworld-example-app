@@ -43,7 +43,7 @@ export class UserController {
   async login(@Body('user') loginUserDto: LoginUserDto): Promise<IUserRO> {
     const foundUser = await this.userService.findOne(loginUserDto);
 
-    const errors = { User: ' not found' };
+    const errors = { message: 'User not found' };
     if (!foundUser) {
       throw new HttpException({ errors }, 401);
     }
