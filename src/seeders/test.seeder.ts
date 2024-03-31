@@ -1,6 +1,6 @@
 import { EntityManager } from '@mikro-orm/core';
 import { Seeder } from '@mikro-orm/seeder';
-import { User } from '../../src/user/user.entity';
+import { User } from '../user/user.entity';
 
 export class TestSeeder extends Seeder {
 
