@@ -7,7 +7,9 @@ import { UserService } from './user.service';
 
 import {
   ApiBearerAuth,
+  ApiBody,
   ApiTags,
+  getSchemaPath
 } from '@nestjs/swagger';
 
 @ApiBearerAuth()
@@ -28,8 +30,9 @@ export class UserController {
   }
 
   @UsePipes(new ValidationPipe())
+  @ApiBody({ type: CreateUserDto })
   @Post('users')
-  async create(@Body('user') userData: CreateUserDto) {
+  async create(@Body() userData: CreateUserDto) {
     return this.userService.create(userData);
   }
 
@@ -39,8 +42,9 @@ export class UserController {
   }
 
   @UsePipes(new ValidationPipe())
+  @ApiBody({ type: LoginUserDto })
   @Post('users/login')
-  async login(@Body('user') loginUserDto: LoginUserDto): Promise<IUserRO> {
+  async login(@Body() loginUserDto: LoginUserDto): Promise<IUserRO> {
     const foundUser = await this.userService.findOne(loginUserDto);
 
     const errors = { User: ' not found' };
@@ -53,3 +57,4 @@ export class UserController {
     return { user };
   }
 }
+
