@@ -20,7 +20,7 @@ export class UserService {
     return this.userRepository.findAll();
   }
 
-  async findOne(loginUserDto: LoginUserDto): Promise<User|null> {
+  async findOne(loginUserDto: LoginUserDto): Promise<User | null> {
     const findOneOptions = {
       email: loginUserDto.email,
       password: crypto.createHmac('sha256', loginUserDto.password).digest('hex'),
