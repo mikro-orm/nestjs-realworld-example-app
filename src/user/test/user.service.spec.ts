@@ -24,6 +24,7 @@ describe('UsersService', () => {
     findOneOrFail: jest.fn().mockImplementation((options) => ({
       id: Date.now(),
       email: 'test@test.com' || options.email,
+      password: 'test' || options.password,
       bio: 'test',
       username: 'test',
       image: 'test.jpg',
@@ -62,6 +63,7 @@ describe('UsersService', () => {
     expect(user).toEqual({
       id: expect.any(Number),
       email: 'test@test.com',
+      password: 'test',
       username: 'test',
       bio: 'test',
       image: 'test.jpg',
