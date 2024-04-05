@@ -1492,14 +1492,14 @@ __metadata:
   linkType: hard
 
 "@types/express-serve-static-core@npm:^4.17.33":
-  version: 4.17.43
-  resolution: "@types/express-serve-static-core@npm:4.17.43"
+  version: 4.19.0
+  resolution: "@types/express-serve-static-core@npm:4.19.0"
   dependencies:
     "@types/node": "npm:*"
     "@types/qs": "npm:*"
     "@types/range-parser": "npm:*"
     "@types/send": "npm:*"
-  checksum: 10/9079e137470e0456bb8e77ae66df9505ee12591e94860bde574cfe52c5c60bbc5bf7dd44f5689c3cbb1baf0aa84442d9a21f53dcd921d18745727293cd5a5fd6
+  checksum: 10/3e803822f90106158e2c7598d0a44e078e22fad67806eadb1e9f00261fa2be7ea65725d9d177157225d2b0ab22793a84039a433c2d97910586ae6f79e9d04c2f
   languageName: node
   linkType: hard
 
@@ -5261,9 +5261,9 @@ __metadata:
   linkType: hard
 
 "libphonenumber-js@npm:^1.10.53":
-  version: 1.10.59
-  resolution: "libphonenumber-js@npm:1.10.59"
-  checksum: 10/71bd840fd3f884564fb11dd21355a195908f32c974537531887bc0373045fc98b6fbf7afb9e7c1b71f71da8468acbb24e16e13041aad4faa6c866fd5c0ee1cd5
+  version: 1.10.60
+  resolution: "libphonenumber-js@npm:1.10.60"
+  checksum: 10/5fbae9dde13fdad9e14166dc652aae896ef16896b6c436563b8860eef8beda0b63286a54c962fc4e2345a6c4aef63d01aad9c1a81663d96566f9a764e70536d4
   languageName: node
   linkType: hard
 
