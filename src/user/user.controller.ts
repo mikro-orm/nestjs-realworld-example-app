@@ -33,9 +33,9 @@ export class UserController {
     return this.userService.create(userData);
   }
 
-  @Delete('users/:slug')
-  async delete(@Param() params: { slug: string }): Promise<any> {
-    return this.userService.delete(params.slug);
+  @Delete('users/:email')
+  async delete(@Param() params: string): Promise<any> {
+    return this.userService.delete(params);
   }
 
   @UsePipes(new ValidationPipe())
