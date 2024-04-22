@@ -2,7 +2,6 @@
   "compilerOptions": {
     "module": "NodeNext",
     "declaration": true,
-    "noImplicitAny": false,
     "removeComments": true,
     "esModuleInterop": true,
     "noLib": false,

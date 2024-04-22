@@ -84,7 +84,7 @@ export class UserService {
     return this.buildUserRO(user);
   }
 
-  generateJWT(user) {
+  generateJWT(user: User) {
     const today = new Date();
     const exp = new Date(today);
     exp.setDate(today.getDate() + 60);

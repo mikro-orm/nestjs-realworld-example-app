@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { EntityManager, QueryOrder, wrap } from '@mikro-orm/core';
+import { EntityManager, FilterQuery, QueryOrder, wrap } from '@mikro-orm/core';
 import { InjectRepository } from '@mikro-orm/nestjs'
 import { EntityRepository } from '@mikro-orm/mysql';
 
@@ -71,7 +71,7 @@ export class ArticleService {
     return { articles: articles.map(a => a.toJSON(user)), articlesCount };
   }
 
-  async findFeed(userId: number, query): Promise<IArticlesRO> {
+  async findFeed(userId: number, query: any): Promise<IArticlesRO> {
     const user = userId ? await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites'] }) : undefined;
     const res = await this.articleRepository.findAndCount({ author: { followers: userId } }, {
       populate: ['author'],
@@ -84,7 +84,7 @@ export class ArticleService {
     return { articles: res[0].map(a => a.toJSON(user)), articlesCount: res[1] };
   }
 
-  async findOne(userId: number, where): Promise<IArticleRO> {
+  async findOne(userId: number, where: FilterQuery<Article>): Promise<IArticleRO> {
     const user = userId ? await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites'] }) : undefined;
     const article = await this.articleRepository.findOneOrFail(where, { populate: ['author'] });
     return { article: article?.toJSON(user) };
