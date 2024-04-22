@@ -422,7 +422,7 @@
         "operationId": "CreateArticle",
         "parameters": [
           {
-            "name": "article",
+            "name": "body",
             "in": "body",
             "required": true,
             "description": "Article to create",
@@ -848,13 +848,8 @@
     "NewUserRequest": {
       "type": "object",
       "properties": {
-        "user": {
-          "$ref": "#/definitions/NewUser"
-        }
-      },
-      "required": [
-        "user"
-      ]
+        "$ref": "#/definitions/NewUser"
+      }
     },
     "User": {
       "type": "object",
@@ -886,13 +881,8 @@
     "UserResponse": {
       "type": "object",
       "properties": {
-        "user": {
-          "$ref": "#/definitions/User"
-        }
-      },
-      "required": [
-        "user"
-      ]
+        "$ref": "#/definitions/User"
+      }
     },
     "UpdateUser": {
       "type": "object",
@@ -1068,13 +1058,8 @@
     "NewArticleRequest": {
       "type": "object",
       "properties": {
-        "article": {
-          "$ref": "#/definitions/NewArticle"
-        }
-      },
-      "required": [
-        "article"
-      ]
+        "$ref": "#/definitions/NewArticle"
+      }
     },
     "UpdateArticle": {
       "type": "object",

@@ -1,5 +1,5 @@
 import { Body, Controller, Delete, Get, Param, Post, Put, Query } from '@nestjs/common';
-import { ApiBearerAuth, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiBody, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { User } from '../user/user.decorator';
 import { IArticleRO, IArticlesRO, ICommentsRO } from './article.interface';
 import { ArticleService } from './article.service';
@@ -38,18 +38,20 @@ export class ArticleController {
   }
 
   @ApiOperation({ summary: 'Create article' })
+  @ApiBody({ type: CreateArticleDto })
   @ApiResponse({ status: 201, description: 'The article has been successfully created.' })
   @ApiResponse({ status: 403, description: 'Forbidden.' })
   @Post()
-  async create(@User('id') userId: number, @Body('article') articleData: CreateArticleDto) {
+  async create(@User('id') userId: number, @Body() articleData: CreateArticleDto) {
     return this.articleService.create(userId, articleData);
   }
 
   @ApiOperation({ summary: 'Update article' })
+  @ApiBody({ type: CreateArticleDto })
   @ApiResponse({ status: 201, description: 'The article has been successfully updated.' })
   @ApiResponse({ status: 403, description: 'Forbidden.' })
   @Put(':slug')
-  async update(@User('id') user: number, @Param() params, @Body('article') articleData: CreateArticleDto) {
+  async update(@User('id') user: number, @Param() params, @Body() articleData: CreateArticleDto) {
     // Todo: update slug also when title gets changed
     return this.articleService.update(+user, params.slug, articleData);
   }
@@ -63,10 +65,11 @@ export class ArticleController {
   }
 
   @ApiOperation({ summary: 'Create comment' })
+  @ApiBody({ type: CreateCommentDto })
   @ApiResponse({ status: 201, description: 'The comment has been successfully created.' })
   @ApiResponse({ status: 403, description: 'Forbidden.' })
   @Post(':slug/comments')
-  async createComment(@User('id') user: number, @Param('slug') slug, @Body('comment') commentData: CreateCommentDto) {
+  async createComment(@User('id') user: number, @Param('slug') slug, @Body() commentData: CreateCommentDto) {
     return this.articleService.addComment(user, slug, commentData);
   }
 

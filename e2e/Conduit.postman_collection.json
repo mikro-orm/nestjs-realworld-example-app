@@ -49,7 +49,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"user\":{\"email\":\"{{EMAIL}}\", \"password\":\"{{PASSWORD}}\", \"username\":\"{{USERNAME}}\"}}"
+							"raw": "{\"email\":\"{{EMAIL}}\", \"password\":\"{{PASSWORD}}\", \"username\":\"{{USERNAME}}\"}"
 						},
 						"url": {
 							"raw": "{{APIURL}}/users",
@@ -101,7 +101,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"user\":{\"email\":\"{{EMAIL}}\", \"password\":\"{{PASSWORD}}\"}}"
+							"raw": "{\"email\":\"{{EMAIL}}\", \"password\":\"{{PASSWORD}}\"}"
 						},
 						"url": {
 							"raw": "{{APIURL}}/users/login",
@@ -161,7 +161,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"user\":{\"email\":\"{{EMAIL}}\", \"password\":\"{{PASSWORD}}\"}}"
+							"raw": "{\"email\":\"{{EMAIL}}\", \"password\":\"{{PASSWORD}}\"}"
 						},
 						"url": {
 							"raw": "{{APIURL}}/users/login",
@@ -662,7 +662,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"article\":{\"title\":\"How to train your dragon\", \"description\":\"Ever wonder how?\", \"body\":\"Very carefully.\", \"tagList\":[\"dragons\",\"training\"]}}"
+							"raw": "{\"title\":\"How to train your dragon\", \"description\":\"Ever wonder how?\", \"body\":\"Very carefully.\", \"tagList\":[\"dragons\",\"training\"]}"
 						},
 						"url": {
 							"raw": "{{APIURL}}/articles",
@@ -1641,7 +1641,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"comment\":{\"body\":\"Thank you so much!\"}}"
+							"raw": "{\"body\":\"Thank you so much!\"}"
 						},
 						"url": {
 							"raw": "{{APIURL}}/articles/{{slug}}/comments",
@@ -1864,7 +1864,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\"user\":{\"email\":\"celeb_{{EMAIL}}\", \"password\":\"{{PASSWORD}}\", \"username\":\"celeb_{{USERNAME}}\"}}"
+							"raw": "{\"email\":\"celeb_{{EMAIL}}\", \"password\":\"{{PASSWORD}}\", \"username\":\"celeb_{{USERNAME}}\"}"
 						},
 						"url": {
 							"raw": "{{APIURL}}/users",
