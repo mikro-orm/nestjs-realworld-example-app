@@ -3158,9 +3158,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.748
-  resolution: "electron-to-chromium@npm:1.4.748"
-  checksum: 10/c1a5664f151d49209df43c8a33cf02f7004591ac5c9b4d685e5dfe3a0470843358f7578de4c21e26108a7bd7e9629a20ac92c7ccc76f4cfbc535af5afaf097aa
+  version: 1.4.749
+  resolution: "electron-to-chromium@npm:1.4.749"
+  checksum: 10/59867792303f0b91216074aafe247b738a6e4a1eae2f3cba5e06394f733d4fe806263ebe4ab643e2ac837bfb7103835a4a8228928d2007af46decb509fb480bc
   languageName: node
   linkType: hard
 
@@ -5404,9 +5404,9 @@ __metadata:
   linkType: hard
 
 "lru-cache@npm:^10.0.1, lru-cache@npm:^10.2.0":
-  version: 10.2.0
-  resolution: "lru-cache@npm:10.2.0"
-  checksum: 10/502ec42c3309c0eae1ce41afca471f831c278566d45a5273a0c51102dee31e0e250a62fa9029c3370988df33a14188a38e682c16143b794de78668de3643e302
+  version: 10.2.1
+  resolution: "lru-cache@npm:10.2.1"
+  checksum: 10/65639bf4534c00b7a420be001d7f0485d6147fe0fdc68b9a67d0ef94dca6dace27d87cfa345e817c62bc6e000393379ac744f40870c285bb7c13949c1cc87209
   languageName: node
   linkType: hard
 
@@ -6443,9 +6443,9 @@ __metadata:
   linkType: hard
 
 "react-is@npm:^18.0.0":
-  version: 18.2.0
-  resolution: "react-is@npm:18.2.0"
-  checksum: 10/200cd65bf2e0be7ba6055f647091b725a45dd2a6abef03bf2380ce701fd5edccee40b49b9d15edab7ac08a762bf83cb4081e31ec2673a5bfb549a36ba21570df
+  version: 18.3.0
+  resolution: "react-is@npm:18.3.0"
+  checksum: 10/1593796b4bde2ce1196f151d926de01054f4345a14a38a8eeb154aed075c2f78658570352cffc71a0a8602cd135b369e604dfa1300ccc85a622ce2073578d160
   languageName: node
   linkType: hard
 
@@ -7163,9 +7163,9 @@ __metadata:
   linkType: hard
 
 "swagger-ui-dist@npm:>=5.0.0":
-  version: 5.17.1
-  resolution: "swagger-ui-dist@npm:5.17.1"
-  checksum: 10/f993c5f6537f7223a122b419204979ba2f29a1c643f541bdd9e46468bb9aa9c7e0b455b8566e2dc4b94c3cfe81958c4d7517d62149775d52aea11638aa8c91f4
+  version: 5.17.2
+  resolution: "swagger-ui-dist@npm:5.17.2"
+  checksum: 10/b2010fd61f5139be73c65dd3f328e1687cd1758a89ac79061b7590c4c5f3021262280a57ea45fa685218091dbcf1a99edd66ad291115b20a0bf812764b2645d0
   languageName: node
   linkType: hard
 
