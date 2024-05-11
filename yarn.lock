@@ -1279,9 +1279,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rushstack/node-core-library@npm:4.2.0":
-  version: 4.2.0
-  resolution: "@rushstack/node-core-library@npm:4.2.0"
+"@rushstack/node-core-library@npm:4.2.1":
+  version: 4.2.1
+  resolution: "@rushstack/node-core-library@npm:4.2.1"
   dependencies:
     fs-extra: "npm:~7.0.1"
     import-lazy: "npm:~4.0.0"
@@ -1294,34 +1294,34 @@ __metadata:
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10/f67650224ae14dae98970660cf3ab62f5df1824bdb4a07690331f9a821b50503fc843e4bb2bd73556463df38a00c7c305e5b7f13c25fb2cbceaf97db6326c626
+  checksum: 10/e905594233432a89bb511822667b54fd9a23a4c10808b61464367afa5afb751b019766b76349f9e021e919b2239dbc2119e103fd99947ad28d8280686c2b9d8c
   languageName: node
   linkType: hard
 
-"@rushstack/terminal@npm:0.10.2":
-  version: 0.10.2
-  resolution: "@rushstack/terminal@npm:0.10.2"
+"@rushstack/terminal@npm:0.10.3":
+  version: 0.10.3
+  resolution: "@rushstack/terminal@npm:0.10.3"
   dependencies:
-    "@rushstack/node-core-library": "npm:4.2.0"
+    "@rushstack/node-core-library": "npm:4.2.1"
     supports-color: "npm:~8.1.1"
   peerDependencies:
     "@types/node": "*"
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10/4dddc4815d57a9466a8965b85d803cc242438bb8e4b82355b8a693fabe3cf6a2a47ead5ca50e1e6d4e81ac17c2db69faca6f3a8318d4cbb6254b5c0e209022c0
+  checksum: 10/e8c31774e51c540205956fb5680a867c358826b9d47c06f7a3cfef3f2a800e1b538ebfcc6cee7564b52d3f960dab4bf7e61ef813d750b16b003c8882ea1030b1
   languageName: node
   linkType: hard
 
 "@rushstack/ts-command-line@npm:^4.12.2":
-  version: 4.19.4
-  resolution: "@rushstack/ts-command-line@npm:4.19.4"
+  version: 4.19.5
+  resolution: "@rushstack/ts-command-line@npm:4.19.5"
   dependencies:
-    "@rushstack/terminal": "npm:0.10.2"
+    "@rushstack/terminal": "npm:0.10.3"
     "@types/argparse": "npm:1.0.38"
     argparse: "npm:~1.0.9"
     string-argv: "npm:~0.3.1"
-  checksum: 10/cc9e1336b635b3256cd429409bac428ea8d2749a9949148b5b329da8675b9c957ed8498e09fa04bf4875baa1366380a49e3d05afd5e02db154ed3f7b95b595a0
+  checksum: 10/49b83a53e0086dcd98a9c75384162ee8d0b2f3a42dbee7d84323ec246042985e92d42e8af926ce07e38f26f2afe562863b72d95f3f2a1057e6734c8e66aa36c4
   languageName: node
   linkType: hard
 
@@ -3163,9 +3163,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.762
-  resolution: "electron-to-chromium@npm:1.4.762"
-  checksum: 10/8f14dfe22c8442314e351263c39d07218bc6dfeb2f753787229fdbda56a16bc55431f388aa7a904f3c162dd930e0833c6cfd004cc83cb533971a91f6536122f5
+  version: 1.4.763
+  resolution: "electron-to-chromium@npm:1.4.763"
+  checksum: 10/088c53acfe4723d40077a9fd98cc67e74af2c8d0c5c12e75ffddacfd6e98c009c75fff07e3443a3dc499f599a71b7cf0bcbfb1b0c574355436d297c88979056b
   languageName: node
   linkType: hard
 
