@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { UserService } from '../user.service';
 import { UserRepository } from '../user.repository';
-import { EntityManager } from '@mikro-orm/core';
+import { EntityManager } from '@mikro-orm/mysql';
 
 describe('UsersService', () => {
   let service: UserService;

@@ -1,7 +1,7 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { User } from '../user/user.entity';
 import { IProfileData, IProfileRO } from './profile.interface';
-import { EntityManager, FilterQuery, serialize } from '@mikro-orm/core';
+import { EntityManager, FilterQuery, serialize } from '@mikro-orm/mysql';
 import { UserRepository } from '../user/user.repository';
 
 @Injectable()
