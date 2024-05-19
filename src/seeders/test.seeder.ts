@@ -1,4 +1,4 @@
-import { EntityManager } from '@mikro-orm/core';
+import { EntityManager } from '@mikro-orm/mysql';
 import { Seeder } from '@mikro-orm/seeder';
 import { User } from '../user/user.entity';
 

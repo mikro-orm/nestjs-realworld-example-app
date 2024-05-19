@@ -10,7 +10,7 @@ import {
   PrimaryKey,
   Property,
   wrap,
-} from '@mikro-orm/core';
+} from '@mikro-orm/mysql';
 import { Article } from '../article/article.entity';
 import { UserRepository } from './user.repository';
 

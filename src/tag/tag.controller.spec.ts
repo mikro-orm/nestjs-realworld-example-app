@@ -4,7 +4,7 @@ import { MikroOrmModule } from '@mikro-orm/nestjs'
 import { TagController } from './tag.controller';
 import { Tag } from './tag.entity';
 import { TagService } from './tag.service';
-import { MikroORM } from '@mikro-orm/core';
+import { MikroORM } from '@mikro-orm/mysql';
 
 describe('TagController', () => {
   let tagController: TagController;
@@ -23,7 +23,7 @@ describe('TagController', () => {
     orm = module.get<MikroORM>(MikroORM);
   });
 
-  afterAll(async () => await orm.close(true));
+  afterEach(async () => await orm.close(true));
 
   describe('findAll', () => {
     it('should return an array of tags', async () => {

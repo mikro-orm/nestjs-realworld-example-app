@@ -1,5 +1,5 @@
 import { MiddlewareConsumer, Module, NestModule, OnModuleInit } from '@nestjs/common';
-import { MikroORM } from '@mikro-orm/core';
+import { MikroORM } from '@mikro-orm/mysql';
 import { MikroOrmMiddleware, MikroOrmModule } from '@mikro-orm/nestjs';
 
 import { AppController } from './app.controller';
