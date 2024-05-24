@@ -1279,49 +1279,51 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rushstack/node-core-library@npm:4.3.0":
-  version: 4.3.0
-  resolution: "@rushstack/node-core-library@npm:4.3.0"
+"@rushstack/node-core-library@npm:5.0.0":
+  version: 5.0.0
+  resolution: "@rushstack/node-core-library@npm:5.0.0"
   dependencies:
+    ajv: "npm:~8.13.0"
+    ajv-draft-04: "npm:~1.0.0"
+    ajv-formats: "npm:~3.0.1"
     fs-extra: "npm:~7.0.1"
     import-lazy: "npm:~4.0.0"
     jju: "npm:~1.4.0"
     resolve: "npm:~1.22.1"
     semver: "npm:~7.5.4"
-    z-schema: "npm:~5.0.2"
   peerDependencies:
     "@types/node": "*"
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10/79788b8cf22f578c5dce38e1e9282c89123e3b659d41bb76f83d1d36e1aba8b7cdc43aab26b1decfaf858a7f0ea151b0b9cba68a603ef3873eaf827cb304fd98
+  checksum: 10/0ba8234c6555194f9a7716510fc3f0290f7e0962b4d995a838beda28d11b7548d8a3bc6636184c2c650303d3130ae361d1c3fa8998f0fc270edde0d7271a4573
   languageName: node
   linkType: hard
 
-"@rushstack/terminal@npm:0.11.0":
-  version: 0.11.0
-  resolution: "@rushstack/terminal@npm:0.11.0"
+"@rushstack/terminal@npm:0.11.1":
+  version: 0.11.1
+  resolution: "@rushstack/terminal@npm:0.11.1"
   dependencies:
-    "@rushstack/node-core-library": "npm:4.3.0"
+    "@rushstack/node-core-library": "npm:5.0.0"
     supports-color: "npm:~8.1.1"
   peerDependencies:
     "@types/node": "*"
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10/da64e115be249a4a9de59d231624b23f9eb838bf299b698e4ed0a931c333ab12874b771d5a3fc46b899d2a850c24429a36d124fa9513cfc32b1ae68e6112dfaa
+  checksum: 10/4abbba88712f36909681d4d8b7f16482f24973a74c8dacdfe446c5ffbdf13d77208c0cecfffad9085aff0597036cab8712dc4fb47bfb041c74a62a7abafadd3e
   languageName: node
   linkType: hard
 
 "@rushstack/ts-command-line@npm:^4.12.2":
-  version: 4.21.0
-  resolution: "@rushstack/ts-command-line@npm:4.21.0"
+  version: 4.21.1
+  resolution: "@rushstack/ts-command-line@npm:4.21.1"
   dependencies:
-    "@rushstack/terminal": "npm:0.11.0"
+    "@rushstack/terminal": "npm:0.11.1"
     "@types/argparse": "npm:1.0.38"
     argparse: "npm:~1.0.9"
     string-argv: "npm:~0.3.1"
-  checksum: 10/8cb8f10585f868f94548d8cfab74031db2af271a0088ad51eda807e756892bdf86103c6fe29c2ae4a08da5f222bd4f97c8e4a4ba1c0e28686706482b6e7a0370
+  checksum: 10/3520131353b2163ac41b7cc846b8745fa042711c4bf9762db3633648779c7f844bc124188c4465ffc74e1a545a38c15d7af1c92389b031a029020a806942ba76
   languageName: node
   linkType: hard
 
@@ -2023,6 +2025,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ajv-draft-04@npm:~1.0.0":
+  version: 1.0.0
+  resolution: "ajv-draft-04@npm:1.0.0"
+  peerDependencies:
+    ajv: ^8.5.0
+  peerDependenciesMeta:
+    ajv:
+      optional: true
+  checksum: 10/3f11fa0e7f7359bef6608657f02ab78e9cc62b1fb7bdd860db0d00351b3863a1189c1a23b72466d2d82726cab4eb20725c76f5e7c134a89865e2bfd0e6828137
+  languageName: node
+  linkType: hard
+
 "ajv-formats@npm:2.1.1":
   version: 2.1.1
   resolution: "ajv-formats@npm:2.1.1"
@@ -2034,6 +2048,20 @@ __metadata:
     ajv:
       optional: true
   checksum: 10/70c263ded219bf277ffd9127f793b625f10a46113b2e901e150da41931fcfd7f5592da6d66862f4449bb157ffe65867c3294a7df1d661cc232c4163d5a1718ed
+  languageName: node
+  linkType: hard
+
+"ajv-formats@npm:~3.0.1":
+  version: 3.0.1
+  resolution: "ajv-formats@npm:3.0.1"
+  dependencies:
+    ajv: "npm:^8.0.0"
+  peerDependencies:
+    ajv: ^8.0.0
+  peerDependenciesMeta:
+    ajv:
+      optional: true
+  checksum: 10/5679b9f9ced9d0213a202a37f3aa91efcffe59a6de1a6e3da5c873344d3c161820a1f11cc29899661fee36271fd2895dd3851b6461c902a752ad661d1c1e8722
   languageName: node
   linkType: hard
 
@@ -2070,7 +2098,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^8.0.0":
+"ajv@npm:^8.0.0, ajv@npm:~8.13.0":
   version: 8.13.0
   resolution: "ajv@npm:8.13.0"
   dependencies:
@@ -2782,13 +2810,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^9.4.1":
-  version: 9.5.0
-  resolution: "commander@npm:9.5.0"
-  checksum: 10/41c49b3d0f94a1fbeb0463c85b13f15aa15a9e0b4d5e10a49c0a1d58d4489b549d62262b052ae0aa6cfda53299bee487bfe337825df15e342114dde543f82906
-  languageName: node
-  linkType: hard
-
 "comment-json@npm:4.2.3":
   version: 4.2.3
   resolution: "comment-json@npm:4.2.3"
@@ -3151,9 +3172,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.778
-  resolution: "electron-to-chromium@npm:1.4.778"
-  checksum: 10/2a7bced6e0e2b2cac8dea42eabfaddb2b56015ed7b8a3d4aebd2bf41ef9f03406500fd529ec79b196ec44eec5257baa85c055849a1dc702d9c597dd3bf836963
+  version: 1.4.781
+  resolution: "electron-to-chromium@npm:1.4.781"
+  checksum: 10/fb6b32466d38d295cbf615c2dd6bc9ed87a9fb1c0c3a83d024f75de39ee73947cfd956fa5b75e5ae7dc772407d30d649b83ad7e8b1068356118b13f1bba8f322
   languageName: node
   linkType: hard
 
@@ -5307,13 +5328,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.get@npm:^4.4.2":
-  version: 4.4.2
-  resolution: "lodash.get@npm:4.4.2"
-  checksum: 10/2a4925f6e89bc2c010a77a802d1ba357e17ed1ea03c2ddf6a146429f2856a216663e694a6aa3549a318cbbba3fd8b7decb392db457e6ac0b83dc745ed0a17380
-  languageName: node
-  linkType: hard
-
 "lodash.includes@npm:^4.3.0":
   version: 4.3.0
   resolution: "lodash.includes@npm:4.3.0"
@@ -5325,13 +5339,6 @@ __metadata:
   version: 3.0.3
   resolution: "lodash.isboolean@npm:3.0.3"
   checksum: 10/b70068b4a8b8837912b54052557b21fc4774174e3512ed3c5b94621e5aff5eb6c68089d0a386b7e801d679cd105d2e35417978a5e99071750aa2ed90bffd0250
-  languageName: node
-  linkType: hard
-
-"lodash.isequal@npm:^4.5.0":
-  version: 4.5.0
-  resolution: "lodash.isequal@npm:4.5.0"
-  checksum: 10/82fc58a83a1555f8df34ca9a2cd300995ff94018ac12cc47c349655f0ae1d4d92ba346db4c19bbfc90510764e0c00ddcc985a358bdcd4b3b965abf8f2a48a214
   languageName: node
   linkType: hard
 
@@ -5712,9 +5719,9 @@ __metadata:
   linkType: hard
 
 "minipass@npm:^5.0.0 || ^6.0.2 || ^7.0.0, minipass@npm:^7.0.2, minipass@npm:^7.0.3, minipass@npm:^7.0.4":
-  version: 7.1.1
-  resolution: "minipass@npm:7.1.1"
-  checksum: 10/6f4f920f1b5ea585d08fa3739b9bd81726cd85a0c972fb371c0fa6c1544d468813fb1694c7bc64ad81f138fd8abf665e2af0f406de9ba5741d8e4a377ed346b1
+  version: 7.1.2
+  resolution: "minipass@npm:7.1.2"
+  checksum: 10/c25f0ee8196d8e6036661104bacd743785b2599a21de5c516b32b3fa2b83113ac89a2358465bc04956baab37ffb956ae43be679b2262bf7be15fce467ccd7950
   languageName: node
   linkType: hard
 
@@ -7687,7 +7694,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"validator@npm:^13.7.0, validator@npm:^13.9.0":
+"validator@npm:^13.9.0":
   version: 13.12.0
   resolution: "validator@npm:13.12.0"
   checksum: 10/db6eb0725e2b67d60d30073ae8573982713b5903195d031dc3c7db7e82df8b74e8c13baef8e2106d146d979599fd61a06cde1fec5c148e4abd53d52817ff0fd9
@@ -7937,22 +7944,5 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: 10/f77b3d8d00310def622123df93d4ee654fc6a0096182af8bd60679ddcdfb3474c56c6c7190817c84a2785648cdee9d721c0154eb45698c62176c322fb46fc700
-  languageName: node
-  linkType: hard
-
-"z-schema@npm:~5.0.2":
-  version: 5.0.5
-  resolution: "z-schema@npm:5.0.5"
-  dependencies:
-    commander: "npm:^9.4.1"
-    lodash.get: "npm:^4.4.2"
-    lodash.isequal: "npm:^4.5.0"
-    validator: "npm:^13.7.0"
-  dependenciesMeta:
-    commander:
-      optional: true
-  bin:
-    z-schema: bin/z-schema
-  checksum: 10/8ac2fa445f5a00e790d1f91a48aeff0ccfc340f84626771853e03f4d97cdc2f5f798cdb2e38418f7815ffc3aac3952c45caabcf077bf4f83fedf0cdef43b885b
   languageName: node
   linkType: hard
