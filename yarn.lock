@@ -1278,9 +1278,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rushstack/node-core-library@npm:5.2.0":
-  version: 5.2.0
-  resolution: "@rushstack/node-core-library@npm:5.2.0"
+"@rushstack/node-core-library@npm:5.3.0":
+  version: 5.3.0
+  resolution: "@rushstack/node-core-library@npm:5.3.0"
   dependencies:
     ajv: "npm:~8.13.0"
     ajv-draft-04: "npm:~1.0.0"
@@ -1295,34 +1295,34 @@ __metadata:
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10/df8ecdf2f25f1d371dc4b3d416bb7861cdfd6f25fe09c042f5dac971bcb54b958a39c7350b1efdaf1531f599b576cd039af115f25b75b2798f938afe55e69a9f
+  checksum: 10/80e90e0f0e8c0c97a1f75cff99d5cb28a4d92aa31790ee7110b5236e66b542d9ad41362c2d200ebd3a1395b58e18fdafc4d1b8a6a99c5aab90846ac4b3e3a199
   languageName: node
   linkType: hard
 
-"@rushstack/terminal@npm:0.12.1":
-  version: 0.12.1
-  resolution: "@rushstack/terminal@npm:0.12.1"
+"@rushstack/terminal@npm:0.12.2":
+  version: 0.12.2
+  resolution: "@rushstack/terminal@npm:0.12.2"
   dependencies:
-    "@rushstack/node-core-library": "npm:5.2.0"
+    "@rushstack/node-core-library": "npm:5.3.0"
     supports-color: "npm:~8.1.1"
   peerDependencies:
     "@types/node": "*"
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10/e2f40c48a74db0511984e29a3b31a028475986498d6be896d25029553d0bdcd1ce7d0988549a424fad4a00c972781b76d0aefddfb72d3dde4e664c3099b3073f
+  checksum: 10/ebcd2782306959091a46410654c75652ddbcfce721da979f87a16547148c3c8ad58fce141a13c5f5cfd5ec294255918179709b11420ec4a13f90945416a517c6
   languageName: node
   linkType: hard
 
 "@rushstack/ts-command-line@npm:^4.12.2":
-  version: 4.21.3
-  resolution: "@rushstack/ts-command-line@npm:4.21.3"
+  version: 4.21.4
+  resolution: "@rushstack/ts-command-line@npm:4.21.4"
   dependencies:
-    "@rushstack/terminal": "npm:0.12.1"
+    "@rushstack/terminal": "npm:0.12.2"
     "@types/argparse": "npm:1.0.38"
     argparse: "npm:~1.0.9"
     string-argv: "npm:~0.3.1"
-  checksum: 10/570c73858534147d121ebbf5302012604a98b83dcc98c74f8be6f43e8b52b5489d1aa44ef6557d91411a946d7fa98ee47c4ceeb72488b607898390721c7fa666
+  checksum: 10/faed84bfce69f1e45d221b6d7af65ac753000c7a2074e8b4100453c8010fc6fbe1b08da6dc874def1d7bbb1f9170f0832199e0c1084858c3718a63d3143aebd9
   languageName: node
   linkType: hard
 
@@ -2550,9 +2550,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001587":
-  version: 1.0.30001623
-  resolution: "caniuse-lite@npm:1.0.30001623"
-  checksum: 10/5bb1f007314d1b21f7fb65a3a05e11ed09b34d673ddef0040097e7be68180cb3f8e74acee0d8a30a086ad56fdd081a8ebe467d4ad727b7e7a3d2ce0a0ef67f75
+  version: 1.0.30001624
+  resolution: "caniuse-lite@npm:1.0.30001624"
+  checksum: 10/238d3ca78c8a17eaff77b77f83d80d1917df9230dadb05873966df0703fd5211d54233ffeb602cbc3f8f80d47b0653cdd0a83dae355f82c483cf602c1bf3005c
   languageName: node
   linkType: hard
 
@@ -7191,9 +7191,9 @@ __metadata:
   linkType: hard
 
 "swagger-ui-dist@npm:>=5.0.0":
-  version: 5.17.13
-  resolution: "swagger-ui-dist@npm:5.17.13"
-  checksum: 10/9af5a85dc9bb2896d7719a42c142ce198bae707ac79db87baece48aed41ad2228525e93821b130c6c4a97deb99a461e2d15209f9195b3dfd92dc2303d835923e
+  version: 5.17.14
+  resolution: "swagger-ui-dist@npm:5.17.14"
+  checksum: 10/b9e62d7ecb64e837849252c9f82af654b26cae60ebd551cff96495d826166d3ed866ebae40f22a2c61d307330151945d79d995e50659ae17eea6cf4ece788f9d
   languageName: node
   linkType: hard
 
@@ -7376,8 +7376,8 @@ __metadata:
   linkType: hard
 
 "ts-jest@npm:^29.1.2":
-  version: 29.1.3
-  resolution: "ts-jest@npm:29.1.3"
+  version: 29.1.4
+  resolution: "ts-jest@npm:29.1.4"
   dependencies:
     bs-logger: "npm:0.x"
     fast-json-stable-stringify: "npm:2.x"
@@ -7407,7 +7407,7 @@ __metadata:
       optional: true
   bin:
     ts-jest: cli.js
-  checksum: 10/cc1f608bb5859e112ffb8a6d84ddb5c20954b7ec8c89a8c7f95e373368d8946b5843594fe7779078eec2b7e825962848f1a1ba7a44c71b8a08ed4e75d3a3f8d8
+  checksum: 10/3103c0e2f9937ae6bb51918105883565bb2d11cae1121ae20aedd1c4374f843341463a4a1986e02a958d119be0d3a9b996d761bc4aac85152a29385e609fed3c
   languageName: node
   linkType: hard
 
