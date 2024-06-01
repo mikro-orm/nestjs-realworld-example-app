@@ -900,84 +900,94 @@ __metadata:
   linkType: hard
 
 "@mikro-orm/cli@npm:^6.2.7":
-  version: 6.2.8
-  resolution: "@mikro-orm/cli@npm:6.2.8"
+  version: 6.2.9
+  resolution: "@mikro-orm/cli@npm:6.2.9"
   dependencies:
     "@jercle/yargonaut": "npm:1.1.5"
-    "@mikro-orm/core": "npm:6.2.8"
-    "@mikro-orm/knex": "npm:6.2.8"
+    "@mikro-orm/core": "npm:6.2.9"
+    "@mikro-orm/knex": "npm:6.2.9"
     fs-extra: "npm:11.2.0"
     tsconfig-paths: "npm:4.2.0"
     yargs: "npm:17.7.2"
   bin:
     mikro-orm: cli
     mikro-orm-esm: esm
-  checksum: 10/087576be174cba3779e314e4c86dd59a85126d40ce1317c7e6adfce8362cf4031bd85fa687ce0c08f92f244b5ddcc30cfc06b1797a954877f6edd3ec49611c60
+  checksum: 10/c469a726df4bb3e50817da061f97e64a1bbebe7ce0e5ba3694040ab863c3e01ffa129ebb6daf35e6102a950d55d0ab802b5043e97206e6e6f97bfaa255e1ffc3
   languageName: node
   linkType: hard
 
-"@mikro-orm/core@npm:6.2.8, @mikro-orm/core@npm:^6.2.7":
-  version: 6.2.8
-  resolution: "@mikro-orm/core@npm:6.2.8"
+"@mikro-orm/core@npm:6.2.9, @mikro-orm/core@npm:^6.2.7":
+  version: 6.2.9
+  resolution: "@mikro-orm/core@npm:6.2.9"
   dependencies:
     dataloader: "npm:2.2.2"
     dotenv: "npm:16.4.5"
     esprima: "npm:4.0.1"
     fs-extra: "npm:11.2.0"
     globby: "npm:11.1.0"
-    mikro-orm: "npm:6.2.8"
+    mikro-orm: "npm:6.2.9"
     reflect-metadata: "npm:0.2.2"
-  checksum: 10/3c3a24da1ff873fd4895da862c657a546cc7d6ba246c26185679d28ad222955009656561b7ab9e8e3a0dfb58d606dbc4747f1566bc62c7eb9fa7ffc3ad73d321
+  checksum: 10/02d9755750ddc1d7a7a9929e0ec8aca7252dfd12c0f9ea391c2f9f6238d1a239b3e928d948c27fcf75a9ed8744cbd88e43dcaf70d72e2acfaaee8d3fbf81ff0b
   languageName: node
   linkType: hard
 
 "@mikro-orm/entity-generator@npm:^6.2.7":
-  version: 6.2.8
-  resolution: "@mikro-orm/entity-generator@npm:6.2.8"
+  version: 6.2.9
+  resolution: "@mikro-orm/entity-generator@npm:6.2.9"
   dependencies:
-    "@mikro-orm/knex": "npm:6.2.8"
+    "@mikro-orm/knex": "npm:6.2.9"
     fs-extra: "npm:11.2.0"
   peerDependencies:
     "@mikro-orm/core": ^6.0.0
-  checksum: 10/8d4f72031f01a896ef5ba68f6ff3d4766d5896ff785e4371cb8d8ddb1a6016c72c761785b60252bac21029ec5f1094c6fd7fb7e92ca9e5c7731552508394b48d
+  checksum: 10/116ce57f5b2df08bca328deb3b30b39943dbea83736c9cefd6df207c43a21abdbde7d22799fc799e287c7521e518ccd4b7dcd2637239ed2aa413751a4c2e965d
   languageName: node
   linkType: hard
 
-"@mikro-orm/knex@npm:6.2.8":
-  version: 6.2.8
-  resolution: "@mikro-orm/knex@npm:6.2.8"
+"@mikro-orm/knex@npm:6.2.9":
+  version: 6.2.9
+  resolution: "@mikro-orm/knex@npm:6.2.9"
   dependencies:
     fs-extra: "npm:11.2.0"
     knex: "npm:3.1.0"
     sqlstring: "npm:2.3.3"
   peerDependencies:
     "@mikro-orm/core": ^6.0.0
-  checksum: 10/0867f4c81dbd2caa8c5afb7440bca9a6f153ab70921162b157d05e36a26bf09ff12a48bcd447e5fceb68ab5dde78e256c9505f69a9bbb007527ea9a01837321e
+    better-sqlite3: "*"
+    libsql: "*"
+    mariadb: "*"
+  peerDependenciesMeta:
+    better-sqlite3:
+      optional: true
+    libsql:
+      optional: true
+    mariadb:
+      optional: true
+  checksum: 10/81b5f0dabc8abd4f37b2f21c56c2900f337c5a4f0d44f63782eaafbfa6b0c5100b311a340b42c696022731e8dae678583b62805d089814398bb2fa91d3ec2a53
   languageName: node
   linkType: hard
 
 "@mikro-orm/migrations@npm:^6.2.7":
-  version: 6.2.8
-  resolution: "@mikro-orm/migrations@npm:6.2.8"
+  version: 6.2.9
+  resolution: "@mikro-orm/migrations@npm:6.2.9"
   dependencies:
-    "@mikro-orm/knex": "npm:6.2.8"
+    "@mikro-orm/knex": "npm:6.2.9"
     fs-extra: "npm:11.2.0"
     umzug: "npm:3.8.0"
   peerDependencies:
     "@mikro-orm/core": ^6.0.0
-  checksum: 10/70f590e1a08493901a9123e04aedff482f8104bcb35d083d6facbd9213b1fc0d4896b3915cda0e797958adfd4c4a0f6b9bac32f03b8884372b0eadd1131b59d4
+  checksum: 10/68a849f887bb40770783e607221eba4911d28c1d246a5a3417415fa437206a8ec7788f5f81d600190bf8a4bcf48e6e5e12c65a785b69c1af129e74e5964d5505
   languageName: node
   linkType: hard
 
 "@mikro-orm/mysql@npm:^6.2.7":
-  version: 6.2.8
-  resolution: "@mikro-orm/mysql@npm:6.2.8"
+  version: 6.2.9
+  resolution: "@mikro-orm/mysql@npm:6.2.9"
   dependencies:
-    "@mikro-orm/knex": "npm:6.2.8"
-    mysql2: "npm:3.9.7"
+    "@mikro-orm/knex": "npm:6.2.9"
+    mysql2: "npm:3.10.0"
   peerDependencies:
     "@mikro-orm/core": ^6.0.0
-  checksum: 10/18457bc01528ae3d51438871121ae12c6d228ef92a1e9751ef743c63fd421400aca8cba37a2f2c14b07fac51b37a19f5120b0106cf942ef5401e76914fcb6572
+  checksum: 10/946750d955573b9c631007f88e446b39aa9dc1d2db7ef4be1418883ddc716599fc39ee0438b60002d0ddc1f7022913ab269aad2586620d411b7f4cba1cf68bbc
   languageName: node
   linkType: hard
 
@@ -993,26 +1003,26 @@ __metadata:
   linkType: hard
 
 "@mikro-orm/reflection@npm:^6.2.7":
-  version: 6.2.8
-  resolution: "@mikro-orm/reflection@npm:6.2.8"
+  version: 6.2.9
+  resolution: "@mikro-orm/reflection@npm:6.2.9"
   dependencies:
     globby: "npm:11.1.0"
     ts-morph: "npm:22.0.0"
   peerDependencies:
     "@mikro-orm/core": ^6.0.0
-  checksum: 10/471411e2b48d291f4e127642620793846c5720c5dd01954abcec6b0ec91263e4227342b3f043b2da17b422ee68c6c9fb556c462ebaf295b4424d7b5c06bffac6
+  checksum: 10/a37b4201c4adfdb03a2e9103eba7592013c98640f81c5fb50e4238ec526964789967ec776f26c35726c5a21e00785a3eb485122688528c1723a118a579795b11
   languageName: node
   linkType: hard
 
 "@mikro-orm/seeder@npm:^6.2.7":
-  version: 6.2.8
-  resolution: "@mikro-orm/seeder@npm:6.2.8"
+  version: 6.2.9
+  resolution: "@mikro-orm/seeder@npm:6.2.9"
   dependencies:
     fs-extra: "npm:11.2.0"
     globby: "npm:11.1.0"
   peerDependencies:
     "@mikro-orm/core": ^6.0.0
-  checksum: 10/b406dfef8ea0ddc128409653becdef605c8b843f934a42dc9484dae1e07fa995c5cd75c34241ba633ad0426f87fbcfec639d47e7de338122fe22318bca4e01d0
+  checksum: 10/6f9a58d6a275488722f9bd513c688e7dd5234549192e6051e40a791b0b93eb1c49f06855bd1e08ff34ec14be003c70880155bb82cd13f8c4d6f49f0abf41ef49
   languageName: node
   linkType: hard
 
@@ -1584,11 +1594,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:^20.11.30":
-  version: 20.12.13
-  resolution: "@types/node@npm:20.12.13"
+  version: 20.13.0
+  resolution: "@types/node@npm:20.13.0"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10/c9f02cfe342bce4aa9221f389115c1f9e3bd9abc87d45e3b2c3a5b92d99523c02b72dd67f50cbbc5edddbaf7dd458cf61dd3289d7a8c14fde80c998df10fee82
+  checksum: 10/82f0e999078fa5e251de002c755d18f63c47ff09c192fdd1381ca91774327563ad778244ab51f52304a9432b5ba678c1328585ef5e92ffdc5eed8e950a6ad1b9
   languageName: node
   linkType: hard
 
@@ -3010,7 +3020,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:4.3.4, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.4":
+"debug@npm:4, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.4":
+  version: 4.3.5
+  resolution: "debug@npm:4.3.5"
+  dependencies:
+    ms: "npm:2.1.2"
+  peerDependenciesMeta:
+    supports-color:
+      optional: true
+  checksum: 10/cb6eab424c410e07813ca1392888589972ce9a32b8829c6508f5e1f25f3c3e70a76731610ae55b4bbe58d1a2fffa1424b30e97fa8d394e49cd2656a9643aedd2
+  languageName: node
+  linkType: hard
+
+"debug@npm:4.3.4":
   version: 4.3.4
   resolution: "debug@npm:4.3.4"
   dependencies:
@@ -5573,10 +5595,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mikro-orm@npm:6.2.8":
-  version: 6.2.8
-  resolution: "mikro-orm@npm:6.2.8"
-  checksum: 10/e3be479a75555ee978446246c3d8bc6b25bf70afef7d97f75d56ffea9dd5321fd5f0142ee94dbcb132dcff69d5767139509d93ab1bee5cc9bf7c760e7ad2aa46
+"mikro-orm@npm:6.2.9":
+  version: 6.2.9
+  resolution: "mikro-orm@npm:6.2.9"
+  checksum: 10/e2a994bf0d3d81173c69effd580fe6b0371b2c520ed92e0a1cd6aeafbefe59967f4f12bbe4ad3c6cfea6bc764722a031fe05bcef383768aca074631e768aede8
   languageName: node
   linkType: hard
 
@@ -5825,9 +5847,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mysql2@npm:3.9.7":
-  version: 3.9.7
-  resolution: "mysql2@npm:3.9.7"
+"mysql2@npm:3.10.0":
+  version: 3.10.0
+  resolution: "mysql2@npm:3.10.0"
   dependencies:
     denque: "npm:^2.1.0"
     generate-function: "npm:^2.3.1"
@@ -5837,7 +5859,7 @@ __metadata:
     named-placeholders: "npm:^1.1.3"
     seq-queue: "npm:^0.0.5"
     sqlstring: "npm:^2.3.2"
-  checksum: 10/7f43b17cc0acdec30791c9b29a97c75f7e4512bbf41c2baa383ce76b50d0a92300083a8dba3cc019423ee3b7710ed7c756baf805449f0c9650e08e5d48454b07
+  checksum: 10/81426e2b64b2b193c6652a45caef2aec00ddcc849dfaf7e36750f4b2cc8f4bf235b98b1ed385bb541f3a019bcd4310c57ee1522f609c02e1bb3b8964e95acf8b
   languageName: node
   linkType: hard
 
@@ -7198,13 +7220,13 @@ __metadata:
   linkType: hard
 
 "swagger-ui-express@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "swagger-ui-express@npm:5.0.0"
+  version: 5.0.1
+  resolution: "swagger-ui-express@npm:5.0.1"
   dependencies:
     swagger-ui-dist: "npm:>=5.0.0"
   peerDependencies:
     express: ">=4.0.0 || >=5.0.0-beta"
-  checksum: 10/e970d99cb33b8db235feb23d24b79d680cfbb8f9e920863990df5549ae56a35b12dfa761bbdde22cd8cbec2823b7d1078710b4a1970c9441b541917b56d197cc
+  checksum: 10/13d95e6683214717f98dd53063bf398751ea798e971c43ece949b67a45102cc48995da319547002b2acc262d39f1994bd4af39828d99e95658966d6b332b585e
   languageName: node
   linkType: hard
 
