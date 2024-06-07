@@ -2564,9 +2564,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001587":
-  version: 1.0.30001628
-  resolution: "caniuse-lite@npm:1.0.30001628"
-  checksum: 10/bf1c4afe673a49eb3044438ed529dc1ae3e8252d2fcdd1ad7ff2e6fc1329379bd395c24245d46e08d61e5845a2f007a5dce062c0b804c917b35673c0ec9f9ba7
+  version: 1.0.30001629
+  resolution: "caniuse-lite@npm:1.0.30001629"
+  checksum: 10/3345bbf1f114b4ba6f862361f2ae6c3f9898b9e061e5d2edd829eff8d2d138f86a6b8d34b2eea48fbf71e6b860e4b6559b31437a7da85568e9d95d03ec042fa9
   languageName: node
   linkType: hard
 
@@ -3209,9 +3209,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.790
-  resolution: "electron-to-chromium@npm:1.4.790"
-  checksum: 10/9a0735ea1b7df71d5ca3af402149bbb863cdb8f0476edfbfed148152db730454528bdbfc537d40a63041ab213c6013c642808a341bebf107bd6448acde716663
+  version: 1.4.793
+  resolution: "electron-to-chromium@npm:1.4.793"
+  checksum: 10/a6d5f7be295d537c90d44e2e34dc007616d498e61f1a62eee09ae94fd5a836b6c42a25d6fc53a0351b23416b9a68247969b471af269acf00fda1968ad922e068
   languageName: node
   linkType: hard
 
@@ -7292,8 +7292,8 @@ __metadata:
   linkType: hard
 
 "terser@npm:^5.26.0":
-  version: 5.31.0
-  resolution: "terser@npm:5.31.0"
+  version: 5.31.1
+  resolution: "terser@npm:5.31.1"
   dependencies:
     "@jridgewell/source-map": "npm:^0.3.3"
     acorn: "npm:^8.8.2"
@@ -7301,7 +7301,7 @@ __metadata:
     source-map-support: "npm:~0.5.20"
   bin:
     terser: bin/terser
-  checksum: 10/11b28065d6fd9f496acf1f23b22982867e4625e769d0a1821861a15e6bebfdb414142a8444f74f2a93f458d0182b8314ceb889be053b50eb5907cc98e8230467
+  checksum: 10/4b22b62e762aebcd538dc3f5d5323fb3b51786e9294f7069d591cb61401a1161778039fdf283bbaf06244f500ee8563e0c49fc3c64176310556f34cc6637d463
   languageName: node
   linkType: hard
 
