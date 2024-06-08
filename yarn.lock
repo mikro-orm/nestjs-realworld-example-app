@@ -3209,9 +3209,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.793
-  resolution: "electron-to-chromium@npm:1.4.793"
-  checksum: 10/a6d5f7be295d537c90d44e2e34dc007616d498e61f1a62eee09ae94fd5a836b6c42a25d6fc53a0351b23416b9a68247969b471af269acf00fda1968ad922e068
+  version: 1.4.796
+  resolution: "electron-to-chromium@npm:1.4.796"
+  checksum: 10/af3c22d0cbde460a17a9e2b3ad44fa767d154f0fe431bdb3ac9009f712d4b20f2cea5d3c8cfe32fbd8da732e4f9abb12a29f7083174d3b28a27dce17453eca2e
   languageName: node
   linkType: hard
 
@@ -7552,9 +7552,9 @@ __metadata:
   linkType: hard
 
 "type-fest@npm:^4.0.0":
-  version: 4.19.0
-  resolution: "type-fest@npm:4.19.0"
-  checksum: 10/746294c1f463913425a4b40e9160ed1ea5cd1f877587789cbd42e01c6b67be9c55daf75e0d4787da584b98a09487df69e89b44c934d497e5d035800e115dc1e9
+  version: 4.20.0
+  resolution: "type-fest@npm:4.20.0"
+  checksum: 10/df037c11f6393312f27825ea6eb2c8cd62b1ba21c31144bed41854648ba2a18dcb8c68a930607c7227dd531b42006cc7c7a60f7f034668d1c92c205523ae1ea2
   languageName: node
   linkType: hard
 
