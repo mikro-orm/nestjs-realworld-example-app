@@ -2,7 +2,7 @@ version: "3.4"
 
 services:
   mysql:
-    image: mysql:8.4
+    image: mysql:9.0
     platform: linux/x86_64
     restart: unless-stopped
     ports:
