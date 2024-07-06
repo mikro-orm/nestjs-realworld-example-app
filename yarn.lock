@@ -1040,8 +1040,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/cli@npm:^10.3.2":
-  version: 10.4.1
-  resolution: "@nestjs/cli@npm:10.4.1"
+  version: 10.4.2
+  resolution: "@nestjs/cli@npm:10.4.2"
   dependencies:
     "@angular-devkit/core": "npm:17.3.8"
     "@angular-devkit/schematics": "npm:17.3.8"
@@ -1056,11 +1056,10 @@ __metadata:
     inquirer: "npm:8.2.6"
     node-emoji: "npm:1.11.0"
     ora: "npm:5.4.1"
-    source-map-support: "npm:0.5.21"
     tree-kill: "npm:1.2.2"
     tsconfig-paths: "npm:4.2.0"
     tsconfig-paths-webpack-plugin: "npm:4.1.0"
-    typescript: "npm:5.5.3"
+    typescript: "npm:5.3.3"
     webpack: "npm:5.92.1"
     webpack-node-externals: "npm:3.0.0"
   peerDependencies:
@@ -1073,7 +1072,7 @@ __metadata:
       optional: true
   bin:
     nest: bin/nest.js
-  checksum: 10/855287368d49c5c2496a8b437ca81b3a8f955cec02b98d5d2e1d831062dff1ddccee11fc7d789524ccf0678f072a41100351dcf5c3442ce0602483c0e6db460c
+  checksum: 10/20587526f460c9d696a0637354f746efe272547b570321119411bef7298471cd157f384f9097ae529f70e9e67e094ce5d2112e360198502b561cbec91bc271b6
   languageName: node
   linkType: hard
 
@@ -1596,11 +1595,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:^20.11.30":
-  version: 20.14.9
-  resolution: "@types/node@npm:20.14.9"
+  version: 20.14.10
+  resolution: "@types/node@npm:20.14.10"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10/f313b06c79be92f5d3541159ef813b9fc606941f951ecf826e940658c6d4952755ca2f06277b746326cef0697ed79a04676ecde053d32e1121b3352c8168d2e9
+  checksum: 10/672892cf94d0d95cf052f11271990686a0fd204cd1e5fe7a4ef240e5315e06711765dc47b9ec98627d3adac18b8c92bb7e2d8db21d18faa20bc3e3203a143e79
   languageName: node
   linkType: hard
 
@@ -3209,9 +3208,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.796":
-  version: 1.4.816
-  resolution: "electron-to-chromium@npm:1.4.816"
-  checksum: 10/c44da0ca6eb40b92cc025a9ab157d465708601b4c226b7a41ab3fbb42825094f62b25d6260bb4399dd9a4be308611f22711412eb61a13cecc544d95fab8eafab
+  version: 1.4.817
+  resolution: "electron-to-chromium@npm:1.4.817"
+  checksum: 10/fcf99d078a6dfe2923d63cc218bf9e22f08c0f67a6db2ec5a8d18752f288946f2fa5a77d9873119353b1407517b48fc217fa187060cb9cb30bc1510f30e08ab4
   languageName: node
   linkType: hard
 
@@ -6856,7 +6855,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map-support@npm:0.5.21, source-map-support@npm:~0.5.20":
+"source-map-support@npm:~0.5.20":
   version: 0.5.21
   resolution: "source-map-support@npm:0.5.21"
   dependencies:
@@ -7449,6 +7448,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:5.3.3":
+  version: 5.3.3
+  resolution: "typescript@npm:5.3.3"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10/6e4e6a14a50c222b3d14d4ea2f729e79f972fa536ac1522b91202a9a65af3605c2928c4a790a4a50aa13694d461c479ba92cedaeb1e7b190aadaa4e4b96b8e18
+  languageName: node
+  linkType: hard
+
 "typescript@npm:5.5.3":
   version: 5.5.3
   resolution: "typescript@npm:5.5.3"
@@ -7456,6 +7465,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 10/11a867312419ed497929aafd2f1d28b2cd41810a5eb6c6e9e169559112e9ea073d681c121a29102e67cd4478d0a4ae37a306a5800f3717f59c4337e6a9bd5e8d
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>":
+  version: 5.3.3
+  resolution: "typescript@patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10/c93786fcc9a70718ba1e3819bab56064ead5817004d1b8186f8ca66165f3a2d0100fee91fa64c840dcd45f994ca5d615d8e1f566d39a7470fc1e014dbb4cf15d
   languageName: node
   linkType: hard
 
