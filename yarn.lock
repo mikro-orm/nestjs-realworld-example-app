@@ -104,14 +104,14 @@ __metadata:
   linkType: hard
 
 "@babel/generator@npm:^7.24.8, @babel/generator@npm:^7.24.9, @babel/generator@npm:^7.7.2":
-  version: 7.24.9
-  resolution: "@babel/generator@npm:7.24.9"
+  version: 7.24.10
+  resolution: "@babel/generator@npm:7.24.10"
   dependencies:
     "@babel/types": "npm:^7.24.9"
     "@jridgewell/gen-mapping": "npm:^0.3.5"
     "@jridgewell/trace-mapping": "npm:^0.3.25"
     jsesc: "npm:^2.5.1"
-  checksum: 10/ef48aaa9e6719dd4bc7bb250c0d9c3059685651f38f180bab6e8fb65f4417d8f408d266ff334181ac6200f4465ba8143ef11a1d80ed0cf9ee5e9e2103efbc1fb
+  checksum: 10/c2491fb7d985527a165546cbcf9e5f6a2518f2a968c7564409c012acce1019056b21e67a152af89b3f4d4a295ca2e75a1a16858152f750efbc4b5087f0cb7253
   languageName: node
   linkType: hard
 
@@ -1289,9 +1289,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rushstack/node-core-library@npm:5.4.1":
-  version: 5.4.1
-  resolution: "@rushstack/node-core-library@npm:5.4.1"
+"@rushstack/node-core-library@npm:5.5.0":
+  version: 5.5.0
+  resolution: "@rushstack/node-core-library@npm:5.5.0"
   dependencies:
     ajv: "npm:~8.13.0"
     ajv-draft-04: "npm:~1.0.0"
@@ -1306,34 +1306,34 @@ __metadata:
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10/7822a77987b99fa7ada0be01e715608820a0ca98b4e3c7c6cd7389fbe210f70ae1d4070d2d556a1ea0fd04fe624abafddf112092e407b53273bb019ad24cf6ce
+  checksum: 10/8b60669d05fa8548339256ff7da7df39c455627200fef9ff57458ecc5f0c9946ebce43cac216b69e98f3994185de84508f0bc9608b0ac863193a34c428218868
   languageName: node
   linkType: hard
 
-"@rushstack/terminal@npm:0.13.0":
-  version: 0.13.0
-  resolution: "@rushstack/terminal@npm:0.13.0"
+"@rushstack/terminal@npm:0.13.1":
+  version: 0.13.1
+  resolution: "@rushstack/terminal@npm:0.13.1"
   dependencies:
-    "@rushstack/node-core-library": "npm:5.4.1"
+    "@rushstack/node-core-library": "npm:5.5.0"
     supports-color: "npm:~8.1.1"
   peerDependencies:
     "@types/node": "*"
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10/099c00b7df196aafb345899c395a3600e578bebb905b3de7e49971da0f03501b9ebf7b6442f07ee894ed47fb11e216c8e219d8075bdf9abc6d292658301ae300
+  checksum: 10/5e02a370c6563b387de9a165d2fe01cefb2982e6837e47fb19111647dd5b0ace24a61f0b23590cd95af2c52cde026601b986c98393f8ee11708da402df24ac39
   languageName: node
   linkType: hard
 
 "@rushstack/ts-command-line@npm:^4.12.2":
-  version: 4.22.0
-  resolution: "@rushstack/ts-command-line@npm:4.22.0"
+  version: 4.22.1
+  resolution: "@rushstack/ts-command-line@npm:4.22.1"
   dependencies:
-    "@rushstack/terminal": "npm:0.13.0"
+    "@rushstack/terminal": "npm:0.13.1"
     "@types/argparse": "npm:1.0.38"
     argparse: "npm:~1.0.9"
     string-argv: "npm:~0.3.1"
-  checksum: 10/274a1e8221edbe49f2693b3a8fe4a2c9767a81c31a9e6116eb861e7e895470eddc9c6ed7c32e22d3bed08232d07448843d54b63426c2f114d2298f16cd1ea413
+  checksum: 10/f468441624535f942a143dd133355b314354956e658e7180b72701424cc90569b9fcac38ee86453a651e96892593b36d35368bc3bbffd7c78de0decc73a810d9
   languageName: node
   linkType: hard
 
@@ -1595,11 +1595,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:^20.11.30":
-  version: 20.14.10
-  resolution: "@types/node@npm:20.14.10"
+  version: 20.14.11
+  resolution: "@types/node@npm:20.14.11"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10/672892cf94d0d95cf052f11271990686a0fd204cd1e5fe7a4ef240e5315e06711765dc47b9ec98627d3adac18b8c92bb7e2d8db21d18faa20bc3e3203a143e79
+  checksum: 10/344e1ce1ed16c86ed1c4209ab4d1de67db83dd6b694a6fabe295c47144dde2c58dabddae9f39a0a2bdd246e95f8d141ccfe848e464884b48b8918df4f7788025
   languageName: node
   linkType: hard
 
@@ -5991,9 +5991,9 @@ __metadata:
   linkType: hard
 
 "node-releases@npm:^2.0.14":
-  version: 2.0.14
-  resolution: "node-releases@npm:2.0.14"
-  checksum: 10/0f7607ec7db5ef1dc616899a5f24ae90c869b6a54c2d4f36ff6d84a282ab9343c7ff3ca3670fe4669171bb1e8a9b3e286e1ef1c131f09a83d70554f855d54f24
+  version: 2.0.17
+  resolution: "node-releases@npm:2.0.17"
+  checksum: 10/199e4128db3c415368abf344c0bff527c1300c67094b2d5592a67f9388b434cdad8bf76829dace65c9318fbb27cda8ecb91c5758057bbdf0b59e9408ab92408b
   languageName: node
   linkType: hard
 
@@ -6729,11 +6729,11 @@ __metadata:
   linkType: hard
 
 "semver@npm:^7.3.5, semver@npm:^7.5.3, semver@npm:^7.5.4, semver@npm:^7.6.0":
-  version: 7.6.2
-  resolution: "semver@npm:7.6.2"
+  version: 7.6.3
+  resolution: "semver@npm:7.6.3"
   bin:
     semver: bin/semver.js
-  checksum: 10/296b17d027f57a87ef645e9c725bff4865a38dfc9caf29b26aa084b85820972fbe7372caea1ba6857162fa990702c6d9c1d82297cecb72d56c78ab29070d2ca2
+  checksum: 10/36b1fbe1a2b6f873559cd57b238f1094a053dbfd997ceeb8757d79d1d2089c56d1321b9f1069ce263dc64cfa922fa1d2ad566b39426fe1ac6c723c1487589e10
   languageName: node
   linkType: hard
 
@@ -7238,8 +7238,8 @@ __metadata:
   linkType: hard
 
 "terser@npm:^5.26.0":
-  version: 5.31.2
-  resolution: "terser@npm:5.31.2"
+  version: 5.31.3
+  resolution: "terser@npm:5.31.3"
   dependencies:
     "@jridgewell/source-map": "npm:^0.3.3"
     acorn: "npm:^8.8.2"
@@ -7247,7 +7247,7 @@ __metadata:
     source-map-support: "npm:~0.5.20"
   bin:
     terser: bin/terser
-  checksum: 10/dab8d0a7e2845f14535433795aa8dcf1b80a33e75749f5dbd67ee97aa66c1dec37191afa46dd88dad8472c9ff0bf16a812dd4388cb30d8675a6a95a7ead0421b
+  checksum: 10/7f66d93a1157f66f5eda16515ed45e6eb485d3c4acbc46e78a5e62922f5b4643d9212abc586f791021fafc71563a93475a986c52f4270a5e0b3ee50a70507d9e
   languageName: node
   linkType: hard
 
@@ -7492,9 +7492,9 @@ __metadata:
   linkType: hard
 
 "type-fest@npm:^4.0.0":
-  version: 4.21.0
-  resolution: "type-fest@npm:4.21.0"
-  checksum: 10/a4dc074b25239fff4062495c58554dcec15845622d753092d2bf24fc3b1c49f85805ed74f151976d666056ff122b3a5a988e85226575b7fbbc8e92d2db210137
+  version: 4.22.0
+  resolution: "type-fest@npm:4.22.0"
+  checksum: 10/f5e1471829166641cc52dd826839f40c43525a66c3fcd76bba8635bc2c42c339c7198b0f17395d23a91205da913be8294c58ab8d52cc03ef227386d24099f525
   languageName: node
   linkType: hard
 
