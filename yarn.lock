@@ -1159,8 +1159,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/schematics@npm:^10.0.1, @nestjs/schematics@npm:^10.1.1":
-  version: 10.1.2
-  resolution: "@nestjs/schematics@npm:10.1.2"
+  version: 10.1.3
+  resolution: "@nestjs/schematics@npm:10.1.3"
   dependencies:
     "@angular-devkit/core": "npm:17.3.8"
     "@angular-devkit/schematics": "npm:17.3.8"
@@ -1169,7 +1169,7 @@ __metadata:
     pluralize: "npm:8.0.0"
   peerDependencies:
     typescript: ">=4.8.2"
-  checksum: 10/c6aff36353bc43da024891d643a7b3683ee9c1764e351bded8430f52d90cf8e53c1e2aee430542efd55943e8ce674cba7ba120543d078ea38058364f80d8d971
+  checksum: 10/f9aa9a31192e2e7ae4d2e831dabb2438156be4fcc8b4b846746e2f137d7775a7768379974f0c3d4b6c436a157131d0b6744dc555ee28ca32282bc7bf971bc09a
   languageName: node
   linkType: hard
 
