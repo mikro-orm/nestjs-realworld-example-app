@@ -1287,14 +1287,14 @@ __metadata:
   linkType: hard
 
 "@rushstack/ts-command-line@npm:^4.12.2":
-  version: 4.22.3
-  resolution: "@rushstack/ts-command-line@npm:4.22.3"
+  version: 4.22.4
+  resolution: "@rushstack/ts-command-line@npm:4.22.4"
   dependencies:
     "@rushstack/terminal": "npm:0.13.3"
     "@types/argparse": "npm:1.0.38"
     argparse: "npm:~1.0.9"
     string-argv: "npm:~0.3.1"
-  checksum: 10/64509a787022944ee8bbb5e860f6791d004bc5c8a0c8a74f35b4e30622ea3ef5b1912acf1c7af3eb183407d62059eb4982c9ad2d69eea7e3b53c4d1c76736b43
+  checksum: 10/cc3d071174a78e15e9c91a9481ac5d4b85a9ff23415a1ebec485508abbc8c45683e56279d16406fa49f8ebc21eec9d36cbd1400b3a2aad597e15de1240dc95b0
   languageName: node
   linkType: hard
 
@@ -1556,20 +1556,20 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 22.0.2
-  resolution: "@types/node@npm:22.0.2"
+  version: 22.1.0
+  resolution: "@types/node@npm:22.1.0"
   dependencies:
-    undici-types: "npm:~6.11.1"
-  checksum: 10/7f5937f22d5171df6d1764b838b64f03fd2686e0ebee15bb64eb609ee5280cfd8cbbb78efdf163bb49eee11c77de461ef8b85e2781e508d231777390ddf0e8ec
+    undici-types: "npm:~6.13.0"
+  checksum: 10/c2ac1340509646b6c673b27fae2a46e501a97e540e7221be4dd2e0be7a0f61efefb5bf3be8bedf2dbce245fa49cfc49bba77bce73fa3c4296d0d19521ced3222
   languageName: node
   linkType: hard
 
 "@types/node@npm:^20.11.30":
-  version: 20.14.13
-  resolution: "@types/node@npm:20.14.13"
+  version: 20.14.14
+  resolution: "@types/node@npm:20.14.14"
   dependencies:
     undici-types: "npm:~5.26.4"
-  checksum: 10/749160b6bd9866e6169cb1a222e75aaf81da3868af1fda1e1e66d33c7e182be381f98a42b7d231fddf470f6389f2052ee842e776b3fdc677df798b933617866d
+  checksum: 10/035bc347e3de04888d537801e23eb4b4f99522975ca002dbfef978edd853710031b7cd43bf022670d6aba4ed5d4ac75ea1b5ff77ff8f80998bffd943b7bcef48
   languageName: node
   linkType: hard
 
@@ -7562,10 +7562,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~6.11.1":
-  version: 6.11.1
-  resolution: "undici-types@npm:6.11.1"
-  checksum: 10/bdee4c3d67626bf45f1502b817b96e328ff9c3c006ecafa3708bc39ba66d6cecc2d5d69d3148667bb833d3fb457c0e715bfeed0b7b6767fa4d3044f5c1036ba9
+"undici-types@npm:~6.13.0":
+  version: 6.13.0
+  resolution: "undici-types@npm:6.13.0"
+  checksum: 10/da52e37cbc6da3a75da86fa08dd795ca8924430deb91005eb884b840e46e19013ccd4c1c289f70018e8cf0c338add24a500e7c3acfcd49b1ffb27ff9f91e38b9
   languageName: node
   linkType: hard
 
