@@ -5925,7 +5925,7 @@ __metadata:
     passport-jwt: "npm:^4.0.1"
     reflect-metadata: "npm:^0.2.1"
     rxjs: "npm:^7.8.1"
-    slug: "npm:^9.0.0"
+    slug: "npm:^10.0.0"
     supertest: "npm:^7.0.0"
     swagger-ui-express: "npm:^5.0.0"
     ts-jest: "npm:^29.1.2"
@@ -6866,12 +6866,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"slug@npm:^9.0.0":
-  version: 9.1.0
-  resolution: "slug@npm:9.1.0"
+"slug@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "slug@npm:10.0.0"
   bin:
     slug: cli.js
-  checksum: 10/b386fe7363749251c27a08b1d566befaf943ac04c9da145086c537167cda586d3d6fd893f1394d017ec932a90c02b58e815d96fb94f34b9cb83f8acf15f33620
+  checksum: 10/ce81e8f7959bfcfb08f3dfad767b0cc0dd6cbcb82f19e21ec721e1abf05532153ba777696562e47701a5d1bb0074a9dc084496cdc281c69c41bfa6fde91ca7cf
   languageName: node
   linkType: hard
 
