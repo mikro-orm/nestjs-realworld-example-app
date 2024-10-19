@@ -3858,13 +3858,13 @@ __metadata:
   linkType: hard
 
 "formidable@npm:^3.5.1":
-  version: 3.5.1
-  resolution: "formidable@npm:3.5.1"
+  version: 3.5.2
+  resolution: "formidable@npm:3.5.2"
   dependencies:
     dezalgo: "npm:^1.0.4"
-    hexoid: "npm:^1.0.0"
+    hexoid: "npm:^2.0.0"
     once: "npm:^1.4.0"
-  checksum: 10/c9a7bbbd4ca8142893da88b51cf7797adee022344ea180cf157a108bf999bed5ad8bc07a10a28d8a39fcbfaa02e8cba07f4ba336fbeb330deb23907336ba1fc2
+  checksum: 10/b9d87af44be8ba82f8f4955c240e65c559aedb84fecce6b294d97b256db66e6a20d50e799776fdf29ee46cb83857231d12c416c735696b18d3895b85620704f4
   languageName: node
   linkType: hard
 
@@ -4207,10 +4207,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexoid@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "hexoid@npm:1.0.0"
-  checksum: 10/f2271b8b6b0e13fb5a1eccf740f53ce8bae689c80b9498b854c447f9dc94f75f44e0de064c0e4660ecdbfa8942bb2b69973fdcb080187b45bbb409a3c71f19d4
+"hexoid@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "hexoid@npm:2.0.0"
+  checksum: 10/73d8e135bdd9326d0fa9ea05356741d48a3e67fbd3b2ce14c4f7b523a1cdabe70fa42f2c53447244886a0aecdf7873d4124abc30093a72d15188805f7a7ee406
   languageName: node
   linkType: hard
 
