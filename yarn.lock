@@ -1177,9 +1177,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/swagger@npm:^7.3.0":
-  version: 7.4.2
-  resolution: "@nestjs/swagger@npm:7.4.2"
+"@nestjs/swagger@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "@nestjs/swagger@npm:8.0.0"
   dependencies:
     "@microsoft/tsdoc": "npm:^0.15.0"
     "@nestjs/mapped-types": "npm:2.0.5"
@@ -1201,7 +1201,7 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10/e3f9cac6a092442461fe7e4edd45b8af3377a02c626bb2b9f7da2e0ffe4999c3c20f32240aa1a67e9999a919946e6ed6c0da01c703e7d83d49823f1d7b9caf09
+  checksum: 10/43294226fcccc0cde6377e2154845906868636788b76b6a7a4de25487bd6b75cd9b41fd642b3f2891185e314ccb13e6e1a1eeb656a48f758c6e7974018800e53
   languageName: node
   linkType: hard
 
@@ -5876,7 +5876,7 @@ __metadata:
     "@nestjs/core": "npm:^10.3.4"
     "@nestjs/platform-express": "npm:^10.3.4"
     "@nestjs/schematics": "npm:^10.1.1"
-    "@nestjs/swagger": "npm:^7.3.0"
+    "@nestjs/swagger": "npm:^8.0.0"
     "@nestjs/testing": "npm:^10.3.4"
     "@types/express": "npm:^5.0.0"
     "@types/jest": "npm:^29.5.12"
