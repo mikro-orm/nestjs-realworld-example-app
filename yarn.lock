@@ -1178,8 +1178,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/swagger@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@nestjs/swagger@npm:8.0.0"
+  version: 8.0.1
+  resolution: "@nestjs/swagger@npm:8.0.1"
   dependencies:
     "@microsoft/tsdoc": "npm:^0.15.0"
     "@nestjs/mapped-types": "npm:2.0.5"
@@ -1201,7 +1201,7 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10/43294226fcccc0cde6377e2154845906868636788b76b6a7a4de25487bd6b75cd9b41fd642b3f2891185e314ccb13e6e1a1eeb656a48f758c6e7974018800e53
+  checksum: 10/3489a7153aede7a4bf44a77d594ea4d7d69d2dc80d47a047beabd0eef949b9e4e75c291d174d6d550c88aec307c4f9471b57815cfdf7320c0c5bc50ab3e56cce
   languageName: node
   linkType: hard
 
@@ -1579,11 +1579,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:^22.0.0":
-  version: 22.8.2
-  resolution: "@types/node@npm:22.8.2"
+  version: 22.8.4
+  resolution: "@types/node@npm:22.8.4"
   dependencies:
     undici-types: "npm:~6.19.8"
-  checksum: 10/ae4ba44dd13cfd5277fae062f2e55d12631db10b7ec67c842b9a0e21c767a5538c07e6944320fba7a2a7c2aba3130768203c8553a5f1896073e5a39e7f5df195
+  checksum: 10/ee6b6b66c290a74bb37487f5ec533b7333c25e1b2f45016af4cd870408c4366f6fca75de5b8bb7a6e5836ab0536d2ef1910a89a2f797ae33a80344d0e81de03e
   languageName: node
   linkType: hard
 
@@ -2555,9 +2555,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001669":
-  version: 1.0.30001673
-  resolution: "caniuse-lite@npm:1.0.30001673"
-  checksum: 10/e2e053faa5d424a57204a8631b015ef51415c12bcb85622643ea41aff4d5127114017d27df7391d46737e1bbcd9bd8ed004cf370920c9f264f63fca60303a81d
+  version: 1.0.30001674
+  resolution: "caniuse-lite@npm:1.0.30001674"
+  checksum: 10/0a15b79917a839b1374b25674262d03bca384689e7c7537aa139d7e64826ba08a896ba1c248ac6bdb2ebebe838b788abf360e4dd98bfde888752a49d9bda70a8
   languageName: node
   linkType: hard
 
@@ -3184,9 +3184,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.41":
-  version: 1.5.48
-  resolution: "electron-to-chromium@npm:1.5.48"
-  checksum: 10/ed3caf8f26c5e8c629bec4427dc61f264d101d9936cfe1991ea1fac13d6f11d1e4d24439bf894957561fdc8e22e1e3578edb5576803c652bcc39aa838ad83b9c
+  version: 1.5.49
+  resolution: "electron-to-chromium@npm:1.5.49"
+  checksum: 10/4c368eca149587619bbc961490883cca510c8ab1986abee6cbbb7ed245a06d68607245c25078a9460c0d18ea4179411abed94b755d7b7a82a3f4e696494c4360
   languageName: node
   linkType: hard
 
