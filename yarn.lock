@@ -1012,8 +1012,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/cli@npm:^10.3.2":
-  version: 10.4.7
-  resolution: "@nestjs/cli@npm:10.4.7"
+  version: 10.4.8
+  resolution: "@nestjs/cli@npm:10.4.8"
   dependencies:
     "@angular-devkit/core": "npm:17.3.11"
     "@angular-devkit/schematics": "npm:17.3.11"
@@ -1024,13 +1024,13 @@ __metadata:
     cli-table3: "npm:0.6.5"
     commander: "npm:4.1.1"
     fork-ts-checker-webpack-plugin: "npm:9.0.2"
-    glob: "npm:10.4.2"
+    glob: "npm:10.4.5"
     inquirer: "npm:8.2.6"
     node-emoji: "npm:1.11.0"
     ora: "npm:5.4.1"
     tree-kill: "npm:1.2.2"
     tsconfig-paths: "npm:4.2.0"
-    tsconfig-paths-webpack-plugin: "npm:4.1.0"
+    tsconfig-paths-webpack-plugin: "npm:4.2.0"
     typescript: "npm:5.6.3"
     webpack: "npm:5.96.1"
     webpack-node-externals: "npm:3.0.0"
@@ -1044,7 +1044,7 @@ __metadata:
       optional: true
   bin:
     nest: bin/nest.js
-  checksum: 10/aa0547f73eb838f0d945d40a227a4d3dbbbc683e792c81043d73a4a19e40de4de4277fcdd47fa69ae6261de55845c4ab03f65f65b6bec9fa6de0299fb2eed422
+  checksum: 10/11f69cf6a51c0bb1d0fe19dd1982fd3fd7d1d9302843bde373a3e0eb3688339c4ab463a8c724bd8b133db968105a8fb2202a7d318f71426cfa6674c3f5b63a01
   languageName: node
   linkType: hard
 
@@ -1573,11 +1573,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:^22.0.0":
-  version: 22.9.0
-  resolution: "@types/node@npm:22.9.0"
+  version: 22.9.1
+  resolution: "@types/node@npm:22.9.1"
   dependencies:
     undici-types: "npm:~6.19.8"
-  checksum: 10/a7df3426891868b0f5fb03e46aeddd8446178233521c624a44531c92a040cf08a82d8235f7e1e02af731fd16984665d4d71f3418caf9c2788313b10f040d615d
+  checksum: 10/43fadcb3a914a1daff8e559839f235eec65fe80bfef5016b361dbc7952c9bc9d79456c78d89beab275a9e9e5accff37e838c019ab519f821f12c953cd6c24b50
   languageName: node
   linkType: hard
 
@@ -3985,23 +3985,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:10.4.2":
-  version: 10.4.2
-  resolution: "glob@npm:10.4.2"
-  dependencies:
-    foreground-child: "npm:^3.1.0"
-    jackspeak: "npm:^3.1.2"
-    minimatch: "npm:^9.0.4"
-    minipass: "npm:^7.1.2"
-    package-json-from-dist: "npm:^1.0.0"
-    path-scurry: "npm:^1.11.1"
-  bin:
-    glob: dist/esm/bin.mjs
-  checksum: 10/e412776b5952a818eba790c830bea161c9a56813fd767d8c4c49f855603b1fb962b3e73f1f627a47298a57d2992b9f0f2fe15cf93e74ecaaa63fb45d63fdd090
-  languageName: node
-  linkType: hard
-
-"glob@npm:^10.2.2, glob@npm:^10.3.10":
+"glob@npm:10.4.5, glob@npm:^10.2.2, glob@npm:^10.3.10":
   version: 10.4.5
   resolution: "glob@npm:10.4.5"
   dependencies:
@@ -5275,9 +5259,9 @@ __metadata:
   linkType: hard
 
 "libphonenumber-js@npm:^1.10.53":
-  version: 1.11.14
-  resolution: "libphonenumber-js@npm:1.11.14"
-  checksum: 10/44433ddcd1f542b68a417c33e1b3ca4f9bb06c1fd8f2f1cd1683472072e12157f2d88d8eb3624a806a1ed1c1012c9f159934f764e7b6ff736c6d17010a7c03d5
+  version: 1.11.15
+  resolution: "libphonenumber-js@npm:1.11.15"
+  checksum: 10/f04e33e188aeeae66efd56625e3affa52e127ade6e81bea896c4da30d2c2c8e2310dae67b9d7f51b9f39f4e0f543b7d6d1caef580a9c35b883b44711f76a37f9
   languageName: node
   linkType: hard
 
@@ -7389,14 +7373,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsconfig-paths-webpack-plugin@npm:4.1.0":
-  version: 4.1.0
-  resolution: "tsconfig-paths-webpack-plugin@npm:4.1.0"
+"tsconfig-paths-webpack-plugin@npm:4.2.0":
+  version: 4.2.0
+  resolution: "tsconfig-paths-webpack-plugin@npm:4.2.0"
   dependencies:
     chalk: "npm:^4.1.0"
     enhanced-resolve: "npm:^5.7.0"
+    tapable: "npm:^2.2.1"
     tsconfig-paths: "npm:^4.1.2"
-  checksum: 10/e5a36902528e51bfd13daddd9b843cf4c12d40f23bb21953bdbf4fe97ade11ccd848ca5f1353f89688c7ef4704099e26a8f9f1b1cd0a0484287b93b00215b63e
+  checksum: 10/946f23a38a404bf2d3803b60b5af1d7a6cc85bed411c9feefa707656efd9007cdcee7eb0e860ca8690ba479810c7b94ce026f6ac70daa6c803e55aac809c86c4
   languageName: node
   linkType: hard
 
