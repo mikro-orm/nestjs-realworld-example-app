@@ -4092,9 +4092,11 @@ __metadata:
   linkType: hard
 
 "has-proto@npm:^1.0.1":
-  version: 1.0.3
-  resolution: "has-proto@npm:1.0.3"
-  checksum: 10/0b67c2c94e3bea37db3e412e3c41f79d59259875e636ba471e94c009cdfb1fa82bf045deeffafc7dbb9c148e36cae6b467055aaa5d9fad4316e11b41e3ba551a
+  version: 1.1.0
+  resolution: "has-proto@npm:1.1.0"
+  dependencies:
+    call-bind: "npm:^1.0.7"
+  checksum: 10/75387f6f7e296057900dac29fd499a132dea316534776bb9c178378379eb4252d89ee41ca37b1aa7ef743a587126e641b24401d69fcfca6796718a546b5c800e
   languageName: node
   linkType: hard
 
