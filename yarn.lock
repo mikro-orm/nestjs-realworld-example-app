@@ -2540,9 +2540,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001669":
-  version: 1.0.30001684
-  resolution: "caniuse-lite@npm:1.0.30001684"
-  checksum: 10/35dd0941dd32319c87409441e8400faea32114c4a74938c29262a613160d2890a4f57902e24c770f076dbd0b85c4442aa135f9f641d4a74a9246fe624e6f780a
+  version: 1.0.30001685
+  resolution: "caniuse-lite@npm:1.0.30001685"
+  checksum: 10/33ea5c4df6ba120c977907d909bca9c9c7eccd527055d5d806947c6e5e56a2b6a47893258487ead32a6d197fad02e348adf6ed0fda24501014ecaa57dcd83e29
   languageName: node
   linkType: hard
 
@@ -3169,9 +3169,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.41":
-  version: 1.5.67
-  resolution: "electron-to-chromium@npm:1.5.67"
-  checksum: 10/02dc78eeaa5eb6630353e48a30f2f081e283a6e1ef9ba0d4a932ca289795fd98947b6fa85c9d74d8fb335b80ad8f65d893052b047a9ac78093e5b37501c3d34f
+  version: 1.5.68
+  resolution: "electron-to-chromium@npm:1.5.68"
+  checksum: 10/405fbed1feda987c586e40fdf19a8cbf83bfa77458d5f873cdf8801d083c6e49258a7de285b86405e00655d12eaede864c45af58a32f8e83c12e6d07f39482af
   languageName: node
   linkType: hard
 
@@ -4101,9 +4101,9 @@ __metadata:
   linkType: hard
 
 "has-symbols@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "has-symbols@npm:1.0.3"
-  checksum: 10/464f97a8202a7690dadd026e6d73b1ceeddd60fe6acfd06151106f050303eaa75855aaa94969df8015c11ff7c505f196114d22f7386b4a471038da5874cf5e9b
+  version: 1.1.0
+  resolution: "has-symbols@npm:1.1.0"
+  checksum: 10/959385c98696ebbca51e7534e0dc723ada325efa3475350951363cce216d27373e0259b63edb599f72eb94d6cde8577b4b2375f080b303947e560f85692834fa
   languageName: node
   linkType: hard
 
@@ -5261,9 +5261,9 @@ __metadata:
   linkType: hard
 
 "libphonenumber-js@npm:^1.10.53":
-  version: 1.11.15
-  resolution: "libphonenumber-js@npm:1.11.15"
-  checksum: 10/f04e33e188aeeae66efd56625e3affa52e127ade6e81bea896c4da30d2c2c8e2310dae67b9d7f51b9f39f4e0f543b7d6d1caef580a9c35b883b44711f76a37f9
+  version: 1.11.16
+  resolution: "libphonenumber-js@npm:1.11.16"
+  checksum: 10/062be6ae91ad4631b443d9cfb5c92bb3c402414c556a65ed73a7b431bd184b48b700da47bdae81bd799fce3694ff70609670d037cea73fa90695af9f25c2ab1a
   languageName: node
   linkType: hard
 
@@ -5904,8 +5904,8 @@ __metadata:
   linkType: hard
 
 "node-gyp@npm:latest":
-  version: 10.2.0
-  resolution: "node-gyp@npm:10.2.0"
+  version: 10.3.1
+  resolution: "node-gyp@npm:10.3.1"
   dependencies:
     env-paths: "npm:^2.2.0"
     exponential-backoff: "npm:^3.1.1"
@@ -5919,7 +5919,7 @@ __metadata:
     which: "npm:^4.0.0"
   bin:
     node-gyp: bin/node-gyp.js
-  checksum: 10/41773093b1275751dec942b985982fd4e7a69b88cae719b868babcef3880ee6168aaec8dcaa8cd0b9fa7c84873e36cc549c6cac6a124ee65ba4ce1f1cc108cfe
+  checksum: 10/d3004f648559e42d7ec8791ea75747fe8a163a6061c202e311e5d7a5f6266baa9a5f5c6fde7be563974c88b030c5d0855fd945364f52fcd230d2a2ceee7be80d
   languageName: node
   linkType: hard
 
@@ -6535,9 +6535,9 @@ __metadata:
   linkType: hard
 
 "resolve.exports@npm:^2.0.0":
-  version: 2.0.2
-  resolution: "resolve.exports@npm:2.0.2"
-  checksum: 10/f1cc0b6680f9a7e0345d783e0547f2a5110d8336b3c2a4227231dd007271ffd331fd722df934f017af90bae0373920ca0d4005da6f76cb3176c8ae426370f893
+  version: 2.0.3
+  resolution: "resolve.exports@npm:2.0.3"
+  checksum: 10/536efee0f30a10fac8604e6cdc7844dbc3f4313568d09f06db4f7ed8a5b8aeb8585966fe975083d1f2dfbc87cf5f8bc7ab65a5c23385c14acbb535ca79f8398a
   languageName: node
   linkType: hard
 
@@ -7436,9 +7436,9 @@ __metadata:
   linkType: hard
 
 "type-fest@npm:^4.0.0":
-  version: 4.29.0
-  resolution: "type-fest@npm:4.29.0"
-  checksum: 10/e13757fcbad2c7ee2418c4a888eb4de8f44ecabdc67f8a00b6d5c7af5f39c605154382f99f8f134f31c1f81bfbe3bf8d7e72e5129373afdb41b6b9199e74d062
+  version: 4.30.0
+  resolution: "type-fest@npm:4.30.0"
+  checksum: 10/46c733df4feb87dfd281fba4fa3913dc38b45136be35adffbcef95e13414105a4669476c1f8686680b9c98e59ed5dc85efe42caf67adbaa04f48dfc41f8330fa
   languageName: node
   linkType: hard
 
