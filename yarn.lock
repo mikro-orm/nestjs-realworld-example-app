@@ -2523,7 +2523,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"call-bind@npm:^1.0.7, call-bind@npm:^1.0.8":
+"call-bind@npm:^1.0.7":
   version: 1.0.8
   resolution: "call-bind@npm:1.0.8"
   dependencies:
@@ -2536,12 +2536,12 @@ __metadata:
   linkType: hard
 
 "call-bound@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "call-bound@npm:1.0.2"
+  version: 1.0.3
+  resolution: "call-bound@npm:1.0.3"
   dependencies:
-    call-bind: "npm:^1.0.8"
-    get-intrinsic: "npm:^1.2.5"
-  checksum: 10/6f0020b8848307446ed410d0dcf40470b3c16d96a26d8d8bba2ea5bc1582f9bdfc49945cf270698495d4c0f422ad56d243a336855cfb0260feabf72952238cf8
+    call-bind-apply-helpers: "npm:^1.0.1"
+    get-intrinsic: "npm:^1.2.6"
+  checksum: 10/c39a8245f68cdb7c1f5eea7b3b1e3a7a90084ea6efebb78ebc454d698ade2c2bb42ec033abc35f1e596d62496b6100e9f4cdfad1956476c510130e2cda03266d
   languageName: node
   linkType: hard
 
@@ -2567,9 +2567,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001688":
-  version: 1.0.30001688
-  resolution: "caniuse-lite@npm:1.0.30001688"
-  checksum: 10/2125e900af866ee211c66beca01220c98e72c8a91d25c87b8ab456d3916f56fb1be5feef72556bca746da7aa852fc0118a04669f5ec2e6511eb77c960479e1c0
+  version: 1.0.30001689
+  resolution: "caniuse-lite@npm:1.0.30001689"
+  checksum: 10/62dfdd3dc7537b1d812c2f8ee219051f369bc3e93b5bf0380fdb20d4d6dd6f7c21f5332fa7ecc903984bdb6d284b44bc23b4deeada788eb5257b4b2c5f46931c
   languageName: node
   linkType: hard
 
@@ -3200,9 +3200,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.73":
-  version: 1.5.73
-  resolution: "electron-to-chromium@npm:1.5.73"
-  checksum: 10/07d0885656c49ea4deb98340db23c68b43615c0325566e0ae6df751328460d4cdfb86ca0fcaaa745cf7b44c6141440fe2eb2f5d9518d1c110ba3872c73ed817d
+  version: 1.5.74
+  resolution: "electron-to-chromium@npm:1.5.74"
+  checksum: 10/6ed6330341e865e25e07c2f8dd5f614ffac929014571d15f1386a685b6d2a4c9bfc0c94f22392ebe0f72c834f48d578990e4e3399949fc4363219fc36d5ac553
   languageName: node
   linkType: hard
 
@@ -3955,7 +3955,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-intrinsic@npm:^1.2.4, get-intrinsic@npm:^1.2.5":
+"get-intrinsic@npm:^1.2.4, get-intrinsic@npm:^1.2.5, get-intrinsic@npm:^1.2.6":
   version: 1.2.6
   resolution: "get-intrinsic@npm:1.2.6"
   dependencies:
@@ -7501,9 +7501,9 @@ __metadata:
   linkType: hard
 
 "type-fest@npm:^4.0.0":
-  version: 4.30.1
-  resolution: "type-fest@npm:4.30.1"
-  checksum: 10/0a2af4d096053b89f6c4323108feeee1865a77f7440b16e2cafef8429afa28539ff1cb99fb8703f07c3893530b1f27e9b51f344dc1ff627d7d2fe2b7c07cc6f6
+  version: 4.30.2
+  resolution: "type-fest@npm:4.30.2"
+  checksum: 10/c5168b159c366e4fd5b74c7f7b786bed9248c03f67e6e07d52dd5d51354447468fa7c92b9f2142c7fe9279814031f783959370242c3520de848931b65ddb48bb
   languageName: node
   linkType: hard
 
