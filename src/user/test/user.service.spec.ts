@@ -12,9 +12,9 @@ describe('UsersService', () => {
   const mockUserRepository = {
     findAll: jest.fn().mockImplementation(async () => []),
     findOne: jest.fn().mockImplementation(async (options) => ({
-      id: Date.now() || options.id,
-      email: 'test@test.com' || options.email,
-      password: 'test' || options.password,
+      id: options.id ?? Date.now(),
+      email: options.email ?? 'test@test.com',
+      password: options.password ?? 'test',
       bio: 'test',
       image: 'test.jpg',
       username: 'test',
@@ -23,8 +23,8 @@ describe('UsersService', () => {
     nativeDelete: jest.fn().mockImplementation(() => 1),
     findOneOrFail: jest.fn().mockImplementation((options) => ({
       id: Date.now(),
-      email: 'test@test.com' || options.email,
-      password: 'test' || options.password,
+      email: options.email ?? 'test@test.com',
+      password: options.password ?? 'test',
       bio: 'test',
       username: 'test',
       image: 'test.jpg',
@@ -63,7 +63,7 @@ describe('UsersService', () => {
     expect(user).toEqual({
       id: expect.any(Number),
       email: 'test@test.com',
-      password: 'test',
+      password: 'ad71148c79f21ab9eec51ea5c7dd2b668792f7c0d3534ae66b22f71c61523fb3',
       username: 'test',
       bio: 'test',
       image: 'test.jpg',

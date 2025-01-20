@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [ 18, 20 ]
+        node-version: [ 20, 22 ]
     steps:
       - name: Checkout Source code
         uses: actions/checkout@v4
@@ -24,7 +24,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Init docker
-        run: docker-compose up -d
+        run: docker compose up -d
       - name: Sleep for 10s
         uses: juliangruber/sleep-action@v2
         with:
@@ -64,4 +64,4 @@ jobs:
           exit 0
 
       - name: Teardown docker
-        run: docker-compose down
+        run: docker compose down
