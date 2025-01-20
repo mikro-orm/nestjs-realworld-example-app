@@ -86,7 +86,7 @@
     "@mikro-orm/cli": "^6.4.0",
     "@mikro-orm/seeder": "^6.4.0",
     "@nestjs/cli": "^10.3.2",
-    "@nestjs/schematics": "^10.1.1",
+    "@nestjs/schematics": "^11.0.0",
     "@nestjs/testing": "^11.0.0",
     "@types/express": "^5.0.0",
     "@types/jest": "^29.5.12",
