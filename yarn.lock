@@ -1259,8 +1259,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/cli@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "@nestjs/cli@npm:11.0.0"
+  version: 11.0.1
+  resolution: "@nestjs/cli@npm:11.0.1"
   dependencies:
     "@angular-devkit/core": "npm:19.1.2"
     "@angular-devkit/schematics": "npm:19.1.2"
@@ -1291,7 +1291,7 @@ __metadata:
       optional: true
   bin:
     nest: bin/nest.js
-  checksum: 10/7765004b66bc2336f63cd19c9778bc60d20c82486c022650dc34e6dec45c6eea85d0b676bc7ab736f37ca7c1ee4079b22406b444a70945caddacee2843713067
+  checksum: 10/baf674d80acdba3ce89a8df0b12fffb302198aae6c5bab0178236196a486cefdb6b3926d434fee4c3cfc67b8faf0f6a8a5d1add161903a9d17799b334408decd
   languageName: node
   linkType: hard
 
@@ -2188,10 +2188,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"abbrev@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "abbrev@npm:2.0.0"
-  checksum: 10/ca0a54e35bea4ece0ecb68a47b312e1a9a6f772408d5bcb9051230aaa94b0460671c5b5c9cb3240eb5b7bc94c52476550eb221f65a0bbd0145bdc9f3113a6707
+"abbrev@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "abbrev@npm:3.0.0"
+  checksum: 10/2ceee14efdeda42ef7355178c1069499f183546ff7112b3efe79c1edef09d20ad9c17939752215fb8f7fcf48d10e6a7c0aa00136dc9cf4d293d963718bb1d200
   languageName: node
   linkType: hard
 
@@ -6148,13 +6148,13 @@ __metadata:
   linkType: hard
 
 "nopt@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "nopt@npm:8.0.0"
+  version: 8.1.0
+  resolution: "nopt@npm:8.1.0"
   dependencies:
-    abbrev: "npm:^2.0.0"
+    abbrev: "npm:^3.0.0"
   bin:
     nopt: bin/nopt.js
-  checksum: 10/2d137f64b6f9331ec97047dd1cbbe4dcd9a61ceef4fd0f2252c0bbac1d69ba15671e6fd83a441328824b3ca78afe6ebe1694f12ebcd162b73a221582a06179ff
+  checksum: 10/26ab456c51a96f02a9e5aa8d1b80ef3219f2070f3f3528a040e32fb735b1e651e17bdf0f1476988d3a46d498f35c65ed662d122f340d38ce4a7e71dd7b20c4bc
   languageName: node
   linkType: hard
 
