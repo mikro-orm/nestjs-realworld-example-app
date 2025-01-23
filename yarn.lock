@@ -39,9 +39,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular-devkit/core@npm:19.1.2":
-  version: 19.1.2
-  resolution: "@angular-devkit/core@npm:19.1.2"
+"@angular-devkit/core@npm:19.1.3":
+  version: 19.1.3
+  resolution: "@angular-devkit/core@npm:19.1.3"
   dependencies:
     ajv: "npm:8.17.1"
     ajv-formats: "npm:3.0.1"
@@ -54,23 +54,23 @@ __metadata:
   peerDependenciesMeta:
     chokidar:
       optional: true
-  checksum: 10/df33d0edd996f4339306b4238e7726644ced8aae929d4cb4e49823dca18134192e6da05bbde08770fe6bad464e18fd448fc8dfbd9faab4c4d85bdfd1ecd40bb5
+  checksum: 10/55b0f67b9f2b7c4f378d3e4f176a8424a2c35090ccc1d5f22bd3b24d5a4b6d536230f7c1c9edad0ed7065013c8ced64d86fc2f7197aad53313daa3921711d028
   languageName: node
   linkType: hard
 
-"@angular-devkit/schematics-cli@npm:19.1.2":
-  version: 19.1.2
-  resolution: "@angular-devkit/schematics-cli@npm:19.1.2"
+"@angular-devkit/schematics-cli@npm:19.1.3":
+  version: 19.1.3
+  resolution: "@angular-devkit/schematics-cli@npm:19.1.3"
   dependencies:
-    "@angular-devkit/core": "npm:19.1.2"
-    "@angular-devkit/schematics": "npm:19.1.2"
+    "@angular-devkit/core": "npm:19.1.3"
+    "@angular-devkit/schematics": "npm:19.1.3"
     "@inquirer/prompts": "npm:7.2.1"
     ansi-colors: "npm:4.1.3"
     symbol-observable: "npm:4.0.0"
     yargs-parser: "npm:21.1.1"
   bin:
     schematics: bin/schematics.js
-  checksum: 10/0b6466e61047fc931e63fe906bf2d124fdda9e7ed493e617987aa5a40a1e27fbe0a4e39e2e963ee289dc4bb155ea36a98b6eb8dc99162e2de15fe3f43adab583
+  checksum: 10/97763baa7c7a72a221235b2943631aea028d08b56a1df391777039a1a095d6914e07cd7a892a81f3ba236e9724aa048daedfa5a37a6109e46725dd90512287ea
   languageName: node
   linkType: hard
 
@@ -92,16 +92,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular-devkit/schematics@npm:19.1.2":
-  version: 19.1.2
-  resolution: "@angular-devkit/schematics@npm:19.1.2"
+"@angular-devkit/schematics@npm:19.1.3":
+  version: 19.1.3
+  resolution: "@angular-devkit/schematics@npm:19.1.3"
   dependencies:
-    "@angular-devkit/core": "npm:19.1.2"
+    "@angular-devkit/core": "npm:19.1.3"
     jsonc-parser: "npm:3.3.1"
     magic-string: "npm:0.30.17"
     ora: "npm:5.4.1"
     rxjs: "npm:7.8.1"
-  checksum: 10/8b34530e341c16dcaba2bede7c2279732f87a2225a739dbdd13ccfd31e52b3c28b8d0664930100141de2e95d53b10507d48b56d7752b074da985bf899398146a
+  checksum: 10/80ff27d84470f806ff48e7ed40dd8018ec4decbfb1ca14a1f6411b9d23adf44a4fce9231b2e2f611f48decb3c39298f28eaffaeb61ff8e5a219ded8f623121f1
   languageName: node
   linkType: hard
 
@@ -1259,12 +1259,12 @@ __metadata:
   linkType: hard
 
 "@nestjs/cli@npm:^11.0.0":
-  version: 11.0.1
-  resolution: "@nestjs/cli@npm:11.0.1"
+  version: 11.0.2
+  resolution: "@nestjs/cli@npm:11.0.2"
   dependencies:
-    "@angular-devkit/core": "npm:19.1.2"
-    "@angular-devkit/schematics": "npm:19.1.2"
-    "@angular-devkit/schematics-cli": "npm:19.1.2"
+    "@angular-devkit/core": "npm:19.1.3"
+    "@angular-devkit/schematics": "npm:19.1.3"
+    "@angular-devkit/schematics-cli": "npm:19.1.3"
     "@inquirer/prompts": "npm:7.2.3"
     "@nestjs/schematics": "npm:11.0.0"
     ansis: "npm:3.9.0"
@@ -1291,13 +1291,13 @@ __metadata:
       optional: true
   bin:
     nest: bin/nest.js
-  checksum: 10/baf674d80acdba3ce89a8df0b12fffb302198aae6c5bab0178236196a486cefdb6b3926d434fee4c3cfc67b8faf0f6a8a5d1add161903a9d17799b334408decd
+  checksum: 10/50e86e679e79301c5ac71a36795efc1e42e27fe9bfa17db57fbc4773fbcd74d04b89279961f8afde1fcd955c2c27b59a4bf05420d8ccd0d825f8d949e208b15a
   languageName: node
   linkType: hard
 
 "@nestjs/common@npm:^11.0.0":
-  version: 11.0.3
-  resolution: "@nestjs/common@npm:11.0.3"
+  version: 11.0.4
+  resolution: "@nestjs/common@npm:11.0.4"
   dependencies:
     iterare: "npm:1.2.1"
     tslib: "npm:2.8.1"
@@ -1312,13 +1312,13 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10/fbc732e3445c850fd9793cf6725984b1a7eab2580d9998d89b6c6cd3d0cb796bec029b1b0d17583d00c307d8fcb1296f99e13399dabd9c1c267317f790e5d52e
+  checksum: 10/c9ad8e2a277a80d6aef4fabf4f1b5b9dcccac0f36fef7475b760965d3730ab35f5bf1efe5d7fc4c9a5572b497f82ca71d7c555d6dea88febf45d92dcea008ebc
   languageName: node
   linkType: hard
 
 "@nestjs/core@npm:^11.0.0":
-  version: 11.0.3
-  resolution: "@nestjs/core@npm:11.0.3"
+  version: 11.0.4
+  resolution: "@nestjs/core@npm:11.0.4"
   dependencies:
     "@nuxt/opencollective": "npm:0.4.1"
     fast-safe-stringify: "npm:2.1.1"
@@ -1340,7 +1340,7 @@ __metadata:
       optional: true
     "@nestjs/websockets":
       optional: true
-  checksum: 10/ae992c5126f6f2e5324b9570f34f52f5b8b82bf17356eb9c279c7593ec7d91a05753b012a73b71903789502bae937ef6de2cbacc375e67addeda5b608aa37a6e
+  checksum: 10/195ca59b5fde8e556e51c40591f97e0973b67b8f18d0d42c226bd4988cc863075f2c4a19cabdc09eec3f36873551bdbe2119608deff41d66e6dd042ba9f75390
   languageName: node
   linkType: hard
 
@@ -1362,8 +1362,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/platform-express@npm:^11.0.0":
-  version: 11.0.3
-  resolution: "@nestjs/platform-express@npm:11.0.3"
+  version: 11.0.4
+  resolution: "@nestjs/platform-express@npm:11.0.4"
   dependencies:
     cors: "npm:2.8.5"
     express: "npm:5.0.1"
@@ -1373,7 +1373,7 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^11.0.0
     "@nestjs/core": ^11.0.0
-  checksum: 10/d7b698fc8c9e54c912095e7bc84b7e55b7a87440920bb347f8d47838655db0c7337c3ffe8f66139d65a3e32ec8e57b62bd3b4db7e68a0522c320959bae21a360
+  checksum: 10/fc9914abbfe1b249f9f907bb7516a114c660e7c9421e63c57299e4a6672954c68c49378ff12b94a12d849f758aa0c177ad6ae5f3784e010713683a5a800e48c8
   languageName: node
   linkType: hard
 
@@ -1421,8 +1421,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/testing@npm:^11.0.0":
-  version: 11.0.3
-  resolution: "@nestjs/testing@npm:11.0.3"
+  version: 11.0.4
+  resolution: "@nestjs/testing@npm:11.0.4"
   dependencies:
     tslib: "npm:2.8.1"
   peerDependencies:
@@ -1435,7 +1435,7 @@ __metadata:
       optional: true
     "@nestjs/platform-express":
       optional: true
-  checksum: 10/a5aacea6c028d2b19cf4d87008aaf5c355d471e8cde7eee762ff321117979edc6854ea0e4ff3d905482ba17e3db2b47a3a5e15e3f5d5856f74ce0fdfae843658
+  checksum: 10/45c2a6eadd2dc7238d268a6c94ffa5e3b32191c3f0dc16c0de0da6c0ffdbe25091abfaa909fa8014f5790413e94fb7fa8ac7c9eefe9f295fabf1aa721697cf9a
   languageName: node
   linkType: hard
 
@@ -3422,9 +3422,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.73":
-  version: 1.5.84
-  resolution: "electron-to-chromium@npm:1.5.84"
-  checksum: 10/c6cba430282d5561c97c937905c8b201e9b39d8805e7a400a5eea95c54e628d75733e7d418e8b0afd4bbcee4cf417a123ad1b10714e977e6c5fc2c35c3a3e572
+  version: 1.5.85
+  resolution: "electron-to-chromium@npm:1.5.85"
+  checksum: 10/429e69312f07f23d847fdc46fc86062d7075cdfd3c09863687c4d59319bff98da31c96516fc23f020d4ba4a181ab9f0d85ca3b22c5b99974dd606408d19dfe5c
   languageName: node
   linkType: hard
 
