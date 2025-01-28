@@ -1122,7 +1122,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/cli@npm:^6.4.0":
+"@mikro-orm/cli@npm:^6.4.4":
   version: 6.4.4
   resolution: "@mikro-orm/cli@npm:6.4.4"
   dependencies:
@@ -1139,7 +1139,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/core@npm:6.4.4, @mikro-orm/core@npm:^6.4.0":
+"@mikro-orm/core@npm:6.4.4, @mikro-orm/core@npm:^6.4.4":
   version: 6.4.4
   resolution: "@mikro-orm/core@npm:6.4.4"
   dependencies:
@@ -1154,7 +1154,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/entity-generator@npm:^6.4.0":
+"@mikro-orm/entity-generator@npm:^6.4.4":
   version: 6.4.4
   resolution: "@mikro-orm/entity-generator@npm:6.4.4"
   dependencies:
@@ -1189,7 +1189,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/migrations@npm:^6.4.0":
+"@mikro-orm/migrations@npm:^6.4.4":
   version: 6.4.4
   resolution: "@mikro-orm/migrations@npm:6.4.4"
   dependencies:
@@ -1202,7 +1202,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/mysql@npm:^6.4.0":
+"@mikro-orm/mysql@npm:^6.4.4":
   version: 6.4.4
   resolution: "@mikro-orm/mysql@npm:6.4.4"
   dependencies:
@@ -1214,18 +1214,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/nestjs@npm:^6.0.1":
-  version: 6.0.2
-  resolution: "@mikro-orm/nestjs@npm:6.0.2"
+"@mikro-orm/nestjs@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "@mikro-orm/nestjs@npm:6.1.0"
   peerDependencies:
     "@mikro-orm/core": ^6.0.0 || ^6.0.0-dev.0
-    "@nestjs/common": ^10.0.0
-    "@nestjs/core": ^10.0.0
-  checksum: 10/0e03591df5c4d6e72d5ecc849cc06ec1cfd3471420b898e3a72ca76254df6180a51c4329365880a6971e0f5c2cdc32a1a9cbeac81aee216f0289165303d36b4c
+    "@nestjs/common": ^10.0.0 || ^11.0.5
+    "@nestjs/core": ^10.0.0 || ^11.0.5
+  checksum: 10/48703f2fae5fdf9e69e234dac546908017594fadcbada3aee4ba6363fc2e16a7076fc8c4221c7c2c21914fd32ee657a9b3ba5460ad3e97692fa98c559a72cfea
   languageName: node
   linkType: hard
 
-"@mikro-orm/reflection@npm:^6.4.0":
+"@mikro-orm/reflection@npm:^6.4.4":
   version: 6.4.4
   resolution: "@mikro-orm/reflection@npm:6.4.4"
   dependencies:
@@ -1237,7 +1237,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/seeder@npm:^6.4.0":
+"@mikro-orm/seeder@npm:^6.4.4":
   version: 6.4.4
   resolution: "@mikro-orm/seeder@npm:6.4.4"
   dependencies:
@@ -1258,7 +1258,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/cli@npm:^11.0.0":
+"@nestjs/cli@npm:^11.0.2":
   version: 11.0.2
   resolution: "@nestjs/cli@npm:11.0.2"
   dependencies:
@@ -1295,7 +1295,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/common@npm:^11.0.0":
+"@nestjs/common@npm:^11.0.6":
   version: 11.0.6
   resolution: "@nestjs/common@npm:11.0.6"
   dependencies:
@@ -1316,7 +1316,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/core@npm:^11.0.0":
+"@nestjs/core@npm:^11.0.6":
   version: 11.0.6
   resolution: "@nestjs/core@npm:11.0.6"
   dependencies:
@@ -1361,7 +1361,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/platform-express@npm:^11.0.0":
+"@nestjs/platform-express@npm:^11.0.6":
   version: 11.0.6
   resolution: "@nestjs/platform-express@npm:11.0.6"
   dependencies:
@@ -1392,7 +1392,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/swagger@npm:^11.0.0":
+"@nestjs/swagger@npm:^11.0.3":
   version: 11.0.3
   resolution: "@nestjs/swagger@npm:11.0.3"
   dependencies:
@@ -1420,7 +1420,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/testing@npm:^11.0.0":
+"@nestjs/testing@npm:^11.0.6":
   version: 11.0.6
   resolution: "@nestjs/testing@npm:11.0.6"
   dependencies:
@@ -6059,22 +6059,22 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nestjs-realworld-example-app@workspace:."
   dependencies:
-    "@mikro-orm/cli": "npm:^6.4.0"
-    "@mikro-orm/core": "npm:^6.4.0"
-    "@mikro-orm/entity-generator": "npm:^6.4.0"
-    "@mikro-orm/migrations": "npm:^6.4.0"
-    "@mikro-orm/mysql": "npm:^6.4.0"
-    "@mikro-orm/nestjs": "npm:^6.0.1"
-    "@mikro-orm/reflection": "npm:^6.4.0"
-    "@mikro-orm/seeder": "npm:^6.4.0"
+    "@mikro-orm/cli": "npm:^6.4.4"
+    "@mikro-orm/core": "npm:^6.4.4"
+    "@mikro-orm/entity-generator": "npm:^6.4.4"
+    "@mikro-orm/migrations": "npm:^6.4.4"
+    "@mikro-orm/mysql": "npm:^6.4.4"
+    "@mikro-orm/nestjs": "npm:^6.1.0"
+    "@mikro-orm/reflection": "npm:^6.4.4"
+    "@mikro-orm/seeder": "npm:^6.4.4"
     "@mikro-orm/sql-highlighter": "npm:^1.0.1"
-    "@nestjs/cli": "npm:^11.0.0"
-    "@nestjs/common": "npm:^11.0.0"
-    "@nestjs/core": "npm:^11.0.0"
-    "@nestjs/platform-express": "npm:^11.0.0"
+    "@nestjs/cli": "npm:^11.0.2"
+    "@nestjs/common": "npm:^11.0.6"
+    "@nestjs/core": "npm:^11.0.6"
+    "@nestjs/platform-express": "npm:^11.0.6"
     "@nestjs/schematics": "npm:^11.0.0"
-    "@nestjs/swagger": "npm:^11.0.0"
-    "@nestjs/testing": "npm:^11.0.0"
+    "@nestjs/swagger": "npm:^11.0.3"
+    "@nestjs/testing": "npm:^11.0.6"
     "@types/express": "npm:^5.0.0"
     "@types/jest": "npm:^29.5.12"
     "@types/jsonwebtoken": "npm:^9.0.6"
