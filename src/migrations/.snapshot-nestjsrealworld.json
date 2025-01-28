@@ -10,6 +10,7 @@
           "autoincrement": true,
           "primary": true,
           "nullable": false,
+          "length": null,
           "mappedType": "integer"
         },
         "tag": {
@@ -19,6 +20,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": 255,
           "mappedType": "string"
         }
       },
@@ -48,6 +50,7 @@
           "autoincrement": true,
           "primary": true,
           "nullable": false,
+          "length": null,
           "mappedType": "integer"
         },
         "username": {
@@ -57,6 +60,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": 255,
           "mappedType": "string"
         },
         "email": {
@@ -66,6 +70,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": 255,
           "mappedType": "string"
         },
         "bio": {
@@ -75,6 +80,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": 255,
           "mappedType": "string"
         },
         "image": {
@@ -84,6 +90,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": 255,
           "mappedType": "string"
         },
         "password": {
@@ -93,6 +100,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": 255,
           "mappedType": "string"
         }
       },
@@ -122,6 +130,7 @@
           "autoincrement": true,
           "primary": true,
           "nullable": false,
+          "length": null,
           "mappedType": "integer"
         },
         "slug": {
@@ -131,6 +140,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": 255,
           "mappedType": "string"
         },
         "title": {
@@ -140,6 +150,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": 255,
           "mappedType": "string"
         },
         "description": {
@@ -149,6 +160,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": 255,
           "mappedType": "string"
         },
         "body": {
@@ -158,6 +170,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": 255,
           "mappedType": "string"
         },
         "created_at": {
@@ -167,7 +180,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
-          "length": 0,
+          "length": null,
           "mappedType": "datetime"
         },
         "updated_at": {
@@ -177,7 +190,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
-          "length": 0,
+          "length": null,
           "mappedType": "datetime"
         },
         "tag_list": {
@@ -187,6 +200,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": null,
           "mappedType": "text"
         },
         "author_id": {
@@ -196,6 +210,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": null,
           "mappedType": "integer"
         },
         "favorites_count": {
@@ -205,6 +220,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": null,
           "mappedType": "integer"
         }
       },
@@ -257,6 +273,7 @@
           "autoincrement": true,
           "primary": true,
           "nullable": false,
+          "length": null,
           "mappedType": "integer"
         },
         "created_at": {
@@ -266,7 +283,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
-          "length": 0,
+          "length": null,
           "mappedType": "datetime"
         },
         "updated_at": {
@@ -276,7 +293,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
-          "length": 0,
+          "length": null,
           "mappedType": "datetime"
         },
         "body": {
@@ -286,6 +303,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": 255,
           "mappedType": "string"
         },
         "article_id": {
@@ -295,6 +313,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": null,
           "mappedType": "integer"
         },
         "author_id": {
@@ -304,6 +323,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": null,
           "mappedType": "integer"
         }
       },
@@ -378,6 +398,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": null,
           "mappedType": "integer"
         },
         "article_id": {
@@ -387,6 +408,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": null,
           "mappedType": "integer"
         }
       },
@@ -464,6 +486,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": null,
           "mappedType": "integer"
         },
         "following": {
@@ -473,6 +496,7 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "length": null,
           "mappedType": "integer"
         }
       },
