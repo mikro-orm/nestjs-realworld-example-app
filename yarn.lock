@@ -1333,8 +1333,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/common@npm:^11.0.6":
-  version: 11.0.7
-  resolution: "@nestjs/common@npm:11.0.7"
+  version: 11.0.8
+  resolution: "@nestjs/common@npm:11.0.8"
   dependencies:
     iterare: "npm:1.2.1"
     tslib: "npm:2.8.1"
@@ -1349,13 +1349,13 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10/dccd66b22298fb77f5497931eecfc6678e4bafa05205e781f9d7e89007a68b62084481fea9e63e6028654c471fa5d5aecfb4d3f078c61dbab2868444eae20885
+  checksum: 10/9d994f409b0258dad08fc0d42aabc7a370f7e48deccc7362ea35f729b8e16e31cf4133b65e736645dd02a5857c00e678b8bc6ea89a1cef4c39cb7716d2150e2b
   languageName: node
   linkType: hard
 
 "@nestjs/core@npm:^11.0.6":
-  version: 11.0.7
-  resolution: "@nestjs/core@npm:11.0.7"
+  version: 11.0.8
+  resolution: "@nestjs/core@npm:11.0.8"
   dependencies:
     "@nuxt/opencollective": "npm:0.4.1"
     fast-safe-stringify: "npm:2.1.1"
@@ -1377,7 +1377,7 @@ __metadata:
       optional: true
     "@nestjs/websockets":
       optional: true
-  checksum: 10/6f85aefbe1afe2b700c06a78e84d20e419622f707d3102c7dc571a009bfae446bee8672d681391f5e18e235d17122448b147f027836272ae325dfe04f571545d
+  checksum: 10/df1e3d2455d5b3dc44f3b1000c81a8e627189e9e176589e9ef719cf2e364aee0b582823349901c97d58a5bffd0e9c840e23e2e748ed77575e61d11436ab81286
   languageName: node
   linkType: hard
 
@@ -1399,8 +1399,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/platform-express@npm:^11.0.6":
-  version: 11.0.7
-  resolution: "@nestjs/platform-express@npm:11.0.7"
+  version: 11.0.8
+  resolution: "@nestjs/platform-express@npm:11.0.8"
   dependencies:
     cors: "npm:2.8.5"
     express: "npm:5.0.1"
@@ -1410,7 +1410,7 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^11.0.0
     "@nestjs/core": ^11.0.0
-  checksum: 10/d6966519e1ce659211255441dd7890907e7c7fbe75eddcca5b631654d6457085060e59ab5b7fc6103362d06e645a37739b51116d08846acc5cdb988feb94d97d
+  checksum: 10/7779fc1a74ca8edc0fc4bb5d9720c79d62d57c3435e082b02377b6a0ae6e35090f59d95c3d263b9c41cfa3ab65ff21d1caf7a2d7be97e6853724e35d58e6e816
   languageName: node
   linkType: hard
 
@@ -1458,8 +1458,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/testing@npm:^11.0.6":
-  version: 11.0.7
-  resolution: "@nestjs/testing@npm:11.0.7"
+  version: 11.0.8
+  resolution: "@nestjs/testing@npm:11.0.8"
   dependencies:
     tslib: "npm:2.8.1"
   peerDependencies:
@@ -1472,7 +1472,7 @@ __metadata:
       optional: true
     "@nestjs/platform-express":
       optional: true
-  checksum: 10/a7751d09bf15ecc44de74f38ec68fc79f56e4dc64e27953f5168a28a41c14ca88512deec26e3399dbae73c238491a93b0b2d79d99367cce74e0458ade0fe6536
+  checksum: 10/b1457d31f36b59839747713556710ebb850dfe96ea00b87e7a3a9d701ca7d4683ff2b5c8c690af9e7a783390b608f6a431731fa10a21e60731a7c7405c1966c7
   languageName: node
   linkType: hard
 
@@ -3467,9 +3467,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.73":
-  version: 1.5.92
-  resolution: "electron-to-chromium@npm:1.5.92"
-  checksum: 10/c7f4bd8683dc948f0471849e452aad7a240b29236fe0e1684fe7e88fe0a882eb90419d1c1dba75cf4bfa03957b1cff786c754347aae099241f24ca400133548b
+  version: 1.5.94
+  resolution: "electron-to-chromium@npm:1.5.94"
+  checksum: 10/def9b4738a6847f272f3915b48b9e90336dd71b457427a67c79ec88c6791811b5f03f31bb3564ba8b8eb7cf3e59c0b5fe10f93239cf1afcee5c72e7f84755e74
   languageName: node
   linkType: hard
 
@@ -3802,9 +3802,9 @@ __metadata:
   linkType: hard
 
 "exponential-backoff@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "exponential-backoff@npm:3.1.1"
-  checksum: 10/2d9bbb6473de7051f96790d5f9a678f32e60ed0aa70741dc7fdc96fec8d631124ec3374ac144387604f05afff9500f31a1d45bd9eee4cdc2e4f9ad2d9b9d5dbd
+  version: 3.1.2
+  resolution: "exponential-backoff@npm:3.1.2"
+  checksum: 10/ca2f01f1aa4dafd3f3917bd531ab5be08c6f5f4b2389d2e974f903de3cbeb50b9633374353516b6afd70905775e33aba11afab1232d3acf0aa2963b98a611c51
   languageName: node
   linkType: hard
 
@@ -7465,8 +7465,8 @@ __metadata:
   linkType: hard
 
 "terser@npm:^5.31.1":
-  version: 5.38.0
-  resolution: "terser@npm:5.38.0"
+  version: 5.38.1
+  resolution: "terser@npm:5.38.1"
   dependencies:
     "@jridgewell/source-map": "npm:^0.3.3"
     acorn: "npm:^8.8.2"
@@ -7474,7 +7474,7 @@ __metadata:
     source-map-support: "npm:~0.5.20"
   bin:
     terser: bin/terser
-  checksum: 10/91d20ab35836861e1500a298b3f401b93f0a564cd4a52cd0da79f1a0a8fdbce4967cfc9b77f037603273a31af698eee2b27bbfab4dc5812d334035c9be18256b
+  checksum: 10/5c32213210e6e07fef2100c231aadf4a7f7be7903cc65daa3edc886075444b940f65991acf30f8b271e13a2f395b81bba1fa248409cc57160315339a40be3e2a
   languageName: node
   linkType: hard
 
