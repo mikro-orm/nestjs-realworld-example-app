@@ -1252,13 +1252,13 @@ __metadata:
   linkType: hard
 
 "@mikro-orm/nestjs@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "@mikro-orm/nestjs@npm:6.1.0"
+  version: 6.1.1
+  resolution: "@mikro-orm/nestjs@npm:6.1.1"
   peerDependencies:
-    "@mikro-orm/core": ^6.0.0 || ^6.0.0-dev.0
+    "@mikro-orm/core": ^6.0.0 || ^6.0.0-dev.0 || ^7.0.0-dev.0
     "@nestjs/common": ^10.0.0 || ^11.0.5
     "@nestjs/core": ^10.0.0 || ^11.0.5
-  checksum: 10/48703f2fae5fdf9e69e234dac546908017594fadcbada3aee4ba6363fc2e16a7076fc8c4221c7c2c21914fd32ee657a9b3ba5460ad3e97692fa98c559a72cfea
+  checksum: 10/5da180b05b71abee40919d60aa6b93f4a22af4a704a17c15ac72946f6d2e13207d1baa3f3c83285a359bbe7afc11beb08b645e4a5287d3d534b39183885e50bc
   languageName: node
   linkType: hard
 
@@ -2821,9 +2821,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001688":
-  version: 1.0.30001699
-  resolution: "caniuse-lite@npm:1.0.30001699"
-  checksum: 10/325bf4d4ea8ab377046b6d5a43685359d5426adbb62aa1bea2c851cb5673547ef22b4a2b0e172e5a87ac74a7042e6ad23b87b78fdd04543c152d4e799397d7ba
+  version: 1.0.30001700
+  resolution: "caniuse-lite@npm:1.0.30001700"
+  checksum: 10/9203ed502fd1b74c47f315a001e1d91abe2abecb951f8e15dd1556cfc23a29fa7a7b2cc654380604bb6f58bcfa0c65b78055b9d99a7489c13baa0d4158a6e25e
   languageName: node
   linkType: hard
 
@@ -5488,9 +5488,9 @@ __metadata:
   linkType: hard
 
 "libphonenumber-js@npm:^1.10.53":
-  version: 1.11.19
-  resolution: "libphonenumber-js@npm:1.11.19"
-  checksum: 10/6f6992a9cb6b93b4513b72e0b090fe116f1a45f8340379a0c0f6271853579e9ab36a5f172dcd61f224fe33664217ab7421b432ed264955c2e8fb3e321821799a
+  version: 1.11.20
+  resolution: "libphonenumber-js@npm:1.11.20"
+  checksum: 10/06d763dc39f142fa4961bb747cc39eb88795a4ce77c2d47691668c90390339cdc8f8eb4e259c499c278771510874210d25706d47a615f63ff13100f4e8c82cb8
   languageName: node
   linkType: hard
 
