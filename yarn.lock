@@ -1391,8 +1391,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/swagger@npm:^11.0.3":
-  version: 11.0.4
-  resolution: "@nestjs/swagger@npm:11.0.4"
+  version: 11.0.5
+  resolution: "@nestjs/swagger@npm:11.0.5"
   dependencies:
     "@microsoft/tsdoc": "npm:0.15.1"
     "@nestjs/mapped-types": "npm:2.1.0"
@@ -1414,7 +1414,7 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10/0c82da147525ac1f4dc1065c03e33cfbf6b87cc7e0d23bd34a5111849b4fb4ee28611fbe13dbd316f13f8419c5a6402d9d59d965fcf953ccc35da4e3c047dff5
+  checksum: 10/16bb5a32104b8fa5489595c143be9084a4ce81db9e6b10fa8df448baa001b51a94345a754e93def22e1f82bb8422aad4d5d8692f0e5660e8b37a89a695c632e8
   languageName: node
   linkType: hard
 
@@ -3162,7 +3162,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
+"cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3, cross-spawn@npm:^7.0.6":
   version: 7.0.6
   resolution: "cross-spawn@npm:7.0.6"
   dependencies:
@@ -3411,9 +3411,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.73":
-  version: 1.5.103
-  resolution: "electron-to-chromium@npm:1.5.103"
-  checksum: 10/ffcbc1addc01bd420b12b886c1e05b8fdf0bc2e0e2d99f4f1dc4737008c2bcb0aceb3117dff7c4aa4d31cf25cda809116d5de9289263ab537a86a250a9b518a3
+  version: 1.5.104
+  resolution: "electron-to-chromium@npm:1.5.104"
+  checksum: 10/ad580610ec45d335a6a90e801a8e868167206a056bb24199093c129976598127cac19711ae22dfccf33f74b39872e299e00002d7ee4a3c7948fe9630a8dc0d25
   languageName: node
   linkType: hard
 
@@ -3978,12 +3978,12 @@ __metadata:
   linkType: hard
 
 "foreground-child@npm:^3.1.0":
-  version: 3.3.0
-  resolution: "foreground-child@npm:3.3.0"
+  version: 3.3.1
+  resolution: "foreground-child@npm:3.3.1"
   dependencies:
-    cross-spawn: "npm:^7.0.0"
+    cross-spawn: "npm:^7.0.6"
     signal-exit: "npm:^4.0.1"
-  checksum: 10/e3a60480f3a09b12273ce2c5fcb9514d98dd0e528f58656a1b04680225f918d60a2f81f6a368f2f3b937fcee9cfc0cbf16f1ad9a0bc6a3a6e103a84c9a90087e
+  checksum: 10/427b33f997a98073c0424e5c07169264a62cda806d8d2ded159b5b903fdfc8f0a1457e06b5fc35506497acb3f1e353f025edee796300209ac6231e80edece835
   languageName: node
   linkType: hard
 
