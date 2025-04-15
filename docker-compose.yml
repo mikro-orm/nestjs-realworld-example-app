@@ -1,6 +1,6 @@
 services:
   mysql:
-    image: mysql:9.2
+    image: mysql:9.3
     platform: linux/x86_64
     restart: unless-stopped
     ports:
