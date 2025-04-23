@@ -1396,8 +1396,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/swagger@npm:^11.0.3":
-  version: 11.1.4
-  resolution: "@nestjs/swagger@npm:11.1.4"
+  version: 11.1.5
+  resolution: "@nestjs/swagger@npm:11.1.5"
   dependencies:
     "@microsoft/tsdoc": "npm:0.15.1"
     "@nestjs/mapped-types": "npm:2.1.0"
@@ -1419,7 +1419,7 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10/9346f56f3d0fd7431a9177f78cd4f3cc3739c9e34577178a5e4c09dc9543c69c1a9a3f6df40b7bb01b70de62558ad41f8b7253415075baab2a4101df992fcc1c
+  checksum: 10/8c6c52e4954a165cc3a8b14bc951e08569dc5ff4da31931f36f2f6a56f8b01ef9650721e6904a959cd3d85458e2ebc9c07ab9ea5a416e5f7e71ba0a590e1ba1e
   languageName: node
   linkType: hard
 
@@ -3486,9 +3486,9 @@ __metadata:
   linkType: hard
 
 "es-module-lexer@npm:^1.2.1":
-  version: 1.6.0
-  resolution: "es-module-lexer@npm:1.6.0"
-  checksum: 10/807ee7020cc46a9c970c78cad1f2f3fc139877e5ebad7f66dbfbb124d451189ba1c48c1c632bd5f8ce1b8af2caef3fca340ba044a410fa890d17b080a59024bb
+  version: 1.7.0
+  resolution: "es-module-lexer@npm:1.7.0"
+  checksum: 10/b6f3e576a3fed4d82b0d0ad4bbf6b3a5ad694d2e7ce8c4a069560da3db6399381eaba703616a182b16dde50ce998af64e07dcf49f2ae48153b9e07be3f107087
   languageName: node
   linkType: hard
 
@@ -6823,14 +6823,14 @@ __metadata:
   linkType: hard
 
 "schema-utils@npm:^4.3.0":
-  version: 4.3.0
-  resolution: "schema-utils@npm:4.3.0"
+  version: 4.3.2
+  resolution: "schema-utils@npm:4.3.2"
   dependencies:
     "@types/json-schema": "npm:^7.0.9"
     ajv: "npm:^8.9.0"
     ajv-formats: "npm:^2.1.1"
     ajv-keywords: "npm:^5.1.0"
-  checksum: 10/86c5a7c72a275c56f140bc3cdd832d56efb11428c88ad588127db12cb9b2c83ccaa9540e115d7baa9c6175b5e360094457e29c44e6fb76787c9498c2eb6df5d6
+  checksum: 10/02c32c34aae762d48468f98465a96a167fede637772871c7c7d8923671ddb9f20b2cc6f6e8448ae6bef5363e3597493c655212c8b06a4ee73aa099d9452fbd8b
   languageName: node
   linkType: hard
 
