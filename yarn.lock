@@ -3643,9 +3643,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.173":
-  version: 1.5.190
-  resolution: "electron-to-chromium@npm:1.5.190"
-  checksum: 10/20c1c29ca0a31847008aa5187ce8d67684f4579dc5398c2300d226e10568c087459260c2bcfb0f5c6c7d837e0b7521dbdd781971a486f4b4b0d1916f31e21df0
+  version: 1.5.191
+  resolution: "electron-to-chromium@npm:1.5.191"
+  checksum: 10/d5a5ca41bb2fbe03bee2973d72d8eaa9d2112b153d6c45fd8ad418998423871047700c28c941d64a92ee1e3445b0552c5312621aba8ff550c3752951f2987dbb
   languageName: node
   linkType: hard
 
@@ -7406,11 +7406,11 @@ __metadata:
   linkType: hard
 
 "strtok3@npm:^10.2.2":
-  version: 10.3.2
-  resolution: "strtok3@npm:10.3.2"
+  version: 10.3.4
+  resolution: "strtok3@npm:10.3.4"
   dependencies:
     "@tokenizer/token": "npm:^0.3.0"
-  checksum: 10/f39591a12005a9ecaf2f8879566af64a039036eadd7d4f9172b0b3a7ae29ec572d0c8a6dc34e38bec64e7461658ec1bf3313e5317b241470cc112f2b02d61608
+  checksum: 10/53be14a567dca149be56cb072eaa3c0fffd70d066acf800cf588b91558c6d475364ff8d550524ce0499fc4873a4b0d42ad8c542bfdb9fb39cba520ef2e2e9818
   languageName: node
   linkType: hard
 
@@ -7643,12 +7643,12 @@ __metadata:
   linkType: hard
 
 "token-types@npm:^6.0.0":
-  version: 6.0.3
-  resolution: "token-types@npm:6.0.3"
+  version: 6.0.4
+  resolution: "token-types@npm:6.0.4"
   dependencies:
     "@tokenizer/token": "npm:^0.3.0"
     ieee754: "npm:^1.2.1"
-  checksum: 10/8b352abfb5ac0a22cbdfe9612de8e8206df9aa8071fa045be5d892797c943f7e470f4ce1894f56726ca80fe8bb58af73a187d478eebd6d4c894abec4528e1415
+  checksum: 10/9d49742fdc0fbb684af9907adc5697207d7a0ecd7423b48bb35c901eb16560702df47ea2fcb1cfea8c20e35be18073b6082f3b436508b89d00bc6b23b6cdb6e5
   languageName: node
   linkType: hard
 
