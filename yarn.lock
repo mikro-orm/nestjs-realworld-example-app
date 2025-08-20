@@ -576,8 +576,8 @@ __metadata:
   linkType: hard
 
 "@inquirer/confirm@npm:^5.1.14, @inquirer/confirm@npm:^5.1.6":
-  version: 5.1.14
-  resolution: "@inquirer/confirm@npm:5.1.14"
+  version: 5.1.15
+  resolution: "@inquirer/confirm@npm:5.1.15"
   dependencies:
     "@inquirer/core": "npm:^10.1.15"
     "@inquirer/type": "npm:^3.0.8"
@@ -586,7 +586,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/node":
       optional: true
-  checksum: 10/18e56ca1a46bd7b03064cc01b467f9c699d0c27abdccafb14174192875d7a39a1802eb968386f33668303a28b0b1859dac07ac0323422c35a62f5a80a0987a7a
+  checksum: 10/d9202888f29bf9f81f97d9f6f67da42324452d139f1408884e0c12037338dc18f565947ec9b843f4762c463f2981f29f9b2335a9befac9e8f0000ba237b76b91
   languageName: node
   linkType: hard
 
@@ -1700,9 +1700,9 @@ __metadata:
   linkType: hard
 
 "@sinclair/typebox@npm:^0.34.0":
-  version: 0.34.39
-  resolution: "@sinclair/typebox@npm:0.34.39"
-  checksum: 10/3031d8a1414dfbef430a3f8dc85d89103e9e50a2756d7b8e7824229f1f2a529483ce5f9cc570f2c58500da149ca2dd54d5be6837b75af491c0d6bd8161a06f9e
+  version: 0.34.40
+  resolution: "@sinclair/typebox@npm:0.34.40"
+  checksum: 10/d167bf62ab8bb60b618fa13659e494476ccf47f03688bdb626e59848fb9f828db11ca78eafd53d4c236b32c6ca3c20dabf48ba3cd82cdab680b806684092e1d2
   languageName: node
   linkType: hard
 
@@ -2675,9 +2675,9 @@ __metadata:
   linkType: hard
 
 "ansi-regex@npm:^6.0.1":
-  version: 6.1.0
-  resolution: "ansi-regex@npm:6.1.0"
-  checksum: 10/495834a53b0856c02acd40446f7130cb0f8284f4a39afdab20d5dc42b2e198b1196119fe887beed8f9055c4ff2055e3b2f6d4641d0be018cdfb64fedf6fc1aac
+  version: 6.2.0
+  resolution: "ansi-regex@npm:6.2.0"
+  checksum: 10/f1a540a85647187f21918a87ea3fc910adc6ecc2bfc180c22d9b01a04379dce3a6c1f2e5375ab78e8d7d589eb1aeb734f49171e262e90c4225f21b4415c08c8c
   languageName: node
   linkType: hard
 
@@ -2944,16 +2944,16 @@ __metadata:
   linkType: hard
 
 "browserslist@npm:^4.24.0":
-  version: 4.25.2
-  resolution: "browserslist@npm:4.25.2"
+  version: 4.25.3
+  resolution: "browserslist@npm:4.25.3"
   dependencies:
-    caniuse-lite: "npm:^1.0.30001733"
-    electron-to-chromium: "npm:^1.5.199"
+    caniuse-lite: "npm:^1.0.30001735"
+    electron-to-chromium: "npm:^1.5.204"
     node-releases: "npm:^2.0.19"
     update-browserslist-db: "npm:^1.1.3"
   bin:
     browserslist: cli.js
-  checksum: 10/5a42c8728feffec8ace9fdf3dea52115e0329e0c423e2aec26f3e31e7bc0dea8e6267681a165d7e46cd867065e0fb3f042ef749f872c1ef912b62cacb7b84854
+  checksum: 10/12c45dfc9d98fea3832da56ac474d1b86296a56b819b55c98d2e97963545cd2aeb5809ee6e4a5b0da81c3a90b5f05613e13debb463689718a0e3eae92a93e4fd
   languageName: node
   linkType: hard
 
@@ -3076,7 +3076,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001733":
+"caniuse-lite@npm:^1.0.30001735":
   version: 1.0.30001735
   resolution: "caniuse-lite@npm:1.0.30001735"
   checksum: 10/4b404ed363a5ccf3ec07144c2360106aa47dcec1f896ea6705a2773c6977e9ffb19a2b58be9492462733170e29b4823211533b0986d5a25f0f65f7ff702470ab
@@ -3623,10 +3623,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-to-chromium@npm:^1.5.199":
-  version: 1.5.203
-  resolution: "electron-to-chromium@npm:1.5.203"
-  checksum: 10/ccf4f434c02c1da715917535cc1100e52ab5118a919bbc98ff147eed17cd1d78ffbdef9444e5ce80f113b245dedd4ca03b1aeb5eea69d7883d866d2a315834cb
+"electron-to-chromium@npm:^1.5.204":
+  version: 1.5.207
+  resolution: "electron-to-chromium@npm:1.5.207"
+  checksum: 10/ed195241d55a9a0d0134dc71693588242c09845327d54c91db38f34516b076f7a2f52059e24500cde9a424b51500d8f119ce56a6f4f2766b7202eae9bb74ca45
   languageName: node
   linkType: hard
 
@@ -4889,12 +4889,12 @@ __metadata:
   linkType: hard
 
 "istanbul-reports@npm:^3.1.3":
-  version: 3.1.7
-  resolution: "istanbul-reports@npm:3.1.7"
+  version: 3.2.0
+  resolution: "istanbul-reports@npm:3.2.0"
   dependencies:
     html-escaper: "npm:^2.0.0"
     istanbul-lib-report: "npm:^3.0.0"
-  checksum: 10/f1faaa4684efaf57d64087776018d7426312a59aa6eeb4e0e3a777347d23cd286ad18f427e98f0e3dee666103d7404c9d7abc5f240406a912fa16bd6695437fa
+  checksum: 10/6773a1d5c7d47eeec75b317144fe2a3b1da84a44b6282bebdc856e09667865e58c9b025b75b3d87f5bc62939126cbba4c871ee84254537d934ba5da5d4c4ec4e
   languageName: node
   linkType: hard
 
