@@ -5591,9 +5591,9 @@ __metadata:
   linkType: hard
 
 "libphonenumber-js@npm:^1.11.1":
-  version: 1.12.12
-  resolution: "libphonenumber-js@npm:1.12.12"
-  checksum: 10/228bb6f754155f0d3f7a911d2bfefe16cd9fef3333e5fb3889e11f65c1bd2f7b77d35085cd2a3568d810864902b96b7aa6332f37e47d746bc5dfda2152f0eb4c
+  version: 1.12.13
+  resolution: "libphonenumber-js@npm:1.12.13"
+  checksum: 10/6a8f31a5102a7c1c186d0a10e66149392b459209e2896837e9662b2b4efa063386b3655bdf6c294aef70b0aa58a759693d190b639331c5122c8fabdb94275f0d
   languageName: node
   linkType: hard
 
@@ -6234,8 +6234,8 @@ __metadata:
   linkType: hard
 
 "node-gyp@npm:latest":
-  version: 11.3.0
-  resolution: "node-gyp@npm:11.3.0"
+  version: 11.4.1
+  resolution: "node-gyp@npm:11.4.1"
   dependencies:
     env-paths: "npm:^2.2.0"
     exponential-backoff: "npm:^3.1.1"
@@ -6249,7 +6249,7 @@ __metadata:
     which: "npm:^5.0.0"
   bin:
     node-gyp: bin/node-gyp.js
-  checksum: 10/e7fb17ba72172d743ee791ea470cba1a579d1c37bcaa67a45d221d07df055baf1367d0684b3c7ee2b9b61f260cea77b2016aaac47027dbc0f43030c90b21527d
+  checksum: 10/78d388d37cf743baef1034e2210ae97a7618190696adcce609341626a6873af193d9cf5e71e5dab905dad3c13f21d4d3652ffb30bb87886fba385efaa4802f0e
   languageName: node
   linkType: hard
 
