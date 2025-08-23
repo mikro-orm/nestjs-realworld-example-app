@@ -3077,9 +3077,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001735":
-  version: 1.0.30001736
-  resolution: "caniuse-lite@npm:1.0.30001736"
-  checksum: 10/e2294b495145ad11d47b81f264145ff4b8efdc41ef3fdd9ff38a336f8195b407c27428f01bb6513481d9dc5a587fe0113f8d242a5e53ab93c9467ef9f689d4b1
+  version: 1.0.30001737
+  resolution: "caniuse-lite@npm:1.0.30001737"
+  checksum: 10/8e13943f1b2c5fc6b77db1a99081028c35c811689941d39ecfd3d9923b722e894213e87a8f4f2df9afc21c82542802f51caf716e80b396c8d43e49eec9ad8baa
   languageName: node
   linkType: hard
 
@@ -7446,9 +7446,9 @@ __metadata:
   linkType: hard
 
 "tapable@npm:^2.1.1, tapable@npm:^2.2.0, tapable@npm:^2.2.1":
-  version: 2.2.2
-  resolution: "tapable@npm:2.2.2"
-  checksum: 10/065a0dc44aba1b32020faa1c27c719e8f76e5345347515d8494bf158524f36e9f22ad9eaa5b5494f9d5d67bf0640afdd5698505948c46d720b6b7e69d19349a6
+  version: 2.2.3
+  resolution: "tapable@npm:2.2.3"
+  checksum: 10/15e0472f662e40ea865cee2664163d4809c14369777c6b6dec27e3163dd24f8f3e4f3bf59c629e772402aec9a45e7daf40f9df9606b7304722d3c81f3b49235d
   languageName: node
   linkType: hard
 
@@ -7838,9 +7838,9 @@ __metadata:
   linkType: hard
 
 "uint8array-extras@npm:^1.4.0":
-  version: 1.4.1
-  resolution: "uint8array-extras@npm:1.4.1"
-  checksum: 10/ef1a510e885c0a1ed02a9f6a1f05f2d7badd122c031e878bf80b701cd344d22cffeb42f9767cd0ada37245e1bfead5ea38a5d64d019b121bcca275b045e52858
+  version: 1.5.0
+  resolution: "uint8array-extras@npm:1.5.0"
+  checksum: 10/94fd56a2dda6a7445f5176f301f491814c87757d38e4b3c932299ab54d69ec504830e5d5c18ffa20cf694a69a210315be8b4a2c9952c6334da817ea2d2e1dce0
   languageName: node
   linkType: hard
 
