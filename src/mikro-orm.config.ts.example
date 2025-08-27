@@ -16,7 +16,5 @@ export default defineConfig({
   debug: true,
   highlighter: new SqlHighlighter(),
   metadataProvider: TsMorphMetadataProvider,
-  // @ts-expect-error nestjs adapter option
-  registerRequestContext: false,
   extensions: [Migrator, EntityGenerator, SeedManager],
 });

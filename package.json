@@ -59,17 +59,17 @@
     ]
   },
   "dependencies": {
-    "@mikro-orm/core": "^6.4.0",
-    "@mikro-orm/entity-generator": "^6.4.0",
-    "@mikro-orm/migrations": "^6.4.0",
-    "@mikro-orm/mysql": "^6.4.0",
-    "@mikro-orm/nestjs": "^6.0.1",
-    "@mikro-orm/reflection": "^6.4.0",
+    "@mikro-orm/core": "^6.4.4",
+    "@mikro-orm/entity-generator": "^6.4.4",
+    "@mikro-orm/migrations": "^6.4.4",
+    "@mikro-orm/mysql": "^6.4.4",
+    "@mikro-orm/nestjs": "^6.1.0",
+    "@mikro-orm/reflection": "^6.4.4",
     "@mikro-orm/sql-highlighter": "^1.0.1",
-    "@nestjs/common": "^11.0.0",
-    "@nestjs/core": "^11.0.0",
-    "@nestjs/platform-express": "^11.0.0",
-    "@nestjs/swagger": "^11.0.0",
+    "@nestjs/common": "^11.0.6",
+    "@nestjs/core": "^11.0.6",
+    "@nestjs/platform-express": "^11.0.6",
+    "@nestjs/swagger": "^11.0.3",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "crypto": "^1.0.1",
@@ -83,13 +83,13 @@
     "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
-    "@mikro-orm/cli": "^6.4.0",
-    "@mikro-orm/seeder": "^6.4.0",
-    "@nestjs/cli": "^10.3.2",
+    "@mikro-orm/cli": "^6.4.4",
+    "@mikro-orm/seeder": "^6.4.4",
+    "@nestjs/cli": "^11.0.2",
     "@nestjs/schematics": "^11.0.0",
-    "@nestjs/testing": "^11.0.0",
+    "@nestjs/testing": "^11.0.6",
     "@types/express": "^5.0.0",
-    "@types/jest": "^29.5.12",
+    "@types/jest": "^30.0.0",
     "@types/jsonwebtoken": "^9.0.6",
     "@types/node": "^22.0.0",
     "@types/slug": "^5.0.8",
@@ -99,11 +99,11 @@
     "deep-extend": ">=0.6.0",
     "eslint": "^8.57.0",
     "extend": ">=3.0.2",
-    "jest": "^29.7.0",
+    "jest": "^30.0.0",
     "supertest": "^7.0.0",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
-    "typescript": "5.7.3"
+    "typescript": "5.9.2"
   },
-  "packageManager": "yarn@4.6.0"
+  "packageManager": "yarn@4.9.4"
 }
