@@ -5648,9 +5648,9 @@ __metadata:
   linkType: hard
 
 "libphonenumber-js@npm:^1.11.1":
-  version: 1.12.21
-  resolution: "libphonenumber-js@npm:1.12.21"
-  checksum: 10/5784a3392bd7decf5e8c6927a5e1c08a876983adb9d7f76e7b19ce770659d74f4d33e82afb0b32b5fe200d57320f49650ab3ab131d0bd9a1b99ec9767e3e2adc
+  version: 1.12.22
+  resolution: "libphonenumber-js@npm:1.12.22"
+  checksum: 10/d6665870908489e16a5c124bf95adab3ff82a6606446d564cbea03380404adcfcafffbdf6d1a31c039b025dd28723997102980b88bde959bfbdac54c0a5687e0
   languageName: node
   linkType: hard
 
