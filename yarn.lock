@@ -2914,11 +2914,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.8.3":
-  version: 2.8.7
-  resolution: "baseline-browser-mapping@npm:2.8.7"
+  version: 2.8.8
+  resolution: "baseline-browser-mapping@npm:2.8.8"
   bin:
     baseline-browser-mapping: dist/cli.js
-  checksum: 10/b73855387c89c2ee8e7f7947abac4e3c289e7cf6d831ed58e9d90c098e32a40493eb3b9b0f029145a97f2a3c22f53736900e9a20e1aaed908bbfb2301f373df9
+  checksum: 10/e14a00eed317046fe8d67e953a6a68f40f93935018b4982a4644b3b80d6d75955a412a1b7f730847dc884f3b4967ebbeec3c6c5e16f99ddda33281d3b13b7d4c
   languageName: node
   linkType: hard
 
@@ -3667,9 +3667,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.218":
-  version: 1.5.224
-  resolution: "electron-to-chromium@npm:1.5.224"
-  checksum: 10/49922712f709e191e7f57af980907e3bd5392a216f51b53818de9f1aea80abc115f1bf3e0e3e4589ab9a05b7efca4c5b65556e2cb41081b49bfeb68314119c6f
+  version: 1.5.225
+  resolution: "electron-to-chromium@npm:1.5.225"
+  checksum: 10/96e071b69084a28c17ae56ca8ec8fd61bdf5c8ffff5caabe81cf13542aa3a827567365711f62f594ebdb99ae43741952cb83c1be94066bb760117097f2abe846
   languageName: node
   linkType: hard
 
@@ -5648,9 +5648,9 @@ __metadata:
   linkType: hard
 
 "libphonenumber-js@npm:^1.11.1":
-  version: 1.12.22
-  resolution: "libphonenumber-js@npm:1.12.22"
-  checksum: 10/d6665870908489e16a5c124bf95adab3ff82a6606446d564cbea03380404adcfcafffbdf6d1a31c039b025dd28723997102980b88bde959bfbdac54c0a5687e0
+  version: 1.12.23
+  resolution: "libphonenumber-js@npm:1.12.23"
+  checksum: 10/74b00fa8dd51f3b99d3d0be2c108186aa260fbf832f7d29b8d79a1eed4e874a542e9fced315477c5f57e6c6958e4c93f1ea7267873248bd1ad83d04b852ba553
   languageName: node
   linkType: hard
 
