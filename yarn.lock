@@ -1448,8 +1448,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/common@npm:^11.0.6":
-  version: 11.1.7
-  resolution: "@nestjs/common@npm:11.1.7"
+  version: 11.1.8
+  resolution: "@nestjs/common@npm:11.1.8"
   dependencies:
     file-type: "npm:21.0.0"
     iterare: "npm:1.2.1"
@@ -1466,13 +1466,13 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10/e758efc24f5c231f052d64709dc5b171ffd5d155fa1f96852e18a3a9c39abd7cdca90241a6eb125ad2e90f931cedf9347999618aadee8fa04d454c9e7b220e44
+  checksum: 10/1f22d3caaa2a4ddcb6bda0dd0b4600d0b07f4a99864edc64c224521d950f9ab9b96e376a03fffcb6d328d43bf69432f75496800989fa518c04d662372487a91c
   languageName: node
   linkType: hard
 
 "@nestjs/core@npm:^11.0.6":
-  version: 11.1.7
-  resolution: "@nestjs/core@npm:11.1.7"
+  version: 11.1.8
+  resolution: "@nestjs/core@npm:11.1.8"
   dependencies:
     "@nuxt/opencollective": "npm:0.4.1"
     fast-safe-stringify: "npm:2.1.1"
@@ -1494,7 +1494,7 @@ __metadata:
       optional: true
     "@nestjs/websockets":
       optional: true
-  checksum: 10/3f34328be28b6ecc698e8e5cf52c7658de3932038e5c5ddb4ffffef0cbbf471a5be6460100e246fb0914fa847ae995c9ca4af21a2ae38afab468485851a56369
+  checksum: 10/1be01d8cb2932b40144ad9cfdb370032ebc933822b751fcfa207adb40292a667bcc46b2131f8a63313ee20befeb0f39956a4e36776a6c404cba36aa02aad0101
   languageName: node
   linkType: hard
 
@@ -1516,8 +1516,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/platform-express@npm:^11.0.6":
-  version: 11.1.7
-  resolution: "@nestjs/platform-express@npm:11.1.7"
+  version: 11.1.8
+  resolution: "@nestjs/platform-express@npm:11.1.8"
   dependencies:
     cors: "npm:2.8.5"
     express: "npm:5.1.0"
@@ -1527,7 +1527,7 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^11.0.0
     "@nestjs/core": ^11.0.0
-  checksum: 10/25b65207cd4335e1c7665ca7a28ad5451de479075164557431903ea115065fb190771145e0e452a99c5f88ded9e39957368a58d5d51146bec4fc5536c7428f94
+  checksum: 10/b1c2691480a12e3606f857e103d169f95e2ec807d45a210800c59b3de194625c20f18e0492ac0ff4981b5ad4b6bfa6bbd35c67ad2e89cee9fc1f6bc935c1f1e7
   languageName: node
   linkType: hard
 
@@ -1575,8 +1575,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/testing@npm:^11.0.6":
-  version: 11.1.7
-  resolution: "@nestjs/testing@npm:11.1.7"
+  version: 11.1.8
+  resolution: "@nestjs/testing@npm:11.1.8"
   dependencies:
     tslib: "npm:2.8.1"
   peerDependencies:
@@ -1589,7 +1589,7 @@ __metadata:
       optional: true
     "@nestjs/platform-express":
       optional: true
-  checksum: 10/02df88a5c9efd13c12a198efbcd66c1f4eb43faaaad9fd9ee29b902cc2f8dbe919a28ed9f83c21511a17f5147d81b218859c085bc586701245191eb0166fd56b
+  checksum: 10/2492cb13b52a93888ca3991110dc3899f84e8f64bcd735c682c15d905b152203b58943945301a7e743010c5d2b34052d58bab9c1c5ba8913bdacb866155c7c0a
   languageName: node
   linkType: hard
 
@@ -1936,13 +1936,13 @@ __metadata:
   linkType: hard
 
 "@types/express@npm:^5.0.0":
-  version: 5.0.4
-  resolution: "@types/express@npm:5.0.4"
+  version: 5.0.5
+  resolution: "@types/express@npm:5.0.5"
   dependencies:
     "@types/body-parser": "npm:*"
     "@types/express-serve-static-core": "npm:^5.0.0"
-    "@types/serve-static": "npm:*"
-  checksum: 10/0a07540b8220d0ebeeaca3afad96b6541d815e36f204c9fac202dd4c59fc545ffabea46df2c02f44276c00adbfccb7bb7a98f877cea4aebb0f9f8d4502447fec
+    "@types/serve-static": "npm:^1"
+  checksum: 10/9e72410286fbc80bea8a57d1b374c25235f6019dabf8af67e5b72c2f9be548f36ccc09d048fc88172731450e80f06018f90c17e05beb5afc4dbdaf5f7200dbb3
   languageName: node
   linkType: hard
 
@@ -2020,11 +2020,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:^24.0.0":
-  version: 24.9.1
-  resolution: "@types/node@npm:24.9.1"
+  version: 24.9.2
+  resolution: "@types/node@npm:24.9.2"
   dependencies:
     undici-types: "npm:~7.16.0"
-  checksum: 10/eacbd06621616825042428dd6105d0c2f86d67b5f05f99db9fa89fe1cc173d5e65e604a9a61f1ce52ad915d09f2119e7468816ca1a22bb7a3cf5f3c131413c86
+  checksum: 10/3e76ad89cca317c0886deedab0245b6b2a04ef6c47362bd3918020296f3e9630334795af9cee8c6633eae774c85d848ff2e6bed5a7c3133fc94968364fc3ee36
   languageName: node
   linkType: hard
 
@@ -2061,7 +2061,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/serve-static@npm:*":
+"@types/serve-static@npm:^1":
   version: 1.15.10
   resolution: "@types/serve-static@npm:1.15.10"
   dependencies:
@@ -2087,9 +2087,9 @@ __metadata:
   linkType: hard
 
 "@types/validator@npm:^13.11.8":
-  version: 13.15.3
-  resolution: "@types/validator@npm:13.15.3"
-  checksum: 10/1703d836941de615e731cfa612844a81476a598ae37107c9e21279bca6448f6d540957c6715ca9d5b5881d83e3403d1ae1dc5cfd06a80c7d8a10e099b9066755
+  version: 13.15.4
+  resolution: "@types/validator@npm:13.15.4"
+  checksum: 10/a0e6d58fe8aa31a9faead1c4a7c49d87fce09ab8c4034c6873461264c8f669a69998c085302ae85273d98d138f59454101fde23c2a38cfccb847f5f4a9716463
   languageName: node
   linkType: hard
 
@@ -3709,9 +3709,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.238":
-  version: 1.5.240
-  resolution: "electron-to-chromium@npm:1.5.240"
-  checksum: 10/35210acbd189e58e1447157498e23f53a4e0562145caac56bf103a1f3d88259d9dd59663a9396ecf64adbdef487873b327ff8c0688ece95b5531b10d27fb4e7d
+  version: 1.5.241
+  resolution: "electron-to-chromium@npm:1.5.241"
+  checksum: 10/938c51b3a7aec066a1c2b40339e537fdb8c29a8e34e096d049d76f61a7fd79934cf743e39fdfb2dc7c6b8dbfb830dba65a709a29ac7beb2db5816036c707218e
   languageName: node
   linkType: hard
 
@@ -6048,11 +6048,11 @@ __metadata:
   linkType: hard
 
 "minimatch@npm:^10.0.1, minimatch@npm:^10.0.3":
-  version: 10.0.3
-  resolution: "minimatch@npm:10.0.3"
+  version: 10.1.1
+  resolution: "minimatch@npm:10.1.1"
   dependencies:
     "@isaacs/brace-expansion": "npm:^5.0.0"
-  checksum: 10/d5b8b2538b367f2cfd4aeef27539fddeee58d1efb692102b848e4a968a09780a302c530eb5aacfa8c57f7299155fb4b4e85219ad82664dcef5c66f657111d9b8
+  checksum: 10/110f38921ea527022e90f7a5f43721838ac740d0a0c26881c03b57c261354fb9a0430e40b2c56dfcea2ef3c773768f27210d1106f1f2be19cde3eea93f26f45e
   languageName: node
   linkType: hard
 
@@ -7496,11 +7496,11 @@ __metadata:
   linkType: hard
 
 "swagger-ui-dist@npm:>=5.0.0":
-  version: 5.29.5
-  resolution: "swagger-ui-dist@npm:5.29.5"
+  version: 5.30.0
+  resolution: "swagger-ui-dist@npm:5.30.0"
   dependencies:
     "@scarf/scarf": "npm:=1.4.0"
-  checksum: 10/d0ed6a03d7198df60f64685136e59e83e9e6e7a646575d3ac2a40335cf0daeb4cfadd012690830535a0a0cc45b684d29ba97ac76d60a8e195761a8d3ee243f81
+  checksum: 10/719422e7a03956e975b2efb5df6ce0967c334b9ebc4705d26b9a2f2100f8d39ba9ab15eb456da29fdd98ba3427309be9a7c4cac599457fc681e193d62059d475
   languageName: node
   linkType: hard
 
