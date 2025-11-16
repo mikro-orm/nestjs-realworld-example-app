@@ -3708,9 +3708,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.249":
-  version: 1.5.252
-  resolution: "electron-to-chromium@npm:1.5.252"
-  checksum: 10/86727dc45512b062cdf017ce9bba4dabd90f23fbd4e5db0d5d5e62ad00d7f526a90256acfc2288ed9c29c57963858c1aeb420c93e1fbbfa3aad3ed8799196c46
+  version: 1.5.254
+  resolution: "electron-to-chromium@npm:1.5.254"
+  checksum: 10/f8d598b77b696bb66c922f63d5b98b2ab311844c944d5ee4d48945bb0e47c38cd10c42d846603c72fa169fd4ef92d6dd903415a30455439dff020d61c514fa84
   languageName: node
   linkType: hard
 
@@ -4190,13 +4190,13 @@ __metadata:
   linkType: hard
 
 "figlet@npm:^1.5.2":
-  version: 1.9.3
-  resolution: "figlet@npm:1.9.3"
+  version: 1.9.4
+  resolution: "figlet@npm:1.9.4"
   dependencies:
     commander: "npm:^14.0.0"
   bin:
     figlet: bin/index.js
-  checksum: 10/1212aa2676579c3632cf89fdbb3d070a9674dc544586b1f04519788463abac5c845d6f492647be0f8d74d5d041abf9831e486fd4d60e943745ed9bbe7c7ffec9
+  checksum: 10/78dce84595c7627d506b8f4e957b01bfb0b18b2ea80f0dbb4f4d46974a881096eb708eb1acc725d0ec4b05337dfc565afd0e8e60fb97f9405f7f9207ab7afebd
   languageName: node
   linkType: hard
 
