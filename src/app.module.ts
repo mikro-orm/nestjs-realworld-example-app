@@ -9,24 +9,14 @@ import { TagModule } from './tag/tag.module';
 import { UserModule } from './user/user.module';
 
 @Module({
-  controllers: [
-    AppController,
-  ],
-  imports: [
-    MikroOrmModule.forRoot(),
-    ArticleModule,
-    UserModule,
-    ProfileModule,
-    TagModule,
-  ],
+  controllers: [AppController],
+  imports: [MikroOrmModule.forRoot(), ArticleModule, UserModule, ProfileModule, TagModule],
   providers: [],
 })
 export class AppModule implements OnModuleInit {
-
   constructor(private readonly orm: MikroORM) {}
 
   async onModuleInit(): Promise<void> {
     await this.orm.getMigrator().up();
   }
-
 }

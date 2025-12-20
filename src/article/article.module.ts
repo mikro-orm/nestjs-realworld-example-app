@@ -1,5 +1,6 @@
-import { MiddlewareConsumer, Module, NestModule, RequestMethod } from '@nestjs/common';
-import { MikroOrmModule } from '@mikro-orm/nestjs'
+import type { MiddlewareConsumer, NestModule } from '@nestjs/common';
+import { Module, RequestMethod } from '@nestjs/common';
+import { MikroOrmModule } from '@mikro-orm/nestjs';
 import { AuthMiddleware } from '../user/auth.middleware';
 import { User } from '../user/user.entity';
 import { UserModule } from '../user/user.module';
@@ -9,9 +10,7 @@ import { ArticleService } from './article.service';
 import { Comment } from './comment.entity';
 
 @Module({
-  controllers: [
-    ArticleController,
-  ],
+  controllers: [ArticleController],
   imports: [MikroOrmModule.forFeature({ entities: [Article, Comment, User] }), UserModule],
   providers: [ArticleService],
 })
@@ -27,6 +26,7 @@ export class ArticleModule implements NestModule {
         { path: 'articles/:slug/comments', method: RequestMethod.POST },
         { path: 'articles/:slug/comments/:id', method: RequestMethod.DELETE },
         { path: 'articles/:slug/favorite', method: RequestMethod.POST },
-        { path: 'articles/:slug/favorite', method: RequestMethod.DELETE });
+        { path: 'articles/:slug/favorite', method: RequestMethod.DELETE },
+      );
   }
 }

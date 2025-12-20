@@ -68,7 +68,7 @@ describe('UsersController', () => {
     });
   });
   it('should create user and return him', async () => {
-    const email: string = 'test@test.com';
+    const email = 'test@test.com';
     expect(
       await controller.create({
         email,

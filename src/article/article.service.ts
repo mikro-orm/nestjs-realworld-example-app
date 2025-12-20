@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { EntityManager, EntityRepository, FilterQuery, QueryOrder, wrap } from '@mikro-orm/mysql';
-import { InjectRepository } from '@mikro-orm/nestjs'
+import { InjectRepository } from '@mikro-orm/nestjs';
 
 import { User } from '../user/user.entity';
 import { Article } from './article.entity';
@@ -10,7 +10,6 @@ import { CreateArticleDto, CreateCommentDto } from './dto';
 
 @Injectable()
 export class ArticleService {
-
   constructor(
     private readonly em: EntityManager,
     @InjectRepository(Article)
@@ -22,11 +21,10 @@ export class ArticleService {
   ) {}
 
   async findAll(userId: number, query: any): Promise<IArticlesRO> {
-    const user = userId ? await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites'] }) : undefined;
-    const qb = this.articleRepository
-      .createQueryBuilder('a')
-      .select('a.*')
-      .leftJoin('a.author', 'u');
+    const user = userId
+      ? await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites'] })
+      : undefined;
+    const qb = this.articleRepository.createQueryBuilder('a').select('a.*').leftJoin('a.author', 'u');
 
     if ('tag' in query) {
       qb.andWhere({ tagList: new RegExp(query.tag) });
@@ -53,7 +51,7 @@ export class ArticleService {
       qb.andWhere({ author: ids });
     }
 
-    qb.orderBy({ createdAt: QueryOrder.DESC });
+    qb.orderBy({ createdAt: 'desc' });
     const res = await qb.clone().count('id', true).execute('get');
     const articlesCount = res.count;
 
@@ -71,20 +69,26 @@ export class ArticleService {
   }
 
   async findFeed(userId: number, query: any): Promise<IArticlesRO> {
-    const user = userId ? await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites'] }) : undefined;
-    const res = await this.articleRepository.findAndCount({ author: { followers: userId } }, {
-      populate: ['author'],
-      orderBy: { createdAt: QueryOrder.DESC },
-      limit: query.limit,
-      offset: query.offset,
-    });
+    const user = userId
+      ? await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites'] })
+      : undefined;
+    const res = await this.articleRepository.findAndCount(
+      { author: { followers: userId } },
+      {
+        populate: ['author'],
+        orderBy: { createdAt: 'desc' },
+        limit: query.limit,
+        offset: query.offset,
+      },
+    );
 
-    console.log('findFeed', { articles: res[0], articlesCount: res[1] });
     return { articles: res[0].map(a => a.toJSON(user)), articlesCount: res[1] };
   }
 
   async findOne(userId: number, where: FilterQuery<Article>): Promise<IArticleRO> {
-    const user = userId ? await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites'] }) : undefined;
+    const user = userId
+      ? await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites'] })
+      : undefined;
     const article = await this.articleRepository.findOneOrFail(where, { populate: ['author'] });
     return { article: article?.toJSON(user) };
   }
@@ -164,5 +168,4 @@ export class ArticleService {
   async delete(slug: string) {
     return this.articleRepository.nativeDelete({ slug });
   }
-
 }

@@ -6,7 +6,8 @@ import {
   EntityDTO,
   EntityRepositoryType,
   ManyToMany,
-  OneToMany, Opt,
+  OneToMany,
+  Opt,
   PrimaryKey,
   Property,
   wrap,
@@ -16,7 +17,6 @@ import { UserRepository } from './user.repository';
 
 @Entity({ repository: () => UserRepository })
 export class User {
-
   [EntityRepositoryType]?: UserRepository;
 
   @PrimaryKey()
@@ -41,7 +41,15 @@ export class User {
   @ManyToMany({ hidden: true })
   favorites = new Collection<Article>(this);
 
-  @ManyToMany({ entity: () => User, inversedBy: u => u.followed, owner: true, pivotTable: 'user_to_follower', joinColumn: 'follower', inverseJoinColumn: 'following', hidden: true })
+  @ManyToMany({
+    entity: () => User,
+    inversedBy: u => u.followed,
+    owner: true,
+    pivotTable: 'user_to_follower',
+    joinColumn: 'follower',
+    inverseJoinColumn: 'following',
+    hidden: true,
+  })
   followers = new Collection<User>(this);
 
   @ManyToMany(() => User, u => u.followers, { hidden: true })
@@ -63,7 +71,6 @@ export class User {
 
     return o;
   }
-
 }
 
 interface UserDTO extends EntityDTO<User> {

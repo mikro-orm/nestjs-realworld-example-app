@@ -9,7 +9,6 @@ import { CreateArticleDto, CreateCommentDto } from './dto';
 @ApiTags('articles')
 @Controller('articles')
 export class ArticleController {
-
   constructor(private readonly articleService: ArticleService) {}
 
   @ApiOperation({ summary: 'Get all articles' })
@@ -49,7 +48,11 @@ export class ArticleController {
   @ApiResponse({ status: 201, description: 'The article has been successfully updated.' })
   @ApiResponse({ status: 403, description: 'Forbidden.' })
   @Put(':slug')
-  async update(@User('id') user: number, @Param() params: { slug: string }, @Body('article') articleData: CreateArticleDto) {
+  async update(
+    @User('id') user: number,
+    @Param() params: { slug: string },
+    @Body('article') articleData: CreateArticleDto,
+  ) {
     // Todo: update slug also when title gets changed
     return this.articleService.update(+user, params.slug, articleData);
   }
@@ -66,7 +69,11 @@ export class ArticleController {
   @ApiResponse({ status: 201, description: 'The comment has been successfully created.' })
   @ApiResponse({ status: 403, description: 'Forbidden.' })
   @Post(':slug/comments')
-  async createComment(@User('id') user: number, @Param('slug') slug: string, @Body('comment') commentData: CreateCommentDto) {
+  async createComment(
+    @User('id') user: number,
+    @Param('slug') slug: string,
+    @Body('comment') commentData: CreateCommentDto,
+  ) {
     return this.articleService.addComment(user, slug, commentData);
   }
 
@@ -94,5 +101,4 @@ export class ArticleController {
   async unFavorite(@User('id') userId: number, @Param('slug') slug: string) {
     return this.articleService.unFavorite(userId, slug);
   }
-
 }

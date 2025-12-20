@@ -5,16 +5,12 @@ import { User } from './user.decorator';
 import { IUserRO } from './user.interface';
 import { UserService } from './user.service';
 
-import {
-  ApiBearerAuth,
-  ApiTags,
-} from '@nestjs/swagger';
+import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 
 @ApiBearerAuth()
 @ApiTags('user')
 @Controller()
 export class UserController {
-
   constructor(private readonly userService: UserService) {}
 
   @Get('user')
@@ -47,7 +43,7 @@ export class UserController {
     if (!foundUser) {
       throw new HttpException({ errors }, 401);
     }
-    const token = await this.userService.generateJWT(foundUser);
+    const token = this.userService.generateJWT(foundUser);
     const { email, username, bio, image } = foundUser;
     const user = { email, token, username, bio, image };
     return { user };
