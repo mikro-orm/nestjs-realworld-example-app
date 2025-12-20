@@ -21,9 +21,12 @@ export class ProfileService {
   }
 
   async findProfile(id: number, followingUsername: string): Promise<IProfileRO> {
-    const foundProfile = await this.userRepository.findOneOrFail({ username: followingUsername }, {
-      populate: ['followers'],
-    });
+    const foundProfile = await this.userRepository.findOneOrFail(
+      { username: followingUsername },
+      {
+        populate: ['followers'],
+      },
+    );
     const follower = this.userRepository.getReference(id);
 
     const profile: IProfileData = {
@@ -41,9 +44,12 @@ export class ProfileService {
       throw new HttpException('Follower email and username not provided.', HttpStatus.BAD_REQUEST);
     }
 
-    const followingUser = await this.userRepository.findOneOrFail({ username }, {
-      populate: ['followers'],
-    });
+    const followingUser = await this.userRepository.findOneOrFail(
+      { username },
+      {
+        populate: ['followers'],
+      },
+    );
     const followerUser = await this.userRepository.findOneOrFail({ email: followerEmail });
 
     if (followingUser.email === followerEmail) {
@@ -68,9 +74,12 @@ export class ProfileService {
       throw new HttpException('FollowerId and username not provided.', HttpStatus.BAD_REQUEST);
     }
 
-    const followingUser = await this.userRepository.findOneOrFail({ username }, {
-      populate: ['followers'],
-    });
+    const followingUser = await this.userRepository.findOneOrFail(
+      { username },
+      {
+        populate: ['followers'],
+      },
+    );
     const followerUser = this.userRepository.getReference(followerId);
 
     if (followingUser.id === followerId) {

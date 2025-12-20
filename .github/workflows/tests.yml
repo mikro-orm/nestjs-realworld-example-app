@@ -2,7 +2,7 @@ name: tests
 
 on:
   push:
-    branches: [ master, renovate/** ]
+    branches: [master, renovate/**]
   pull_request:
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [ 20, 22, 24 ]
+        node-version: [20, 22, 24]
     steps:
       - name: Checkout Source code
         uses: actions/checkout@v6

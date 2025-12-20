@@ -28,9 +28,7 @@
       "indexes": [
         {
           "keyName": "PRIMARY",
-          "columnNames": [
-            "id"
-          ],
+          "columnNames": ["id"],
           "composite": false,
           "constraint": true,
           "primary": true,
@@ -108,9 +106,7 @@
       "indexes": [
         {
           "keyName": "PRIMARY",
-          "columnNames": [
-            "id"
-          ],
+          "columnNames": ["id"],
           "composite": false,
           "constraint": true,
           "primary": true,
@@ -227,9 +223,7 @@
       "name": "article",
       "indexes": [
         {
-          "columnNames": [
-            "author_id"
-          ],
+          "columnNames": ["author_id"],
           "composite": false,
           "keyName": "article_author_id_index",
           "constraint": false,
@@ -238,9 +232,7 @@
         },
         {
           "keyName": "PRIMARY",
-          "columnNames": [
-            "id"
-          ],
+          "columnNames": ["id"],
           "composite": false,
           "constraint": true,
           "primary": true,
@@ -251,13 +243,9 @@
       "foreignKeys": {
         "article_author_id_foreign": {
           "constraintName": "article_author_id_foreign",
-          "columnNames": [
-            "author_id"
-          ],
+          "columnNames": ["author_id"],
           "localTableName": "article",
-          "referencedColumnNames": [
-            "id"
-          ],
+          "referencedColumnNames": ["id"],
           "referencedTableName": "user",
           "updateRule": "cascade"
         }
@@ -330,9 +318,7 @@
       "name": "comment",
       "indexes": [
         {
-          "columnNames": [
-            "article_id"
-          ],
+          "columnNames": ["article_id"],
           "composite": false,
           "keyName": "comment_article_id_index",
           "constraint": false,
@@ -340,9 +326,7 @@
           "unique": false
         },
         {
-          "columnNames": [
-            "author_id"
-          ],
+          "columnNames": ["author_id"],
           "composite": false,
           "keyName": "comment_author_id_index",
           "constraint": false,
@@ -351,9 +335,7 @@
         },
         {
           "keyName": "PRIMARY",
-          "columnNames": [
-            "id"
-          ],
+          "columnNames": ["id"],
           "composite": false,
           "constraint": true,
           "primary": true,
@@ -364,25 +346,17 @@
       "foreignKeys": {
         "comment_article_id_foreign": {
           "constraintName": "comment_article_id_foreign",
-          "columnNames": [
-            "article_id"
-          ],
+          "columnNames": ["article_id"],
           "localTableName": "comment",
-          "referencedColumnNames": [
-            "id"
-          ],
+          "referencedColumnNames": ["id"],
           "referencedTableName": "article",
           "updateRule": "cascade"
         },
         "comment_author_id_foreign": {
           "constraintName": "comment_author_id_foreign",
-          "columnNames": [
-            "author_id"
-          ],
+          "columnNames": ["author_id"],
           "localTableName": "comment",
-          "referencedColumnNames": [
-            "id"
-          ],
+          "referencedColumnNames": ["id"],
           "referencedTableName": "user",
           "updateRule": "cascade"
         }
@@ -415,9 +389,7 @@
       "name": "user_favorites",
       "indexes": [
         {
-          "columnNames": [
-            "user_id"
-          ],
+          "columnNames": ["user_id"],
           "composite": false,
           "keyName": "user_favorites_user_id_index",
           "constraint": false,
@@ -425,9 +397,7 @@
           "unique": false
         },
         {
-          "columnNames": [
-            "article_id"
-          ],
+          "columnNames": ["article_id"],
           "composite": false,
           "keyName": "user_favorites_article_id_index",
           "constraint": false,
@@ -436,10 +406,7 @@
         },
         {
           "keyName": "PRIMARY",
-          "columnNames": [
-            "user_id",
-            "article_id"
-          ],
+          "columnNames": ["user_id", "article_id"],
           "composite": true,
           "constraint": true,
           "primary": true,
@@ -450,26 +417,18 @@
       "foreignKeys": {
         "user_favorites_user_id_foreign": {
           "constraintName": "user_favorites_user_id_foreign",
-          "columnNames": [
-            "user_id"
-          ],
+          "columnNames": ["user_id"],
           "localTableName": "user_favorites",
-          "referencedColumnNames": [
-            "id"
-          ],
+          "referencedColumnNames": ["id"],
           "referencedTableName": "user",
           "deleteRule": "cascade",
           "updateRule": "cascade"
         },
         "user_favorites_article_id_foreign": {
           "constraintName": "user_favorites_article_id_foreign",
-          "columnNames": [
-            "article_id"
-          ],
+          "columnNames": ["article_id"],
           "localTableName": "user_favorites",
-          "referencedColumnNames": [
-            "id"
-          ],
+          "referencedColumnNames": ["id"],
           "referencedTableName": "article",
           "deleteRule": "cascade",
           "updateRule": "cascade"
@@ -503,9 +462,7 @@
       "name": "user_to_follower",
       "indexes": [
         {
-          "columnNames": [
-            "follower"
-          ],
+          "columnNames": ["follower"],
           "composite": false,
           "keyName": "user_to_follower_follower_index",
           "constraint": false,
@@ -513,9 +470,7 @@
           "unique": false
         },
         {
-          "columnNames": [
-            "following"
-          ],
+          "columnNames": ["following"],
           "composite": false,
           "keyName": "user_to_follower_following_index",
           "constraint": false,
@@ -524,10 +479,7 @@
         },
         {
           "keyName": "PRIMARY",
-          "columnNames": [
-            "follower",
-            "following"
-          ],
+          "columnNames": ["follower", "following"],
           "composite": true,
           "constraint": true,
           "primary": true,
@@ -538,26 +490,18 @@
       "foreignKeys": {
         "user_to_follower_follower_foreign": {
           "constraintName": "user_to_follower_follower_foreign",
-          "columnNames": [
-            "follower"
-          ],
+          "columnNames": ["follower"],
           "localTableName": "user_to_follower",
-          "referencedColumnNames": [
-            "id"
-          ],
+          "referencedColumnNames": ["id"],
           "referencedTableName": "user",
           "deleteRule": "cascade",
           "updateRule": "cascade"
         },
         "user_to_follower_following_foreign": {
           "constraintName": "user_to_follower_following_foreign",
-          "columnNames": [
-            "following"
-          ],
+          "columnNames": ["following"],
           "localTableName": "user_to_follower",
-          "referencedColumnNames": [
-            "id"
-          ],
+          "referencedColumnNames": ["id"],
           "referencedTableName": "user",
           "deleteRule": "cascade",
           "updateRule": "cascade"

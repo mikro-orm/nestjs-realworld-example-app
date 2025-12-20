@@ -4,7 +4,6 @@ import { Article } from './article.entity';
 
 @Entity()
 export class Comment {
-
   @PrimaryKey()
   id!: number;
 
@@ -28,5 +27,4 @@ export class Comment {
     this.article = article;
     this.body = body;
   }
-
 }

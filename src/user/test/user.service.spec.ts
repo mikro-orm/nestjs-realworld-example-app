@@ -7,11 +7,11 @@ describe('UsersService', () => {
   let service: UserService;
 
   const mockEntityManager = {
-    persistAndFlush: jest.fn().mockImplementation(async () => {}),
+    persistAndFlush: jest.fn().mockImplementation(async () => void 0),
   };
   const mockUserRepository = {
     findAll: jest.fn().mockImplementation(async () => []),
-    findOne: jest.fn().mockImplementation(async (options) => ({
+    findOne: jest.fn().mockImplementation(async options => ({
       id: options.id ?? Date.now(),
       email: options.email ?? 'test@test.com',
       password: options.password ?? 'test',
@@ -21,7 +21,7 @@ describe('UsersService', () => {
     })),
     count: jest.fn().mockImplementation(() => 0),
     nativeDelete: jest.fn().mockImplementation(() => 1),
-    findOneOrFail: jest.fn().mockImplementation((options) => ({
+    findOneOrFail: jest.fn().mockImplementation(options => ({
       id: Date.now(),
       email: options.email ?? 'test@test.com',
       password: options.password ?? 'test',
@@ -42,7 +42,7 @@ describe('UsersService', () => {
         {
           provide: EntityManager,
           useValue: mockEntityManager,
-        }
+        },
       ],
     }).compile();
 
