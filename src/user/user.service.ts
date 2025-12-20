@@ -57,7 +57,7 @@ export class UserService {
         HttpStatus.BAD_REQUEST,
       );
     } else {
-      await this.em.persistAndFlush(user);
+      await this.em.persist(user).flush();
       return this.buildUserRO(user);
     }
   }

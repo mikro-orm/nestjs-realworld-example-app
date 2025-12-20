@@ -8,7 +8,7 @@ describe('UsersController', () => {
   let controller: UserController;
 
   const mockUserService = {
-    findByEmail: jest.fn((email: string) => {
+    findByEmail: vi.fn((email: string) => {
       return {
         bio: 'testbio',
         email,
@@ -17,7 +17,7 @@ describe('UsersController', () => {
         username: 'testusername',
       };
     }),
-    create: jest.fn((dto: CreateUserDto) => {
+    create: vi.fn((dto: CreateUserDto) => {
       return {
         bio: 'testbio',
         email: dto.email,
@@ -26,7 +26,7 @@ describe('UsersController', () => {
         username: dto.username,
       };
     }),
-    update: jest.fn((id, dto: UpdateUserDto) => {
+    update: vi.fn((id, dto: UpdateUserDto) => {
       return {
         bio: dto.bio,
         email: dto.email,
@@ -35,7 +35,7 @@ describe('UsersController', () => {
         username: dto.username,
       };
     }),
-    delete: jest.fn(() => {
+    delete: vi.fn(() => {
       return 1;
     }),
   };

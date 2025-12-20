@@ -97,7 +97,7 @@ export class ArticleService {
     const article = await this.articleRepository.findOneOrFail({ slug }, { populate: ['author'] });
     const author = await this.userRepository.findOneOrFail(userId);
     const comment = new Comment(author, article, dto.body);
-    await this.em.persistAndFlush(comment);
+    await this.em.persist(comment).flush();
 
     return { comment, article: article.toJSON(author) };
   }
@@ -109,7 +109,7 @@ export class ArticleService {
 
     if (article.comments.contains(comment)) {
       article.comments.remove(comment);
-      await this.em.removeAndFlush(comment);
+      await this.em.remove(comment).flush();
     }
 
     return { article: article.toJSON(user) };
