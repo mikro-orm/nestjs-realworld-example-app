@@ -38,7 +38,7 @@ schema.
 
 - `yarn start` - Start application
 - `yarn start:dev` - Start application in watch mode
-- `yarn test` - run Jest test runner
+- `yarn test` - run Vitest test runner
 - `yarn start:prod` - Build application
 
 ---

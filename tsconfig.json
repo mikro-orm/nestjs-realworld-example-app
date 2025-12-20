@@ -7,13 +7,14 @@
     "noLib": false,
     "lib": ["ES2022"],
     "emitDecoratorMetadata": true,
+    "isolatedModules": true,
     "experimentalDecorators": true,
-    "target": "ES2022",
+    "target": "ESNext",
     "sourceMap": true,
     "strict": true,
     "allowJs": true,
+    "types": ["vitest/globals"],
     "outDir": "./dist"
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "include": ["src/**/*"]
 }
