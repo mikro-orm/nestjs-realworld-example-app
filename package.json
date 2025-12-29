@@ -64,7 +64,7 @@
     "deep-extend": ">=0.6.0",
     "extend": ">=3.0.2",
     "jest": "^30.0.0",
-    "oxfmt": "^0.20.0",
+    "oxfmt": "^0.21.0",
     "oxlint": "^1.33.0",
     "oxlint-tsgolint": "^0.10.0",
     "supertest": "^7.0.0",
