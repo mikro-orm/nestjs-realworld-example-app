@@ -1380,10 +1380,10 @@ __metadata:
   linkType: hard
 
 "@nestjs/common@npm:^11.0.6":
-  version: 11.1.10
-  resolution: "@nestjs/common@npm:11.1.10"
+  version: 11.1.11
+  resolution: "@nestjs/common@npm:11.1.11"
   dependencies:
-    file-type: "npm:21.1.1"
+    file-type: "npm:21.2.0"
     iterare: "npm:1.2.1"
     load-esm: "npm:1.0.3"
     tslib: "npm:2.8.1"
@@ -1398,13 +1398,13 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10/2f86ac11bccab6354ccc61ff6ab734b5702f84f0d7a5b42b945904531de8c5bfc11d16fa68aec57b3e74e248fb2e74cd6e1b50905ee32c5939628dff550bb182
+  checksum: 10/a0027d306e95549350395627f311689a1c75bc66cd458ccf81916ee6f574b4e726c0397b0af62664a6338b8523a99a5b4f4ef59c55a2d385ad645bfb22c11aaa
   languageName: node
   linkType: hard
 
 "@nestjs/core@npm:^11.0.6":
-  version: 11.1.10
-  resolution: "@nestjs/core@npm:11.1.10"
+  version: 11.1.11
+  resolution: "@nestjs/core@npm:11.1.11"
   dependencies:
     "@nuxt/opencollective": "npm:0.4.1"
     fast-safe-stringify: "npm:2.1.1"
@@ -1426,7 +1426,7 @@ __metadata:
       optional: true
     "@nestjs/websockets":
       optional: true
-  checksum: 10/dc1a1cea7a7b219eb4bf0860bd0293119cba38a973cbd55d111f91d449ff6b92d6268e3d4c7a3cffb4bf12c6279c746337ac9206fb98c4b3700e09f2527d0e1b
+  checksum: 10/f94b8049741862d698b7079cdb70cd9eb91875f22c52a04707cc1e81bbd2db030c3992a3c454518bf507f29cd8f12ec18189b6d475f7e8c5f5fab827537f0cd3
   languageName: node
   linkType: hard
 
@@ -1448,8 +1448,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/platform-express@npm:^11.0.6":
-  version: 11.1.10
-  resolution: "@nestjs/platform-express@npm:11.1.10"
+  version: 11.1.11
+  resolution: "@nestjs/platform-express@npm:11.1.11"
   dependencies:
     cors: "npm:2.8.5"
     express: "npm:5.2.1"
@@ -1459,7 +1459,7 @@ __metadata:
   peerDependencies:
     "@nestjs/common": ^11.0.0
     "@nestjs/core": ^11.0.0
-  checksum: 10/e08af457d98e9cd50f89019eea08a55ef6fae1396e97eec76c20efafa1ae2c114016c90b493125a94ffae9af1c28d4878fb6a6b3f435e7f241313e08a07f140d
+  checksum: 10/877658da61e9d64c260f85590c8a15ae81a3466e5a0c51e94f2016b699cac7af59d994a18c124aaa4920920e9f24e0c1abf081d717f138d3d63b7d20cd86e2ef
   languageName: node
   linkType: hard
 
@@ -1507,8 +1507,8 @@ __metadata:
   linkType: hard
 
 "@nestjs/testing@npm:^11.0.6":
-  version: 11.1.10
-  resolution: "@nestjs/testing@npm:11.1.10"
+  version: 11.1.11
+  resolution: "@nestjs/testing@npm:11.1.11"
   dependencies:
     tslib: "npm:2.8.1"
   peerDependencies:
@@ -1521,7 +1521,7 @@ __metadata:
       optional: true
     "@nestjs/platform-express":
       optional: true
-  checksum: 10/5c8324cc6f5eaf3f4bda8fd0fc351dd210b9f872d0650f386701a57a3d0baf12d3a1ef7abd47e33e46547af93cbeb1bea045808241d4e18c89b24fe34333e9c9
+  checksum: 10/5e46ce024d7fecf73718f295bfd30eb248bd0faed4e443180144eeca1f2cb98cd5505f65d914bb16dc8dc02c10763ddebc4a8d1fb82165c189b9d08fd6b23742
   languageName: node
   linkType: hard
 
@@ -1690,58 +1690,58 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oxlint/darwin-arm64@npm:1.35.0":
-  version: 1.35.0
-  resolution: "@oxlint/darwin-arm64@npm:1.35.0"
+"@oxlint/darwin-arm64@npm:1.36.0":
+  version: 1.36.0
+  resolution: "@oxlint/darwin-arm64@npm:1.36.0"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@oxlint/darwin-x64@npm:1.35.0":
-  version: 1.35.0
-  resolution: "@oxlint/darwin-x64@npm:1.35.0"
+"@oxlint/darwin-x64@npm:1.36.0":
+  version: 1.36.0
+  resolution: "@oxlint/darwin-x64@npm:1.36.0"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@oxlint/linux-arm64-gnu@npm:1.35.0":
-  version: 1.35.0
-  resolution: "@oxlint/linux-arm64-gnu@npm:1.35.0"
+"@oxlint/linux-arm64-gnu@npm:1.36.0":
+  version: 1.36.0
+  resolution: "@oxlint/linux-arm64-gnu@npm:1.36.0"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@oxlint/linux-arm64-musl@npm:1.35.0":
-  version: 1.35.0
-  resolution: "@oxlint/linux-arm64-musl@npm:1.35.0"
+"@oxlint/linux-arm64-musl@npm:1.36.0":
+  version: 1.36.0
+  resolution: "@oxlint/linux-arm64-musl@npm:1.36.0"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@oxlint/linux-x64-gnu@npm:1.35.0":
-  version: 1.35.0
-  resolution: "@oxlint/linux-x64-gnu@npm:1.35.0"
+"@oxlint/linux-x64-gnu@npm:1.36.0":
+  version: 1.36.0
+  resolution: "@oxlint/linux-x64-gnu@npm:1.36.0"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@oxlint/linux-x64-musl@npm:1.35.0":
-  version: 1.35.0
-  resolution: "@oxlint/linux-x64-musl@npm:1.35.0"
+"@oxlint/linux-x64-musl@npm:1.36.0":
+  version: 1.36.0
+  resolution: "@oxlint/linux-x64-musl@npm:1.36.0"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@oxlint/win32-arm64@npm:1.35.0":
-  version: 1.35.0
-  resolution: "@oxlint/win32-arm64@npm:1.35.0"
+"@oxlint/win32-arm64@npm:1.36.0":
+  version: 1.36.0
+  resolution: "@oxlint/win32-arm64@npm:1.36.0"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@oxlint/win32-x64@npm:1.35.0":
-  version: 1.35.0
-  resolution: "@oxlint/win32-x64@npm:1.35.0"
+"@oxlint/win32-x64@npm:1.36.0":
+  version: 1.36.0
+  resolution: "@oxlint/win32-x64@npm:1.36.0"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -3086,9 +3086,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001759":
-  version: 1.0.30001761
-  resolution: "caniuse-lite@npm:1.0.30001761"
-  checksum: 10/9ebcef209a08d7c2f3d55b5105fafe48f657b3259a8cdd5842c5445aca9dcb0b6778cae524bde0cd73de508c680222edea594e64954503cbffd992407dbceda2
+  version: 1.0.30001762
+  resolution: "caniuse-lite@npm:1.0.30001762"
+  checksum: 10/d60a589180198ac759fa1775e521862f03503286cc9354144adcd88e76d275f03b2b6e9cab1c606790eee9d6af5cedbedb048ec652f5ff77a2b229992b7c4845
   languageName: node
   linkType: hard
 
@@ -3993,15 +3993,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"file-type@npm:21.1.1":
-  version: 21.1.1
-  resolution: "file-type@npm:21.1.1"
+"file-type@npm:21.2.0":
+  version: 21.2.0
+  resolution: "file-type@npm:21.2.0"
   dependencies:
     "@tokenizer/inflate": "npm:^0.4.1"
     strtok3: "npm:^10.3.4"
     token-types: "npm:^6.1.1"
     uint8array-extras: "npm:^1.4.0"
-  checksum: 10/64841dbd9180aad066ea6133ba775eaa0ce7c4b5956ea351cb83570accbf3e0d3bc51a3d10b0303e8988648302a1124bb9d2fb91e93697d9e47f5f200d47529c
+  checksum: 10/62262834abe03b5346a18a9a9e7c6dc0b53f07f79ae82157d2bf4ffd4061d643d03897b0e13c64fae32dd6466c8d62b96d2ff62c14584e987c4a240f8eba5425
   languageName: node
   linkType: hard
 
@@ -6168,17 +6168,17 @@ __metadata:
   linkType: hard
 
 "oxlint@npm:^1.33.0":
-  version: 1.35.0
-  resolution: "oxlint@npm:1.35.0"
+  version: 1.36.0
+  resolution: "oxlint@npm:1.36.0"
   dependencies:
-    "@oxlint/darwin-arm64": "npm:1.35.0"
-    "@oxlint/darwin-x64": "npm:1.35.0"
-    "@oxlint/linux-arm64-gnu": "npm:1.35.0"
-    "@oxlint/linux-arm64-musl": "npm:1.35.0"
-    "@oxlint/linux-x64-gnu": "npm:1.35.0"
-    "@oxlint/linux-x64-musl": "npm:1.35.0"
-    "@oxlint/win32-arm64": "npm:1.35.0"
-    "@oxlint/win32-x64": "npm:1.35.0"
+    "@oxlint/darwin-arm64": "npm:1.36.0"
+    "@oxlint/darwin-x64": "npm:1.36.0"
+    "@oxlint/linux-arm64-gnu": "npm:1.36.0"
+    "@oxlint/linux-arm64-musl": "npm:1.36.0"
+    "@oxlint/linux-x64-gnu": "npm:1.36.0"
+    "@oxlint/linux-x64-musl": "npm:1.36.0"
+    "@oxlint/win32-arm64": "npm:1.36.0"
+    "@oxlint/win32-x64": "npm:1.36.0"
   peerDependencies:
     oxlint-tsgolint: ">=0.10.0"
   dependenciesMeta:
@@ -6204,7 +6204,7 @@ __metadata:
   bin:
     oxc_language_server: bin/oxc_language_server
     oxlint: bin/oxlint
-  checksum: 10/6a78d875457c756871550d3bd31c3f6f3b63f29274a1a1adde52eb2bb961202810f325bfd2fdf935e900d1e55e522c4accf3d82c14a1ad4b03366317eecad67a
+  checksum: 10/6e72f2c38d7aed48dba3aa75b5bf4b5cd37030fb834d33eed1145fb3949ebd26e023451b2343c4793178136e71da97861de25c460d0958ed4794e0fee05e48d7
   languageName: node
   linkType: hard
 
@@ -6513,11 +6513,11 @@ __metadata:
   linkType: hard
 
 "qs@npm:^6.11.2, qs@npm:^6.14.0":
-  version: 6.14.0
-  resolution: "qs@npm:6.14.0"
+  version: 6.14.1
+  resolution: "qs@npm:6.14.1"
   dependencies:
     side-channel: "npm:^1.1.0"
-  checksum: 10/a60e49bbd51c935a8a4759e7505677b122e23bf392d6535b8fc31c1e447acba2c901235ecb192764013cd2781723dc1f61978b5fdd93cc31d7043d31cdc01974
+  checksum: 10/34b5ab00a910df432d55180ef39c1d1375e550f098b5ec153b41787f1a6a6d7e5f9495593c3b112b77dbc6709d0ae18e55b82847a4c2bbbb0de1e8ccbb1794c5
   languageName: node
   linkType: hard
 
