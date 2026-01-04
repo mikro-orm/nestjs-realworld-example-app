@@ -485,21 +485,21 @@ __metadata:
   linkType: hard
 
 "@emnapi/core@npm:^1.4.3":
-  version: 1.7.1
-  resolution: "@emnapi/core@npm:1.7.1"
+  version: 1.8.0
+  resolution: "@emnapi/core@npm:1.8.0"
   dependencies:
     "@emnapi/wasi-threads": "npm:1.1.0"
     tslib: "npm:^2.4.0"
-  checksum: 10/260841f6dd2a7823a964d9de6da3a5e6f565dac8d21a5bd8f6215b87c45c22a4dc371b9ad877961579ee3cca8a76e55e3dd033ae29cba1998999cda6d794bdab
+  checksum: 10/bbb45ea76aa6a3eb93e3cd7d53b459dbb68aabec583e189f62db276c11fc225b783d6dedb0534994a37e3b1ef79dcaf3f6da418ceee50735e6c8189c59643af4
   languageName: node
   linkType: hard
 
 "@emnapi/runtime@npm:^1.4.3":
-  version: 1.7.1
-  resolution: "@emnapi/runtime@npm:1.7.1"
+  version: 1.8.0
+  resolution: "@emnapi/runtime@npm:1.8.0"
   dependencies:
     tslib: "npm:^2.4.0"
-  checksum: 10/6fc83f938e3c70e32e84c1fbe5cab6cb9340b8107cee4048384ad5b8f2998a06502b4bed342acaf6e44f473f2c14c4ab1e3fd5083bd7823fc63abfca9eff0175
+  checksum: 10/52374c594a98c54abdbfed38a62e694f447306c83b3e04bded5667d383f3688be5686e2f80803ff326947cfbbbbd95b070be4733a968ae4de792c7a2bf1ac738
   languageName: node
   linkType: hard
 
