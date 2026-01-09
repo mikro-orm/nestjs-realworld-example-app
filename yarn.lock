@@ -2888,11 +2888,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.9.0":
-  version: 2.9.12
-  resolution: "baseline-browser-mapping@npm:2.9.12"
+  version: 2.9.13
+  resolution: "baseline-browser-mapping@npm:2.9.13"
   bin:
     baseline-browser-mapping: dist/cli.js
-  checksum: 10/07af71d6139d177bfed83ed70ac6b12f3326903f67338a6e36fbb529dfc8f384da9b054650f0d44d1b2619e673ff1df2540f63bbf5d9412bad15101e6d657aff
+  checksum: 10/304fcd0668941aabf9cf59e7852481767ed9ca9f6e4355afe7e4af2008eab14cd55676bd9078226f24895b5225c28693a91c59c561b36c3baae7262ad0e56f26
   languageName: node
   linkType: hard
 
@@ -3086,9 +3086,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001759":
-  version: 1.0.30001762
-  resolution: "caniuse-lite@npm:1.0.30001762"
-  checksum: 10/d60a589180198ac759fa1775e521862f03503286cc9354144adcd88e76d275f03b2b6e9cab1c606790eee9d6af5cedbedb048ec652f5ff77a2b229992b7c4845
+  version: 1.0.30001763
+  resolution: "caniuse-lite@npm:1.0.30001763"
+  checksum: 10/66efb73a641fe2612f561d0f32e5b55415b742dfa3b585f69891b2306cddd8f79bc1a1b0eaac42512686ba9cff59c049aaf1a50192eb5bd27d6f6890c934a5ae
   languageName: node
   linkType: hard
 
@@ -4461,11 +4461,11 @@ __metadata:
   linkType: hard
 
 "iconv-lite@npm:^0.7.0, iconv-lite@npm:~0.7.0":
-  version: 0.7.1
-  resolution: "iconv-lite@npm:0.7.1"
+  version: 0.7.2
+  resolution: "iconv-lite@npm:0.7.2"
   dependencies:
     safer-buffer: "npm:>= 2.1.2 < 3.0.0"
-  checksum: 10/bf9bfa10132b591d7b43cc2cc6700cd72d848b7943c3f38db05527d04c224eb44d1d92101f76d25eac7fabc67cb918320b93808b0be47e45cf7257df0a5ec54c
+  checksum: 10/24c937b532f868e938386b62410b303b7c767ce3d08dc2829cbe59464d5a26ef86ae5ad1af6b34eec43ddfea39e7d101638644b0178d67262fa87015d59f983a
   languageName: node
   linkType: hard
 
