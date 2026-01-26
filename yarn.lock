@@ -3983,13 +3983,13 @@ __metadata:
   linkType: hard
 
 "figlet@npm:^1.5.2":
-  version: 1.9.4
-  resolution: "figlet@npm:1.9.4"
+  version: 1.10.0
+  resolution: "figlet@npm:1.10.0"
   dependencies:
     commander: "npm:^14.0.0"
   bin:
     figlet: bin/index.js
-  checksum: 10/78dce84595c7627d506b8f4e957b01bfb0b18b2ea80f0dbb4f4d46974a881096eb708eb1acc725d0ec4b05337dfc565afd0e8e60fb97f9405f7f9207ab7afebd
+  checksum: 10/c0ab3499b424427d71ea90e6b2fd8d5c96e00a11ba86173884e4b14c9b908e0d78a1bb9ca58520445c586aa1b85596b9938aac4ae5b3d97311b70b2a7b547f9d
   languageName: node
   linkType: hard
 
@@ -5493,9 +5493,9 @@ __metadata:
   linkType: hard
 
 "lru-cache@npm:^11.0.0, lru-cache@npm:^11.1.0, lru-cache@npm:^11.2.1":
-  version: 11.2.4
-  resolution: "lru-cache@npm:11.2.4"
-  checksum: 10/3b2da74c0b6653767f8164c38c4c4f4d7f0cc10c62bfa512663d94a830191ae6a5af742a8d88a8b30d5f9974652d3adae53931f32069139ad24fa2a18a199aca
+  version: 11.2.5
+  resolution: "lru-cache@npm:11.2.5"
+  checksum: 10/be50f66c6e23afeaab9c7eefafa06344dd13cde7b3528809c2660c4ad70d93b9ba537366634623cbb2eb411671f526b5a4af2c602507b9258aead0fa8d713f6c
   languageName: node
   linkType: hard
 
