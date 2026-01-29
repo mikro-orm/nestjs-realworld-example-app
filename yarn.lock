@@ -1648,44 +1648,44 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/darwin-arm64@npm:0.11.2":
-  version: 0.11.2
-  resolution: "@oxlint-tsgolint/darwin-arm64@npm:0.11.2"
+"@oxlint-tsgolint/darwin-arm64@npm:0.11.3":
+  version: 0.11.3
+  resolution: "@oxlint-tsgolint/darwin-arm64@npm:0.11.3"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/darwin-x64@npm:0.11.2":
-  version: 0.11.2
-  resolution: "@oxlint-tsgolint/darwin-x64@npm:0.11.2"
+"@oxlint-tsgolint/darwin-x64@npm:0.11.3":
+  version: 0.11.3
+  resolution: "@oxlint-tsgolint/darwin-x64@npm:0.11.3"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/linux-arm64@npm:0.11.2":
-  version: 0.11.2
-  resolution: "@oxlint-tsgolint/linux-arm64@npm:0.11.2"
+"@oxlint-tsgolint/linux-arm64@npm:0.11.3":
+  version: 0.11.3
+  resolution: "@oxlint-tsgolint/linux-arm64@npm:0.11.3"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/linux-x64@npm:0.11.2":
-  version: 0.11.2
-  resolution: "@oxlint-tsgolint/linux-x64@npm:0.11.2"
+"@oxlint-tsgolint/linux-x64@npm:0.11.3":
+  version: 0.11.3
+  resolution: "@oxlint-tsgolint/linux-x64@npm:0.11.3"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/win32-arm64@npm:0.11.2":
-  version: 0.11.2
-  resolution: "@oxlint-tsgolint/win32-arm64@npm:0.11.2"
+"@oxlint-tsgolint/win32-arm64@npm:0.11.3":
+  version: 0.11.3
+  resolution: "@oxlint-tsgolint/win32-arm64@npm:0.11.3"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/win32-x64@npm:0.11.2":
-  version: 0.11.2
-  resolution: "@oxlint-tsgolint/win32-x64@npm:0.11.2"
+"@oxlint-tsgolint/win32-x64@npm:0.11.3":
+  version: 0.11.3
+  resolution: "@oxlint-tsgolint/win32-x64@npm:0.11.3"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -2098,11 +2098,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 25.0.10
-  resolution: "@types/node@npm:25.0.10"
+  version: 25.1.0
+  resolution: "@types/node@npm:25.1.0"
   dependencies:
     undici-types: "npm:~7.16.0"
-  checksum: 10/e5fc1fe0e585957f91ff3ad8ee01b051ce0c9da9658c5ba68d11d557522450783ab61ac2778355e8f566b83bc3bd18e78576569162e9729ed52af36999f81c9a
+  checksum: 10/ad15db75cfaec9e6311a1db7f3a91799be4c2698e1cfb0f74cc4d6e4398361550d00a4070921e1de7d9a10db83e41fd29f3a640dfacdabbd1c74ae16d8ce943a
   languageName: node
   linkType: hard
 
@@ -2888,11 +2888,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.9.0":
-  version: 2.9.18
-  resolution: "baseline-browser-mapping@npm:2.9.18"
+  version: 2.9.19
+  resolution: "baseline-browser-mapping@npm:2.9.19"
   bin:
     baseline-browser-mapping: dist/cli.js
-  checksum: 10/7607ae6cad62e013787f13f52856899ebc81d4fc47c311ed513619ade9c83a317b8c0e17092e6de96a0d26f2c6bbf10e1c37db84d419cfb2e4a5485fa5af0d93
+  checksum: 10/8d7bbb7fe3d1ad50e04b127c819ba6d059c01ed0d2a7a5fc3327e23a8c42855fa3a8b510550c1fe1e37916147e6a390243566d3ef85bf6130c8ddfe5cc3db530
   languageName: node
   linkType: hard
 
@@ -5980,8 +5980,8 @@ __metadata:
   linkType: hard
 
 "node-gyp@npm:latest":
-  version: 12.1.0
-  resolution: "node-gyp@npm:12.1.0"
+  version: 12.2.0
+  resolution: "node-gyp@npm:12.2.0"
   dependencies:
     env-paths: "npm:^2.2.0"
     exponential-backoff: "npm:^3.1.1"
@@ -5990,12 +5990,12 @@ __metadata:
     nopt: "npm:^9.0.0"
     proc-log: "npm:^6.0.0"
     semver: "npm:^7.3.5"
-    tar: "npm:^7.5.2"
+    tar: "npm:^7.5.4"
     tinyglobby: "npm:^0.2.12"
     which: "npm:^6.0.0"
   bin:
     node-gyp: bin/node-gyp.js
-  checksum: 10/d93079236cef1dd7fa4df683708d8708ad255c55865f6656664c8959e4d3963d908ac48e8f9f341705432e979dbbf502a40d68d65a17fe35956a5a05ba6c1cb4
+  checksum: 10/4ebab5b77585a637315e969c2274b5520562473fe75de850639a580c2599652fb9f33959ec782ea45a2e149d8f04b548030f472eeeb3dbdf19a7f2ccbc30b908
   languageName: node
   linkType: hard
 
@@ -6135,15 +6135,15 @@ __metadata:
   linkType: hard
 
 "oxlint-tsgolint@npm:^0.11.0":
-  version: 0.11.2
-  resolution: "oxlint-tsgolint@npm:0.11.2"
+  version: 0.11.3
+  resolution: "oxlint-tsgolint@npm:0.11.3"
   dependencies:
-    "@oxlint-tsgolint/darwin-arm64": "npm:0.11.2"
-    "@oxlint-tsgolint/darwin-x64": "npm:0.11.2"
-    "@oxlint-tsgolint/linux-arm64": "npm:0.11.2"
-    "@oxlint-tsgolint/linux-x64": "npm:0.11.2"
-    "@oxlint-tsgolint/win32-arm64": "npm:0.11.2"
-    "@oxlint-tsgolint/win32-x64": "npm:0.11.2"
+    "@oxlint-tsgolint/darwin-arm64": "npm:0.11.3"
+    "@oxlint-tsgolint/darwin-x64": "npm:0.11.3"
+    "@oxlint-tsgolint/linux-arm64": "npm:0.11.3"
+    "@oxlint-tsgolint/linux-x64": "npm:0.11.3"
+    "@oxlint-tsgolint/win32-arm64": "npm:0.11.3"
+    "@oxlint-tsgolint/win32-x64": "npm:0.11.3"
   dependenciesMeta:
     "@oxlint-tsgolint/darwin-arm64":
       optional: true
@@ -6159,7 +6159,7 @@ __metadata:
       optional: true
   bin:
     tsgolint: bin/tsgolint.js
-  checksum: 10/a59a3a2aefda44e313c16078f915ea3965abd811bd5e12f872bf5b286ab4654737b2b7dfc6bda3379d7a9cbbe064b287487b5f78613170a4fb4777c591959b07
+  checksum: 10/0f7d6b3789f0d98c0b93bbe1aa7c617e71f9fac67fe9ac2c70f1bf28ad2b47c265603f99bdc70c85376c4a1c41ed1a59730134527f974b6d88f0671e74a8be50
   languageName: node
   linkType: hard
 
@@ -7240,16 +7240,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tar@npm:^7.5.2":
-  version: 7.5.6
-  resolution: "tar@npm:7.5.6"
+"tar@npm:^7.5.4":
+  version: 7.5.7
+  resolution: "tar@npm:7.5.7"
   dependencies:
     "@isaacs/fs-minipass": "npm:^4.0.0"
     chownr: "npm:^3.0.0"
     minipass: "npm:^7.1.2"
     minizlib: "npm:^3.1.0"
     yallist: "npm:^5.0.0"
-  checksum: 10/cf4a84d79b9327fcf765f2ea16de4702b9b8dd7dc6b1840b16e0f999628d96b81b2c7efbf83d4eb42b0164856f1db887a5a61ffef97d36cdb77cac742219f9ee
+  checksum: 10/0d6938dd32fe5c0f17c8098d92bd9889ee0ed9d11f12381b8146b6e8c87bb5aa49feec7abc42463f0597503d8e89e4c4c0b42bff1a5a38444e918b4878b7fd21
   languageName: node
   linkType: hard
 
