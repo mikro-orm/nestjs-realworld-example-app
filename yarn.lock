@@ -1197,52 +1197,52 @@ __metadata:
   linkType: hard
 
 "@mikro-orm/cli@npm:^6.6.2":
-  version: 6.6.5
-  resolution: "@mikro-orm/cli@npm:6.6.5"
+  version: 6.6.6
+  resolution: "@mikro-orm/cli@npm:6.6.6"
   dependencies:
     "@jercle/yargonaut": "npm:1.1.5"
-    "@mikro-orm/core": "npm:6.6.5"
-    "@mikro-orm/knex": "npm:6.6.5"
+    "@mikro-orm/core": "npm:6.6.6"
+    "@mikro-orm/knex": "npm:6.6.6"
     fs-extra: "npm:11.3.3"
     tsconfig-paths: "npm:4.2.0"
     yargs: "npm:17.7.2"
   bin:
     mikro-orm: cli
     mikro-orm-esm: esm
-  checksum: 10/6822bf94ab425356c08a8b0d060b58039abfe736fdf99c76a4c1c8517fdf6ee320b3e0253dc0f29cb300b9b673ba37828b03c57b3c58f901dd3707508bb84421
+  checksum: 10/ad3dec8c58c3eb17da1a1836754eace329d7d99e557af835ee81b9958eb28f6bf983af704689d4da00e7414e7481bfe9f71f41ff0b7838335dd2c122dbe8718d
   languageName: node
   linkType: hard
 
-"@mikro-orm/core@npm:6.6.5, @mikro-orm/core@npm:^6.6.2":
-  version: 6.6.5
-  resolution: "@mikro-orm/core@npm:6.6.5"
+"@mikro-orm/core@npm:6.6.6, @mikro-orm/core@npm:^6.6.2":
+  version: 6.6.6
+  resolution: "@mikro-orm/core@npm:6.6.6"
   dependencies:
     dataloader: "npm:2.2.3"
     dotenv: "npm:17.2.3"
     esprima: "npm:4.0.1"
     fs-extra: "npm:11.3.3"
     globby: "npm:11.1.0"
-    mikro-orm: "npm:6.6.5"
+    mikro-orm: "npm:6.6.6"
     reflect-metadata: "npm:0.2.2"
-  checksum: 10/4925ce205c0f88edf0286fbcc13998c184280d659d06b5a418af1b8ee485dccfe1608a807c871819eb343da8db2c763f944ce9f5c01e650627ce1ccbaff07dcb
+  checksum: 10/0fb1e61cf5d37bf897f168d0ab22a061597c2b86ef1112eb23599f301a6cf90b4504d35287f173db59f2205c06a8454a87d49d5a03b78bfd87060e17512eddd5
   languageName: node
   linkType: hard
 
 "@mikro-orm/entity-generator@npm:^6.6.2":
-  version: 6.6.5
-  resolution: "@mikro-orm/entity-generator@npm:6.6.5"
+  version: 6.6.6
+  resolution: "@mikro-orm/entity-generator@npm:6.6.6"
   dependencies:
-    "@mikro-orm/knex": "npm:6.6.5"
+    "@mikro-orm/knex": "npm:6.6.6"
     fs-extra: "npm:11.3.3"
   peerDependencies:
     "@mikro-orm/core": ^6.0.0
-  checksum: 10/938f836594d83809ae41bd0ec0a25f833a9a07881ebde741cfd63a47e465445c2753553e7b95680631b9d5593b5fa9cc37064a05762596bc4da8acd159f8fdd1
+  checksum: 10/e6f2f6e3dc0f1a6fd14b8e8cf325856023b17b948670e9e2ad9b8c1cc732249cbabdc336cf3e4da4097ce8082e22ecfad4b449f125771238f24549f41ff15b00
   languageName: node
   linkType: hard
 
-"@mikro-orm/knex@npm:6.6.5":
-  version: 6.6.5
-  resolution: "@mikro-orm/knex@npm:6.6.5"
+"@mikro-orm/knex@npm:6.6.6":
+  version: 6.6.6
+  resolution: "@mikro-orm/knex@npm:6.6.6"
   dependencies:
     fs-extra: "npm:11.3.3"
     knex: "npm:3.1.0"
@@ -1259,32 +1259,32 @@ __metadata:
       optional: true
     mariadb:
       optional: true
-  checksum: 10/e273e9b001f8a80e2a8fe9c1036ffbb38297ce1ad914df1c52a74568007f8bfa6b788d42637101a97c4ea4c453c3ccc246279e4bf32c44a97dad73df95863785
+  checksum: 10/4fa548c52c764e2a6f585820810f733a13fa6d14e6760b84ffdc281b9cd17a5b90e2f46766f2d71b7b7db846fec9800c8ca5f2ee8f7f2e88feebb8bee6db0ddd
   languageName: node
   linkType: hard
 
 "@mikro-orm/migrations@npm:^6.6.2":
-  version: 6.6.5
-  resolution: "@mikro-orm/migrations@npm:6.6.5"
+  version: 6.6.6
+  resolution: "@mikro-orm/migrations@npm:6.6.6"
   dependencies:
-    "@mikro-orm/knex": "npm:6.6.5"
+    "@mikro-orm/knex": "npm:6.6.6"
     fs-extra: "npm:11.3.3"
     umzug: "npm:3.8.2"
   peerDependencies:
     "@mikro-orm/core": ^6.0.0
-  checksum: 10/9720ccd3da29afd9e6614697b1db6ff6e1e84798981e8db5ef48f40291fa03f1eaa041bb0958432d25f02db235e2989bc9000fe613b1fa54eec239177cd6b211
+  checksum: 10/7b40857df6d1a926c13de9f7fa362a85ccd2ff8677785387badf0aab26912a60a0d71cb30ce2a57a9350d80d74a8328f037c69ab6adfa7e9cd2611d95014ebc0
   languageName: node
   linkType: hard
 
 "@mikro-orm/mysql@npm:^6.6.2":
-  version: 6.6.5
-  resolution: "@mikro-orm/mysql@npm:6.6.5"
+  version: 6.6.6
+  resolution: "@mikro-orm/mysql@npm:6.6.6"
   dependencies:
-    "@mikro-orm/knex": "npm:6.6.5"
+    "@mikro-orm/knex": "npm:6.6.6"
     mysql2: "npm:3.16.0"
   peerDependencies:
     "@mikro-orm/core": ^6.0.0
-  checksum: 10/dd9f08e326b18e03445b718067db99c584e1acc3ecaf022ad3fd842ee1a33b34920e3fc7d4a025047a6b72e7f79e2a87166a923966029f17ff64a3c3bac22382
+  checksum: 10/c1b91bfdb55631d46eaf051ec8359a95a353f352317844467eee56864ede1416e504829c390a18d2efe7e7c7782d95def92a84dae34133ed01ca202192dcb08f
   languageName: node
   linkType: hard
 
@@ -1300,26 +1300,26 @@ __metadata:
   linkType: hard
 
 "@mikro-orm/reflection@npm:^6.6.2":
-  version: 6.6.5
-  resolution: "@mikro-orm/reflection@npm:6.6.5"
+  version: 6.6.6
+  resolution: "@mikro-orm/reflection@npm:6.6.6"
   dependencies:
     globby: "npm:11.1.0"
     ts-morph: "npm:27.0.2"
   peerDependencies:
     "@mikro-orm/core": ^6.0.0
-  checksum: 10/ad698715a9ed7f31903d48df8882d6f45833259bef00c5555677bd060afe951737705d48f8a043df388a83c7db31b07d7dc2435dbc34f710992cee115a7f2e7c
+  checksum: 10/3d4b8afe9437fc3d7899280cf55bd545415919883347c956e320908e6ccf619dcef5d25a1dba376c6729161d691bd11b30872be15de507083e4709c275e1a6b1
   languageName: node
   linkType: hard
 
 "@mikro-orm/seeder@npm:^6.6.2":
-  version: 6.6.5
-  resolution: "@mikro-orm/seeder@npm:6.6.5"
+  version: 6.6.6
+  resolution: "@mikro-orm/seeder@npm:6.6.6"
   dependencies:
     fs-extra: "npm:11.3.3"
     globby: "npm:11.1.0"
   peerDependencies:
     "@mikro-orm/core": ^6.0.0
-  checksum: 10/283576470fc71df604b422b3970354034a8553b5b48cb080cd6394074aa7982fd97a392f99663d3df5391609497cf7d49c8edf39540ecf122aefd93a977c4ab4
+  checksum: 10/b6dddb0b1fbd6f01b83851bdac12191c3671a25336fef72c967448eb2f2c56c313f1fa3b521be2010f8300040b376f987ff07b7ea238c9011bcdeacba721149e
   languageName: node
   linkType: hard
 
@@ -1648,44 +1648,44 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/darwin-arm64@npm:0.11.3":
-  version: 0.11.3
-  resolution: "@oxlint-tsgolint/darwin-arm64@npm:0.11.3"
+"@oxlint-tsgolint/darwin-arm64@npm:0.11.4":
+  version: 0.11.4
+  resolution: "@oxlint-tsgolint/darwin-arm64@npm:0.11.4"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/darwin-x64@npm:0.11.3":
-  version: 0.11.3
-  resolution: "@oxlint-tsgolint/darwin-x64@npm:0.11.3"
+"@oxlint-tsgolint/darwin-x64@npm:0.11.4":
+  version: 0.11.4
+  resolution: "@oxlint-tsgolint/darwin-x64@npm:0.11.4"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/linux-arm64@npm:0.11.3":
-  version: 0.11.3
-  resolution: "@oxlint-tsgolint/linux-arm64@npm:0.11.3"
+"@oxlint-tsgolint/linux-arm64@npm:0.11.4":
+  version: 0.11.4
+  resolution: "@oxlint-tsgolint/linux-arm64@npm:0.11.4"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/linux-x64@npm:0.11.3":
-  version: 0.11.3
-  resolution: "@oxlint-tsgolint/linux-x64@npm:0.11.3"
+"@oxlint-tsgolint/linux-x64@npm:0.11.4":
+  version: 0.11.4
+  resolution: "@oxlint-tsgolint/linux-x64@npm:0.11.4"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/win32-arm64@npm:0.11.3":
-  version: 0.11.3
-  resolution: "@oxlint-tsgolint/win32-arm64@npm:0.11.3"
+"@oxlint-tsgolint/win32-arm64@npm:0.11.4":
+  version: 0.11.4
+  resolution: "@oxlint-tsgolint/win32-arm64@npm:0.11.4"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/win32-x64@npm:0.11.3":
-  version: 0.11.3
-  resolution: "@oxlint-tsgolint/win32-x64@npm:0.11.3"
+"@oxlint-tsgolint/win32-x64@npm:0.11.4":
+  version: 0.11.4
+  resolution: "@oxlint-tsgolint/win32-x64@npm:0.11.4"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -3140,9 +3140,9 @@ __metadata:
   linkType: hard
 
 "ci-info@npm:^4.2.0":
-  version: 4.3.1
-  resolution: "ci-info@npm:4.3.1"
-  checksum: 10/9dc952bef67e665ccde2e7a552d42d5d095529d21829ece060a00925ede2dfa136160c70ef2471ea6ed6c9b133218b47c007f56955c0f1734a2e57f240aa7445
+  version: 4.4.0
+  resolution: "ci-info@npm:4.4.0"
+  checksum: 10/dfded0c630267d89660c8abb988ac8395a382bdfefedcc03e3e2858523312c5207db777c239c34774e3fcff11f015477c19d2ac8a58ea58aa476614a2e64f434
   languageName: node
   linkType: hard
 
@@ -3620,9 +3620,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.263":
-  version: 1.5.279
-  resolution: "electron-to-chromium@npm:1.5.279"
-  checksum: 10/debb143e6d5482a0f4cff7535bdb5725d58625f65bfa3704a5d1074052d934a72b20f253e7db124acad9cd40f404f14a53eb671db11cc10d69833960483be70d
+  version: 1.5.283
+  resolution: "electron-to-chromium@npm:1.5.283"
+  checksum: 10/3fcede119d5af48372f18c446051909c392e1f85a3823469d5ab9f40a9b1500ae9edfb4c13ff3b9d7d69b925b9a64d06eefd1d5e2d9b16066ff185eb90491158
   languageName: node
   linkType: hard
 
@@ -5362,9 +5362,9 @@ __metadata:
   linkType: hard
 
 "libphonenumber-js@npm:^1.11.1":
-  version: 1.12.35
-  resolution: "libphonenumber-js@npm:1.12.35"
-  checksum: 10/53d7680f66523236edf74247a02d3ee28ad159d0ae529bdd4b9042e105775a8163bf5c3dd64d03ad80178bdbc9877d174ee914a4c886eac380cf91ec16a72152
+  version: 1.12.36
+  resolution: "libphonenumber-js@npm:1.12.36"
+  checksum: 10/8a0950bc078647c51e7020a1026283ded089e9ceb5989512a961e0ff23780af18fc9455792f0ed4bd1bd6ba45c2a2be0ca2d96a90bcd7bb9e58ea9577095d415
   languageName: node
   linkType: hard
 
@@ -5645,10 +5645,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mikro-orm@npm:6.6.5":
-  version: 6.6.5
-  resolution: "mikro-orm@npm:6.6.5"
-  checksum: 10/9febed5cf97a273bbf2fb74a67e64417c3ff6d00d924717d0f701b0ae4befce6e6fc88da21c16aa99c9b512916f66ff59f8ac03bb5ab4f2203d1b199765f52ec
+"mikro-orm@npm:6.6.6":
+  version: 6.6.6
+  resolution: "mikro-orm@npm:6.6.6"
+  checksum: 10/a15329c798da59e08f835d3db292dd2db4d300f1a5bc29b7c21cdbb4fb5f9843472cfb8caf1f4d1857fc3db754eeac043e3f0b4e020a78a13be65e8fdf7412e0
   languageName: node
   linkType: hard
 
@@ -6135,15 +6135,15 @@ __metadata:
   linkType: hard
 
 "oxlint-tsgolint@npm:^0.11.0":
-  version: 0.11.3
-  resolution: "oxlint-tsgolint@npm:0.11.3"
+  version: 0.11.4
+  resolution: "oxlint-tsgolint@npm:0.11.4"
   dependencies:
-    "@oxlint-tsgolint/darwin-arm64": "npm:0.11.3"
-    "@oxlint-tsgolint/darwin-x64": "npm:0.11.3"
-    "@oxlint-tsgolint/linux-arm64": "npm:0.11.3"
-    "@oxlint-tsgolint/linux-x64": "npm:0.11.3"
-    "@oxlint-tsgolint/win32-arm64": "npm:0.11.3"
-    "@oxlint-tsgolint/win32-x64": "npm:0.11.3"
+    "@oxlint-tsgolint/darwin-arm64": "npm:0.11.4"
+    "@oxlint-tsgolint/darwin-x64": "npm:0.11.4"
+    "@oxlint-tsgolint/linux-arm64": "npm:0.11.4"
+    "@oxlint-tsgolint/linux-x64": "npm:0.11.4"
+    "@oxlint-tsgolint/win32-arm64": "npm:0.11.4"
+    "@oxlint-tsgolint/win32-x64": "npm:0.11.4"
   dependenciesMeta:
     "@oxlint-tsgolint/darwin-arm64":
       optional: true
@@ -6159,7 +6159,7 @@ __metadata:
       optional: true
   bin:
     tsgolint: bin/tsgolint.js
-  checksum: 10/0f7d6b3789f0d98c0b93bbe1aa7c617e71f9fac67fe9ac2c70f1bf28ad2b47c265603f99bdc70c85376c4a1c41ed1a59730134527f974b6d88f0671e74a8be50
+  checksum: 10/9e22d1e7a488dcf81832c2c4b0008251757173e4aaa63ddeee549fd4ab4e90078cd8822b281426fa75cdeb6c273d43171e51bb0ef196a234a434112a9fd0ce9f
   languageName: node
   linkType: hard
 
