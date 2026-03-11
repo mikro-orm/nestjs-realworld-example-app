@@ -10,7 +10,13 @@
           "autoincrement": true,
           "primary": true,
           "nullable": false,
+          "unique": false,
           "length": null,
+          "precision": 10,
+          "scale": 0,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "integer"
         },
         "tag": {
@@ -20,102 +26,114 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "unique": false,
           "length": 255,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "string"
         }
       },
       "name": "tag",
       "indexes": [
         {
-          "keyName": "PRIMARY",
           "columnNames": ["id"],
-          "composite": false,
-          "constraint": true,
+          "keyName": "PRIMARY",
+          "unique": true,
           "primary": true,
-          "unique": true
+          "constraint": true
         }
       ],
       "checks": [],
       "foreignKeys": {},
-      "nativeEnums": {}
+      "nativeEnums": {},
+      "comment": ""
     },
     {
       "columns": {
-        "id": {
-          "name": "id",
+        "follower": {
+          "name": "follower",
           "type": "int",
           "unsigned": true,
-          "autoincrement": true,
+          "autoincrement": false,
           "primary": true,
           "nullable": false,
+          "unique": false,
           "length": null,
+          "precision": 10,
+          "scale": 0,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "integer"
         },
-        "username": {
-          "name": "username",
-          "type": "varchar(255)",
-          "unsigned": false,
+        "following": {
+          "name": "following",
+          "type": "int",
+          "unsigned": true,
           "autoincrement": false,
-          "primary": false,
+          "primary": true,
           "nullable": false,
-          "length": 255,
-          "mappedType": "string"
-        },
-        "email": {
-          "name": "email",
-          "type": "varchar(255)",
-          "unsigned": false,
-          "autoincrement": false,
-          "primary": false,
-          "nullable": false,
-          "length": 255,
-          "mappedType": "string"
-        },
-        "bio": {
-          "name": "bio",
-          "type": "varchar(255)",
-          "unsigned": false,
-          "autoincrement": false,
-          "primary": false,
-          "nullable": false,
-          "length": 255,
-          "mappedType": "string"
-        },
-        "image": {
-          "name": "image",
-          "type": "varchar(255)",
-          "unsigned": false,
-          "autoincrement": false,
-          "primary": false,
-          "nullable": false,
-          "length": 255,
-          "mappedType": "string"
-        },
-        "password": {
-          "name": "password",
-          "type": "varchar(255)",
-          "unsigned": false,
-          "autoincrement": false,
-          "primary": false,
-          "nullable": false,
-          "length": 255,
-          "mappedType": "string"
+          "unique": false,
+          "length": null,
+          "precision": 10,
+          "scale": 0,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
+          "mappedType": "integer"
         }
       },
-      "name": "user",
+      "name": "user_to_follower",
       "indexes": [
         {
+          "columnNames": ["follower", "following"],
           "keyName": "PRIMARY",
-          "columnNames": ["id"],
-          "composite": false,
-          "constraint": true,
+          "unique": true,
           "primary": true,
-          "unique": true
+          "constraint": true,
+          "composite": true
+        },
+        {
+          "columnNames": ["follower"],
+          "keyName": "user_to_follower_follower_index",
+          "unique": false,
+          "primary": false,
+          "constraint": false
+        },
+        {
+          "columnNames": ["following"],
+          "keyName": "user_to_follower_following_index",
+          "unique": false,
+          "primary": false,
+          "constraint": false
         }
       ],
       "checks": [],
-      "foreignKeys": {},
-      "nativeEnums": {}
+      "foreignKeys": {
+        "user_to_follower_follower_foreign": {
+          "columnNames": ["follower"],
+          "constraintName": "user_to_follower_follower_foreign",
+          "localTableName": "user_to_follower",
+          "referencedTableName": "user",
+          "referencedColumnNames": ["id"],
+          "updateRule": "cascade",
+          "deleteRule": "cascade"
+        },
+        "user_to_follower_following_foreign": {
+          "columnNames": ["following"],
+          "constraintName": "user_to_follower_following_foreign",
+          "localTableName": "user_to_follower",
+          "referencedTableName": "user",
+          "referencedColumnNames": ["id"],
+          "updateRule": "cascade",
+          "deleteRule": "cascade"
+        }
+      },
+      "nativeEnums": {},
+      "comment": ""
     },
     {
       "columns": {
@@ -126,7 +144,13 @@
           "autoincrement": true,
           "primary": true,
           "nullable": false,
+          "unique": false,
           "length": null,
+          "precision": 10,
+          "scale": 0,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "integer"
         },
         "slug": {
@@ -136,7 +160,13 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "unique": false,
           "length": 255,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "string"
         },
         "title": {
@@ -146,7 +176,13 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "unique": false,
           "length": 255,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "string"
         },
         "description": {
@@ -156,7 +192,13 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "unique": false,
           "length": 255,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "string"
         },
         "body": {
@@ -166,7 +208,13 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "unique": false,
           "length": 255,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "string"
         },
         "created_at": {
@@ -176,7 +224,13 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
-          "length": null,
+          "unique": false,
+          "length": 0,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "datetime"
         },
         "updated_at": {
@@ -186,7 +240,13 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
-          "length": null,
+          "unique": false,
+          "length": 0,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "datetime"
         },
         "tag_list": {
@@ -196,7 +256,13 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
-          "length": null,
+          "unique": false,
+          "length": 65535,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "text"
         },
         "author_id": {
@@ -206,7 +272,13 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "unique": false,
           "length": null,
+          "precision": 10,
+          "scale": 0,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "integer"
         },
         "favorites_count": {
@@ -216,7 +288,13 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "unique": false,
           "length": null,
+          "precision": 10,
+          "scale": 0,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "integer"
         }
       },
@@ -224,33 +302,33 @@
       "indexes": [
         {
           "columnNames": ["author_id"],
-          "composite": false,
           "keyName": "article_author_id_index",
-          "constraint": false,
+          "unique": false,
           "primary": false,
-          "unique": false
+          "constraint": false
         },
         {
-          "keyName": "PRIMARY",
           "columnNames": ["id"],
-          "composite": false,
-          "constraint": true,
+          "keyName": "PRIMARY",
+          "unique": true,
           "primary": true,
-          "unique": true
+          "constraint": true
         }
       ],
       "checks": [],
       "foreignKeys": {
         "article_author_id_foreign": {
-          "constraintName": "article_author_id_foreign",
           "columnNames": ["author_id"],
+          "constraintName": "article_author_id_foreign",
           "localTableName": "article",
-          "referencedColumnNames": ["id"],
           "referencedTableName": "user",
-          "updateRule": "cascade"
+          "referencedColumnNames": ["id"],
+          "updateRule": "cascade",
+          "deleteRule": "no action"
         }
       },
-      "nativeEnums": {}
+      "nativeEnums": {},
+      "comment": ""
     },
     {
       "columns": {
@@ -261,7 +339,13 @@
           "autoincrement": true,
           "primary": true,
           "nullable": false,
+          "unique": false,
           "length": null,
+          "precision": 10,
+          "scale": 0,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "integer"
         },
         "created_at": {
@@ -271,7 +355,13 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
-          "length": null,
+          "unique": false,
+          "length": 0,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "datetime"
         },
         "updated_at": {
@@ -281,7 +371,13 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
-          "length": null,
+          "unique": false,
+          "length": 0,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "datetime"
         },
         "body": {
@@ -291,7 +387,13 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "unique": false,
           "length": 255,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "string"
         },
         "article_id": {
@@ -301,7 +403,13 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "unique": false,
           "length": null,
+          "precision": 10,
+          "scale": 0,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "integer"
         },
         "author_id": {
@@ -311,7 +419,13 @@
           "autoincrement": false,
           "primary": false,
           "nullable": false,
+          "unique": false,
           "length": null,
+          "precision": 10,
+          "scale": 0,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "integer"
         }
       },
@@ -319,49 +433,49 @@
       "indexes": [
         {
           "columnNames": ["article_id"],
-          "composite": false,
           "keyName": "comment_article_id_index",
-          "constraint": false,
+          "unique": false,
           "primary": false,
-          "unique": false
+          "constraint": false
         },
         {
           "columnNames": ["author_id"],
-          "composite": false,
           "keyName": "comment_author_id_index",
-          "constraint": false,
+          "unique": false,
           "primary": false,
-          "unique": false
+          "constraint": false
         },
         {
-          "keyName": "PRIMARY",
           "columnNames": ["id"],
-          "composite": false,
-          "constraint": true,
+          "keyName": "PRIMARY",
+          "unique": true,
           "primary": true,
-          "unique": true
+          "constraint": true
         }
       ],
       "checks": [],
       "foreignKeys": {
         "comment_article_id_foreign": {
-          "constraintName": "comment_article_id_foreign",
           "columnNames": ["article_id"],
+          "constraintName": "comment_article_id_foreign",
           "localTableName": "comment",
-          "referencedColumnNames": ["id"],
           "referencedTableName": "article",
-          "updateRule": "cascade"
+          "referencedColumnNames": ["id"],
+          "updateRule": "cascade",
+          "deleteRule": "no action"
         },
         "comment_author_id_foreign": {
-          "constraintName": "comment_author_id_foreign",
           "columnNames": ["author_id"],
+          "constraintName": "comment_author_id_foreign",
           "localTableName": "comment",
-          "referencedColumnNames": ["id"],
           "referencedTableName": "user",
-          "updateRule": "cascade"
+          "referencedColumnNames": ["id"],
+          "updateRule": "cascade",
+          "deleteRule": "no action"
         }
       },
-      "nativeEnums": {}
+      "nativeEnums": {},
+      "comment": ""
     },
     {
       "columns": {
@@ -370,9 +484,15 @@
           "type": "int",
           "unsigned": true,
           "autoincrement": false,
-          "primary": false,
+          "primary": true,
           "nullable": false,
+          "unique": false,
           "length": null,
+          "precision": 10,
+          "scale": 0,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "integer"
         },
         "article_id": {
@@ -380,135 +500,182 @@
           "type": "int",
           "unsigned": true,
           "autoincrement": false,
-          "primary": false,
+          "primary": true,
           "nullable": false,
+          "unique": false,
           "length": null,
+          "precision": 10,
+          "scale": 0,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "integer"
         }
       },
       "name": "user_favorites",
       "indexes": [
         {
-          "columnNames": ["user_id"],
-          "composite": false,
-          "keyName": "user_favorites_user_id_index",
-          "constraint": false,
-          "primary": false,
-          "unique": false
+          "columnNames": ["user_id", "article_id"],
+          "keyName": "PRIMARY",
+          "unique": true,
+          "primary": true,
+          "constraint": true,
+          "composite": true
         },
         {
           "columnNames": ["article_id"],
-          "composite": false,
           "keyName": "user_favorites_article_id_index",
-          "constraint": false,
+          "unique": false,
           "primary": false,
-          "unique": false
+          "constraint": false
         },
         {
-          "keyName": "PRIMARY",
-          "columnNames": ["user_id", "article_id"],
-          "composite": true,
-          "constraint": true,
-          "primary": true,
-          "unique": true
+          "columnNames": ["user_id"],
+          "keyName": "user_favorites_user_id_index",
+          "unique": false,
+          "primary": false,
+          "constraint": false
         }
       ],
       "checks": [],
       "foreignKeys": {
-        "user_favorites_user_id_foreign": {
-          "constraintName": "user_favorites_user_id_foreign",
-          "columnNames": ["user_id"],
-          "localTableName": "user_favorites",
-          "referencedColumnNames": ["id"],
-          "referencedTableName": "user",
-          "deleteRule": "cascade",
-          "updateRule": "cascade"
-        },
         "user_favorites_article_id_foreign": {
-          "constraintName": "user_favorites_article_id_foreign",
           "columnNames": ["article_id"],
+          "constraintName": "user_favorites_article_id_foreign",
           "localTableName": "user_favorites",
-          "referencedColumnNames": ["id"],
           "referencedTableName": "article",
-          "deleteRule": "cascade",
-          "updateRule": "cascade"
+          "referencedColumnNames": ["id"],
+          "updateRule": "cascade",
+          "deleteRule": "cascade"
+        },
+        "user_favorites_user_id_foreign": {
+          "columnNames": ["user_id"],
+          "constraintName": "user_favorites_user_id_foreign",
+          "localTableName": "user_favorites",
+          "referencedTableName": "user",
+          "referencedColumnNames": ["id"],
+          "updateRule": "cascade",
+          "deleteRule": "cascade"
         }
       },
-      "nativeEnums": {}
+      "nativeEnums": {},
+      "comment": ""
     },
     {
       "columns": {
-        "follower": {
-          "name": "follower",
+        "id": {
+          "name": "id",
           "type": "int",
           "unsigned": true,
-          "autoincrement": false,
-          "primary": false,
+          "autoincrement": true,
+          "primary": true,
           "nullable": false,
+          "unique": false,
           "length": null,
+          "precision": 10,
+          "scale": 0,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
           "mappedType": "integer"
         },
-        "following": {
-          "name": "following",
-          "type": "int",
-          "unsigned": true,
+        "username": {
+          "name": "username",
+          "type": "varchar(255)",
+          "unsigned": false,
           "autoincrement": false,
           "primary": false,
           "nullable": false,
-          "length": null,
-          "mappedType": "integer"
+          "unique": false,
+          "length": 255,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
+          "mappedType": "string"
+        },
+        "email": {
+          "name": "email",
+          "type": "varchar(255)",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "unique": false,
+          "length": 255,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
+          "mappedType": "string"
+        },
+        "bio": {
+          "name": "bio",
+          "type": "varchar(255)",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "unique": false,
+          "length": 255,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
+          "mappedType": "string"
+        },
+        "image": {
+          "name": "image",
+          "type": "varchar(255)",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "unique": false,
+          "length": 255,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
+          "mappedType": "string"
+        },
+        "password": {
+          "name": "password",
+          "type": "varchar(255)",
+          "unsigned": false,
+          "autoincrement": false,
+          "primary": false,
+          "nullable": false,
+          "unique": false,
+          "length": 255,
+          "precision": null,
+          "scale": null,
+          "default": null,
+          "comment": null,
+          "enumItems": [],
+          "mappedType": "string"
         }
       },
-      "name": "user_to_follower",
+      "name": "user",
       "indexes": [
         {
-          "columnNames": ["follower"],
-          "composite": false,
-          "keyName": "user_to_follower_follower_index",
-          "constraint": false,
-          "primary": false,
-          "unique": false
-        },
-        {
-          "columnNames": ["following"],
-          "composite": false,
-          "keyName": "user_to_follower_following_index",
-          "constraint": false,
-          "primary": false,
-          "unique": false
-        },
-        {
+          "columnNames": ["id"],
           "keyName": "PRIMARY",
-          "columnNames": ["follower", "following"],
-          "composite": true,
-          "constraint": true,
+          "unique": true,
           "primary": true,
-          "unique": true
+          "constraint": true
         }
       ],
       "checks": [],
-      "foreignKeys": {
-        "user_to_follower_follower_foreign": {
-          "constraintName": "user_to_follower_follower_foreign",
-          "columnNames": ["follower"],
-          "localTableName": "user_to_follower",
-          "referencedColumnNames": ["id"],
-          "referencedTableName": "user",
-          "deleteRule": "cascade",
-          "updateRule": "cascade"
-        },
-        "user_to_follower_following_foreign": {
-          "constraintName": "user_to_follower_following_foreign",
-          "columnNames": ["following"],
-          "localTableName": "user_to_follower",
-          "referencedColumnNames": ["id"],
-          "referencedTableName": "user",
-          "deleteRule": "cascade",
-          "updateRule": "cascade"
-        }
-      },
-      "nativeEnums": {}
+      "foreignKeys": {},
+      "nativeEnums": {},
+      "comment": ""
     }
   ],
+  "views": [],
   "nativeEnums": {}
 }

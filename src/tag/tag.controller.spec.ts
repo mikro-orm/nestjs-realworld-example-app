@@ -1,6 +1,6 @@
 import { Test } from '@nestjs/testing';
-import { MikroOrmModule } from '@mikro-orm/nestjs';
 import { MikroORM } from '@mikro-orm/mysql';
+import { MikroOrmModule } from '@mikro-orm/nestjs';
 import { TagController } from './tag.controller';
 import { Tag } from './tag.entity';
 import { TagService } from './tag.service';
@@ -13,7 +13,10 @@ describe('TagController', () => {
 
   beforeEach(async () => {
     const module = await Test.createTestingModule({
-      imports: [MikroOrmModule.forRoot(config), MikroOrmModule.forFeature({ entities: [Tag] })],
+      imports: [
+        MikroOrmModule.forRoot({ ...config, dynamicImportProvider: id => import(id) }),
+        MikroOrmModule.forFeature({ entities: [Tag] }),
+      ],
       controllers: [TagController],
       providers: [TagService],
     }).compile();
@@ -37,7 +40,7 @@ describe('TagController', () => {
       tags.push(createTag(1, 'angularjs'));
       tags.push(createTag(2, 'reactjs'));
 
-      jest.spyOn(tagService, 'findAll').mockResolvedValue({ tags });
+      vi.spyOn(tagService, 'findAll').mockResolvedValue({ tags });
 
       const findAllResult = await tagController.findAll();
       expect(findAllResult).toMatchObject({ tags });

@@ -7,11 +7,12 @@ describe('UsersService', () => {
   let service: UserService;
 
   const mockEntityManager = {
-    persistAndFlush: jest.fn().mockImplementation(async () => void 0),
+    persist: vi.fn().mockImplementation(() => mockEntityManager),
+    flush: vi.fn().mockImplementation(async () => void 0),
   };
   const mockUserRepository = {
-    findAll: jest.fn().mockImplementation(async () => []),
-    findOne: jest.fn().mockImplementation(async options => ({
+    findAll: vi.fn().mockImplementation(async () => []),
+    findOne: vi.fn().mockImplementation(async options => ({
       id: options.id ?? Date.now(),
       email: options.email ?? 'test@test.com',
       password: options.password ?? 'test',
@@ -19,9 +20,9 @@ describe('UsersService', () => {
       image: 'test.jpg',
       username: 'test',
     })),
-    count: jest.fn().mockImplementation(() => 0),
-    nativeDelete: jest.fn().mockImplementation(() => 1),
-    findOneOrFail: jest.fn().mockImplementation(options => ({
+    count: vi.fn().mockImplementation(() => 0),
+    nativeDelete: vi.fn().mockImplementation(() => 1),
+    findOneOrFail: vi.fn().mockImplementation(options => ({
       id: Date.now(),
       email: options.email ?? 'test@test.com',
       password: options.password ?? 'test',

@@ -1,17 +1,7 @@
 import { IsEmail } from 'class-validator';
 import crypto from 'crypto';
-import {
-  Collection,
-  Entity,
-  EntityDTO,
-  EntityRepositoryType,
-  ManyToMany,
-  OneToMany,
-  Opt,
-  PrimaryKey,
-  Property,
-  wrap,
-} from '@mikro-orm/mysql';
+import { Collection, EntityDTO, EntityRepositoryType, Opt, wrap } from '@mikro-orm/mysql';
+import { Entity, ManyToMany, OneToMany, PrimaryKey, Property } from '@mikro-orm/decorators/legacy';
 import { Article } from '../article/article.entity';
 import { UserRepository } from './user.repository';
 
