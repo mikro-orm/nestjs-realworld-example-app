@@ -4,7 +4,13 @@ import swc from 'unplugin-swc';
 export default defineConfig({
   plugins: [
     swc.vite({
-      jsc: { target: 'es2024' },
+      jsc: {
+        target: 'es2024',
+        transform: {
+          legacyDecorator: true,
+          decoratorMetadata: true,
+        },
+      },
       sourceMaps: true,
     }),
   ],
@@ -18,7 +24,8 @@ export default defineConfig({
     },
     disableConsoleIntercept: true,
     clearMocks: true,
-    isolate: false,
+    setupFiles: ['reflect-metadata'],
+    fileParallelism: false,
     testTimeout: 60_000,
   },
 });
