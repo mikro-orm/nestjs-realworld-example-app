@@ -23,24 +23,13 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Init docker
-        run: docker compose up -d
-      - name: Sleep for 10s
-        uses: juliangruber/sleep-action@v2
-        with:
-          time: 10s
-
       - name: Enable corepack
         run: |
           corepack enable
           corepack prepare yarn@stable --activate
 
-      # Yarn dependencies cannot be cached until yarn is installed
-      # WORKAROUND: https://github.com/actions/setup-node/issues/531
-      - name: Extract cached dependencies
-        uses: actions/setup-node@v6
-        with:
-          cache: yarn
+      - name: Init docker
+        run: docker compose up -d --wait
 
       - name: Install
         run: yarn
@@ -49,7 +38,7 @@ jobs:
         run: |
           cp src/config.ts.example src/config.ts
           cp src/mikro-orm.config.ts.example src/mikro-orm.config.ts
-          npx mikro-orm migration:up
+          yarn mikro-orm migration:up
 
       - name: Test
         run: |
