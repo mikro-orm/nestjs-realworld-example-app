@@ -2798,9 +2798,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001759":
-  version: 1.0.30001779
-  resolution: "caniuse-lite@npm:1.0.30001779"
-  checksum: 10/025b74d98d6bb05d3f95038ad7f9d621fab980768228c166f72bc012ee2f62e65dfc793fa64abab5de079bbfe7f2f831c30cfd22b82335e15107ef4deb27208e
+  version: 1.0.30001780
+  resolution: "caniuse-lite@npm:1.0.30001780"
+  checksum: 10/4232c1bc97559c3052769b1ddbfa9e5095c4b48cbbf994db0515d4fd2d11bade9755f6f15dfbdd9a3cb7816109464b702d7241f3b299b0874a5dce8a355452d3
   languageName: node
   linkType: hard
 
@@ -5826,11 +5826,11 @@ __metadata:
   linkType: hard
 
 "swagger-ui-dist@npm:>=5.0.0":
-  version: 5.32.0
-  resolution: "swagger-ui-dist@npm:5.32.0"
+  version: 5.32.1
+  resolution: "swagger-ui-dist@npm:5.32.1"
   dependencies:
     "@scarf/scarf": "npm:=1.4.0"
-  checksum: 10/99b6aec6a222d3a3b6352fb36dd2785baeac7a3611d2e4a177dedf45b96c40af6d55008ad2ee18dee141de9804d79a55a3e558b358755d664eaa398c3d004a77
+  checksum: 10/7c98109e09a6230a2f7ec1dd4aa0dd0ffccdb751a094d23fd9cc000c2f486af073350f784c17867bf03efa14b9beb178c795b538d24bc9ab4af1e739b5574947
   languageName: node
   linkType: hard
 
