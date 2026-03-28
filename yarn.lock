@@ -1200,44 +1200,44 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/darwin-arm64@npm:0.18.0":
-  version: 0.18.0
-  resolution: "@oxlint-tsgolint/darwin-arm64@npm:0.18.0"
+"@oxlint-tsgolint/darwin-arm64@npm:0.18.1":
+  version: 0.18.1
+  resolution: "@oxlint-tsgolint/darwin-arm64@npm:0.18.1"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/darwin-x64@npm:0.18.0":
-  version: 0.18.0
-  resolution: "@oxlint-tsgolint/darwin-x64@npm:0.18.0"
+"@oxlint-tsgolint/darwin-x64@npm:0.18.1":
+  version: 0.18.1
+  resolution: "@oxlint-tsgolint/darwin-x64@npm:0.18.1"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/linux-arm64@npm:0.18.0":
-  version: 0.18.0
-  resolution: "@oxlint-tsgolint/linux-arm64@npm:0.18.0"
+"@oxlint-tsgolint/linux-arm64@npm:0.18.1":
+  version: 0.18.1
+  resolution: "@oxlint-tsgolint/linux-arm64@npm:0.18.1"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/linux-x64@npm:0.18.0":
-  version: 0.18.0
-  resolution: "@oxlint-tsgolint/linux-x64@npm:0.18.0"
+"@oxlint-tsgolint/linux-x64@npm:0.18.1":
+  version: 0.18.1
+  resolution: "@oxlint-tsgolint/linux-x64@npm:0.18.1"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/win32-arm64@npm:0.18.0":
-  version: 0.18.0
-  resolution: "@oxlint-tsgolint/win32-arm64@npm:0.18.0"
+"@oxlint-tsgolint/win32-arm64@npm:0.18.1":
+  version: 0.18.1
+  resolution: "@oxlint-tsgolint/win32-arm64@npm:0.18.1"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@oxlint-tsgolint/win32-x64@npm:0.18.0":
-  version: 0.18.0
-  resolution: "@oxlint-tsgolint/win32-x64@npm:0.18.0"
+"@oxlint-tsgolint/win32-x64@npm:0.18.1":
+  version: 0.18.1
+  resolution: "@oxlint-tsgolint/win32-x64@npm:0.18.1"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -2689,12 +2689,12 @@ __metadata:
   linkType: hard
 
 "brace-expansion@npm:^1.1.7":
-  version: 1.1.12
-  resolution: "brace-expansion@npm:1.1.12"
+  version: 1.1.13
+  resolution: "brace-expansion@npm:1.1.13"
   dependencies:
     balanced-match: "npm:^1.0.0"
     concat-map: "npm:0.0.1"
-  checksum: 10/12cb6d6310629e3048cadb003e1aca4d8c9bb5c67c3c321bafdd7e7a50155de081f78ea3e0ed92ecc75a9015e784f301efc8132383132f4f7904ad1ac529c562
+  checksum: 10/b5f4329fdbe9d2e25fa250c8f866ebd054ba946179426e99b86dcccddabdb1d481f0e40ee5430032e62a7d0a6c2837605ace6783d015aa1d65d85ca72154d936
   languageName: node
   linkType: hard
 
@@ -3221,9 +3221,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.263":
-  version: 1.5.326
-  resolution: "electron-to-chromium@npm:1.5.326"
-  checksum: 10/963e412f4f883b616d5122a9ec0174d246c9425e953f853d7cc9879008571e0cce40f4d2bb6f9f40d11c0881680ac8eedeb7997e603a47f7cb10fa63a1ef5ad3
+  version: 1.5.328
+  resolution: "electron-to-chromium@npm:1.5.328"
+  checksum: 10/bec0f12759edb8ee10a8856c7f8343a69e92d7626c443dec66a7718a3e54b0114397238ecc8320cb8502cab050a890988550da126843d2216b1a3e745914c512
   languageName: node
   linkType: hard
 
@@ -4997,15 +4997,15 @@ __metadata:
   linkType: hard
 
 "oxlint-tsgolint@npm:^0.18.0":
-  version: 0.18.0
-  resolution: "oxlint-tsgolint@npm:0.18.0"
+  version: 0.18.1
+  resolution: "oxlint-tsgolint@npm:0.18.1"
   dependencies:
-    "@oxlint-tsgolint/darwin-arm64": "npm:0.18.0"
-    "@oxlint-tsgolint/darwin-x64": "npm:0.18.0"
-    "@oxlint-tsgolint/linux-arm64": "npm:0.18.0"
-    "@oxlint-tsgolint/linux-x64": "npm:0.18.0"
-    "@oxlint-tsgolint/win32-arm64": "npm:0.18.0"
-    "@oxlint-tsgolint/win32-x64": "npm:0.18.0"
+    "@oxlint-tsgolint/darwin-arm64": "npm:0.18.1"
+    "@oxlint-tsgolint/darwin-x64": "npm:0.18.1"
+    "@oxlint-tsgolint/linux-arm64": "npm:0.18.1"
+    "@oxlint-tsgolint/linux-x64": "npm:0.18.1"
+    "@oxlint-tsgolint/win32-arm64": "npm:0.18.1"
+    "@oxlint-tsgolint/win32-x64": "npm:0.18.1"
   dependenciesMeta:
     "@oxlint-tsgolint/darwin-arm64":
       optional: true
@@ -5021,7 +5021,7 @@ __metadata:
       optional: true
   bin:
     tsgolint: bin/tsgolint.js
-  checksum: 10/cd7186d48cc4f47e44bb6402194aadf623eae17433f8cc53253d9344cdefaf0194869a76cf3d899785a13d39767d68da90a5c79294a6104e304fecd503ef9955
+  checksum: 10/48a51f5d619b8a4a7b3eee5fff2b5ac6e2ed6cc06b825d13ee860cd870ea3221af1ca0874253cb908a64dbd85be717b5fa3503d2ec6cf0e211c3d81c0a93cd5c
   languageName: node
   linkType: hard
 
