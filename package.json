@@ -75,7 +75,7 @@
     "oxlint": "^1.33.0",
     "oxlint-tsgolint": "^0.18.0",
     "supertest": "^7.0.1",
-    "typescript": "5.9.3",
+    "typescript": "6.0.2",
     "unplugin-swc": "^1.5.9",
     "vitest": "^4.0.16"
   },
