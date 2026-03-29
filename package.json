@@ -27,13 +27,13 @@
     "test:e2e": "APIURL=http://localhost:3000/api ./e2e/run-api-tests.sh"
   },
   "dependencies": {
-    "@mikro-orm/core": "^7.0.1",
-    "@mikro-orm/decorators": "^7.0.1",
-    "@mikro-orm/entity-generator": "^7.0.1",
-    "@mikro-orm/migrations": "^7.0.1",
-    "@mikro-orm/mysql": "^7.0.1",
-    "@mikro-orm/nestjs": "^7.0.0",
-    "@mikro-orm/reflection": "^7.0.1",
+    "@mikro-orm/core": "^7.0.6",
+    "@mikro-orm/decorators": "^7.0.6",
+    "@mikro-orm/entity-generator": "^7.0.6",
+    "@mikro-orm/migrations": "^7.0.6",
+    "@mikro-orm/mysql": "^7.0.6",
+    "@mikro-orm/nestjs": "^7.0.1",
+    "@mikro-orm/reflection": "^7.0.6",
     "@mikro-orm/sql-highlighter": "^1.0.1",
     "@nestjs/common": "^11.0.6",
     "@nestjs/core": "^11.0.6",
@@ -52,8 +52,8 @@
     "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
-    "@mikro-orm/cli": "^7.0.1",
-    "@mikro-orm/seeder": "^7.0.1",
+    "@mikro-orm/cli": "^7.0.6",
+    "@mikro-orm/seeder": "^7.0.6",
     "@nestjs/cli": "^11.0.2",
     "@nestjs/schematics": "^11.0.0",
     "@nestjs/testing": "^11.0.6",
