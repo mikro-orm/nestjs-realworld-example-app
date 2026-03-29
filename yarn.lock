@@ -524,7 +524,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/cli@npm:^7.0.1":
+"@mikro-orm/cli@npm:^7.0.6":
   version: 7.0.6
   resolution: "@mikro-orm/cli@npm:7.0.6"
   dependencies:
@@ -537,7 +537,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/core@npm:7.0.6, @mikro-orm/core@npm:^7.0.1":
+"@mikro-orm/core@npm:7.0.6, @mikro-orm/core@npm:^7.0.6":
   version: 7.0.6
   resolution: "@mikro-orm/core@npm:7.0.6"
   peerDependencies:
@@ -549,7 +549,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/decorators@npm:^7.0.1":
+"@mikro-orm/decorators@npm:^7.0.6":
   version: 7.0.6
   resolution: "@mikro-orm/decorators@npm:7.0.6"
   peerDependencies:
@@ -562,7 +562,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/entity-generator@npm:^7.0.1":
+"@mikro-orm/entity-generator@npm:^7.0.6":
   version: 7.0.6
   resolution: "@mikro-orm/entity-generator@npm:7.0.6"
   dependencies:
@@ -573,7 +573,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/migrations@npm:^7.0.1":
+"@mikro-orm/migrations@npm:^7.0.6":
   version: 7.0.6
   resolution: "@mikro-orm/migrations@npm:7.0.6"
   dependencies:
@@ -584,7 +584,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/mysql@npm:^7.0.1":
+"@mikro-orm/mysql@npm:^7.0.6":
   version: 7.0.6
   resolution: "@mikro-orm/mysql@npm:7.0.6"
   dependencies:
@@ -598,7 +598,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/nestjs@npm:^7.0.0":
+"@mikro-orm/nestjs@npm:^7.0.1":
   version: 7.0.1
   resolution: "@mikro-orm/nestjs@npm:7.0.1"
   peerDependencies:
@@ -610,7 +610,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/reflection@npm:^7.0.1":
+"@mikro-orm/reflection@npm:^7.0.6":
   version: 7.0.6
   resolution: "@mikro-orm/reflection@npm:7.0.6"
   dependencies:
@@ -621,7 +621,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikro-orm/seeder@npm:^7.0.1":
+"@mikro-orm/seeder@npm:^7.0.6":
   version: 7.0.6
   resolution: "@mikro-orm/seeder@npm:7.0.6"
   peerDependencies:
@@ -4660,15 +4660,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nestjs-realworld-example-app@workspace:."
   dependencies:
-    "@mikro-orm/cli": "npm:^7.0.1"
-    "@mikro-orm/core": "npm:^7.0.1"
-    "@mikro-orm/decorators": "npm:^7.0.1"
-    "@mikro-orm/entity-generator": "npm:^7.0.1"
-    "@mikro-orm/migrations": "npm:^7.0.1"
-    "@mikro-orm/mysql": "npm:^7.0.1"
-    "@mikro-orm/nestjs": "npm:^7.0.0"
-    "@mikro-orm/reflection": "npm:^7.0.1"
-    "@mikro-orm/seeder": "npm:^7.0.1"
+    "@mikro-orm/cli": "npm:^7.0.6"
+    "@mikro-orm/core": "npm:^7.0.6"
+    "@mikro-orm/decorators": "npm:^7.0.6"
+    "@mikro-orm/entity-generator": "npm:^7.0.6"
+    "@mikro-orm/migrations": "npm:^7.0.6"
+    "@mikro-orm/mysql": "npm:^7.0.6"
+    "@mikro-orm/nestjs": "npm:^7.0.1"
+    "@mikro-orm/reflection": "npm:^7.0.6"
+    "@mikro-orm/seeder": "npm:^7.0.6"
     "@mikro-orm/sql-highlighter": "npm:^1.0.1"
     "@nestjs/cli": "npm:^11.0.2"
     "@nestjs/common": "npm:^11.0.6"
