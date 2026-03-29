@@ -14,6 +14,7 @@
     "strict": true,
     "allowJs": true,
     "types": ["vitest/globals"],
+    "rootDir": "./src",
     "outDir": "./dist"
   },
   "include": ["src/**/*"]
