@@ -73,7 +73,7 @@
     "extend": ">=3.0.2",
     "oxfmt": "^0.43.0",
     "oxlint": "^1.33.0",
-    "oxlint-tsgolint": "^0.18.0",
+    "oxlint-tsgolint": "^0.19.0",
     "supertest": "^7.0.1",
     "typescript": "6.0.2",
     "unplugin-swc": "^1.5.9",
