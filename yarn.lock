@@ -3127,9 +3127,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.328":
-  version: 1.5.353
-  resolution: "electron-to-chromium@npm:1.5.353"
-  checksum: 10/b9672c7b21234c6eca94ed7395319e6c1029be59b0ce2c8346b7787fd1f21f4ddfebf857adf4ea8e2db85a5afc7b92357d04f943c43d20a6da62caf797840e3b
+  version: 1.5.354
+  resolution: "electron-to-chromium@npm:1.5.354"
+  checksum: 10/7da615ccaefcf07b8e99849bfbb7b96a0838634aa73d72873ecc146339cac94e6ad90cb6aed84beb22e20fe082559a58c8035caf5a3a8ebeac93c51a8bca2c67
   languageName: node
   linkType: hard
 
@@ -4548,9 +4548,9 @@ __metadata:
   linkType: hard
 
 "node-releases@npm:^2.0.36":
-  version: 2.0.38
-  resolution: "node-releases@npm:2.0.38"
-  checksum: 10/0e6bba9d7e75dddf7d45c099f202ac7cb0eaeb363c36a34880c219e1697cf7369b6548e48f538490b706501ff9aa017e102adf3362184b9b64786de8377e0501
+  version: 2.0.44
+  resolution: "node-releases@npm:2.0.44"
+  checksum: 10/c6bc49ac7f0855820e3649e7a31386929f3a3b364e40ad9e9933a9ef0858f4e129a10316037482215dbfd2b1756b6e6759403687ad3d244cb14b442e34d3afb2
   languageName: node
   linkType: hard
 
@@ -5548,11 +5548,11 @@ __metadata:
   linkType: hard
 
 "swagger-ui-dist@npm:>=5.0.0":
-  version: 5.32.5
-  resolution: "swagger-ui-dist@npm:5.32.5"
+  version: 5.32.6
+  resolution: "swagger-ui-dist@npm:5.32.6"
   dependencies:
     "@scarf/scarf": "npm:=1.4.0"
-  checksum: 10/ee11d80c05d66d8cb9af3fbffaebd074da85549383e005f75b1a43187f25727655caa55390162863a0e62044277d25c14099d1ede4e499388223f546033bdf34
+  checksum: 10/cf1ef6c5c876576170f16bf58756f09c5b45a00b6e8006d25464b8b243e0f7e22e4d2e91d2260716a260c67f1a83f3606e02ddfe8a91332e1a5c3702ceec1789
   languageName: node
   linkType: hard
 
