@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { EntityManager, EntityRepository, FilterQuery, QueryOrder, wrap } from '@mikro-orm/mysql';
+import { EntityManager, EntityRepository, FilterQuery, type Loaded, QueryOrder, wrap } from '@mikro-orm/mysql';
 import { InjectRepository } from '@mikro-orm/nestjs';
 
 import { User } from '../user/user.entity';
@@ -24,7 +24,7 @@ export class ArticleService {
     const user = userId
       ? await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites'] })
       : undefined;
-    const qb = this.articleRepository.createQueryBuilder('a').select('a.*').leftJoin('a.author', 'u');
+    const qb = this.articleRepository.createQueryBuilder('a').leftJoinAndSelect('a.author', 'u');
 
     if ('tag' in query) {
       qb.andWhere({ tagList: new RegExp(query.tag) });
@@ -47,13 +47,10 @@ export class ArticleService {
         return { articles: [], articlesCount: 0 };
       }
 
-      const ids = author.favorites.$.getIdentifiers();
-      qb.andWhere({ author: ids });
+      qb.andWhere({ author: author.favorites.$.getIdentifiers() });
     }
 
     qb.orderBy({ createdAt: 'desc' });
-    const res = await qb.clone().count('id', true).execute('get');
-    const articlesCount = res.count;
 
     if ('limit' in query) {
       qb.limit(query.limit);
@@ -63,7 +60,7 @@ export class ArticleService {
       qb.offset(query.offset);
     }
 
-    const articles = await qb.getResult();
+    const [articles, articlesCount] = await qb.getResultAndCount();
 
     return { articles: articles.map(a => a.toJSON(user)), articlesCount };
   }
@@ -148,7 +145,8 @@ export class ArticleService {
 
   async create(userId: number, dto: CreateArticleDto) {
     const user = await this.userRepository.findOneOrFail(userId, { populate: ['followers', 'favorites', 'articles'] });
-    const article = new Article(user, dto.title, dto.description, dto.body);
+    // author is set in the constructor, so it's loaded from the identity map
+    const article = new Article(user, dto.title, dto.description, dto.body) as Loaded<Article, 'author'>;
     article.tagList.push(...dto.tagList);
     user.articles.add(article);
     await this.em.flush();
