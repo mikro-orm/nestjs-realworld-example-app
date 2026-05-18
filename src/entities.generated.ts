@@ -5,7 +5,7 @@ import { Article } from './article/article.entity';
 import { Comment } from './article/comment.entity';
 import { Tag } from './tag/tag.entity';
 import { User } from './user/user.entity';
-import type { EntitySchemaWithMeta, InferKyselyDB, InferClassEntityDB } from '@mikro-orm/mysql';
+import { EntityManager as DriverEntityManager } from '@mikro-orm/mysql';
 
 export const entities = [
   Article,
@@ -14,5 +14,7 @@ export const entities = [
   User,
 ] as const;
 
-export type Database = InferKyselyDB<Extract<(typeof entities)[number], EntitySchemaWithMeta>>
-  & InferClassEntityDB<(typeof entities)[number]>;
+export type Database = typeof entities;
+
+export type EntityManager = DriverEntityManager & { '~entities': Database };
+export const EntityManager = DriverEntityManager;
