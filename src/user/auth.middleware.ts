@@ -17,13 +17,10 @@ export class AuthMiddleware implements NestMiddleware {
     }
 
     const decoded = jwt.verify(token, SECRET) as { id: number };
-    const user = await this.em.findOne(User, decoded.id, { populate: ['followers', 'favorites'] });
-
-    if (!user) {
-      throw new HttpException('User not found.', HttpStatus.UNAUTHORIZED);
-    }
-
-    req.user = user;
+    req.user = await this.em.findOneOrFail(User, decoded.id, {
+      populate: ['followers', 'favorites'],
+      failHandler: () => new HttpException('User not found.', HttpStatus.UNAUTHORIZED),
+    });
     next();
   }
 }
