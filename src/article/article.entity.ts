@@ -1,4 +1,4 @@
-import { ArrayType, Collection, type EntityDTO, EntityName, type LazyRef, type Loaded, type Rel, wrap } from '@mikro-orm/mysql';
+import { ArrayType, Collection, type EntityDTO, EntityName, type LazyRef, type Rel, wrap } from '@mikro-orm/mysql';
 import { Entity, ManyToOne, OneToMany, PrimaryKey, Property } from '@mikro-orm/decorators/legacy';
 import slug from 'slug';
 
@@ -50,11 +50,10 @@ export class Article {
     this.slug = slug(title, { lower: true }) + '-' + ((Math.random() * Math.pow(36, 6)) | 0).toString(36);
   }
 
-  toJSON(this: Loaded<Article, 'author'>, user?: User) {
-    const o = wrap<Article>(this).toObject() as ArticleDTO;
-    o.favorited = user && user.favorites.isInitialized() ? user.favorites.contains(this) : false;
-    o.author = this.author.toJSON(user);
-
+  toJSON(viewer?: User): ArticleDTO {
+    const o = wrap(this).toObject() as ArticleDTO;
+    o.favorited = viewer?.favorites.isInitialized() ? viewer.favorites.contains(this) : false;
+    o.author = (this.author as User).toJSON(viewer);
     return o;
   }
 }

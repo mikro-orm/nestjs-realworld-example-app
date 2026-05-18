@@ -15,6 +15,7 @@ describe('UsersService', () => {
   const mockEntityManager = {
     persist: vi.fn().mockImplementation(() => mockEntityManager),
     flush: vi.fn().mockImplementation(async () => void 0),
+    assign: vi.fn().mockImplementation((entity, data) => Object.assign(entity, data)),
     getKysely: vi.fn().mockReturnValue(mockKysely),
   };
   const mockUserRepository = {

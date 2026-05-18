@@ -2,7 +2,7 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { validate } from 'class-validator';
 import crypto from 'crypto';
 import jwt from 'jsonwebtoken';
-import { EntityManager, wrap } from '@mikro-orm/mysql';
+import { EntityManager } from '@mikro-orm/mysql';
 import { SECRET } from '../config';
 import { CreateUserDto, LoginUserDto, UpdateUserDto } from './dto';
 import { User } from './user.entity';
@@ -71,7 +71,7 @@ export class UserService {
 
   async update(id: number, dto: UpdateUserDto) {
     const user = await this.userRepository.findOneOrFail(id);
-    wrap(user).assign(dto);
+    this.em.assign(user, dto);
     await this.em.flush();
 
     return this.buildUserRO(user);
@@ -113,15 +113,15 @@ export class UserService {
     );
   }
 
-  private buildUserRO(user: User) {
-    const userRO = {
-      bio: user.bio,
-      email: user.email,
-      image: user.image,
-      token: this.generateJWT(user),
-      username: user.username,
-    } as any;
-
-    return { user: userRO };
+  private buildUserRO(user: User): IUserRO {
+    return {
+      user: {
+        bio: user.bio,
+        email: user.email,
+        image: user.image,
+        token: this.generateJWT(user),
+        username: user.username,
+      },
+    };
   }
 }

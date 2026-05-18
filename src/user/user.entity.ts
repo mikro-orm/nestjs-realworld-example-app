@@ -55,11 +55,10 @@ export class User {
     this.password = crypto.createHmac('sha256', password).digest('hex');
   }
 
-  toJSON(user?: User) {
-    const o = wrap<User>(this).toObject() as UserDTO;
+  toJSON(viewer?: User): UserDTO {
+    const o = wrap(this).toObject() as UserDTO;
     o.image = this.image || 'https://static.productionready.io/images/smiley-cyrus.jpg';
-    o.following = user && user.followers.isInitialized() ? user.followers.contains(this) : false; // TODO or followed?
-
+    o.following = viewer?.followers.isInitialized() ? viewer.followers.contains(this) : false;
     return o;
   }
 }
