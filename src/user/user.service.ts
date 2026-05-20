@@ -2,12 +2,12 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { validate } from 'class-validator';
 import crypto from 'crypto';
 import jwt from 'jsonwebtoken';
-import { EntityManager, wrap } from '@mikro-orm/mysql';
 import { SECRET } from '../config';
 import { CreateUserDto, LoginUserDto, UpdateUserDto } from './dto';
 import { User } from './user.entity';
 import { IUserRO } from './user.interface';
 import { UserRepository } from './user.repository';
+import { EntityManager } from '../entities.generated';
 
 @Injectable()
 export class UserService {
@@ -30,11 +30,22 @@ export class UserService {
   }
 
   async create(dto: CreateUserDto): Promise<IUserRO> {
-    // check uniqueness of username/email
+    // check uniqueness of username/email — typed Kysely with entity/property
+    // names. The EM is imported from `entities.generated` so its entity tuple
+    // is recovered at the type level despite NestJS DI; `getKysely()` then
+    // infers both the database shape and the plugin options from this call.
     const { username, email, password } = dto;
-    const exists = await this.userRepository.count({ $or: [{ username }, { email }] });
+    const kysely = this.em.getKysely({
+      tableNamingStrategy: 'entity',
+      columnNamingStrategy: 'property',
+    });
+    const { count } = await kysely
+      .selectFrom('User')
+      .select(eb => eb.fn.countAll<number>().as('count'))
+      .where(eb => eb.or([eb('username', '=', username), eb('email', '=', email)]))
+      .executeTakeFirstOrThrow();
 
-    if (exists > 0) {
+    if (count > 0) {
       throw new HttpException(
         {
           message: 'Input data validation failed',
@@ -64,7 +75,7 @@ export class UserService {
 
   async update(id: number, dto: UpdateUserDto) {
     const user = await this.userRepository.findOneOrFail(id);
-    wrap(user).assign(dto);
+    this.em.assign(user, dto);
     await this.em.flush();
 
     return this.buildUserRO(user);
@@ -106,15 +117,15 @@ export class UserService {
     );
   }
 
-  private buildUserRO(user: User) {
-    const userRO = {
-      bio: user.bio,
-      email: user.email,
-      image: user.image,
-      token: this.generateJWT(user),
-      username: user.username,
-    } as any;
-
-    return { user: userRO };
+  private buildUserRO(user: User): IUserRO {
+    return {
+      user: {
+        bio: user.bio,
+        email: user.email,
+        image: user.image,
+        token: this.generateJWT(user),
+        username: user.username,
+      },
+    };
   }
 }

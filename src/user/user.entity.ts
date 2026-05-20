@@ -1,12 +1,13 @@
 import { IsEmail } from 'class-validator';
 import crypto from 'crypto';
-import { Collection, EntityDTO, EntityRepositoryType, Opt, wrap } from '@mikro-orm/mysql';
+import { Collection, EntityDTO, EntityName, EntityRepositoryType, Opt, wrap } from '@mikro-orm/mysql';
 import { Entity, ManyToMany, OneToMany, PrimaryKey, Property } from '@mikro-orm/decorators/legacy';
 import { Article } from '../article/article.entity';
 import { UserRepository } from './user.repository';
 
 @Entity({ repository: () => UserRepository })
 export class User {
+  [EntityName]?: 'User';
   [EntityRepositoryType]?: UserRepository;
 
   @PrimaryKey()
@@ -54,11 +55,10 @@ export class User {
     this.password = crypto.createHmac('sha256', password).digest('hex');
   }
 
-  toJSON(user?: User) {
-    const o = wrap<User>(this).toObject() as UserDTO;
+  toJSON(viewer?: User): UserDTO {
+    const o = wrap(this).toObject() as UserDTO;
     o.image = this.image || 'https://static.productionready.io/images/smiley-cyrus.jpg';
-    o.following = user && user.followers.isInitialized() ? user.followers.contains(this) : false; // TODO or followed?
-
+    o.following = viewer?.followers.isInitialized() ? viewer.followers.contains(this) : false;
     return o;
   }
 }

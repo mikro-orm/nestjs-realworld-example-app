@@ -23,9 +23,7 @@ export class ProfileService {
   async findProfile(id: number, followingUsername: string): Promise<IProfileRO> {
     const foundProfile = await this.userRepository.findOneOrFail(
       { username: followingUsername },
-      {
-        populate: ['followers'],
-      },
+      { populate: ['followers'] },
     );
     const follower = this.userRepository.getReference(id);
 
@@ -46,9 +44,7 @@ export class ProfileService {
 
     const followingUser = await this.userRepository.findOneOrFail(
       { username },
-      {
-        populate: ['followers'],
-      },
+      { populate: ['followers'] },
     );
     const followerUser = await this.userRepository.findOneOrFail({ email: followerEmail });
 
@@ -76,9 +72,7 @@ export class ProfileService {
 
     const followingUser = await this.userRepository.findOneOrFail(
       { username },
-      {
-        populate: ['followers'],
-      },
+      { populate: ['followers'] },
     );
     const followerUser = this.userRepository.getReference(followerId);
 

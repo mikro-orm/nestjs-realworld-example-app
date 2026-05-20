@@ -1,30 +1,26 @@
 import { HttpException, HttpStatus, Injectable, NestMiddleware } from '@nestjs/common';
+import { EntityManager } from '@mikro-orm/mysql';
 import { NextFunction, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import { SECRET } from '../config';
-import { UserService } from './user.service';
-import { IUserData } from './user.interface';
+import { User } from './user.entity';
 
 @Injectable()
 export class AuthMiddleware implements NestMiddleware {
-  constructor(private readonly userService: UserService) {}
+  constructor(private readonly em: EntityManager) {}
 
-  async use(req: Request & { user?: IUserData & { id?: number } }, res: Response, next: NextFunction) {
-    const authHeaders = req.headers.authorization;
-    if (authHeaders && (authHeaders as string).split(' ')[1]) {
-      const token = (authHeaders as string).split(' ')[1];
-      const decoded: any = jwt.verify(token, SECRET);
-      const user = await this.userService.findById(decoded.id);
+  async use(req: Request & { user?: User }, res: Response, next: NextFunction) {
+    const token = req.headers.authorization?.split(' ')[1];
 
-      if (!user) {
-        throw new HttpException('User not found.', HttpStatus.UNAUTHORIZED);
-      }
-
-      req.user = user.user;
-      req.user.id = decoded.id;
-      next();
-    } else {
+    if (!token) {
       throw new HttpException('Not authorized.', HttpStatus.UNAUTHORIZED);
     }
+
+    const decoded = jwt.verify(token, SECRET) as { id: number };
+    req.user = await this.em.findOneOrFail(User, decoded.id, {
+      populate: ['followers', 'favorites'],
+      failHandler: () => new HttpException('User not found.', HttpStatus.UNAUTHORIZED),
+    });
+    next();
   }
 }

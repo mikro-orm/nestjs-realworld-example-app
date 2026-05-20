@@ -6,9 +6,17 @@ import { EntityManager } from '@mikro-orm/mysql';
 describe('UsersService', () => {
   let service: UserService;
 
+  const mockKysely = {
+    selectFrom: vi.fn().mockReturnThis(),
+    select: vi.fn().mockReturnThis(),
+    where: vi.fn().mockReturnThis(),
+    executeTakeFirstOrThrow: vi.fn().mockResolvedValue({ count: 0 }),
+  };
   const mockEntityManager = {
     persist: vi.fn().mockImplementation(() => mockEntityManager),
     flush: vi.fn().mockImplementation(async () => void 0),
+    assign: vi.fn().mockImplementation((entity, data) => Object.assign(entity, data)),
+    getKysely: vi.fn().mockReturnValue(mockKysely),
   };
   const mockUserRepository = {
     findAll: vi.fn().mockImplementation(async () => []),

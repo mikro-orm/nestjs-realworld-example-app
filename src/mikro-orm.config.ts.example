@@ -1,6 +1,7 @@
 import { defineConfig } from '@mikro-orm/mysql';
 import { SqlHighlighter } from '@mikro-orm/sql-highlighter';
 import { TsMorphMetadataProvider } from '@mikro-orm/reflection';
+import { entities } from './entities.generated';
 
 export default defineConfig({
   host: 'localhost',
@@ -8,8 +9,7 @@ export default defineConfig({
   user: 'root',
   password: '',
   dbName: 'nestjsrealworld',
-  entities: ['dist/**/*.entity.js'],
-  entitiesTs: ['src/**/*.entity.ts'],
+  entities,
   debug: true,
   highlighter: new SqlHighlighter(),
   metadataProvider: TsMorphMetadataProvider,

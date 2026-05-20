@@ -1,10 +1,12 @@
 import { Entity, ManyToOne, PrimaryKey, Property } from '@mikro-orm/decorators/legacy';
-import type { Rel } from '@mikro-orm/core';
+import { EntityName, type LazyRef, type Rel } from '@mikro-orm/core';
 import { User } from '../user/user.entity';
 import { Article } from './article.entity';
 
 @Entity()
 export class Comment {
+  [EntityName]?: 'Comment';
+
   @PrimaryKey()
   id!: number;
 
@@ -18,10 +20,10 @@ export class Comment {
   body: string;
 
   @ManyToOne()
-  article: Rel<Article>;
+  article!: LazyRef<Article>;
 
   @ManyToOne()
-  author: Rel<User>;
+  author!: LazyRef<User>;
 
   constructor(author: Rel<User>, article: Rel<Article>, body: string) {
     this.author = author;

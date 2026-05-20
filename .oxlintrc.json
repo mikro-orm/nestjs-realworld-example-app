@@ -95,12 +95,7 @@
     "no-var": "error",
     "prefer-rest-params": "error",
     "prefer-spread": "error",
-    "import/no-duplicates": [
-      "error",
-      {
-        "allowSeparateTypeImports": true
-      }
-    ],
+    "import/no-duplicates": "error",
     "no-inner-declarations": "error",
     "eqeqeq": [
       "error",
