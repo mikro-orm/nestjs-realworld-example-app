@@ -2579,11 +2579,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.10.12":
-  version: 2.10.32
-  resolution: "baseline-browser-mapping@npm:2.10.32"
+  version: 2.10.33
+  resolution: "baseline-browser-mapping@npm:2.10.33"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 10/65e8fa5ae614ed266d24e69aab517e46a7da5bbe16c46fa8373ae22007ab9f492c05d7308240e0a8b55bd0e899c67fd82a0e225f78ecb7e9164f23b0791f2784
+  checksum: 10/e5ea31ff7988d631af72cc579825d109f1b8ab70af2490b875daaef5eba9257c60e108a768f7bd949394ca6a9e33469ea48e7367aea680671f8073733514f101
   languageName: node
   linkType: hard
 
@@ -5658,12 +5658,12 @@ __metadata:
   linkType: hard
 
 "tinyglobby@npm:^0.2.12, tinyglobby@npm:^0.2.14, tinyglobby@npm:^0.2.15, tinyglobby@npm:^0.2.16":
-  version: 0.2.16
-  resolution: "tinyglobby@npm:0.2.16"
+  version: 0.2.17
+  resolution: "tinyglobby@npm:0.2.17"
   dependencies:
     fdir: "npm:^6.5.0"
     picomatch: "npm:^4.0.4"
-  checksum: 10/5c2c41b572ada38449e7c86a5fe034f204a1dbba577225a761a14f29f48dc3f2fc0d81a6c56fcc67c5a742cc3aa9fb5e2ca18dbf22b610b0bc0e549b34d5a0f8
+  checksum: 10/f85e8a217d675c3f78d5f0ad25ea4557e7e023ed13ddc2b014da10bd0312eea53a34cd52356af07ccdff777f1243012547656282a4ca70936f68bf5065fbaa71
   languageName: node
   linkType: hard
 
