@@ -3129,9 +3129,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.328":
-  version: 1.5.364
-  resolution: "electron-to-chromium@npm:1.5.364"
-  checksum: 10/2d498239abc5f9891eb8b6a7c872e5ace9c1aa6094f42a4adf5a2b386cadd4e1a0ee93b5ffe042db5b6320562e9a07fa83adb435f3ed580d8a2fafff580025d2
+  version: 1.5.367
+  resolution: "electron-to-chromium@npm:1.5.367"
+  checksum: 10/7041090564a1be7616fe003280a03b5e4fd2a668707863e699635b71ce0fa79640f76d82fc0736c667a99c28962e33f10d29222f659160343f35c7b045482d37
   languageName: node
   linkType: hard
 
@@ -3150,12 +3150,12 @@ __metadata:
   linkType: hard
 
 "enhanced-resolve@npm:^5.20.0, enhanced-resolve@npm:^5.7.0":
-  version: 5.22.1
-  resolution: "enhanced-resolve@npm:5.22.1"
+  version: 5.22.2
+  resolution: "enhanced-resolve@npm:5.22.2"
   dependencies:
     graceful-fs: "npm:^4.2.4"
     tapable: "npm:^2.3.3"
-  checksum: 10/2124366118c1e93836b23b4aad933352ba8d404c2c50129388b5d83520bfea1021169e975967e048bfca3a82cbf07756ba76a26e1eab305ef06b2ab1a384e6c0
+  checksum: 10/4190ea2c3c60631cd2200339f5e49ee65ab44942603ed0514c82e9177006b8c36156cf7046a3e1a5ab4a6dec3880a5a0921ad65184645eca57936f1222b4e298
   languageName: node
   linkType: hard
 
@@ -3959,9 +3959,9 @@ __metadata:
   linkType: hard
 
 "libphonenumber-js@npm:^1.11.1":
-  version: 1.13.4
-  resolution: "libphonenumber-js@npm:1.13.4"
-  checksum: 10/87003fe5f21117bba6faf1956308aa673778ed036c7a36b80dd33e138e988c70778c67c19a5a5416ebdf8c59e44d7294b98d8feeb034565ae8ef75f27f7666ba
+  version: 1.13.5
+  resolution: "libphonenumber-js@npm:1.13.5"
+  checksum: 10/3f598fb50f419510cafdc6f093ebd9c457df826e37de42b8be4ba25251472b58debaca3ddaa152e82c1bf23a986edaae5985d2fe6319131da09ac623bdc88baa
   languageName: node
   linkType: hard
 
