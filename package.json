@@ -72,7 +72,7 @@
     "atob": ">=2.1.2",
     "deep-extend": ">=0.6.0",
     "extend": ">=3.0.2",
-    "oxfmt": "^0.57.0",
+    "oxfmt": "^0.58.0",
     "oxlint": "^1.33.0",
     "oxlint-tsgolint": "^0.24.0",
     "supertest": "^7.0.1",
