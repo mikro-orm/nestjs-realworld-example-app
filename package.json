@@ -89,6 +89,7 @@
     ],
     "semanticCommits": "enabled",
     "separateMajorMinor": false,
+    "minimumReleaseAge": "1 day",
     "dependencyDashboard": false,
     "lockFileMaintenance": {
       "enabled": true,
