@@ -68,7 +68,7 @@
     "@types/slug": "^5.0.8",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",
-    "@vitest/coverage-v8": "^4.0.16",
+    "@vitest/coverage-v8": "^5.0.0",
     "atob": ">=2.1.2",
     "deep-extend": ">=0.6.0",
     "extend": ">=3.0.2",
@@ -78,7 +78,7 @@
     "supertest": "^7.0.1",
     "typescript": "6.0.3",
     "unplugin-swc": "^1.5.9",
-    "vitest": "^4.0.16"
+    "vitest": "^5.0.0"
   },
   "packageManager": "yarn@4.18.0",
   "renovate": {
