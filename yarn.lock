@@ -722,11 +722,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/mapped-types@npm:2.1.1":
-  version: 2.1.1
-  resolution: "@nestjs/mapped-types@npm:2.1.1"
+"@nestjs/mapped-types@npm:12.0.0":
+  version: 12.0.0
+  resolution: "@nestjs/mapped-types@npm:12.0.0"
   peerDependencies:
-    "@nestjs/common": ^10.0.0 || ^11.0.0
+    "@nestjs/common": ^10.0.0 || ^11.0.0 || ^12.0.0
     class-transformer: ^0.4.0 || ^0.5.0
     class-validator: ^0.13.0 || ^0.14.0 || ^0.15.0
     reflect-metadata: ^0.1.12 || ^0.2.0
@@ -735,7 +735,7 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10/83e104a72a9eec62eabdb84338105acdca576556947d9eaafc4c1d892d46249b9875fa7fe072ed369526d0c30873cb8c32b7ed2710c09aa9713137dfb7c8d280
+  checksum: 10/c10c0a7a84a72b189862240a2fec216b7fb23310db8a83051f740e3b0c6791c30c3637dc3b4326a8fd32c4a411d9593b37b9b4afc86e1ef764613f6293d74d17
   languageName: node
   linkType: hard
 
@@ -774,20 +774,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/swagger@npm:^11.0.3":
-  version: 11.4.6
-  resolution: "@nestjs/swagger@npm:11.4.6"
+"@nestjs/swagger@npm:^12.0.0":
+  version: 12.0.1
+  resolution: "@nestjs/swagger@npm:12.0.1"
   dependencies:
     "@microsoft/tsdoc": "npm:0.16.0"
-    "@nestjs/mapped-types": "npm:2.1.1"
-    js-yaml: "npm:5.2.1"
-    lodash: "npm:4.18.1"
+    "@nestjs/mapped-types": "npm:12.0.0"
+    "@standard-schema/spec": "npm:1.1.0"
+    es-toolkit: "npm:1.51.0"
+    js-yaml: "npm:5.4.1"
     path-to-regexp: "npm:8.4.2"
-    swagger-ui-dist: "npm:5.32.8"
+    swagger-ui-dist: "npm:5.32.14"
   peerDependencies:
     "@fastify/static": ^8.0.0 || ^9.0.0 || ^10.0.0
-    "@nestjs/common": ^11.0.1
-    "@nestjs/core": ^11.0.1
+    "@nestjs/common": ^12.0.0
+    "@nestjs/core": ^12.0.0
     class-transformer: "*"
     class-validator: "*"
     reflect-metadata: ^0.1.12 || ^0.2.0
@@ -798,7 +799,7 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 10/4aee3d99012adda56e4d3a8748dc6df1981f0727adedaa33b90f39ffb4bf58fe7da80b70ae692014dc0fbf352bf39de3980aa05c02e520876e386857b99ff03e
+  checksum: 10/5df0dbb92910715dbdb583550f946578d2ce2acdb01de49b98ef0598f2e0ff954a33437c4d254b2240603e007d52c8ec13e73e6ff9e50fa73849203bf05e7eeb
   languageName: node
   linkType: hard
 
@@ -2859,6 +2860,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"es-toolkit@npm:1.51.0":
+  version: 1.51.0
+  resolution: "es-toolkit@npm:1.51.0"
+  dependenciesMeta:
+    "@trivago/prettier-plugin-sort-imports@4.3.0":
+      unplugged: true
+    prettier-plugin-sort-re-exports@0.0.1:
+      unplugged: true
+    vitepress-plugin-sandpack@1.1.4:
+      unplugged: true
+  checksum: 10/95f6265e27eda6efd8f7fb63b53dd631c1b7904dc5285703a0f7ee2d028a9d76d134931f630944094719614440490a28a935f5a522422ea3ab78b692cb61b104
+  languageName: node
+  linkType: hard
+
 "escalade@npm:^3.1.1":
   version: 3.2.0
   resolution: "escalade@npm:3.2.0"
@@ -3338,14 +3353,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-yaml@npm:5.2.1":
-  version: 5.2.1
-  resolution: "js-yaml@npm:5.2.1"
+"js-yaml@npm:5.4.1":
+  version: 5.4.1
+  resolution: "js-yaml@npm:5.4.1"
   dependencies:
     argparse: "npm:^2.0.1"
   bin:
     js-yaml: bin/js-yaml.mjs
-  checksum: 10/e1eca2d21c15572585bb236d9fde31d6789eb50b9c63e8753fa7e0777bc480f7521cad517bd7a0c66f27dfc27ddcd7100beeefa51c1a50e10e98f2e009633c3d
+  checksum: 10/6fff9ee00bd59aeb7e1484b4281f5e927b117cbfbf3ffa6c0fef0c58519317eb61527e93c4aa70f417709229bc1eeed63cba773913577a64405975a72fba7180
   languageName: node
   linkType: hard
 
@@ -3605,13 +3620,6 @@ __metadata:
   version: 4.1.1
   resolution: "lodash.once@npm:4.1.1"
   checksum: 10/202f2c8c3d45e401b148a96de228e50ea6951ee5a9315ca5e15733d5a07a6b1a02d9da1e7fdf6950679e17e8ca8f7190ec33cae47beb249b0c50019d753f38f3
-  languageName: node
-  linkType: hard
-
-"lodash@npm:4.18.1":
-  version: 4.18.1
-  resolution: "lodash@npm:4.18.1"
-  checksum: 10/306fea53dfd39dad1f03d45ba654a2405aebd35797b673077f401edb7df2543623dc44b9effbb98f69b32152295fff725a4cec99c684098947430600c6af0c3f
   languageName: node
   linkType: hard
 
@@ -3885,7 +3893,7 @@ __metadata:
     "@nestjs/core": "npm:^12.0.0"
     "@nestjs/platform-express": "npm:^12.0.0"
     "@nestjs/schematics": "npm:^12.0.0"
-    "@nestjs/swagger": "npm:^11.0.3"
+    "@nestjs/swagger": "npm:^12.0.0"
     "@nestjs/testing": "npm:^12.0.0"
     "@swc-node/register": "npm:^1.11.1"
     "@swc/core": "npm:^1.15.3"
@@ -4868,12 +4876,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"swagger-ui-dist@npm:5.32.8":
-  version: 5.32.8
-  resolution: "swagger-ui-dist@npm:5.32.8"
+"swagger-ui-dist@npm:5.32.14":
+  version: 5.32.14
+  resolution: "swagger-ui-dist@npm:5.32.14"
   dependencies:
     "@scarf/scarf": "npm:=1.4.0"
-  checksum: 10/3521bfa261eb3ad377bec887b7be3cd711752ecc141a7fd0eb1e493682f473f0d3855dabfed8cb0d0f6f455a3794a1c7a5268cd6448e699b15af90a878a9bf7b
+  checksum: 10/1b7b3a978dccc5dd0feca1c54aaaaaf2eb7cc3cf40b2390dd7a46fe81dbbb7a57cc872ead7091c997560fc5dcfa1643f46c2827ef92594728770726bab588976
   languageName: node
   linkType: hard
 
