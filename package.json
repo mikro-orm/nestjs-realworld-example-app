@@ -14,9 +14,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "nest start",
-    "start:dev": "nest start --watch",
-    "start:debug": "nest start --debug --watch",
+    "start": "yarn build && node dist/main",
+    "start:dev": "node --watch --import @oxc-node/core/register src/main.ts",
     "start:prod": "node dist/main",
     "mikro-orm:export": "mikro-orm discovery:export --path './src/**/*.entity.ts'",
     "tsc-check-tests": "tsc --noEmit --project tsconfig.json",
@@ -25,7 +24,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "test:e2e": "APIURL=http://localhost:3000/api ./e2e/run-api-tests.sh"
+    "test:e2e": "APIURL=http://localhost:3000/api ./e2e/run-api-tests.sh",
+    "build": "tsc -p tsconfig.build.json"
   },
   "dependencies": {
     "@mikro-orm/core": "^7.1.0",
@@ -55,10 +55,8 @@
   "devDependencies": {
     "@mikro-orm/cli": "^7.1.0",
     "@mikro-orm/seeder": "^7.1.0",
-    "@nestjs/cli": "^12.0.0",
-    "@nestjs/schematics": "^12.0.0",
     "@nestjs/testing": "^12.0.0",
-    "@swc-node/register": "^1.11.1",
+    "@oxc-node/core": "^0.1.0",
     "@swc/core": "^1.15.3",
     "@types/babel__core": "^7",
     "@types/babel__preset-env": "^7",
@@ -76,7 +74,7 @@
     "oxlint": "^1.33.0",
     "oxlint-tsgolint": "^7.0.0",
     "supertest": "^7.0.1",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "unplugin-swc": "^1.5.9",
     "vite": "^8.2.2",
     "vitest": "^5.0.0"
