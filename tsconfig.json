@@ -12,6 +12,7 @@
     "target": "ESNext",
     "sourceMap": true,
     "strict": true,
+    "skipLibCheck": true,
     "allowJs": true,
     "types": ["vitest/globals"],
     "rootDir": "./src",
