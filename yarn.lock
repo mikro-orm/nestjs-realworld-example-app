@@ -3925,7 +3925,7 @@ __metadata:
     supertest: "npm:^7.0.1"
     swagger-ui-express: "npm:^5.0.0"
     typescript: "npm:6.0.3"
-    unplugin-swc: "npm:^1.5.9"
+    unplugin-swc: "npm:^2.0.0"
     vite: "npm:^8.2.2"
     vitest: "npm:^5.0.0"
   languageName: unknown
@@ -5110,16 +5110,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin-swc@npm:^1.5.9":
-  version: 1.5.11
-  resolution: "unplugin-swc@npm:1.5.11"
+"unplugin-swc@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "unplugin-swc@npm:2.0.0"
   dependencies:
     "@rollup/pluginutils": "npm:^5.4.0"
     load-tsconfig: "npm:^0.2.5"
     unplugin: "npm:^3.3.0"
   peerDependencies:
     "@swc/core": ^1.2.108
-  checksum: 10/230b8c4f4edbd6d462434d32c4bf361e53fc35c7143af5e61a415e661be54096655731430ab2cb5f2e01fceadcccf80340090ba5dc9d31987031aabb74e08818
+  checksum: 10/b56578eb2b1063160bec8f602ae4cc571a590bab792248c6befc6a15aba0fab9ee0bbef3240e34cdb11ff34b804c050874a4c5f2b43c3356fd9b56a24a4ab923
   languageName: node
   linkType: hard
 
