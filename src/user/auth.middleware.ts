@@ -1,15 +1,17 @@
 import { HttpException, HttpStatus, Injectable, NestMiddleware } from '@nestjs/common';
-import { EntityManager } from '@mikro-orm/mysql';
+import { EntityManager, type Loaded } from '@mikro-orm/mysql';
 import { NextFunction, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import { SECRET } from '../config';
 import { User } from './user.entity';
 
+type AuthedUser = Loaded<User, 'followers' | 'favorites', never, 'favorites.comments'>;
+
 @Injectable()
 export class AuthMiddleware implements NestMiddleware {
   constructor(private readonly em: EntityManager) {}
 
-  async use(req: Request & { user?: User }, res: Response, next: NextFunction) {
+  async use(req: Request & { user?: AuthedUser }, res: Response, next: NextFunction) {
     const token = req.headers.authorization?.split(' ')[1];
 
     if (!token) {
@@ -19,6 +21,8 @@ export class AuthMiddleware implements NestMiddleware {
     const decoded = jwt.verify(token, SECRET) as { id: number };
     req.user = await this.em.findOneOrFail(User, decoded.id, {
       populate: ['followers', 'favorites'],
+      // favorites are only checked by identity (the `favorited` flag), so skip their eager comments
+      exclude: ['favorites.comments'],
       failHandler: () => new HttpException('User not found.', HttpStatus.UNAUTHORIZED),
     });
     next();
